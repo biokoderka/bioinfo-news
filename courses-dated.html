@@ -15,14 +15,18 @@ a{color:var(--primary);font-weight:700;text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:1160px;margin:0 auto;padding:28px 18px}
 .hero{color:white;padding:34px 0 18px}
-.nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
 .nav a{color:white;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:10px 14px;border-radius:999px;font-weight:700;font-size:14px}
 .nav a.active{background:white;color:#4c1d95}
-.hero h1{font-size:clamp(28px,5vw,52px);line-height:1;margin:0 0 10px}
-.hero p{max-width:900px;color:#f3e8ff;font-size:16px;line-height:1.55}
+.hero h1{font-size:clamp(28px,5vw,52px);line-height:1;margin:0 0 14px}
 
-.panel{background:rgba(255,255,255,.96);border:1px solid var(--border);box-shadow:0 24px 80px rgba(24,8,48,.22);border-radius:26px;padding:18px;margin:12px 0 18px}
-.filters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.subnav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.12)}
+.subnav a{color:white;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;transition:.15s}
+.subnav a:hover{background:rgba(255,255,255,.2);text-decoration:none}
+.subnav a.active{background:white;color:#4c1d95;border-color:white}
+
+.panel{background:rgba(255,255,255,.96);border:1px solid var(--border);box-shadow:0 24px 80px rgba(24,8,48,.22);border-radius:26px;padding:18px;margin:0 0 18px}
+.filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
 input,select{width:100%;border:1px solid var(--border);border-radius:16px;padding:12px 14px;background:white;color:var(--text);font:inherit;font-size:14px}
 
 .stats-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
@@ -67,10 +71,16 @@ input,select{width:100%;border:1px solid var(--border);border-radius:16px;paddin
       <a href="index.html">← Strona główna</a>
       <a href="https://biokoderka.github.io/bioinfo-jobs/">Oferty pracy</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">Uczelnie</a>
-      <a href="submit.html" class="active">✦ Zgłoś wpis</a>
+      <a href="submit.html">✦ Zgłoś wpis</a>
     </nav>
     <h1>🗓 Kursy z terminem</h1>
-    <p>Wszystkie wpisy w tej kategorii. Prowadzone przez <a href="https://instagram.com/biokoderka" style="color:white">@biokoderka</a>.</p>
+    <nav class="subnav">
+      <a href="meetups.html" class="">🤝 Meetupy</a>
+      <a href="courses-dated.html" class="active">🗓 Kursy z terminem</a>
+      <a href="courses-free.html" class="">📚 Kursy stałe</a>
+      <a href="projects.html" class="">🌿 Projekty</a>
+      <a href="other.html" class="">✦ Inne</a>
+    </nav>
   </header>
 
   <section class="panel">
