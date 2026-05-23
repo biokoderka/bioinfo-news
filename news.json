@@ -103,7 +103,7 @@
       "location": "Przesieka (woj. dolnoslaskie)",
       "date_start": "2026-05-22",
       "date_end": "2026-05-24",
-      "archived": false,
+      "archived": true,
       "added": "2026-05-23"
     },
     {
@@ -133,7 +133,7 @@
       "location": "Warszawa",
       "date_start": "2026-02-01",
       "date_end": "2026-12-31",
-      "archived": false,
+      "archived": true,
       "added": "2026-05-23"
     },
     {
@@ -292,21 +292,6 @@
       "added": "2026-05-23"
     },
     {
-      "id": "2026-022",
-      "type": "course-dated",
-      "title": "SEQme Bioinformatics School 2026 — seria warsztatów online",
-      "org": "SEQme",
-      "description": "8 jednodniowych warsztatów online z analizy danych sekwencjonowania. Każda sesja jest samodzielna. Program: Unix, ONT, de novo assembly, wizualizacja w R, RNA-seq, variant calling, metabarcoding, anotacja funkcjonalna. Kolejne sesje: 11.06, 23.09, 11.11, 09.12.2026. Cena 129 EUR/sesję.",
-      "url": "https://www.seqme.eu/en/courses/dates/bioinformatics-school",
-      "free": false,
-      "lang": "🇬🇧 EN",
-      "location": "Online",
-      "date_start": "2026-06-11",
-      "date_end": "2026-12-09",
-      "archived": false,
-      "added": "2026-05-23"
-    },
-    {
       "id": "2026-023",
       "type": "meetup",
       "title": "VII Polski Kongres Genetyki",
@@ -332,6 +317,8 @@
       "free": false,
       "lang": "🇬🇧 EN",
       "location": "Wrocław",
+      "date_start": "2026-10-12",
+      "date_end": "2026-10-14",
       "archived": false,
       "added": "2026-05-23"
     },
@@ -360,6 +347,8 @@
       "free": true,
       "lang": "🇵🇱 PL",
       "location": "Kraków, AGH",
+      "date_start": "2026-06-02",
+      "date_end": "2026-06-02",
       "archived": false,
       "added": "2026-05-23"
     },
