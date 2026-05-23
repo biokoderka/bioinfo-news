@@ -317,8 +317,9 @@ function renderCard(e){
 }
 function sortActive(entries){
   return [...entries].sort((a,b)=>{
-    const da=a.date_start?new Date(a.date_start):new Date(a.added||'2099-01-01');
-    const db=b.date_start?new Date(b.date_start):new Date(b.added||'2099-01-01');
+    // entries without date_start go to the end (TBA)
+    const da=a.date_start?new Date(a.date_start):new Date('2099-01-01');
+    const db=b.date_start?new Date(b.date_start):new Date('2099-01-01');
     return da-db;
   });
 }
