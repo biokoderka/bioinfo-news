@@ -71,7 +71,7 @@ a:hover{text-decoration:underline}
       <a href="submit.html">✦ Zgłoś wpis</a>
     </nav>
     <h1>BioInfoNews</h1>
-    <p>Projekty, kursy, meetupy i inicjatywy bioinformatyczne w jednym miejscu.<br>
+    <p>Projekty, kursy, meetupy i inicjatywy dla społeczności bioinformatycznej w Polsce.<br>
     Prowadzone przez <a href="https://instagram.com/biokoderka" style="color:white">@biokoderka</a>.</p>
   </header>
 
@@ -116,6 +116,7 @@ function renderCard(e) {
   const tm = TYPE_META[e.type] || TYPE_META['other'];
   let pills = '';
   if (e.free)       pills += `<span class="pill free">✓ bezpłatne</span>`;
+  if (e.lang)       pills += `<span class="pill neutral">${e.lang}</span>`;
   if (e.date_start) pills += `<span class="pill date">📅 ${fmtDate(e.date_start)}</span>`;
   if (e.deadline)   pills += `<span class="pill deadline">⏰ do ${fmtDate(e.deadline)}</span>`;
   if (e.location)   pills += `<span class="pill neutral">📍 ${e.location}</span>`;
