@@ -6,92 +6,131 @@
 <title>Zgłoś wpis — BioInfoNews</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#170b2d;--bg2:#241044;--card:#fff;--text:#21182f;--muted:#70647f;--primary:#7c3aed;--primary2:#a855f7;--soft:#f4e8ff;--soft2:#ead5ff;--border:#e8d5ff}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,var(--bg),#3b0764 42%,#6d28d9);color:var(--text);min-height:100vh}
-a{color:var(--primary);font-weight:700;text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:720px;margin:0 auto;padding:28px 18px}
-.hero{color:white;padding:34px 0 18px}
-.nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
-.nav a{color:white;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:10px 14px;border-radius:999px}
-.nav a.active{background:white;color:#4c1d95}
-.hero h1{font-size:clamp(28px,5vw,48px);line-height:1;margin:0 0 10px}
-.hero p{color:#f3e8ff;font-size:16px;line-height:1.55}
+:root{--bg:#0d0a1a;--bg2:#130f25;--card:#15112a;--card2:#1d1840;--border:rgba(139,92,246,.18);--border2:rgba(139,92,246,.35);--text:#e8e4f8;--muted:#8b7faa;--dim:#4a4268;--purple:#7c3aed;--purple2:#a855f7;--pink:#ec4899}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 20% 0%,rgba(124,58,237,.12) 0%,transparent 60%),radial-gradient(ellipse 40% 30% at 80% 10%,rgba(168,85,247,.08) 0%,transparent 50%)}
+a{text-decoration:none}
 
-.panel{background:rgba(255,255,255,.96);border:1px solid var(--border);box-shadow:0 24px 80px rgba(24,8,48,.22);border-radius:26px;padding:28px;margin:12px 0}
+header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;height:56px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.logo-text{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.3px}
+.logo-text span{color:var(--purple2)}
+.logo-sub{font-size:11px;color:var(--muted);font-weight:500}
+.header-nav{display:flex;gap:6px;margin-left:auto}
+.header-nav a{font-size:12px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;border:1px solid transparent;transition:all .15s}
+.header-nav a:hover{color:var(--text);border-color:var(--border2)}
 
-.notice{background:#faf5ff;border:1px solid var(--border);border-radius:18px;padding:14px 18px;line-height:1.6;font-size:14px;color:var(--muted);margin-bottom:20px}
+.wrap{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:48px 2rem 56px}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--dim);margin-bottom:20px;transition:color .15s}
+.back-link:hover{color:var(--purple2)}
+h1{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1;letter-spacing:-1.5px;margin-bottom:8px;background:linear-gradient(135deg,#fff 30%,#c084fc 65%,#ec4899 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:14px;color:var(--muted);margin-bottom:32px}
 
-label{font-weight:800;margin:16px 0 6px;display:block;font-size:14px}
-label .hint{font-weight:400;color:var(--muted);font-size:13px}
-input,select,textarea{width:100%;border:1px solid var(--border);border-radius:16px;padding:12px 14px;background:white;color:var(--text);font:inherit;font-size:14px}
-textarea{min-height:110px;resize:vertical}
-select option{background:white}
+.notice{background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.2);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--muted);margin-bottom:28px;line-height:1.6}
 
-.row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:500px){.row-2{grid-template-columns:1fr}}
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px}
+.form-group{margin-bottom:20px}
+label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:6px;letter-spacing:.04em;text-transform:uppercase}
+label .hint{font-weight:500;color:var(--dim);text-transform:none;letter-spacing:0;margin-left:4px}
+input,select,textarea{
+  width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+  padding:10px 14px;color:var(--text);font:inherit;font-size:14px;outline:none;transition:border-color .15s;
+}
+input::placeholder{color:var(--dim)}
+input:focus,select:focus,textarea:focus{border-color:var(--border2)}
+textarea{resize:vertical;min-height:100px}
+select option{background:var(--bg2)}
 
-.checkbox-row{display:flex;align-items:center;gap:10px;margin-top:10px}
-.checkbox-row input[type=checkbox]{width:auto;accent-color:var(--primary)}
-.checkbox-row label{margin:0;font-weight:700;font-size:14px}
+.row-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.checkbox-row{display:flex;align-items:center;gap:10px;margin-top:4px}
+.checkbox-row input[type=checkbox]{width:auto;accent-color:var(--purple2)}
+.checkbox-row label{font-size:14px;font-weight:600;color:var(--text);text-transform:none;letter-spacing:0;margin:0}
 
-.btn{border:0;border-radius:999px;padding:13px 28px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:white;font-weight:900;font-size:15px;cursor:pointer;display:inline-block;margin-top:10px;font-family:inherit}
-.btn:hover{opacity:.88}
+.submit-btn{
+  width:100%;margin-top:8px;padding:13px;border:none;border-radius:10px;
+  background:linear-gradient(135deg,var(--purple),var(--purple2));
+  color:#fff;font:inherit;font-size:14px;font-weight:800;cursor:pointer;
+  transition:opacity .15s;letter-spacing:.02em;
+}
+.submit-btn:hover{opacity:.85}
+.submit-btn:disabled{opacity:.5;cursor:not-allowed}
 
-.success{display:none;background:#dcfce7;border:1px solid #bbf7d0;border-radius:18px;padding:18px;color:#166534;font-weight:700;margin-top:16px;font-size:15px}
+.success{display:none;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);border-radius:12px;padding:20px;text-align:center;color:#34d399;font-weight:700;font-size:15px;margin-top:16px}
 
-.footer{color:#f3e8ff;margin:28px 0;font-size:14px}
-.footer a{color:#f3e8ff}
+footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:20px 2rem;text-align:center;font-size:12px;color:var(--dim)}
+footer a{color:var(--muted);font-weight:600}
+footer a:hover{color:var(--purple2)}
+@media(max-width:500px){.row-2{grid-template-columns:1fr}.wrap{padding:32px 1.2rem 40px}header{padding:0 1rem}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <nav class="nav">
-      <a href="index.html">🧬 BioInfoNews</a>
-      <a href="https://biokoderka.github.io/bioinfo-jobs/">Oferty pracy</a>
-      <a href="https://biokoderka.github.io/bioinfo-uni/">Uczelnie</a>
-      <a class="active" href="submit.html">✦ Zgłoś wpis</a>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">🧬</div>
+      <div>
+        <div class="logo-text">BioInfo<span>News</span></div>
+        <div class="logo-sub">by @biokoderka</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html">← Powrót</a>
     </nav>
-    <h1>Zgłoś wpis</h1>
-    <p>Projekt do współpracy, kurs, meetup lub inna inicjatywa warta uwagi społeczności bioinformatycznej?<br>Sprawdzę i dodam wkrótce.</p>
-  </header>
+  </div>
+</header>
 
-  <div class="panel">
-    <div class="notice">
-      📌 Formularz wysyła zgłoszenie do @biokoderka. Wpisy weryfikuję ręcznie — dodaję zazwyczaj w ciągu kilku dni.
-      Jeśli chcesz edytować lub usunąć wpis, napisz na Instagramie.
-    </div>
+<div class="wrap">
+  <a class="back-link" href="index.html">← Strona główna</a>
+  <h1>Zgłoś wpis</h1>
+  <p class="hero-sub">Znasz projekt, kurs, meetup lub inicjatywę wartą uwagi społeczności bioinformatycznej?</p>
 
+  <div class="notice">
+    📌 Formularz wysyła zgłoszenie do @biokoderka. Wpisy weryfikuję ręcznie i dodaję zazwyczaj w ciągu kilku dni. Chcesz edytować lub usunąć wpis? Napisz na Instagramie.
+  </div>
+
+  <div class="form-card">
     <form action="https://formspree.io/f/xnjrzdnz" method="POST" id="submitForm">
 
-      <label>Typ wpisu <span class="hint">— wybierz najlepiej pasującą kategorię</span></label>
-      <select name="type" required>
-        <option value="" disabled selected>Wybierz typ…</option>
-        <option value="project">🌿 Projekt do współpracy / collaboracja</option>
-        <option value="course-free">📚 Kurs stały (platforma, zasoby bez terminu)</option>
-        <option value="course-dated">🗓 Kurs z konkretnym terminem / edycją</option>
-        <option value="meetup">🤝 Meetup / konferencja / warsztat</option>
-        <option value="other">✦ Inne (hackathon, inicjatywa, itp.)</option>
-      </select>
+      <div class="form-group">
+        <label>Typ wpisu</label>
+        <select name="type" required>
+          <option value="" disabled selected>Wybierz typ…</option>
+          <option value="project">🌿 Projekt do współpracy / collaboracja</option>
+          <option value="course-free">📚 Kurs stały (platforma, zasoby bez terminu)</option>
+          <option value="course-dated">🗓 Kurs z konkretnym terminem</option>
+          <option value="meetup">🤝 Meetup / konferencja / warsztat</option>
+          <option value="other">✦ Inne (hackathon, konkurs, inicjatywa)</option>
+        </select>
+      </div>
 
-      <label>Tytuł <span class="hint">— krótko i konkretnie (max 120 znaków)</span></label>
-      <input type="text" name="title" placeholder="np. Projekt analizy metagenomów — szukamy bioinformatyka" required maxlength="120">
+      <div class="form-group">
+        <label>Tytuł <span class="hint">— krótko i konkretnie</span></label>
+        <input type="text" name="title" placeholder="np. Bioinformatics Community PL Meetup #6" required maxlength="120">
+      </div>
 
-      <label>Organizacja / prowadzący <span class="hint">— opcjonalne</span></label>
-      <input type="text" name="org" placeholder="np. Koło Naukowe UW, nazwa platformy…" maxlength="100">
+      <div class="form-group">
+        <label>Organizacja / prowadzący <span class="hint">— opcjonalne</span></label>
+        <input type="text" name="org" placeholder="np. PTBI, NGSchool, nazwa platformy…" maxlength="100">
+      </div>
 
-      <label>Opis <span class="hint">— 2–4 zdania: co, dla kogo, co zyska uczestnik</span></label>
-      <textarea name="description" placeholder="Opisz inicjatywę w kilku zdaniach…" required maxlength="600"></textarea>
+      <div class="form-group">
+        <label>Opis <span class="hint">— 2–4 zdania</span></label>
+        <textarea name="description" placeholder="Co to jest, dla kogo, co zyska uczestnik…" required maxlength="600"></textarea>
+      </div>
 
-      <label>Link <span class="hint">— opcjonalne</span></label>
-      <input type="url" name="url" placeholder="https://…">
+      <div class="form-group">
+        <label>Link <span class="hint">— opcjonalne</span></label>
+        <input type="url" name="url" placeholder="https://…">
+      </div>
 
       <div class="row-2">
-        <div>
+        <div class="form-group">
           <label>Język</label>
           <select name="lang">
             <option value="">Nie dotyczy</option>
@@ -100,75 +139,72 @@ select option{background:white}
             <option value="🇵🇱 PL / 🇬🇧 EN">🇵🇱 PL / 🇬🇧 EN</option>
           </select>
         </div>
-        <div>
+        <div class="form-group">
           <label>Lokalizacja <span class="hint">— opcjonalne</span></label>
           <input type="text" name="location" placeholder="np. Warszawa, Online…" maxlength="60">
         </div>
       </div>
 
       <div class="row-2">
-        <div>
-          <label>Data rozpoczęcia <span class="hint">— opcjonalne</span></label>
+        <div class="form-group">
+          <label>Data rozpoczęcia</label>
           <input type="date" name="date_start">
         </div>
-        <div>
-          <label>Data końca <span class="hint">— archiwizuje wpis automatycznie</span></label>
+        <div class="form-group">
+          <label>Data końca / wygaśnięcia</label>
           <input type="date" name="date_end">
         </div>
       </div>
 
-      <label>Deadline zgłoszeń <span class="hint">— opcjonalne</span></label>
-      <input type="date" name="deadline">
-
-      <div class="checkbox-row">
-        <input type="checkbox" name="free" id="freeCheck" value="true">
-        <label for="freeCheck">Bezpłatne / darmowy udział</label>
+      <div class="form-group">
+        <label>Deadline zgłoszeń <span class="hint">— opcjonalne</span></label>
+        <input type="date" name="deadline">
       </div>
 
-      <label style="margin-top:20px">Twój kontakt <span class="hint">— opcjonalne, nie pokazujemy publicznie</span></label>
-      <input type="text" name="contact" placeholder="Instagram, e-mail lub inne">
+      <div class="form-group">
+        <div class="checkbox-row">
+          <input type="checkbox" name="free" id="freeCheck" value="true">
+          <label for="freeCheck">Bezpłatne / darmowy udział</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Twój kontakt <span class="hint">— opcjonalne, nie pokazujemy publicznie</span></label>
+        <input type="text" name="contact" placeholder="Instagram, e-mail lub inne">
+      </div>
 
       <input type="hidden" name="_subject" value="BioInfoNews — nowe zgłoszenie">
       <input type="text" name="_gotcha" style="display:none">
 
-      <br>
-      <button type="submit" class="btn">✦ Wyślij zgłoszenie</button>
+      <button type="submit" class="submit-btn">✦ Wyślij zgłoszenie</button>
     </form>
-
-    <div class="success" id="successMsg">
-      ✓ Zgłoszenie wysłane! Dziękuję — sprawdzę je i dodam wkrótce. 🧬
-    </div>
+    <div class="success" id="successMsg">✓ Zgłoszenie wysłane! Dziękuję — sprawdzę i dodam wkrótce. 🧬</div>
   </div>
-
-  <footer class="footer">
-    🧬 <strong>BioInfoNews</strong> by <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
-    <a href="index.html">Wróć do listy</a>
-  </footer>
 </div>
 
+<footer>
+  🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
+  <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
+  <a href="index.html">Wróć do listy</a>
+</footer>
+
 <script>
-document.getElementById('submitForm').addEventListener('submit', async function(e) {
+document.getElementById('submitForm').addEventListener('submit',async function(e){
   e.preventDefault();
-  const btn = this.querySelector('button');
-  btn.textContent = 'Wysyłanie…';
-  btn.disabled = true;
-  try {
-    const res = await fetch(this.action, {
-      method: 'POST', body: new FormData(this),
-      headers: { 'Accept': 'application/json' }
-    });
-    if (res.ok) {
-      this.style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
+  const btn=this.querySelector('button');
+  btn.textContent='Wysyłanie…';btn.disabled=true;
+  try{
+    const res=await fetch(this.action,{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}});
+    if(res.ok){
+      this.style.display='none';
+      document.getElementById('successMsg').style.display='block';
     } else {
-      btn.textContent = '✦ Wyślij zgłoszenie';
-      btn.disabled = false;
+      btn.textContent='✦ Wyślij zgłoszenie';btn.disabled=false;
       alert('Coś poszło nie tak. Spróbuj ponownie lub napisz na Instagramie.');
     }
-  } catch {
-    btn.textContent = '✦ Wyślij zgłoszenie';
-    btn.disabled = false;
-    alert('Błąd sieci. Sprawdź połączenie i spróbuj ponownie.');
+  } catch{
+    btn.textContent='✦ Wyślij zgłoszenie';btn.disabled=false;
+    alert('Błąd sieci. Sprawdź połączenie.');
   }
 });
 </script>

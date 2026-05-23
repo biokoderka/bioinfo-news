@@ -3,177 +3,369 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BioInfoNews — projekty, kursy, meetupy i inicjatywy dla społeczności bioinformatycznej w Polsce.">
 <title>BioInfoNews by @biokoderka</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#170b2d;--bg2:#241044;--card:#fff;--text:#21182f;--muted:#70647f;--primary:#7c3aed;--primary2:#a855f7;--soft:#f4e8ff;--soft2:#ead5ff;--border:#e8d5ff;--good:#166534;--warn:#92400e;--bad:#991b1b}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,var(--bg),#3b0764 42%,#6d28d9);color:var(--text);min-height:100vh}
-a{color:var(--primary);font-weight:700;text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1160px;margin:0 auto;padding:28px 18px}
-.hero{color:white;padding:34px 0 18px}
-.nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
-.nav a{color:white;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:10px 14px;border-radius:999px;font-weight:700;font-size:14px}
-.nav a.active{background:white;color:#4c1d95}
-.hero h1{font-size:clamp(32px,6vw,64px);line-height:.96;margin:0 0 14px}
-.hero p{max-width:900px;color:#f3e8ff;font-size:18px;line-height:1.55}
+:root {
+  --bg:      #0d0a1a;
+  --bg2:     #130f25;
+  --bg3:     #1a1535;
+  --card:    #15112a;
+  --card2:   #1d1840;
+  --border:  rgba(139,92,246,.18);
+  --border2: rgba(139,92,246,.35);
+  --text:    #e8e4f8;
+  --muted:   #8b7faa;
+  --dim:     #4a4268;
+  --purple:  #7c3aed;
+  --purple2: #a855f7;
+  --pink:    #ec4899;
+  --green:   #10b981;
+  --yellow:  #f59e0b;
+  --red:     #ef4444;
+  --cyan:    #06b6d4;
+}
 
-/* SECTION BLOCK */
-.section-block{margin-bottom:36px}
-.section-header{display:flex;align-items:center;gap:14px;margin-bottom:14px;flex-wrap:wrap}
-.section-title{font-size:22px;font-weight:900;color:white;margin:0}
-.section-count{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:white;font-size:13px;font-weight:800;padding:4px 12px;border-radius:999px}
-.see-all{margin-left:auto;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);color:white;font-size:13px;font-weight:800;padding:8px 16px;border-radius:999px;text-decoration:none;white-space:nowrap;transition:.15s}
-.see-all:hover{background:rgba(255,255,255,.25);text-decoration:none}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
 
-/* CARDS GRID */
-.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.card{background:rgba(255,255,255,.96);border:1px solid var(--border);box-shadow:0 8px 32px rgba(24,8,48,.18);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:8px}
-.type-pill{border-radius:999px;padding:4px 12px;font-size:12px;font-weight:800;display:inline-flex;align-items:center;gap:4px;align-self:flex-start}
-.type-pill.project{background:#dcfce7;border:1px solid #bbf7d0;color:#166534}
-.type-pill.course-free{background:#e0f2fe;border:1px solid #bae6fd;color:#0369a1}
-.type-pill.course-dated{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
-.type-pill.meetup{background:#fce7f3;border:1px solid #fbcfe8;color:#9d174d}
-.type-pill.other{background:var(--soft);border:1px solid var(--border);color:#4c1d95}
-.card h3{margin:0;font-size:15px;font-weight:800;color:var(--text);line-height:1.35}
-.card .org{font-size:12px;color:var(--muted);margin:0}
-.card .desc{font-size:13px;color:#3d3050;line-height:1.55;flex:1;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.meta{display:flex;gap:6px;flex-wrap:wrap}
-.pill{background:var(--soft);border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:12px;color:#4c1d95;display:inline-flex;align-items:center;gap:3px}
-.pill.date{background:#fffbeb;border-color:#fde68a;color:#92400e}
-.pill.deadline{background:#fee2e2;border-color:#fecaca;color:#991b1b}
-.pill.free{background:#dcfce7;border-color:#bbf7d0;color:#166534}
-.pill.neutral{background:#f3f4f6;border-color:#e5e7eb;color:#4b5563}
-.card-link{display:inline-block;margin-top:4px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:white;padding:7px 14px;border-radius:999px;font-size:12px;font-weight:900;text-decoration:none;align-self:flex-start}
-.card-link:hover{opacity:.85;text-decoration:none}
+/* ── BACKGROUND GLOW ── */
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 0%, rgba(124,58,237,.12) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 80% 10%, rgba(168,85,247,.08) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 60% at 50% 100%, rgba(236,72,153,.05) 0%, transparent 60%);
+}
 
-.empty-section{background:rgba(255,255,255,.07);border:1px dashed rgba(255,255,255,.2);border-radius:20px;padding:24px;text-align:center;color:rgba(255,255,255,.5);font-size:14px}
+/* ── HEADER ── */
+header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(13,10,26,.88);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:0 2rem;
+}
+.header-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;gap:1rem;height:56px;
+}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{
+  width:32px;height:32px;border-radius:8px;
+  background:linear-gradient(135deg,var(--purple),var(--pink));
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;flex-shrink:0;
+}
+.logo-text{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.3px}
+.logo-text span{color:var(--purple2)}
+.logo-sub{font-size:11px;color:var(--muted);font-weight:500;margin-left:2px}
+.header-nav{display:flex;gap:6px;margin-left:auto;align-items:center;flex-wrap:wrap}
+.header-nav a{
+  font-size:12px;font-weight:600;color:var(--muted);text-decoration:none;
+  padding:5px 12px;border-radius:999px;border:1px solid transparent;
+  transition:all .15s;white-space:nowrap;
+}
+.header-nav a:hover{color:var(--text);border-color:var(--border2)}
+.header-nav a.cta{
+  background:linear-gradient(135deg,var(--purple),var(--purple2));
+  color:#fff;border-color:transparent;
+}
+.header-nav a.cta:hover{opacity:.85}
 
-.divider{border:none;border-top:1px solid rgba(255,255,255,.12);margin:8px 0 36px}
+/* ── HERO ── */
+.hero{
+  position:relative;z-index:1;
+  max-width:1200px;margin:0 auto;
+  padding:56px 2rem 40px;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);
+  border-radius:999px;padding:4px 14px;
+  font-size:12px;font-weight:700;color:var(--purple2);
+  margin-bottom:20px;letter-spacing:.04em;text-transform:uppercase;
+}
+.hero h1{
+  font-size:clamp(36px,6vw,72px);font-weight:900;line-height:.95;
+  letter-spacing:-2px;margin-bottom:16px;
+  background:linear-gradient(135deg,#fff 30%,#c084fc 65%,#ec4899 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{
+  font-size:16px;color:var(--muted);max-width:560px;line-height:1.65;
+  margin-bottom:32px;
+}
+.hero-sub a{color:var(--purple2);text-decoration:none;font-weight:600}
+.hero-sub a:hover{text-decoration:underline}
 
-.footer{color:#f3e8ff;margin:32px 0;font-size:14px}
-.footer a{color:#f3e8ff}
+/* ── STATS ROW ── */
+.stats-row{
+  display:flex;gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:16px;overflow:hidden;
+  margin-bottom:56px;
+}
+.stat{
+  flex:1;padding:20px 24px;background:var(--card);
+  text-align:center;
+}
+.stat-num{
+  font-size:32px;font-weight:900;letter-spacing:-1px;
+  background:linear-gradient(135deg,var(--purple2),var(--pink));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  display:block;
+}
+.stat-label{font-size:11px;font-weight:700;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+
+/* ── SECTION ── */
+.section{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 2rem 56px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.section-emoji{font-size:22px;line-height:1}
+.section-title{font-size:20px;font-weight:800;color:var(--text);letter-spacing:-.3px}
+.section-badge{
+  background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);
+  color:var(--purple2);font-size:12px;font-weight:700;
+  padding:3px 10px;border-radius:999px;
+}
+.see-all{
+  margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);
+  text-decoration:none;padding:6px 14px;border-radius:999px;
+  border:1px solid var(--border2);transition:all .15s;white-space:nowrap;
+}
+.see-all:hover{color:var(--purple2);border-color:rgba(124,58,237,.6);background:rgba(124,58,237,.08)}
+
+/* ── CARDS GRID ── */
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+
+/* ── CARD ── */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;padding:18px;
+  display:flex;flex-direction:column;gap:10px;
+  transition:border-color .2s, background .2s, transform .15s;
+  position:relative;overflow:hidden;
+}
+.card::before{
+  content:'';position:absolute;inset:0;border-radius:14px;
+  background:linear-gradient(135deg,rgba(124,58,237,.04),transparent 60%);
+  pointer-events:none;
+}
+.card:hover{border-color:var(--border2);background:var(--card2);transform:translateY(-2px)}
+
+.type-pill{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;
+  align-self:flex-start;letter-spacing:.02em;
+}
+.type-pill.meetup     {background:rgba(236,72,153,.12); border:1px solid rgba(236,72,153,.25); color:#f472b6}
+.type-pill.course-free{background:rgba(6,182,212,.12);  border:1px solid rgba(6,182,212,.25);  color:#22d3ee}
+.type-pill.course-dated{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.25); color:#fbbf24}
+.type-pill.project    {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.25); color:#34d399}
+.type-pill.other      {background:rgba(124,58,237,.12); border:1px solid rgba(124,58,237,.3);  color:#a78bfa}
+
+.card-title{font-size:14px;font-weight:700;color:var(--text);line-height:1.35;letter-spacing:-.1px}
+.card-org{font-size:12px;color:var(--muted);font-weight:500}
+.card-desc{
+  font-size:12px;color:var(--muted);line-height:1.55;flex:1;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+.card-meta{display:flex;gap:5px;flex-wrap:wrap}
+.pill{
+  font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:3px;
+}
+.pill.free    {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.2); color:#34d399}
+.pill.lang    {background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.pill.date    {background:rgba(245,158,11,.1);  border:1px solid rgba(245,158,11,.2); color:#fbbf24}
+.pill.deadline{background:rgba(239,68,68,.1);   border:1px solid rgba(239,68,68,.2);  color:#f87171}
+.pill.loc     {background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--dim)}
+
+.card-link{
+  font-size:12px;font-weight:700;color:var(--purple2);text-decoration:none;
+  display:inline-flex;align-items:center;gap:4px;margin-top:2px;
+  transition:color .15s;
+}
+.card-link:hover{color:var(--pink)}
+
+/* ── DIVIDER ── */
+.section-divider{
+  max-width:1200px;margin:0 auto;
+  border:none;border-top:1px solid var(--border);
+  margin-bottom:48px;
+}
+
+/* ── EMPTY ── */
+.empty-section{
+  background:rgba(124,58,237,.05);border:1px dashed rgba(124,58,237,.2);
+  border-radius:14px;padding:32px;text-align:center;
+  font-size:13px;color:var(--dim);
+}
+.empty-section a{color:var(--purple2);font-weight:700;text-decoration:none}
+
+/* ── FOOTER ── */
+footer{
+  position:relative;z-index:1;
+  border-top:1px solid var(--border);
+  padding:24px 2rem;text-align:center;
+  font-size:12px;color:var(--dim);
+}
+footer a{color:var(--muted);text-decoration:none;font-weight:600}
+footer a:hover{color:var(--purple2)}
 
 @media(max-width:900px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:580px){.cards-grid{grid-template-columns:1fr}.section-header{gap:8px}.see-all{margin-left:0;width:100%}}
+@media(max-width:600px){
+  .cards-grid{grid-template-columns:1fr}
+  .hero{padding:36px 1.2rem 28px}
+  .section{padding:0 1.2rem 40px}
+  .stats-row{flex-wrap:wrap}
+  .stat{flex:1 1 50%}
+  .header-inner{padding:0}
+  header{padding:0 1rem}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <nav class="nav">
-      <a class="active" href="index.html">🧬 BioInfoNews</a>
-      <a href="https://biokoderka.github.io/bioinfo-jobs/">Oferty pracy</a>
-      <a href="https://biokoderka.github.io/bioinfo-uni/">Uczelnie</a>
-      <a href="submit.html">✦ Zgłoś wpis</a>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">🧬</div>
+      <div>
+        <div class="logo-text">BioInfo<span>News</span></div>
+        <div class="logo-sub">by @biokoderka</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
+      <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
+      <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
-    <h1>BioInfoNews</h1>
-    <p>Projekty, kursy, meetupy i inicjatywy dla społeczności bioinformatycznej w Polsce.<br>
-    Prowadzone przez <a href="https://instagram.com/biokoderka" style="color:white">@biokoderka</a>.</p>
-  </header>
+  </div>
+</header>
 
-  <div id="sections-container"></div>
-
-  <footer class="footer">
-    🧬 <strong>BioInfoNews</strong> by <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
-    <a href="submit.html">Zgłoś wpis</a> &nbsp;·&nbsp;
-    <a href="https://biokoderka.github.io/bioinfo-jobs/">BioInfoJobs</a> &nbsp;·&nbsp;
-    <a href="https://biokoderka.github.io/bioinfo-uni/">BioInfoUni</a>
-  </footer>
+<div class="hero">
+  <div class="hero-eyebrow">🧬 Społeczność bioinformatyczna w Polsce</div>
+  <h1>BioInfoNews</h1>
+  <p class="hero-sub">
+    Projekty do współpracy, kursy, meetupy i inicjatywy dla środowiska bioinformatycznego.
+    Curated by <a href="https://instagram.com/biokoderka">@biokoderka</a>.
+  </p>
+  <div class="stats-row" id="statsRow">
+    <div class="stat"><span class="stat-num" id="s-meetup">–</span><div class="stat-label">Meetupy</div></div>
+    <div class="stat"><span class="stat-num" id="s-course-dated">–</span><div class="stat-label">Kursy z terminem</div></div>
+    <div class="stat"><span class="stat-num" id="s-course-free">–</span><div class="stat-label">Kursy stałe</div></div>
+    <div class="stat"><span class="stat-num" id="s-project">–</span><div class="stat-label">Projekty</div></div>
+    <div class="stat"><span class="stat-num" id="s-other">–</span><div class="stat-label">Inne</div></div>
+  </div>
 </div>
+
+<div id="sections-container"></div>
+
+<footer>
+  🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
+  <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
+  <a href="submit.html">Zgłoś wpis</a> &nbsp;·&nbsp;
+  <a href="https://biokoderka.github.io/bioinfo-jobs/">BioInfoJobs</a> &nbsp;·&nbsp;
+  <a href="https://biokoderka.github.io/bioinfo-uni/">BioInfoUni</a>
+</footer>
 
 <script>
 const SECTIONS = [
-  { type: 'meetup',      emoji: '🤝', label: 'Meetupy i wydarzenia',     page: 'meetups.html' },
-  { type: 'course-dated',emoji: '🗓', label: 'Kursy z terminem',          page: 'courses-dated.html' },
-  { type: 'course-free', emoji: '📚', label: 'Kursy stałe i zasoby',      page: 'courses-free.html' },
-  { type: 'project',     emoji: '🌿', label: 'Projekty do współpracy',    page: 'projects.html' },
-  { type: 'other',       emoji: '✦',  label: 'Inne inicjatywy',           page: 'other.html' },
+  { type:'meetup',       emoji:'🤝', label:'Meetupy i wydarzenia',   page:'meetups.html' },
+  { type:'course-dated', emoji:'🗓', label:'Kursy z terminem',        page:'courses-dated.html' },
+  { type:'course-free',  emoji:'📚', label:'Kursy stałe i zasoby',    page:'courses-free.html' },
+  { type:'project',      emoji:'🌿', label:'Projekty do współpracy',  page:'projects.html' },
+  { type:'other',        emoji:'✦',  label:'Inne inicjatywy',         page:'other.html' },
 ];
 
 const TYPE_META = {
-  'project':      { label: '🌿 Projekt',        cls: 'project' },
-  'course-free':  { label: '📚 Kurs stały',      cls: 'course-free' },
-  'course-dated': { label: '🗓 Kurs z terminem', cls: 'course-dated' },
-  'meetup':       { label: '🤝 Meetup',          cls: 'meetup' },
-  'other':        { label: '✦ Inne',             cls: 'other' },
+  'project':      {label:'🌿 Projekt',        cls:'project'},
+  'course-free':  {label:'📚 Kurs stały',      cls:'course-free'},
+  'course-dated': {label:'🗓 Kurs z terminem', cls:'course-dated'},
+  'meetup':       {label:'🤝 Meetup',          cls:'meetup'},
+  'other':        {label:'✦ Inne',             cls:'other'},
 };
 
-function isArchived(e) {
-  if (e.archived) return true;
-  if (e.date_end) return new Date(e.date_end) < new Date();
+function isArchived(e){
+  if(e.archived) return true;
+  if(e.date_end) return new Date(e.date_end) < new Date();
   return false;
 }
-
-function fmtDate(str) {
-  return new Date(str).toLocaleDateString('pl-PL', {day:'numeric', month:'short', year:'numeric'});
+function fmtDate(s){
+  return new Date(s).toLocaleDateString('pl-PL',{day:'numeric',month:'short',year:'numeric'});
 }
-
-function renderCard(e) {
-  const tm = TYPE_META[e.type] || TYPE_META['other'];
-  let pills = '';
-  if (e.free)       pills += `<span class="pill free">✓ bezpłatne</span>`;
-  if (e.lang)       pills += `<span class="pill neutral">${e.lang}</span>`;
-  if (e.date_start) pills += `<span class="pill date">📅 ${fmtDate(e.date_start)}</span>`;
-  if (e.deadline)   pills += `<span class="pill deadline">⏰ do ${fmtDate(e.deadline)}</span>`;
-  if (e.location)   pills += `<span class="pill neutral">📍 ${e.location}</span>`;
+function renderCard(e){
+  const tm = TYPE_META[e.type]||TYPE_META['other'];
+  let pills='';
+  if(e.free)        pills+=`<span class="pill free">✓ bezpłatne</span>`;
+  if(e.lang)        pills+=`<span class="pill lang">${e.lang}</span>`;
+  if(e.date_start)  pills+=`<span class="pill date">📅 ${fmtDate(e.date_start)}</span>`;
+  if(e.deadline)    pills+=`<span class="pill deadline">⏰ do ${fmtDate(e.deadline)}</span>`;
+  if(e.location)    pills+=`<span class="pill loc">📍 ${e.location}</span>`;
   return `<article class="card">
     <span class="type-pill ${tm.cls}">${tm.label}</span>
-    <h3>${e.title}</h3>
-    ${e.org ? `<p class="org">${e.org}</p>` : ''}
-    <p class="desc">${e.description}</p>
-    ${pills ? `<div class="meta">${pills}</div>` : ''}
-    ${e.url ? `<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Więcej info →</a>` : ''}
+    <div class="card-title">${e.title}</div>
+    ${e.org?`<div class="card-org">${e.org}</div>`:''}
+    <div class="card-desc">${e.description}</div>
+    ${pills?`<div class="card-meta">${pills}</div>`:''}
+    ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Więcej info →</a>`:''}
   </article>`;
 }
-
-function sortByDate(entries) {
-  return entries.sort((a, b) => {
-    const da = a.date_start ? new Date(a.date_start) : new Date(a.added || '2099-01-01');
-    const db = b.date_start ? new Date(b.date_start) : new Date(b.added || '2099-01-01');
-    return da - db;
+function sortActive(entries){
+  return [...entries].sort((a,b)=>{
+    const da=a.date_start?new Date(a.date_start):new Date(a.added||'2099-01-01');
+    const db=b.date_start?new Date(b.date_start):new Date(b.added||'2099-01-01');
+    return da-db;
   });
 }
 
-async function init() {
-  const r = await fetch('news.json?v=' + Date.now());
+async function init(){
+  const r = await fetch('news.json?v='+Date.now());
   const data = await r.json();
-  const active = data.entries.filter(e => !isArchived(e));
+  const active = data.entries.filter(e=>!isArchived(e));
+
+  // fill stats
+  SECTIONS.forEach(sec=>{
+    const count = active.filter(e=>e.type===sec.type).length;
+    const el = document.getElementById('s-'+sec.type);
+    if(el) el.textContent = count;
+  });
 
   const container = document.getElementById('sections-container');
-  let html = '';
+  let html='';
 
-  SECTIONS.forEach((sec, i) => {
-    const all = sortByDate(active.filter(e => e.type === sec.type));
-    const top3 = all.slice(0, 3);
+  SECTIONS.forEach((sec,i)=>{
+    const all = sortActive(active.filter(e=>e.type===sec.type));
+    const top3 = all.slice(0,3);
     const count = all.length;
 
-    html += `<div class="section-block">
-      <div class="section-header">
-        <h2 class="section-title">${sec.emoji} ${sec.label}</h2>
-        <span class="section-count">${count} aktywne</span>
-        ${count > 3 ? `<a class="see-all" href="${sec.page}">Zobacz wszystkie (${count}) →</a>` : count > 0 ? `<a class="see-all" href="${sec.page}">Zobacz wszystkie →</a>` : ''}
+    html+=`<section class="section">
+      <div class="section-head">
+        <span class="section-emoji">${sec.emoji}</span>
+        <span class="section-title">${sec.label}</span>
+        <span class="section-badge">${count} aktywne</span>
+        ${count>0?`<a class="see-all" href="${sec.page}">Zobacz wszystkie →</a>`:''}
       </div>`;
 
-    if (top3.length === 0) {
-      html += `<div class="empty-section">Brak aktywnych wpisów — <a href="submit.html" style="color:rgba(255,255,255,.7)">zgłoś pierwszy</a></div>`;
+    if(top3.length===0){
+      html+=`<div class="empty-section">Brak aktywnych wpisów — <a href="submit.html">zgłoś pierwszy</a></div>`;
     } else {
-      html += `<div class="cards-grid">` + top3.map(renderCard).join('') + `</div>`;
+      html+=`<div class="cards-grid">${top3.map(renderCard).join('')}</div>`;
     }
-
-    html += `</div>`;
-    if (i < SECTIONS.length - 1) html += `<hr class="divider">`;
+    html+=`</section>`;
+    if(i<SECTIONS.length-1) html+=`<hr class="section-divider">`;
   });
 
-  container.innerHTML = html;
+  container.innerHTML=html;
 }
 
-init().catch(() => {
-  document.getElementById('sections-container').innerHTML =
-    '<div style="color:rgba(255,255,255,.6);padding:40px 0;text-align:center">Nie udało się załadować danych.</div>';
+init().catch(()=>{
+  document.getElementById('sections-container').innerHTML=
+    '<div style="text-align:center;padding:60px 2rem;color:var(--muted)">Nie udało się załadować danych.</div>';
 });
 </script>
 </body>

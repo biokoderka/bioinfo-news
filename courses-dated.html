@@ -6,205 +6,292 @@
 <title>🗓 Kursy z terminem — BioInfoNews</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#170b2d;--bg2:#241044;--card:#fff;--text:#21182f;--muted:#70647f;--primary:#7c3aed;--primary2:#a855f7;--soft:#f4e8ff;--soft2:#ead5ff;--border:#e8d5ff;--good:#166534;--warn:#92400e;--bad:#991b1b}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,var(--bg),#3b0764 42%,#6d28d9);color:var(--text);min-height:100vh}
-a{color:var(--primary);font-weight:700;text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1160px;margin:0 auto;padding:28px 18px}
-.hero{color:white;padding:34px 0 18px}
-.nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
-.nav a{color:white;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:10px 14px;border-radius:999px;font-weight:700;font-size:14px}
-.nav a.active{background:white;color:#4c1d95}
-.hero h1{font-size:clamp(28px,5vw,52px);line-height:1;margin:0 0 14px}
+:root{
+  --bg:#0d0a1a;--bg2:#130f25;--bg3:#1a1535;
+  --card:#15112a;--card2:#1d1840;
+  --border:rgba(139,92,246,.18);--border2:rgba(139,92,246,.35);
+  --text:#e8e4f8;--muted:#8b7faa;--dim:#4a4268;
+  --purple:#7c3aed;--purple2:#a855f7;--pink:#ec4899;
+  --green:#10b981;--yellow:#f59e0b;--red:#ef4444;--cyan:#06b6d4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 0%,rgba(124,58,237,.12) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 30% at 80% 10%,rgba(168,85,247,.08) 0%,transparent 50%);
+}
+a{text-decoration:none}
 
-.subnav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.12)}
-.subnav a{color:white;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;transition:.15s}
-.subnav a:hover{background:rgba(255,255,255,.2);text-decoration:none}
-.subnav a.active{background:white;color:#4c1d95;border-color:white}
+/* HEADER */
+header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;height:56px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.logo-text{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.3px}
+.logo-text span{color:var(--purple2)}
+.logo-sub{font-size:11px;color:var(--muted);font-weight:500}
+.header-nav{display:flex;gap:6px;margin-left:auto;align-items:center}
+.header-nav a{font-size:12px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;border:1px solid transparent;transition:all .15s;white-space:nowrap}
+.header-nav a:hover{color:var(--text);border-color:var(--border2)}
+.header-nav a.cta{background:linear-gradient(135deg,var(--purple),var(--purple2));color:#fff}
+.header-nav a.cta:hover{opacity:.85}
 
-.panel{background:rgba(255,255,255,.96);border:1px solid var(--border);box-shadow:0 24px 80px rgba(24,8,48,.22);border-radius:26px;padding:18px;margin:0 0 18px}
-.filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
-input,select{width:100%;border:1px solid var(--border);border-radius:16px;padding:12px 14px;background:white;color:var(--text);font:inherit;font-size:14px}
+/* HERO */
+.hero{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:48px 2rem 32px}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--dim);margin-bottom:20px;transition:color .15s}
+.back-link:hover{color:var(--purple2)}
+.hero h1{
+  font-size:clamp(28px,5vw,56px);font-weight:900;line-height:1;letter-spacing:-1.5px;margin-bottom:8px;
+  background:linear-gradient(135deg,#fff 30%,#c084fc 65%,#ec4899 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{font-size:14px;color:var(--muted);margin-bottom:24px}
 
-.stats-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
-.stats-bar span{color:#f3e8ff;font-size:14px}
-.stats-bar strong{color:white}
-.archive-toggle{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);color:white;padding:8px 14px;border-radius:999px;font:inherit;font-size:13px;font-weight:800;cursor:pointer;transition:.15s;margin-left:auto}
-.archive-toggle:hover{background:rgba(255,255,255,.22)}
-.archive-toggle.on{background:white;color:#4c1d95}
+/* SUBNAV */
+.subnav{display:flex;gap:6px;flex-wrap:wrap;padding-bottom:28px;border-bottom:1px solid var(--border);margin-bottom:28px}
+.subnav a{font-size:12px;font-weight:600;color:var(--muted);padding:6px 14px;border-radius:999px;border:1px solid var(--border);transition:all .15s}
+.subnav a:hover{color:var(--text);border-color:var(--border2)}
+.subnav a.active{background:rgba(124,58,237,.2);border-color:rgba(124,58,237,.4);color:var(--purple2)}
 
-.cards{display:grid;gap:14px}
-.card{background:rgba(255,255,255,.96);border:1px solid var(--border);box-shadow:0 8px 32px rgba(24,8,48,.15);border-radius:20px;padding:20px;position:relative}
-.card.archived{opacity:.55}
-.archived-badge{position:absolute;top:16px;right:16px;background:#f3f4f6;border:1px solid #e5e7eb;color:#6b7280;font-size:11px;font-weight:800;padding:3px 10px;border-radius:999px}
-.card-header{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:8px}
-.type-pill{border-radius:999px;padding:5px 12px;font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
-.type-pill.project{background:#dcfce7;border:1px solid #bbf7d0;color:#166534}
-.type-pill.course-free{background:#e0f2fe;border:1px solid #bae6fd;color:#0369a1}
-.type-pill.course-dated{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
-.type-pill.meetup{background:#fce7f3;border:1px solid #fbcfe8;color:#9d174d}
-.type-pill.other{background:var(--soft);border:1px solid var(--border);color:#4c1d95}
-.card h3{margin:0;font-size:17px;font-weight:800;color:var(--text);flex:1}
-.card .org{font-size:13px;color:var(--muted);margin-bottom:8px}
-.card .desc{font-size:14px;color:var(--text);line-height:1.6;margin-bottom:10px}
-.meta{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
-.pill{background:var(--soft);border:1px solid var(--border);border-radius:999px;padding:5px 12px;font-size:13px;color:#4c1d95;display:inline-flex;align-items:center;gap:4px}
-.pill.date{background:#fffbeb;border-color:#fde68a;color:#92400e}
-.pill.deadline{background:#fee2e2;border-color:#fecaca;color:#991b1b}
-.pill.free{background:#dcfce7;border-color:#bbf7d0;color:#166534}
-.pill.neutral{background:#f3f4f6;border-color:#e5e7eb;color:#4b5563}
-.card-link{display:inline-block;margin-top:8px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:white;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:900;text-decoration:none}
-.card-link:hover{opacity:.85;text-decoration:none}
-.empty{padding:40px;text-align:center;color:rgba(255,255,255,.6);font-size:15px}
-.footer{color:#f3e8ff;margin:32px 0;font-size:14px}
-.footer a{color:#f3e8ff}
-@media(max-width:600px){.filters{grid-template-columns:1fr}}
+/* FILTERS */
+.filters-panel{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.filters-panel input,
+.filters-panel select{
+  background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  padding:8px 12px;color:var(--text);font:inherit;font-size:13px;
+  outline:none;transition:border-color .15s;
+}
+.filters-panel input{flex:1;min-width:180px}
+.filters-panel input::placeholder{color:var(--dim)}
+.filters-panel select{cursor:pointer}
+.filters-panel input:focus,
+.filters-panel select:focus{border-color:var(--border2)}
+.filters-panel select option{background:var(--bg2)}
+
+/* STATS + ARCHIVE */
+.controls-row{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.stats-text{font-size:13px;color:var(--dim)}
+.stats-text strong{color:var(--muted)}
+.archive-btn{
+  margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);
+  padding:6px 14px;border-radius:999px;border:1px solid var(--border);
+  background:none;cursor:pointer;font-family:inherit;transition:all .15s;
+}
+.archive-btn:hover{color:var(--purple2);border-color:var(--border2)}
+.archive-btn.on{background:rgba(124,58,237,.15);color:var(--purple2);border-color:rgba(124,58,237,.35)}
+
+/* CARDS */
+.cards{display:grid;gap:12px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:18px;position:relative;overflow:hidden;
+  transition:border-color .2s,background .2s;
+}
+.card::before{
+  content:'';position:absolute;inset:0;border-radius:14px;
+  background:linear-gradient(135deg,rgba(124,58,237,.04),transparent 60%);
+  pointer-events:none;
+}
+.card:hover{border-color:var(--border2);background:var(--card2)}
+.card.archived{opacity:.5}
+.archived-badge{
+  position:absolute;top:14px;right:14px;
+  font-size:10px;font-weight:800;color:var(--dim);letter-spacing:.06em;
+  background:rgba(255,255,255,.05);border:1px solid var(--border);
+  padding:2px 8px;border-radius:999px;text-transform:uppercase;
+}
+
+.card-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.type-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.type-pill.project     {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.25); color:#34d399}
+.type-pill.course-free {background:rgba(6,182,212,.12);  border:1px solid rgba(6,182,212,.25);  color:#22d3ee}
+.type-pill.course-dated{background:rgba(245,158,11,.12); border:1px solid rgba(245,158,11,.25); color:#fbbf24}
+.type-pill.meetup      {background:rgba(236,72,153,.12); border:1px solid rgba(236,72,153,.25); color:#f472b6}
+.type-pill.other       {background:rgba(124,58,237,.12); border:1px solid rgba(124,58,237,.3);  color:#a78bfa}
+
+.card-title{font-size:15px;font-weight:700;color:var(--text);flex:1;line-height:1.3;letter-spacing:-.1px}
+.card-org{font-size:12px;color:var(--muted);margin-bottom:8px}
+.card-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px}
+.card-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.pill{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;display:inline-flex;align-items:center;gap:3px}
+.pill.free    {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.2); color:#34d399}
+.pill.lang    {background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.pill.date    {background:rgba(245,158,11,.1);  border:1px solid rgba(245,158,11,.2); color:#fbbf24}
+.pill.deadline{background:rgba(239,68,68,.1);   border:1px solid rgba(239,68,68,.2);  color:#f87171}
+.pill.loc     {background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--dim)}
+
+.card-link{font-size:12px;font-weight:700;color:var(--purple2);display:inline-flex;align-items:center;gap:4px;transition:color .15s}
+.card-link:hover{color:var(--pink)}
+
+.empty{text-align:center;padding:60px 2rem;color:var(--dim);font-size:14px}
+.empty a{color:var(--purple2);font-weight:700}
+
+footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:20px 2rem;text-align:center;font-size:12px;color:var(--dim)}
+footer a{color:var(--muted);font-weight:600}
+footer a:hover{color:var(--purple2)}
+
+.content{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 2rem 56px}
+@media(max-width:600px){
+  .hero{padding:32px 1.2rem 24px}
+  .content{padding:0 1.2rem 40px}
+  header{padding:0 1rem}
+  .filters-panel{flex-direction:column}
+  .filters-panel input{min-width:0;width:100%}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <nav class="nav">
-      <a href="index.html">← Strona główna</a>
-      <a href="https://biokoderka.github.io/bioinfo-jobs/">Oferty pracy</a>
-      <a href="https://biokoderka.github.io/bioinfo-uni/">Uczelnie</a>
-      <a href="submit.html">✦ Zgłoś wpis</a>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">🧬</div>
+      <div>
+        <div class="logo-text">BioInfo<span>News</span></div>
+        <div class="logo-sub">by @biokoderka</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
+      <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
+      <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
-    <h1>🗓 Kursy z terminem</h1>
-    <nav class="subnav">
-      <a href="meetups.html" class="">🤝 Meetupy</a>
+  </div>
+</header>
+
+<div class="hero">
+  <a class="back-link" href="index.html">← Strona główna</a>
+  <h1>🗓 Kursy z terminem</h1>
+  <p class="hero-sub">Wszystkie wpisy · curated by <a href="https://instagram.com/biokoderka" style="color:var(--purple2);font-weight:600">@biokoderka</a></p>
+  <nav class="subnav">
+    <a href="meetups.html" class="">🤝 Meetupy</a>
       <a href="courses-dated.html" class="active">🗓 Kursy z terminem</a>
       <a href="courses-free.html" class="">📚 Kursy stałe</a>
       <a href="projects.html" class="">🌿 Projekty</a>
       <a href="other.html" class="">✦ Inne</a>
-    </nav>
-  </header>
-
-  <section class="panel">
-    <div class="filters">
-      <input type="text" id="searchInput" placeholder="Szukaj…">
-      <select id="langFilter">
-        <option value="">Język: dowolny</option>
-        <option value="PL">🇵🇱 Polski</option>
-        <option value="EN">🇬🇧 Angielski</option>
-      </select>
-      <select id="freeFilter">
-        <option value="">Płatność: dowolna</option>
-        <option value="free">Bezpłatne</option>
-      </select>
-    </div>
-  </section>
-
-  <div class="stats-bar">
-    <span id="statsLine">Ładowanie…</span>
-    <button class="archive-toggle" id="archiveToggle">📦 Archiwum</button>
-  </div>
-
-  <section class="cards" id="cards">
-    <div class="empty">Ładowanie…</div>
-  </section>
-
-  <footer class="footer">
-    🧬 <strong>BioInfoNews</strong> by <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
-    <a href="index.html">Strona główna</a> &nbsp;·&nbsp;
-    <a href="submit.html">Zgłoś wpis</a>
-  </footer>
+  </nav>
 </div>
 
+<div class="content">
+  <div class="filters-panel">
+    <input type="text" id="searchInput" placeholder="Szukaj...">
+    <select id="langFilter">
+      <option value="">Język: dowolny</option>
+      <option value="PL">🇵🇱 Polski</option>
+      <option value="EN">🇬🇧 Angielski</option>
+    </select>
+    <select id="freeFilter">
+      <option value="">Płatność: dowolna</option>
+      <option value="free">Bezpłatne</option>
+    </select>
+  </div>
+
+  <div class="controls-row">
+    <span class="stats-text" id="statsLine">Ładowanie…</span>
+    <button class="archive-btn" id="archiveToggle">📦 Archiwum</button>
+  </div>
+
+  <div class="cards" id="cards">
+    <div class="empty">Ładowanie…</div>
+  </div>
+</div>
+
+<footer>
+  🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
+  <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
+  <a href="index.html">Strona główna</a> &nbsp;·&nbsp;
+  <a href="submit.html">Zgłoś wpis</a>
+</footer>
+
 <script>
-const TYPE_KEY = 'course-dated';
-const TYPE_META = {
-  'project':      { label: '🌿 Projekt',        cls: 'project' },
-  'course-free':  { label: '📚 Kurs stały',      cls: 'course-free' },
-  'course-dated': { label: '🗓 Kurs z terminem', cls: 'course-dated' },
-  'meetup':       { label: '🤝 Meetup',          cls: 'meetup' },
-  'other':        { label: '✦ Inne',             cls: 'other' },
+const TYPE_KEY='course-dated';
+const TYPE_META={
+  'project':      {label:'🌿 Projekt',        cls:'project'},
+  'course-free':  {label:'📚 Kurs stały',      cls:'course-free'},
+  'course-dated': {label:'🗓 Kurs z terminem', cls:'course-dated'},
+  'meetup':       {label:'🤝 Meetup',          cls:'meetup'},
+  'other':        {label:'✦ Inne',             cls:'other'},
 };
+let allEntries=[],showArchive=false;
 
-let allEntries = [];
-let showArchive = false;
-
-function isArchived(e) {
-  if (e.archived) return true;
-  if (e.date_end) return new Date(e.date_end) < new Date();
+function isArchived(e){
+  if(e.archived)return true;
+  if(e.date_end)return new Date(e.date_end)<new Date();
   return false;
 }
-function fmtDate(s) {
+function fmtDate(s){
   return new Date(s).toLocaleDateString('pl-PL',{day:'numeric',month:'long',year:'numeric'});
 }
-function render() {
-  const q    = document.getElementById('searchInput').value.toLowerCase();
-  const lang = document.getElementById('langFilter').value;
-  const free = document.getElementById('freeFilter').value;
+function render(){
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  const lang=document.getElementById('langFilter').value;
+  const free=document.getElementById('freeFilter').value;
 
-  let entries = allEntries.filter(e => {
-    if (showArchive !== isArchived(e)) return false;
-    if (q && !JSON.stringify(e).toLowerCase().includes(q)) return false;
-    if (lang && !(e.lang||'').includes(lang)) return false;
-    if (free === 'free' && !e.free) return false;
+  let entries=allEntries.filter(e=>{
+    if(showArchive!==isArchived(e))return false;
+    if(q&&!JSON.stringify(e).toLowerCase().includes(q))return false;
+    if(lang&&!(e.lang||'').includes(lang))return false;
+    if(free==='free'&&!e.free)return false;
     return true;
   });
-
-  entries.sort((a,b) => {
-    const da = a.date_start ? new Date(a.date_start) : new Date(a.added||'2099-01-01');
-    const db = b.date_start ? new Date(b.date_start) : new Date(b.added||'2099-01-01');
-    return showArchive ? db - da : da - db;
+  entries.sort((a,b)=>{
+    const da=a.date_start?new Date(a.date_start):new Date(a.added||'2099-01-01');
+    const db=b.date_start?new Date(b.date_start):new Date(b.added||'2099-01-01');
+    return showArchive?db-da:da-db;
   });
 
-  const activeCount  = allEntries.filter(e => !isArchived(e)).length;
-  const archiveCount = allEntries.filter(e =>  isArchived(e)).length;
-  document.getElementById('statsLine').innerHTML =
-    `<strong>${activeCount}</strong> aktywne · <strong>${archiveCount}</strong> w archiwum`;
+  const ac=allEntries.filter(e=>!isArchived(e)).length;
+  const arc=allEntries.filter(e=>isArchived(e)).length;
+  document.getElementById('statsLine').innerHTML=
+    `<strong>${ac}</strong> aktywne &nbsp;·&nbsp; <strong>${arc}</strong> w archiwum`;
 
-  if (!entries.length) {
-    document.getElementById('cards').innerHTML =
-      `<div class="empty">Brak wpisów.<br><a href="submit.html" style="color:rgba(255,255,255,.8);text-decoration:underline">Zgłoś pierwszy →</a></div>`;
+  if(!entries.length){
+    document.getElementById('cards').innerHTML=
+      `<div class="empty">Brak wpisów.<br><a href="submit.html">Zgłoś pierwszy →</a></div>`;
     return;
   }
-
-  document.getElementById('cards').innerHTML = entries.map(e => {
-    const archived = isArchived(e);
-    const tm = TYPE_META[e.type] || TYPE_META['other'];
-    let pills = '';
-    if (e.free)       pills += `<span class="pill free">✓ bezpłatne</span>`;
-    if (e.date_start) pills += `<span class="pill date">📅 ${fmtDate(e.date_start)}</span>`;
-    if (e.deadline)   pills += `<span class="pill deadline">⏰ zgłoszenia do ${fmtDate(e.deadline)}</span>`;
-    if (e.location)   pills += `<span class="pill neutral">📍 ${e.location}</span>`;
-    if (e.lang)       pills += `<span class="pill neutral">${e.lang}</span>`;
+  document.getElementById('cards').innerHTML=entries.map(e=>{
+    const archived=isArchived(e);
+    const tm=TYPE_META[e.type]||TYPE_META['other'];
+    let pills='';
+    if(e.free)       pills+=`<span class="pill free">✓ bezpłatne</span>`;
+    if(e.lang)       pills+=`<span class="pill lang">${e.lang}</span>`;
+    if(e.date_start) pills+=`<span class="pill date">📅 ${fmtDate(e.date_start)}</span>`;
+    if(e.deadline)   pills+=`<span class="pill deadline">⏰ do ${fmtDate(e.deadline)}</span>`;
+    if(e.location)   pills+=`<span class="pill loc">📍 ${e.location}</span>`;
     return `<article class="card${archived?' archived':''}">
       ${archived?'<span class="archived-badge">ARCHIWUM</span>':''}
       <div class="card-header">
         <span class="type-pill ${tm.cls}">${tm.label}</span>
-        <h3>${e.title}</h3>
+        <div class="card-title">${e.title}</div>
       </div>
-      ${e.org?`<div class="org">${e.org}</div>`:''}
-      <div class="desc">${e.description}</div>
-      ${pills?`<div class="meta">${pills}</div>`:''}
+      ${e.org?`<div class="card-org">${e.org}</div>`:''}
+      <div class="card-desc">${e.description}</div>
+      ${pills?`<div class="card-meta">${pills}</div>`:''}
       ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Więcej info →</a>`:''}
     </article>`;
   }).join('');
 }
 
-async function init() {
-  const r = await fetch('news.json?v=' + Date.now());
-  const data = await r.json();
-  allEntries = (data.entries || []).filter(e => e.type === TYPE_KEY);
+async function init(){
+  const r=await fetch('news.json?v='+Date.now());
+  const data=await r.json();
+  allEntries=(data.entries||[]).filter(e=>e.type===TYPE_KEY);
   render();
 }
-
-document.getElementById('searchInput').addEventListener('input', render);
-document.getElementById('langFilter').addEventListener('change', render);
-document.getElementById('freeFilter').addEventListener('change', render);
-document.getElementById('archiveToggle').addEventListener('click', function() {
-  showArchive = !showArchive;
-  this.classList.toggle('on', showArchive);
-  this.textContent = showArchive ? '◀ Aktualności' : '📦 Archiwum';
+document.getElementById('searchInput').addEventListener('input',render);
+document.getElementById('langFilter').addEventListener('change',render);
+document.getElementById('freeFilter').addEventListener('change',render);
+document.getElementById('archiveToggle').addEventListener('click',function(){
+  showArchive=!showArchive;
+  this.classList.toggle('on',showArchive);
+  this.textContent=showArchive?'◀ Aktualności':'📦 Archiwum';
   render();
 });
-
 init();
 </script>
 </body>
