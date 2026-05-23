@@ -1,7 +1,6 @@
 # 🧬 bioinfo-news
 
 Tablica ogłoszeń dla społeczności bioinformatycznej w Polsce.   
-Prowadzona przez [@biokoderka](https://instagram.com/biokoderka).
 
 🔗 **Live:** [biokoderka.github.io/bioinfo-news](https://biokoderka.github.io/bioinfo-news)
 
