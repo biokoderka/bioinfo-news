@@ -14,7 +14,6 @@ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tex
 body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 20% 0%,rgba(124,58,237,.10) 0%,transparent 60%),radial-gradient(ellipse 40% 30% at 80% 10%,rgba(168,85,247,.07) 0%,transparent 50%)}
 a{color:var(--purple2);text-decoration:none;font-weight:600}
 a:hover{text-decoration:underline}
-
 header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
 .header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;height:56px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -25,33 +24,24 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-
 .header-nav{display:flex;gap:6px;margin-left:auto}
 .header-nav a{font-size:12px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;border:1px solid transparent;transition:all .15s}
 .header-nav a:hover{color:var(--text);border-color:var(--border2)}
-
 .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:52px 2rem 80px}
-
 .back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--dim);margin-bottom:28px;transition:color .15s;text-decoration:none}
 .back-link:hover{color:var(--purple2)}
-
 h1{font-size:clamp(26px,4vw,42px);font-weight:900;line-height:1;letter-spacing:-1.5px;margin-bottom:8px;background:linear-gradient(135deg,#fff 30%,#c084fc 65%,#ec4899 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .last-updated{font-size:12px;color:var(--dim);margin-bottom:48px}
-
 h2{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.2px;margin:40px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
 h2:first-of-type{margin-top:0}
-
 p{font-size:14px;color:var(--muted);margin-bottom:12px}
 p:last-child{margin-bottom:0}
-
 ul{list-style:none;margin:8px 0 12px;display:flex;flex-direction:column;gap:6px}
 ul li{font-size:14px;color:var(--muted);padding-left:16px;position:relative}
 ul li::before{content:'–';position:absolute;left:0;color:var(--dim)}
-
 .contact-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin-top:12px}
 .contact-box p{margin:0;font-size:14px;color:var(--muted)}
 .contact-box a{color:var(--purple2)}
-
 footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:20px 2rem;text-align:center;font-size:12px;color:var(--dim)}
 footer a{color:var(--muted);font-weight:600}
 footer a:hover{color:var(--purple2)}
-
 @media(max-width:600px){.wrap{padding:36px 1.2rem 60px}header{padding:0 1rem}}
 </style>
 </head>
@@ -75,52 +65,52 @@ footer a:hover{color:var(--purple2)}
 <div class="wrap">
   <a class="back-link" href="index.html">← Strona główna</a>
   <h1>Privacy Policy &amp; Terms of Use</h1>
-  <p class="last-updated">Last updated: May 2026</p>
+  <p class="last-updated">Last updated: May 2026 · Applies to: biokoderka.github.io/bioinfo-news</p>
 
   <h2>About the Service</h2>
   <p>BioInfoNews is a free, non-commercial, community-driven news aggregation project focused on bioinformatics, computational biology, biotechnology, genomics, AI in life sciences, and related scientific topics.</p>
-  <p>The website aggregates and indexes publicly available news articles, research announcements, publications, blog posts, and related informational resources from external sources in order to improve discoverability and accessibility within the scientific community.</p>
+  <p>The website aggregates and indexes publicly available news articles, research announcements, publications, events, collaborations, and related informational resources from external sources in order to improve discoverability and accessibility within the scientific community.</p>
   <p>BioInfoNews is an independent project and is not affiliated with any publisher, journal, institution, organization, company, or media outlet referenced on this website.</p>
-  <p>The source code of this project may be publicly available as part of the project's open-source and community-oriented nature.</p>
 
   <h2>News &amp; Content Disclaimer</h2>
   <p>BioInfoNews does not create, verify, sponsor, endorse, or guarantee third-party news articles, publications, or external content referenced on this website.</p>
   <p>Any headlines, excerpts, summaries, metadata, or previews displayed on the website may originate from publicly available third-party sources and are provided solely for informational and indexing purposes.</p>
   <p>While reasonable efforts are made to keep information accurate and up to date, BioInfoNews makes no representations or warranties regarding the accuracy, completeness, legality, availability, reliability, or scientific validity of any content referenced on the website.</p>
-  <p>Users are responsible for independently verifying information with the original source before relying on it for scientific, academic, medical, educational, financial, or professional purposes.</p>
+  <p>Users are responsible for independently verifying information with the original source before relying on it for scientific, academic, medical, educational, or professional purposes.</p>
   <p>Links displayed on BioInfoNews redirect users to external third-party websites not operated or controlled by BioInfoNews.</p>
+
+  <h2>Community Submissions</h2>
+  <p>BioInfoNews accepts voluntary community submissions about projects, collaborations, events, and other announcements relevant to the bioinformatics and life sciences community.</p>
+  <p>When submitting content, users may optionally provide contact information (such as an email address) to facilitate follow-up communication. Providing contact information is entirely voluntary.</p>
+  <p>Submitted content is reviewed before publication. BioInfoNews reserves the right to accept, reject, or edit submissions at its sole discretion.</p>
+  <p>By submitting content, users confirm that they have the right to share the submitted information and that it does not infringe any third-party rights.</p>
 
   <h2>Privacy &amp; Data Collection</h2>
   <p>BioInfoNews is designed to minimize collection of personal data.</p>
-  <p>If you voluntarily submit information through forms on this website (for example when suggesting articles, news sources, or corrections), submitted information may include personal data such as:</p>
+  <p>If you voluntarily submit information through forms on this website, submitted information may include personal data such as:</p>
   <ul>
-    <li>email address,</li>
-    <li>name,</li>
-    <li>organization name,</li>
+    <li>email address (optional — only if provided voluntarily),</li>
+    <li>name or handle (optional),</li>
+    <li>organization name (optional),</li>
     <li>other information voluntarily provided by the user.</li>
   </ul>
-  <p>Such information is used solely for:</p>
-  <ul>
-    <li>reviewing submissions and corrections,</li>
-    <li>communicating regarding submitted information,</li>
-    <li>operating and improving the service.</li>
-  </ul>
+  <p>Such information is used solely for reviewing submissions, communicating regarding submitted content, and operating and improving the service.</p>
   <p>BioInfoNews does not sell personal data and does not intentionally share personal data with third parties except where technically necessary to operate the website and related infrastructure.</p>
   <p>Some technical information may be processed automatically by hosting providers, analytics providers, or security systems, including IP addresses, browser metadata, and server logs.</p>
 
   <h2>Cookies &amp; Analytics</h2>
-  <p>This website may use privacy-friendly analytics, hosting logs, or basic cookies necessary for operation and security.</p>
-  <p>Where applicable, third-party providers may process limited technical data according to their own privacy policies.</p>
+  <p>This website uses <strong style="color:var(--text)">Umami Analytics</strong> — a privacy-friendly, open-source analytics tool. Umami does <strong style="color:var(--text)">not use cookies</strong>, does not collect personal data, and does not track users across websites. Only aggregated, anonymous data is collected (page views, visit duration, country, browser type).</p>
+  <p>Umami is hosted on <strong style="color:var(--text)">Vercel</strong> (vercel.com). Vercel may process limited technical data (IP addresses, request logs) as part of hosting infrastructure, in accordance with their <a href="https://vercel.com/legal/privacy-policy" target="_blank">Privacy Policy</a>.</p>
+  <p>This website is hosted on <strong style="color:var(--text)">GitHub Pages</strong> (GitHub, Inc.). GitHub may collect technical data in accordance with their <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">Privacy Statement</a>.</p>
+  <p>No advertising cookies, tracking pixels, or third-party marketing tools are used on this website.</p>
 
   <h2>Intellectual Property &amp; Takedown Requests</h2>
   <p>All trademarks, logos, publication titles, article titles, publisher names, and other third-party materials remain the property of their respective owners.</p>
-  <p>Content displayed on BioInfoNews is sourced from publicly available materials for informational, commentary, aggregation, and indexing purposes.</p>
-  <p>If you are a rights holder or representative of a publisher, organization, or institution and believe that any content displayed on this website infringes intellectual property rights, violates applicable law, or should otherwise be removed or corrected, please contact us. Reasonable takedown or correction requests will be reviewed and addressed promptly.</p>
+  <p>Content displayed on BioInfoNews is sourced from publicly available materials for informational, commentary, aggregation, and indexing purposes only.</p>
+  <p>If you are a rights holder and believe that any content displayed on this website infringes your intellectual property rights, violates applicable law, or should otherwise be removed or corrected, please contact us. Reasonable takedown or correction requests will be reviewed and addressed promptly.</p>
 
   <h2>External Links</h2>
-  <p>This website contains links to external websites operated by third parties.</p>
-  <p>BioInfoNews is not responsible for the content, security, privacy practices, scientific accuracy, availability, or reliability of external websites.</p>
-  <p>Users access third-party websites at their own risk.</p>
+  <p>This website contains links to external websites operated by third parties. BioInfoNews is not responsible for the content, security, privacy practices, scientific accuracy, availability, or reliability of external websites. Users access third-party websites at their own risk.</p>
 
   <h2>Limitation of Liability</h2>
   <p>BioInfoNews is provided on an "as is" and "as available" basis without warranties of any kind.</p>
@@ -134,7 +124,7 @@ footer a:hover{color:var(--purple2)}
   </ul>
 
   <h2>Governing Law</h2>
-  <p>This website is operated from Poland and governed by applicable laws of Poland and the European Union.</p>
+  <p>This website is operated from Poland and governed by applicable laws of Poland and the European Union, including the General Data Protection Regulation (GDPR / RODO).</p>
 
   <h2>Contact</h2>
   <p>For questions, corrections, privacy concerns, or takedown requests, please contact:</p>
@@ -147,7 +137,6 @@ footer a:hover{color:var(--purple2)}
   🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
   <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
   <a href="index.html">Strona główna</a> &nbsp;·&nbsp;
-  <a href="submit.html">Zgłoś wpis</a> &nbsp;·&nbsp;
   <a href="privacy.html">Privacy & Terms</a>
 </footer>
 
