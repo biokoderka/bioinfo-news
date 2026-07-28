@@ -371,10 +371,16 @@ const ARTICLE_TYPE_META={
   'benchmark':       {label:'📊 benchmark',       cls:'art-benchmark'},
   'protokol':        {label:'🧾 protokół',        cls:'art-protokol'},
 };
+const TAG_LABELS={
+  'genomika':'genomika','single-cell':'single-cell','transkryptomika':'transkryptomika',
+  'proteomika':'proteomika','mikrobiom':'mikrobiom','ai-ml':'AI / ML','struktury':'struktury',
+  'leki':'leki','epidemiologia':'epidemiologia','ewolucja':'ewolucja','narzedzia':'narzędzia',
+  'bazy-danych':'bazy danych','inne':'inne','polska':'🇵🇱 polskie źródło',
+};
 function renderResearchCard(e){
   const tm=RESEARCH_TYPE_META[e.type]||RESEARCH_TYPE_META['research'];
   const at=ARTICLE_TYPE_META[e.article_type];
-  const tagPills=(e.tags||[]).slice(0,2).map(t=>`<span class="pill ${t}">${t.replace('-',' ')}</span>`).join('');
+  const tagPills=(e.tags||[]).slice(0,2).map(t=>`<span class="pill ${t}">${TAG_LABELS[t]||t}</span>`).join('');
   return `<article class="card">
     <span class="type-pill ${tm.cls}">${tm.label}</span>
     ${at?`<span class="pill ${at.cls}" style="margin-left:-4px">${at.label}</span>`:''}

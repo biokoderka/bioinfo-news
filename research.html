@@ -249,8 +249,14 @@ function timeAgo(dateStr){
   if(diffH<24) return `${diffH}h temu`;
   return `${Math.floor(diffH/24)}d temu`;
 }
+const TAG_LABELS={
+  'genomika':'genomika','single-cell':'single-cell','transkryptomika':'transkryptomika',
+  'proteomika':'proteomika','mikrobiom':'mikrobiom','ai-ml':'AI / ML','struktury':'struktury',
+  'leki':'leki','epidemiologia':'epidemiologia','ewolucja':'ewolucja','narzedzia':'narzędzia',
+  'bazy-danych':'bazy danych','inne':'inne','polska':'🇵🇱 polskie źródło',
+};
 function tagPills(tags){
-  return (tags||[]).map(t=>`<span class="pill ${t}">${t.replace('-',' ')}</span>`).join('');
+  return (tags||[]).map(t=>`<span class="pill ${t}">${TAG_LABELS[t]||t}</span>`).join('');
 }
 function articleTypePill(e){
   const at = ARTICLE_TYPE_META[e.article_type];
