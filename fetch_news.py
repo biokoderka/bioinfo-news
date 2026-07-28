@@ -2,16 +2,19 @@
 BioInfoNews — pobieranie realnych newsów badawczych/narzędziowych z bioinformatyki.
 
 Źródła:
-  - bioRxiv API      (preprinty, kategoria bioinformatics)         -> api.biorxiv.org
-  - Europe PMC API   (opublikowane artykuły z wybranych czasopism) -> www.ebi.ac.uk
-  - GitHub Releases  (nowe wersje kluczowych narzędzi)             -> api.github.com
+  - bioRxiv API       (preprinty, 6 kategorii)                      -> api.biorxiv.org
+  - Europe PMC API    (opublikowane artykuły z 9 czasopism)         -> www.ebi.ac.uk
+  - GitHub Releases   (nowe wersje 18 narzędzi)                     -> api.github.com
+  - PyPI              (nowe wersje pakietów pythonowych)            -> pypi.org
+  - Nauka w Polsce/PAP (kategoria "Życie", filtrowana słowami kluczowymi) -> naukawpolsce.pl
 
 Uwaga o środowisku:
-  bioRxiv i Europe PMC są blokowane w sandboxie Claude (egress allowlist),
-  dlatego ten skrypt trzeba uruchomić w środowisku z pełnym dostępem do
-  internetu — lokalnie albo (zalecane) w GitHub Actions, patrz
-  .github/workflows/fetch-research-news.yml w tym samym folderze.
-  Zapytania do GitHub API i PyPI zostały już przetestowane i działają.
+  bioRxiv, Europe PMC i Nauka w Polsce są blokowane w sandboxie Claude
+  (egress allowlist), dlatego ten skrypt trzeba uruchomić w środowisku
+  z pełnym dostępem do internetu — lokalnie albo (zalecane) w GitHub
+  Actions, patrz .github/workflows/fetch-research-news.yml w tym samym
+  folderze. Zapytania do GitHub API i PyPI zostały przetestowane i działają
+  z tego sandboxa.
 
 Wyjście: research-news.json — osobny plik, w formacie zgodnym ze
   strukturą Twojego istniejącego news.json (żeby łatwo było go scalić
@@ -26,13 +29,14 @@ import time
 import urllib.request
 import urllib.error
 import urllib.parse
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 USER_AGENT = "BioInfoNews-fetcher/1.0 (+https://biokoderka.github.io/bioinfo-news/)"
 
 # Opcjonalny token GitHub — bez niego limit to 60 zapytan/h (latwo go
-# wyczerpac przy 10 repo x kilka wywolan). W GitHub Actions ustaw sekret
-# GITHUB_TOKEN (workflow ponizej robi to automatycznie) -> limit 5000/h.
+# wyczerpac przy kilkunastu repo x kilka wywolan). W GitHub Actions ustaw
+# sekret GITHUB_TOKEN (workflow ponizej robi to automatycznie) -> limit 5000/h.
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 # ---------------------------------------------------------------------------
@@ -90,16 +94,31 @@ ARTICLE_TYPE_LABELS = {
 }
 
 JOURNAL_QUERIES = {
-    "Bioinformatics (OUP)": 'JOURNAL:"Bioinformatics" AND (FIRST_PDATE:[{start} TO {end}])',
-    "Genome Biology": 'JOURNAL:"Genome Biology" AND (FIRST_PDATE:[{start} TO {end}])',
-    "Nucleic Acids Research": 'JOURNAL:"Nucleic Acids Research" AND (FIRST_PDATE:[{start} TO {end}])',
-    "PLOS Computational Biology": 'JOURNAL:"PLoS computational biology" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Bioinformatics (OUP)":         'JOURNAL:"Bioinformatics" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Genome Biology":               'JOURNAL:"Genome Biology" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Genome Research":              'JOURNAL:"Genome Research" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Nucleic Acids Research":       'JOURNAL:"Nucleic Acids Research" AND (FIRST_PDATE:[{start} TO {end}])',
+    "PLOS Computational Biology":   'JOURNAL:"PLoS computational biology" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Cell Systems":                 'JOURNAL:"Cell Systems" AND (FIRST_PDATE:[{start} TO {end}])',
+    "GigaScience":                  'JOURNAL:"GigaScience" AND (FIRST_PDATE:[{start} TO {end}])',
+    "BMC Bioinformatics":           'JOURNAL:"BMC Bioinformatics" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Briefings in Bioinformatics":  'JOURNAL:"Briefings in Bioinformatics" AND (FIRST_PDATE:[{start} TO {end}])',
+}
+
+# Kategorie bioRxiv, ktore nas interesuja (dokladne nazwy z taksonomii
+# bioRxiv, male litery). Wczesniej lapalismy tylko "bioinformatics" -
+# duzo istotnych prac (np. AlphaFold-owe) wpada w genomics/genetics.
+BIORXIV_CATEGORIES = {
+    "bioinformatics", "genomics", "genetics",
+    "evolutionary biology", "systems biology", "synthetic biology",
 }
 
 GITHUB_REPOS = [
     "Bioconductor/BiocManager",
     "samtools/samtools",
+    "samtools/bcftools",
     "broadinstitute/gatk",
+    "broadinstitute/picard",
     "nextflow-io/nextflow",
     "snakemake/snakemake",
     "pysam-developers/pysam",
@@ -107,6 +126,30 @@ GITHUB_REPOS = [
     "deepmind/alphafold",
     "facebookresearch/esm",
     "COMBINE-lab/salmon",
+    "lh3/bwa",
+    "BenLangmead/bowtie2",
+    "deeptools/deepTools",
+    "shenwei356/seqkit",
+    "ewels/MultiQC",
+    "OpenGene/fastp",
+    "biopython/biopython",
+    "pachterlab/kallisto",
+]
+
+# Pakiety PyPI do sledzenia nowych wersji (glownie python-owe narzedzia
+# bioinformatyczne, ktore nie zawsze publikuja rownolegle release na GitHubie).
+PYPI_PACKAGES = [
+    "scanpy", "biopython", "pysam", "scikit-bio", "anndata", "pyfaidx",
+]
+
+# Nauka w Polsce (PAP) - kategoria "Zycie" (biologia), filtrowana slowami
+# kluczowymi zwiazanymi z bioinformatyka/genomika, bo sam kanal jest
+# ogolnobiologiczny, nie tylko bioinformatyczny.
+NAUKAWPOLSCE_RSS = "https://naukawpolsce.pl/zycie/rss.xml"
+NAUKAWPOLSCE_KEYWORDS = [
+    "bioinformatyk", "genom", "sekwencjonowani", "dna", "mutacj",
+    "mikrobiom", "biotechnolog", "algorytm", "sztuczna inteligencj",
+    "uczenie maszynowe", "baza danych genetyczn", "białk", "genetyczn",
 ]
 
 
@@ -123,6 +166,11 @@ def tag_entry(title, summary):
         if any(k in text for k in keywords):
             tags.append(tag)
     return tags or [FALLBACK_TAG]
+
+
+def add_tag(tags, extra):
+    """Dodaje tag jesli go jeszcze nie ma - unika duplikatow pilli na karcie."""
+    return tags if extra in tags else tags + [extra]
 
 
 def classify_article_type(title, summary):
@@ -154,9 +202,9 @@ def fetch_biorxiv(days_back=7, max_pages=3):
             break
 
         for item in collection:
-            category = (item.get("category") or "").lower()
-            if "bioinformatic" not in category:
-                continue  # interesuje nas tylko kategoria bioinformatics
+            category = (item.get("category") or "").strip().lower()
+            if category not in BIORXIV_CATEGORIES:
+                continue
             title = item.get("title", "").strip()
             abstract = item.get("abstract", "").strip()
             doi = item.get("doi", "")
@@ -259,9 +307,111 @@ def fetch_github_releases(days_back=14):
                 "description": body_short,
                 "url": rel.get("html_url", ""),
                 "date": pub_dt.date().isoformat(),
-                "tags": tag_entry(title, body) + ["narzedzia"],
+                "tags": add_tag(tag_entry(title, body), "narzedzia"),
             })
         time.sleep(0.3)
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# 4) PyPI — nowe wersje wybranych pakietow pythonowych
+# ---------------------------------------------------------------------------
+def fetch_pypi_releases(days_back=14):
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+    entries = []
+
+    for pkg in PYPI_PACKAGES:
+        url = f"https://pypi.org/pypi/{pkg}/json"
+        try:
+            data = http_get_json(url)
+        except (urllib.error.URLError, TimeoutError) as e:
+            print(f"[PyPI] blad pobierania dla {pkg}: {e}", file=sys.stderr)
+            continue
+
+        version = data.get("info", {}).get("version", "")
+        releases = data.get("releases", {}).get(version, [])
+        if not releases:
+            continue
+        upload_time = releases[0].get("upload_time_iso_8601", "")
+        if not upload_time:
+            continue
+        pub_dt = datetime.fromisoformat(upload_time.replace("Z", "+00:00"))
+        if pub_dt < cutoff:
+            continue
+
+        summary = data.get("info", {}).get("summary", "") or ""
+        title = f"{pkg} {version}"
+        entries.append({
+            "type": "narzedzie",
+            "source": f"PyPI · {pkg}",
+            "title": title,
+            "description": summary,
+            "url": data.get("info", {}).get("project_url") or f"https://pypi.org/project/{pkg}/",
+            "date": pub_dt.date().isoformat(),
+            "tags": add_tag(tag_entry(title, summary), "narzedzia"),
+        })
+        time.sleep(0.3)
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# 5) Nauka w Polsce (PAP) — kategoria "Zycie", filtrowana slowami kluczowymi
+#    zwiazanymi z bioinformatyka/genomika (kanal jest ogolnobiologiczny).
+#    RSS, nie JSON API - parsujemy przez stdlib xml.etree.
+# ---------------------------------------------------------------------------
+def fetch_naukawpolsce(days_back=7):
+    entries = []
+    req = urllib.request.Request(NAUKAWPOLSCE_RSS, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            xml_bytes = resp.read()
+    except (urllib.error.URLError, TimeoutError) as e:
+        print(f"[NaukaWPolsce] blad pobierania RSS: {e}", file=sys.stderr)
+        return entries
+
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError as e:
+        print(f"[NaukaWPolsce] blad parsowania XML: {e}", file=sys.stderr)
+        return entries
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+
+    for item in root.iterfind(".//item"):
+        title = (item.findtext("title") or "").strip()
+        description = (item.findtext("description") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub_date_raw = (item.findtext("pubDate") or "").strip()
+
+        text = f"{title} {description}".lower()
+        if not any(k in text for k in NAUKAWPOLSCE_KEYWORDS):
+            continue  # poza tematyka bioinformatyczna/genomiczna
+
+        pub_dt = None
+        for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z"):
+            try:
+                pub_dt = datetime.strptime(pub_date_raw, fmt)
+                if pub_dt.tzinfo is None:
+                    pub_dt = pub_dt.replace(tzinfo=timezone.utc)
+                break
+            except ValueError:
+                continue
+        if pub_dt is None or pub_dt < cutoff:
+            continue
+
+        clean_desc = re.sub(r"<[^>]+>", "", description).strip()
+        entries.append({
+            "type": "research",
+            "source": "Nauka w Polsce (PAP)",
+            "title": title,
+            "description": (clean_desc[:280] + "…") if len(clean_desc) > 280 else clean_desc,
+            "url": link,
+            "date": pub_dt.date().isoformat(),
+            "tags": add_tag(tag_entry(title, clean_desc), "polska"),
+            "article_type": classify_article_type(title, clean_desc),
+        })
 
     return entries
 
@@ -286,6 +436,10 @@ def main():
     all_entries += fetch_europepmc()
     print("Pobieram release'y z GitHub...", file=sys.stderr)
     all_entries += fetch_github_releases()
+    print("Pobieram nowe wersje z PyPI...", file=sys.stderr)
+    all_entries += fetch_pypi_releases()
+    print("Pobieram z Nauka w Polsce (PAP)...", file=sys.stderr)
+    all_entries += fetch_naukawpolsce()
 
     all_entries = dedupe(all_entries)
     all_entries.sort(key=lambda e: e.get("date", ""), reverse=True)
