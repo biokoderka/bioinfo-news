@@ -196,6 +196,25 @@ _CATEGORY_PATTERNS = {tag: _keyword_pattern(kws) for tag, kws in CATEGORY_KEYWOR
 _ARTICLE_TYPE_PATTERNS = [(t, _keyword_pattern(kws)) for t, kws in ARTICLE_TYPE_KEYWORDS]
 
 
+def truncate_summary(text, max_len=220):
+    """Krociutkie streszczenie: tnie po pelnym zdaniu jesli to mozliwe w
+    limicie, w przeciwnym razie po ostatnim pelnym slowie - nigdy w polowie
+    wyrazu ani w polowie zdania."""
+    text = (text or "").strip()
+    if len(text) <= max_len:
+        return text
+
+    clipped = text[:max_len]
+    last_dot = clipped.rfind(". ")
+    if last_dot >= 60:  # sensowna dlugosc pierwszego zdania, nie ucinamy po "np."
+        return clipped[:last_dot + 1]
+
+    last_space = clipped.rfind(" ")
+    if last_space > 0:
+        clipped = clipped[:last_space]
+    return clipped.rstrip(",;: ") + "…"
+
+
 def tag_entry(title, summary):
     text = f"{title} {summary}".lower()
     tags = [tag for tag, pattern in _CATEGORY_PATTERNS.items() if pattern.search(text)]
@@ -246,7 +265,7 @@ def fetch_biorxiv(days_back=7, max_pages=3):
                 "type": "research",
                 "source": "bioRxiv",
                 "title": title,
-                "description": (abstract[:280] + "…") if len(abstract) > 280 else abstract,
+                "description": truncate_summary(abstract),
                 "url": f"https://doi.org/{doi}" if doi else "",
                 "date": item.get("date", ""),
                 "tags": tag_entry(title, abstract),
@@ -277,6 +296,7 @@ def fetch_europepmc(days_back=7, page_size=15):
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
             f"?query={urllib.parse.quote(query)}"
             f"&format=json&pageSize={page_size}&sort=P_PDATE_D+desc"
+            "&resultType=core"  # bez tego API nie zwraca abstractText - domyslny "lite" go pomija
         )
         try:
             data = http_get_json(url)
@@ -292,7 +312,7 @@ def fetch_europepmc(days_back=7, page_size=15):
                 "type": "research",
                 "source": journal_name,
                 "title": title,
-                "description": (abstract[:280] + "…") if len(abstract) > 280 else abstract,
+                "description": truncate_summary(abstract),
                 "url": f"https://doi.org/{doi}" if doi else item.get("fullTextUrlList", {}),
                 "date": item.get("firstPublicationDate", ""),
                 "tags": tag_entry(title, abstract),
@@ -440,7 +460,7 @@ def fetch_naukawpolsce(days_back=7):
             "type": "research",
             "source": "Nauka w Polsce (PAP)",
             "title": title,
-            "description": (clean_desc[:280] + "…") if len(clean_desc) > 280 else clean_desc,
+            "description": truncate_summary(clean_desc),
             "url": link,
             "date": pub_dt.date().isoformat(),
             "tags": add_tag(tag_entry(title, clean_desc), "polska"),
