@@ -36,19 +36,57 @@ USER_AGENT = "BioInfoNews-fetcher/1.0 (+https://biokoderka.github.io/bioinfo-new
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 # ---------------------------------------------------------------------------
-# Kategorie i słowa kluczowe do prostego tagowania (bez zewnętrznego LLM).
-# Kolejność ma znaczenie — pierwsze dopasowanie trafia jako tag dodatkowy,
-# wpis może dostać kilka tagów.
+# Kategorie tematyczne i słowa kluczowe do prostego tagowania (bez LLM).
+# Wpis może dostać kilka tagów. Rozszerzone słowniki, żeby "inne" trafiało
+# się rzadko — nowe kategorie: transkryptomika, mikrobiom, epidemiologia,
+# ewolucja/filogenetyka.
 # ---------------------------------------------------------------------------
 CATEGORY_KEYWORDS = {
-    "genomika":       ["genome", "genomic", "variant", "sequencing", "wgs", "wes", "snp", "sv "],
-    "single-cell":    ["single-cell", "single cell", "scrna", "spatial transcriptomics", "scanpy"],
-    "ai-ml":          ["deep learning", "neural network", "machine learning", "transformer",
-                        "large language model", "llm", "diffusion model", "foundation model"],
-    "struktury":      ["protein structure", "alphafold", "esmfold", "folding", "docking", "cryo-em"],
-    "narzedzia":      ["tool", "package", "software", "pipeline", "workflow", "release"],
-    "bazy-danych":    ["database", "repository", "api release", "data standard"],
-    "leki":           ["drug discovery", "compound", "inhibitor", "virtual screening", "admet"],
+    "genomika":         ["genome", "genomic", "variant", "sequencing", "wgs", "wes", "snp",
+                          "structural variant", "copy number", "assembly", "pangenome",
+                          "long-read", "nanopore", "pacbio"],
+    "single-cell":      ["single-cell", "single cell", "scrna", "spatial transcriptomics",
+                          "scanpy", "cell atlas", "cell type annotation"],
+    "transkryptomika":  ["rna-seq", "transcriptom", "differential expression", "splicing",
+                          "gene expression"],
+    "proteomika":       ["proteomic", "mass spectrometry", "protein-protein interaction",
+                          "post-translational"],
+    "mikrobiom":        ["microbiome", "metagenom", "16s rrna", "microbial community"],
+    "ai-ml":            ["deep learning", "neural network", "machine learning", "transformer",
+                          "large language model", " llm ", "diffusion model", "foundation model",
+                          "generative model", "embedding"],
+    "struktury":        ["protein structure", "alphafold", "esmfold", "folding", "docking",
+                          "cryo-em", "molecular dynamics", "protein design"],
+    "leki":             ["drug discovery", "compound", "inhibitor", "virtual screening", "admet",
+                          "drug target", "pharmacogenom"],
+    "epidemiologia":    ["epidemiolog", "outbreak", "surveillance", "phylodynamic", "pandemic"],
+    "ewolucja":         ["phylogen", "evolution", "selection pressure", "comparative genomic"],
+    "narzedzia":        ["tool", "package", "software", "pipeline", "workflow", "webserver",
+                          "release"],
+    "bazy-danych":      ["database", "repository", "api release", "data standard", "resource"],
+}
+FALLBACK_TAG = "inne"
+
+# ---------------------------------------------------------------------------
+# Typ artykułu — osobny wymiar od tematu: co ten tekst *jest*, nie o czym jest.
+# Klasyfikacja heurystyczna po tytule/abstrakcie; sprawdzana w tej kolejności,
+# pierwsze trafienie wygrywa (przeglądowy i benchmark są bardziej specyficzne
+# niż domyślne "eksperymentalne", więc sprawdzamy je najpierw).
+# ---------------------------------------------------------------------------
+ARTICLE_TYPE_KEYWORDS = [
+    ("przeglad",       ["review", "systematic review", "survey of", "meta-analysis", "we review"]),
+    ("benchmark",      ["benchmark", "comparison of", "comparative evaluation", "we compare",
+                         "performance evaluation"]),
+    ("protokol",       ["protocol", "step-by-step", "methodology for", "best practices for"]),
+    ("narzedzie-art",  ["we present", "we introduce", "new tool", "novel software", "new package",
+                         "new method for", "open-source tool", "we developed"]),
+]
+ARTICLE_TYPE_LABELS = {
+    "przeglad":      "📖 przeglądowy",
+    "benchmark":     "📊 benchmark",
+    "protokol":      "🧾 protokół",
+    "narzedzie-art": "🔧 opis narzędzia",
+    "eksperymentalne": "🧪 eksperymentalny",
 }
 
 JOURNAL_QUERIES = {
@@ -84,7 +122,15 @@ def tag_entry(title, summary):
     for tag, keywords in CATEGORY_KEYWORDS.items():
         if any(k in text for k in keywords):
             tags.append(tag)
-    return tags or ["ogolne"]
+    return tags or [FALLBACK_TAG]
+
+
+def classify_article_type(title, summary):
+    text = f"{title} {summary}".lower()
+    for art_type, keywords in ARTICLE_TYPE_KEYWORDS:
+        if any(k in text for k in keywords):
+            return art_type
+    return "eksperymentalne"  # domyslny typ dla oryginalnych badan/preprintow
 
 
 # ---------------------------------------------------------------------------
@@ -122,6 +168,7 @@ def fetch_biorxiv(days_back=7, max_pages=3):
                 "url": f"https://doi.org/{doi}" if doi else "",
                 "date": item.get("date", ""),
                 "tags": tag_entry(title, abstract),
+                "article_type": classify_article_type(title, abstract),
             })
 
         messages = data.get("messages", [{}])
@@ -167,6 +214,7 @@ def fetch_europepmc(days_back=7, page_size=15):
                 "url": f"https://doi.org/{doi}" if doi else item.get("fullTextUrlList", {}),
                 "date": item.get("firstPublicationDate", ""),
                 "tags": tag_entry(title, abstract),
+                "article_type": classify_article_type(title, abstract),
             })
         time.sleep(0.5)
 
