@@ -245,7 +245,7 @@ footer a:hover{color:var(--purple2)}
     <nav class="header-nav">
       <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
-      <a href="research.html">📄 Badawcze</a>
+      <a href="research.html">📄 Artykuły i newsy</a>
       <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
   </div>
@@ -264,7 +264,7 @@ footer a:hover{color:var(--purple2)}
     <div class="stat"><span class="stat-num" id="s-course-free">–</span><div class="stat-label">Kursy stałe</div></div>
     <div class="stat"><span class="stat-num" id="s-project">–</span><div class="stat-label">Projekty</div></div>
     <div class="stat"><span class="stat-num" id="s-other">–</span><div class="stat-label">Inne</div></div>
-    <div class="stat"><span class="stat-num" id="s-research">–</span><div class="stat-label">Badawcze</div></div>
+    <div class="stat"><span class="stat-num" id="s-research">–</span><div class="stat-label">Artykuły</div></div>
   </div>
 </div>
 
@@ -334,7 +334,7 @@ function renderCard(e){
   </article>`;
 }
 const RESEARCH_TYPE_META={
-  'research':  {label:'📄 Badawcze',  cls:'research'},
+  'research':  {label:'📄 Artykuł',   cls:'research'},
   'narzedzie': {label:'🔧 Narzędzie', cls:'narzedzie'},
 };
 function timeAgo(dateStr){
@@ -405,7 +405,7 @@ async function init(){
 
   container.innerHTML=html;
 
-  // panel "Badawcze" - osobne zrodlo danych (research-news.json),
+  // panel "Artykuly i newsy" - osobne zrodlo danych (research-news.json),
   // nie blokuje reszty strony jesli plik jeszcze nie istnieje
   try{
     const rr = await fetch('research-news.json?v='+Date.now());
@@ -418,7 +418,7 @@ async function init(){
     let rhtml = `<hr class="section-divider"><section class="section">
       <div class="section-head">
         <span class="section-emoji">📄</span>
-        <span class="section-title">Badawcze — newsy naukowe</span>
+        <span class="section-title">Artykuły i newsy</span>
         <span class="section-badge">${rentries.length} wpisów</span>
         ${rentries.length>0?`<a class="see-all" href="research.html">Zobacz wszystkie →</a>`:''}
       </div>`;
