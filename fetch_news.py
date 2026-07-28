@@ -48,17 +48,22 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 CATEGORY_KEYWORDS = {
     "genomika":         ["genome", "genomic", "variant", "sequencing", "wgs", "wes", "snp",
                           "structural variant", "copy number", "assembly", "pangenome",
-                          "long-read", "nanopore", "pacbio"],
+                          "long-read", "nanopore", "pacbio", "sequence alignment",
+                          "read alignment", "genome alignment", "partial order alignment",
+                          "chromatin", "enhancer", "epigenom", "3d genome", "hi-c"],
     "single-cell":      ["single-cell", "single cell", "scrna", "spatial transcriptomics",
                           "scanpy", "cell atlas", "cell type annotation"],
     "transkryptomika":  ["rna-seq", "transcriptom", "differential expression", "splicing",
-                          "gene expression", "mirna", "microrna", "non-coding rna", "ncrna"],
+                          "gene expression", "mirna", "microrna", "non-coding rna", "ncrna",
+                          "epitranscriptom", "rna modification", "m6a", "m1a"],
     "proteomika":       ["proteomic", "mass spectrometry", "protein-protein interaction",
-                          "post-translational"],
+                          "post-translational", "protein panel", "biomarker panel",
+                          "diagnostic biomarker"],
     "mikrobiom":        ["microbiome", "metagenom", "16s rrna", "microbial community"],
     "immunoinformatyka":["antibody", "antibodies", "epitope", "mhc", "hla", "tcr", "bcr",
                           "immunogenicity", "vaccine design", "nanobody", "affinity maturation",
-                          "cdr loop", "paratope"],
+                          "cdr loop", "paratope", "t cell receptor", "cdr contacts",
+                          "cdr region"],
     "sieci-systemy":    ["gene regulatory network", "regulatory network", "systems biology",
                           "pathway analysis", "interactome", "network biology", "network analysis",
                           "boolean model", "progression model", "dynamical model",
@@ -66,15 +71,17 @@ CATEGORY_KEYWORDS = {
     "wielo-omika":      ["multi-omic", "multiomic", "multi-omics", "omics integration",
                           "cross-omic", "omic alignment", "spatial multiomic"],
     "tekst-i-nlp":      ["biomedical text", "text mining", "literature mining",
-                          "named entity recognition", "natural language processing", " nlp ",
-                          "text corpus", "information extraction"],
+                          "named entity recognition", "natural language processing", "nlp",
+                          "text corpus", "information extraction", "relation extraction",
+                          "entity linking", "relationship grounding"],
     "ai-ml":            ["deep learning", "neural network", "machine learning", "transformer",
-                          "large language model", " llm ", "diffusion model", "foundation model",
+                          "large language model", "llm", "diffusion model", "foundation model",
                           "generative model", "embedding", "predictive model", "classifier",
                           "graph neural", "graph encoder", "gnn", "contrastive learning",
                           "encoder network", "attention mechanism", "representation learning",
                           "triplet network", "association prediction", "link prediction",
-                          "self-supervised"],
+                          "self-supervised", "multi-agent", "llm agent", "agent-based",
+                          "mixture of experts"],
     "struktury":        ["protein structure", "alphafold", "esmfold", "folding", "docking",
                           "cryo-em", "molecular dynamics", "protein design", "crystal structure",
                           "nmr structure", "binding affinity", "structure prediction"],
@@ -176,12 +183,22 @@ def http_get_json(url, headers=None, timeout=15):
         return json.loads(resp.read().decode("utf-8"))
 
 
+def _keyword_pattern(keywords):
+    """Buduje jeden regex z granicami slow dla listy fraz kluczowych.
+    Zapobiega falszywym trafieniom typu 'evolution' wewnatrz 'revolutionizes'.
+    Doklejone opcjonalne 's' na koncu kazdej frazy, zeby liczba mnoga
+    (np. 'progression models') dalej pasowala do liczby pojedynczej w slowniku."""
+    parts = [re.escape(k.strip()) + "s?" for k in keywords]
+    return re.compile(r"\b(?:" + "|".join(parts) + r")\b")
+
+
+_CATEGORY_PATTERNS = {tag: _keyword_pattern(kws) for tag, kws in CATEGORY_KEYWORDS.items()}
+_ARTICLE_TYPE_PATTERNS = [(t, _keyword_pattern(kws)) for t, kws in ARTICLE_TYPE_KEYWORDS]
+
+
 def tag_entry(title, summary):
     text = f"{title} {summary}".lower()
-    tags = []
-    for tag, keywords in CATEGORY_KEYWORDS.items():
-        if any(k in text for k in keywords):
-            tags.append(tag)
+    tags = [tag for tag, pattern in _CATEGORY_PATTERNS.items() if pattern.search(text)]
     return tags or [FALLBACK_TAG]
 
 
@@ -192,8 +209,8 @@ def add_tag(tags, extra):
 
 def classify_article_type(title, summary):
     text = f"{title} {summary}".lower()
-    for art_type, keywords in ARTICLE_TYPE_KEYWORDS:
-        if any(k in text for k in keywords):
+    for art_type, pattern in _ARTICLE_TYPE_PATTERNS:
+        if pattern.search(text):
             return art_type
     return "eksperymentalne"  # domyslny typ dla oryginalnych badan/preprintow
 
