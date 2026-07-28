@@ -271,7 +271,7 @@ footer a:hover{color:var(--purple2)}
     <nav class="header-nav">
       <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
-      <a href="research.html">📄 Artykuły i newsy</a>
+      <a href="research.html">📄 Newsy</a>
       <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
   </div>
@@ -290,7 +290,7 @@ footer a:hover{color:var(--purple2)}
     <div class="stat"><span class="stat-num" id="s-course-free">–</span><div class="stat-label">Kursy stałe</div></div>
     <div class="stat"><span class="stat-num" id="s-project">–</span><div class="stat-label">Projekty</div></div>
     <div class="stat"><span class="stat-num" id="s-other">–</span><div class="stat-label">Inne</div></div>
-    <div class="stat"><span class="stat-num" id="s-research">–</span><div class="stat-label">Artykuły</div></div>
+    <div class="stat"><span class="stat-num" id="s-research">–</span><div class="stat-label">Newsy</div></div>
   </div>
 </div>
 
@@ -320,7 +320,7 @@ footer a:hover{color:var(--purple2)}
 <script>
 const SECTIONS = [
   { type:'meetup',       emoji:'🤝', label:'Meetupy i wydarzenia',   page:'meetups.html' },
-  { type:'course-dated', emoji:'🗓', label:'Kursy z terminem',        page:'courses-dated.html' },
+  { type:'course-dated', emoji:'🗓️', label:'Kursy z terminem',        page:'courses-dated.html' },
   { type:'course-free',  emoji:'📚', label:'Kursy stałe i zasoby',    page:'courses-free.html' },
   { type:'project',      emoji:'🌿', label:'Projekty do współpracy',  page:'projects.html' },
   { type:'other',        emoji:'✦',  label:'Inne inicjatywy',         page:'other.html' },
@@ -329,7 +329,7 @@ const SECTIONS = [
 const TYPE_META = {
   'project':      {label:'🌿 Projekt',        cls:'project'},
   'course-free':  {label:'📚 Kurs stały',      cls:'course-free'},
-  'course-dated': {label:'🗓 Kurs z terminem', cls:'course-dated'},
+  'course-dated': {label:'🗓️ Kurs z terminem', cls:'course-dated'},
   'meetup':       {label:'🤝 Meetup',          cls:'meetup'},
   'other':        {label:'✦ Inne',             cls:'other'},
 };
@@ -439,7 +439,7 @@ async function init(){
     let h = `<section class="section">
       <div class="section-head">
         <span class="section-emoji">📄</span>
-        <span class="section-title">Artykuły i newsy</span>
+        <span class="section-title">Newsy</span>
         <span class="section-badge">${recent.length} w tym tygodniu</span>
         ${rentries.length>0?`<a class="see-all" href="research.html">Zobacz wszystkie →</a>`:''}
       </div>`;
