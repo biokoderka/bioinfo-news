@@ -166,6 +166,8 @@ header{
 .type-pill.course-dated{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.25); color:#fbbf24}
 .type-pill.project    {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.25); color:#34d399}
 .type-pill.other      {background:rgba(124,58,237,.12); border:1px solid rgba(124,58,237,.3);  color:#a78bfa}
+.type-pill.research   {background:rgba(239,68,68,.12);  border:1px solid rgba(239,68,68,.25);  color:#f87171}
+.type-pill.narzedzie  {background:rgba(59,130,246,.12);  border:1px solid rgba(59,130,246,.25);  color:#60a5fa}
 
 .card-title{font-size:14px;font-weight:700;color:var(--text);line-height:1.35;letter-spacing:-.1px}
 .card-org{font-size:12px;color:var(--muted);font-weight:500}
@@ -243,6 +245,7 @@ footer a:hover{color:var(--purple2)}
     <nav class="header-nav">
       <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
+      <a href="research.html">📄 Badawcze</a>
       <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
   </div>
@@ -261,6 +264,7 @@ footer a:hover{color:var(--purple2)}
     <div class="stat"><span class="stat-num" id="s-course-free">–</span><div class="stat-label">Kursy stałe</div></div>
     <div class="stat"><span class="stat-num" id="s-project">–</span><div class="stat-label">Projekty</div></div>
     <div class="stat"><span class="stat-num" id="s-other">–</span><div class="stat-label">Inne</div></div>
+    <div class="stat"><span class="stat-num" id="s-research">–</span><div class="stat-label">Badawcze</div></div>
   </div>
 </div>
 
@@ -329,6 +333,30 @@ function renderCard(e){
     ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Więcej info →</a>`:''}
   </article>`;
 }
+const RESEARCH_TYPE_META={
+  'research':  {label:'📄 Badawcze',  cls:'research'},
+  'narzedzie': {label:'🔧 Narzędzie', cls:'narzedzie'},
+};
+function timeAgo(dateStr){
+  if(!dateStr) return '';
+  const diffH=Math.floor((Date.now()-new Date(dateStr).getTime())/3600000);
+  if(diffH<1) return 'przed chwilą';
+  if(diffH<24) return `${diffH}h temu`;
+  return `${Math.floor(diffH/24)}d temu`;
+}
+function renderResearchCard(e){
+  const tm=RESEARCH_TYPE_META[e.type]||RESEARCH_TYPE_META['research'];
+  const tagPills=(e.tags||[]).slice(0,2).map(t=>`<span class="pill loc">${t.replace('-',' ')}</span>`).join('');
+  return `<article class="card">
+    <span class="type-pill ${tm.cls}">${tm.label}</span>
+    <div class="card-title">${e.title}</div>
+    ${e.source?`<div class="card-org">${e.source}</div>`:''}
+    <div class="card-desc">${e.description||''}</div>
+    <div class="card-meta">${tagPills}<span class="pill date">🕐 ${timeAgo(e.date)}</span></div>
+    ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Czytaj więcej →</a>`:''}
+  </article>`;
+}
+
 function sortActive(entries){
   return [...entries].sort((a,b)=>{
     // entries without date_start go to the end (TBA)
@@ -376,6 +404,33 @@ async function init(){
   });
 
   container.innerHTML=html;
+
+  // panel "Badawcze" - osobne zrodlo danych (research-news.json),
+  // nie blokuje reszty strony jesli plik jeszcze nie istnieje
+  try{
+    const rr = await fetch('research-news.json?v='+Date.now());
+    if(!rr.ok) throw new Error('brak pliku');
+    const rdata = await rr.json();
+    const rentries = rdata.entries||[];
+    document.getElementById('s-research').textContent = rentries.length;
+
+    const top3 = rentries.slice(0,3);
+    let rhtml = `<hr class="section-divider"><section class="section">
+      <div class="section-head">
+        <span class="section-emoji">📄</span>
+        <span class="section-title">Badawcze — newsy naukowe</span>
+        <span class="section-badge">${rentries.length} wpisów</span>
+        ${rentries.length>0?`<a class="see-all" href="research.html">Zobacz wszystkie →</a>`:''}
+      </div>`;
+    rhtml += top3.length===0
+      ? `<div class="empty-section">Jeszcze nic nie pobrano — pierwszy przebieg pobierania w toku.</div>`
+      : `<div class="cards-grid">${top3.map(renderResearchCard).join('')}</div>`;
+    rhtml += `</section>`;
+    container.insertAdjacentHTML('beforeend', rhtml);
+  }catch(err){
+    const el = document.getElementById('s-research');
+    if(el) el.textContent = '–';
+  }
 }
 
 init().catch(()=>{
