@@ -137,6 +137,14 @@ BIORXIV_CATEGORIES = {
     "evolutionary biology", "systems biology", "synthetic biology",
 }
 
+# Kategorie medRxiv (siostrzany serwer, klinika/zdrowie publiczne) - realne
+# nazwy z taksonomii medRxiv, male litery. Wybrane pod katem bioinformatyki
+# klinicznej/epidemiologii obliczeniowej, nie caly medRxiv (za szeroki).
+MEDRXIV_CATEGORIES = {
+    "epidemiology", "health informatics", "genetic and genomic medicine",
+    "infectious diseases (except hiv/aids)",
+}
+
 GITHUB_REPOS = [
     "Bioconductor/BiocManager",
     "samtools/samtools",
@@ -235,19 +243,19 @@ def classify_article_type(title, summary):
 
 
 # ---------------------------------------------------------------------------
-# 1) bioRxiv — preprinty z ostatnich N dni
+# 1) bioRxiv / medRxiv — preprinty z ostatnich N dni (to samo API, inny serwer)
 # ---------------------------------------------------------------------------
-def fetch_biorxiv(days_back=7, max_pages=3):
+def fetch_preprint_server(server, categories, source_label, days_back=7, max_pages=3):
     end = datetime.now(timezone.utc).date()
     start = end - timedelta(days=days_back)
     entries = []
     cursor = 0
     for _ in range(max_pages):
-        url = f"https://api.biorxiv.org/details/biorxiv/{start}/{end}/{cursor}"
+        url = f"https://api.biorxiv.org/details/{server}/{start}/{end}/{cursor}"
         try:
             data = http_get_json(url)
-        except (urllib.error.URLError, TimeoutError) as e:
-            print(f"[bioRxiv] blad pobierania: {e}", file=sys.stderr)
+        except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
+            print(f"[{source_label}] blad pobierania: {e}", file=sys.stderr)
             break
 
         collection = data.get("collection", [])
@@ -256,14 +264,14 @@ def fetch_biorxiv(days_back=7, max_pages=3):
 
         for item in collection:
             category = (item.get("category") or "").strip().lower()
-            if category not in BIORXIV_CATEGORIES:
+            if category not in categories:
                 continue
             title = item.get("title", "").strip()
             abstract = item.get("abstract", "").strip()
             doi = item.get("doi", "")
             entries.append({
                 "type": "research",
-                "source": "bioRxiv",
+                "source": source_label,
                 "title": title,
                 "description": truncate_summary(abstract),
                 "url": f"https://doi.org/{doi}" if doi else "",
@@ -280,6 +288,14 @@ def fetch_biorxiv(days_back=7, max_pages=3):
         time.sleep(1)  # uprzejmość wobec API
 
     return entries
+
+
+def fetch_biorxiv(days_back=7, max_pages=3):
+    return fetch_preprint_server("biorxiv", BIORXIV_CATEGORIES, "bioRxiv", days_back, max_pages)
+
+
+def fetch_medrxiv(days_back=7, max_pages=3):
+    return fetch_preprint_server("medrxiv", MEDRXIV_CATEGORIES, "medRxiv", days_back, max_pages)
 
 
 # ---------------------------------------------------------------------------
@@ -300,7 +316,7 @@ def fetch_europepmc(days_back=7, page_size=15):
         )
         try:
             data = http_get_json(url)
-        except (urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
             print(f"[EuropePMC] blad pobierania dla {journal_name}: {e}", file=sys.stderr)
             continue
 
@@ -324,20 +340,57 @@ def fetch_europepmc(days_back=7, page_size=15):
 
 
 # ---------------------------------------------------------------------------
-# 3) GitHub Releases — nowe wersje kluczowych narzędzi bioinformatycznych
+# 3a) GitHub — dynamiczne odkrywanie repo po temacie, zamiast tylko sztywnej
+#     listy GITHUB_REPOS. Lapie nowe/popularne projekty, ktorych nie znamy
+#     z gory. Wyniki laczymy z GITHUB_REPOS przed sprawdzeniem release'ow.
 # ---------------------------------------------------------------------------
-def fetch_github_releases(days_back=14):
+GITHUB_TOPICS = ["bioinformatics", "computational-biology", "genomics"]
+
+
+def discover_github_topic_repos(topics=None, per_topic=8, min_stars=50):
+    topics = topics or GITHUB_TOPICS
+    gh_headers = {"Accept": "application/vnd.github+json"}
+    if GITHUB_TOKEN:
+        gh_headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+
+    discovered = []
+    seen = set()
+    for topic in topics:
+        url = (
+            "https://api.github.com/search/repositories"
+            f"?q=topic:{topic}+stars:>={min_stars}&sort=updated&order=desc&per_page={per_topic}"
+        )
+        try:
+            data = http_get_json(url, headers=gh_headers)
+        except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
+            print(f"[GitHub-topic] blad pobierania dla topic:{topic}: {e}", file=sys.stderr)
+            continue
+        for repo in data.get("items", []):
+            full_name = repo.get("full_name", "")
+            if full_name and full_name not in seen:
+                seen.add(full_name)
+                discovered.append(full_name)
+        time.sleep(0.3)
+
+    return discovered
+
+
+# ---------------------------------------------------------------------------
+# 3b) GitHub Releases — nowe wersje narzedzi (lista sztywna + odkryte po temacie)
+# ---------------------------------------------------------------------------
+def fetch_github_releases(days_back=14, repos=None):
+    repos = repos if repos is not None else GITHUB_REPOS
     cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
     entries = []
 
-    for repo in GITHUB_REPOS:
+    for repo in repos:
         url = f"https://api.github.com/repos/{repo}/releases?per_page=3"
         gh_headers = {"Accept": "application/vnd.github+json"}
         if GITHUB_TOKEN:
             gh_headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
         try:
             releases = http_get_json(url, headers=gh_headers)
-        except (urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
             print(f"[GitHub] blad pobierania dla {repo}: {e}", file=sys.stderr)
             continue
 
@@ -379,7 +432,7 @@ def fetch_pypi_releases(days_back=14):
         url = f"https://pypi.org/pypi/{pkg}/json"
         try:
             data = http_get_json(url)
-        except (urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
             print(f"[PyPI] blad pobierania dla {pkg}: {e}", file=sys.stderr)
             continue
 
@@ -421,7 +474,7 @@ def fetch_naukawpolsce(days_back=7):
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             xml_bytes = resp.read()
-    except (urllib.error.URLError, TimeoutError) as e:
+    except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
         print(f"[NaukaWPolsce] blad pobierania RSS: {e}", file=sys.stderr)
         return entries
 
@@ -470,6 +523,177 @@ def fetch_naukawpolsce(days_back=7):
     return entries
 
 
+# ---------------------------------------------------------------------------
+# 6) arXiv — kategoria q-bio (quantitative biology), Atom/XML API
+# ---------------------------------------------------------------------------
+ARXIV_NS = {"atom": "http://www.w3.org/2005/Atom"}
+
+
+def fetch_arxiv(days_back=7, max_results=40):
+    entries = []
+    url = (
+        "https://export.arxiv.org/api/query"
+        "?search_query=cat:q-bio.*"
+        "&sortBy=submittedDate&sortOrder=descending"
+        f"&max_results={max_results}"
+    )
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            xml_bytes = resp.read()
+    except (urllib.error.URLError, TimeoutError) as e:
+        print(f"[arXiv] blad pobierania: {e}", file=sys.stderr)
+        return entries
+
+    try:
+        root = ET.fromstring(xml_bytes)
+    except ET.ParseError as e:
+        print(f"[arXiv] blad parsowania XML: {e}", file=sys.stderr)
+        return entries
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+
+    for item in root.iterfind("atom:entry", ARXIV_NS):
+        title = re.sub(r"\s+", " ", (item.findtext("atom:title", default="", namespaces=ARXIV_NS) or "")).strip()
+        summary = re.sub(r"\s+", " ", (item.findtext("atom:summary", default="", namespaces=ARXIV_NS) or "")).strip()
+        link = item.findtext("atom:id", default="", namespaces=ARXIV_NS).strip()
+        published_raw = item.findtext("atom:published", default="", namespaces=ARXIV_NS).strip()
+
+        try:
+            pub_dt = datetime.strptime(published_raw, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        if pub_dt < cutoff:
+            continue
+
+        entries.append({
+            "type": "research",
+            "source": "arXiv (q-bio)",
+            "title": title,
+            "description": truncate_summary(summary),
+            "url": link,
+            "date": pub_dt.date().isoformat(),
+            "tags": tag_entry(title, summary),
+            "article_type": classify_article_type(title, summary),
+        })
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# 7) NIH RePORTER — sfinansowane projekty (granty), inny typ newsa niz artykul
+# ---------------------------------------------------------------------------
+def fetch_nih_reporter(days_back=30, limit=15):
+    entries = []
+    end = datetime.now(timezone.utc).date()
+    start = end - timedelta(days=days_back)
+
+    body = {
+        "criteria": {
+            "advanced_text_search": {
+                "operator": "and",
+                "search_field": "projecttitle,terms",
+                "search_text": "bioinformatics",
+            },
+            "award_notice_date": {
+                "from_date": start.isoformat(),
+                "to_date": end.isoformat(),
+            },
+        },
+        "include_fields": [
+            "ProjectTitle", "AbstractText", "OrgName", "AwardAmount",
+            "ProjectStartDate", "ProjectEndDate", "ContactPiName", "ProjectNum",
+        ],
+        "offset": 0,
+        "limit": limit,
+        "sort_field": "award_notice_date",
+        "sort_order": "desc",
+    }
+    req = urllib.request.Request(
+        "https://api.reporter.nih.gov/v2/projects/search",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"User-Agent": USER_AGENT, "Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
+        print(f"[NIH RePORTER] blad pobierania: {e}", file=sys.stderr)
+        return entries
+
+    for item in data.get("results", []):
+        title = (item.get("project_title") or "").strip()
+        abstract = (item.get("abstract_text") or "").strip()
+        org = item.get("org_name") or ""
+        amount = item.get("award_amount")
+        amount_str = f" · ${amount:,.0f}" if isinstance(amount, (int, float)) else ""
+        proj_num = item.get("project_num") or ""
+        start_date = (item.get("project_start_date") or "")[:10]
+
+        entries.append({
+            "type": "grant",
+            "source": f"NIH RePORTER · {org}{amount_str}",
+            "title": title,
+            "description": truncate_summary(abstract),
+            "url": f"https://reporter.nih.gov/project-details/{proj_num}" if proj_num else "https://reporter.nih.gov/",
+            "date": start_date or end.isoformat(),
+            "tags": add_tag(tag_entry(title, abstract), "granty"),
+            "article_type": None,
+        })
+
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# 8) Zenodo — datasety i software release'y (uzupelnienie GitHuba)
+# ---------------------------------------------------------------------------
+def fetch_zenodo(days_back=14, max_results=20):
+    entries = []
+    url = (
+        "https://zenodo.org/api/records"
+        "?q=bioinformatics&sort=mostrecent&size={}".format(max_results)
+    )
+    try:
+        data = http_get_json(url)
+    except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError) as e:
+        print(f"[Zenodo] blad pobierania: {e}", file=sys.stderr)
+        return entries
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+
+    for hit in data.get("hits", {}).get("hits", []):
+        meta = hit.get("metadata", {})
+        resource_type = (meta.get("resource_type", {}) or {}).get("type", "")
+        if resource_type not in ("software", "dataset"):
+            continue  # publikacje/inne juz mamy z bioRxiv/EuropePMC
+
+        pub_date_raw = meta.get("publication_date", "")
+        try:
+            pub_dt = datetime.strptime(pub_date_raw, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        if pub_dt < cutoff:
+            continue
+
+        title = (meta.get("title") or "").strip()
+        description = re.sub(r"<[^>]+>", "", meta.get("description") or "").strip()
+        entry_type = "narzedzie" if resource_type == "software" else "research"
+
+        entries.append({
+            "type": entry_type,
+            "source": f"Zenodo · {resource_type}",
+            "title": title,
+            "description": truncate_summary(description),
+            "url": (hit.get("links", {}) or {}).get("html", ""),
+            "date": pub_dt.date().isoformat(),
+            "tags": add_tag(tag_entry(title, description), "narzedzia" if resource_type == "software" else "bazy-danych"),
+            "article_type": classify_article_type(title, description) if entry_type == "research" else None,
+        })
+
+    return entries
+
+
 def dedupe(entries):
     seen = set()
     unique = []
@@ -482,18 +706,38 @@ def dedupe(entries):
     return unique
 
 
+def run_source(label, fn):
+    """Uruchamia jedno zrodlo w try/except obejmujacym WSZYSTKIE wyjatki -
+    zeby blad (nawet nieprzewidziany, np. zmiana struktury odpowiedzi API)
+    w jednym zrodle nigdy nie ubijal calego skryptu i nie blokowal zapisu
+    danych z pozostalych, juz pobranych zrodel."""
+    print(f"Pobieram z {label}...", file=sys.stderr)
+    try:
+        return fn()
+    except Exception as e:
+        print(f"[{label}] NIEOCZEKIWANY BLAD, pomijam to zrodlo: {e!r}", file=sys.stderr)
+        import traceback
+        traceback.print_exc(file=sys.stderr)
+        return []
+
+
 def main():
     all_entries = []
-    print("Pobieram z bioRxiv...", file=sys.stderr)
-    all_entries += fetch_biorxiv()
-    print("Pobieram z Europe PMC...", file=sys.stderr)
-    all_entries += fetch_europepmc()
-    print("Pobieram release'y z GitHub...", file=sys.stderr)
-    all_entries += fetch_github_releases()
-    print("Pobieram nowe wersje z PyPI...", file=sys.stderr)
-    all_entries += fetch_pypi_releases()
-    print("Pobieram z Nauka w Polsce (PAP)...", file=sys.stderr)
-    all_entries += fetch_naukawpolsce()
+    all_entries += run_source("bioRxiv", fetch_biorxiv)
+    all_entries += run_source("medRxiv", fetch_medrxiv)
+    all_entries += run_source("Europe PMC", fetch_europepmc)
+
+    # GitHub: sztywna lista + dynamicznie odkryte repo po temacie, w jednym
+    # przebiegu sprawdzania release'ow (mniej wywolan do API niz osobno)
+    topic_repos = run_source("GitHub-topic-discovery", discover_github_topic_repos)
+    combined_repos = list(dict.fromkeys(GITHUB_REPOS + topic_repos))  # dedupe, zachowaj kolejnosc
+    all_entries += run_source("GitHub Releases", lambda: fetch_github_releases(repos=combined_repos))
+
+    all_entries += run_source("PyPI", fetch_pypi_releases)
+    all_entries += run_source("Nauka w Polsce", fetch_naukawpolsce)
+    all_entries += run_source("arXiv", fetch_arxiv)
+    all_entries += run_source("NIH RePORTER", fetch_nih_reporter)
+    all_entries += run_source("Zenodo", fetch_zenodo)
 
     all_entries = dedupe(all_entries)
     all_entries.sort(key=lambda e: e.get("date", ""), reverse=True)

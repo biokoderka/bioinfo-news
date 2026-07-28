@@ -76,6 +76,13 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-
 .controls-row{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
 .stats-text{font-size:13px;color:var(--dim)}
 .stats-text strong{color:var(--muted)}
+.archive-btn{
+  margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);
+  padding:6px 14px;border-radius:999px;border:1px solid var(--border);
+  background:none;cursor:pointer;font-family:inherit;transition:all .15s;
+}
+.archive-btn:hover{color:var(--purple2);border-color:var(--border2)}
+.archive-btn.on{background:rgba(124,58,237,.15);color:var(--purple2);border-color:rgba(124,58,237,.35)}
 
 /* CARDS */
 .cards{display:grid;gap:12px}
@@ -95,6 +102,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-
 .type-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
 .type-pill.research  {background:rgba(239,68,68,.12); border:1px solid rgba(239,68,68,.25); color:#f87171}
 .type-pill.narzedzie {background:rgba(59,130,246,.12); border:1px solid rgba(59,130,246,.25); color:#60a5fa}
+.type-pill.grant     {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.25); color:#34d399}
 
 .card-title{font-size:15px;font-weight:700;color:var(--text);flex:1;line-height:1.3;letter-spacing:-.1px}
 .card-org{font-size:12px;color:var(--muted);margin-bottom:8px}
@@ -117,6 +125,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-
 .pill.wielo-omika      {background:rgba(16,185,129,.1);  border:1px solid rgba(16,185,129,.22); color:#a7f3d0}
 .pill.tekst-i-nlp      {background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.2);  color:#fde68a}
 .pill.bazy-danych, .pill.inne{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.pill.granty{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);color:#6ee7b7}
 .pill.polska{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#fca5a5}
 .pill.date{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--dim)}
 
@@ -216,11 +225,13 @@ footer a:hover{color:var(--purple2)}
       <option value="">Źródło: dowolne</option>
       <option value="research">📄 artykuł</option>
       <option value="narzedzie">🔧 release narzędzia</option>
+      <option value="grant">💰 grant</option>
     </select>
   </div>
 
   <div class="controls-row">
     <span class="stats-text" id="statsLine">Ładowanie…</span>
+    <button class="archive-btn" id="archiveToggle">📦 Archiwum</button>
   </div>
 
   <div class="cards" id="cards">
@@ -239,6 +250,7 @@ footer a:hover{color:var(--purple2)}
 const TYPE_META={
   'research':  {label:'📄 Artykuł',   cls:'research'},
   'narzedzie': {label:'🔧 Narzędzie', cls:'narzedzie'},
+  'grant':     {label:'💰 Grant',     cls:'grant'},
 };
 const ARTICLE_TYPE_META={
   'przeglad':        {label:'📖 przeglądowy',    cls:'art-przeglad'},
@@ -248,6 +260,13 @@ const ARTICLE_TYPE_META={
   'protokol':        {label:'🧾 protokół',        cls:'art-protokol'},
 };
 let allEntries=[];
+let showArchive=false;
+const WEEK_MS = 7*24*3600*1000;
+
+function isRecent(e){
+  if(!e.date) return false;
+  return (Date.now() - new Date(e.date).getTime()) <= WEEK_MS;
+}
 
 function timeAgo(dateStr){
   if(!dateStr) return '';
@@ -261,7 +280,7 @@ const TAG_LABELS={
   'genomika':'genomika','single-cell':'single-cell','transkryptomika':'transkryptomika',
   'proteomika':'proteomika','mikrobiom':'mikrobiom','ai-ml':'AI / ML','struktury':'struktury',
   'leki':'leki','epidemiologia':'epidemiologia','ewolucja':'ewolucja','narzedzia':'narzędzia',
-  'bazy-danych':'bazy danych','immunoinformatyka':'immunoinformatyka','sieci-systemy':'sieci i systemy','wielo-omika':'multi-omika','tekst-i-nlp':'text mining / NLP','inne':'inne','polska':'🇵🇱 polskie źródło',
+  'bazy-danych':'bazy danych','immunoinformatyka':'immunoinformatyka','sieci-systemy':'sieci i systemy','wielo-omika':'multi-omika','tekst-i-nlp':'text mining / NLP','inne':'inne','polska':'🇵🇱 polskie źródło','granty':'💰 granty',
 };
 function tagPills(tags){
   return (tags||[]).map(t=>`<span class="pill ${t}">${TAG_LABELS[t]||t}</span>`).join('');
@@ -277,6 +296,7 @@ function render(){
   const type=document.getElementById('typeFilter').value;
 
   let entries=allEntries.filter(e=>{
+    if(showArchive===isRecent(e))return false;  // archiwum=starsze niz tydzien, inaczej=ostatni tydzien
     if(q&&!JSON.stringify(e).toLowerCase().includes(q))return false;
     if(tag&&!(e.tags||[]).includes(tag))return false;
     if(artType&&e.article_type!==artType)return false;
@@ -285,12 +305,16 @@ function render(){
   });
   entries.sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));
 
-  document.getElementById('statsLine').innerHTML=
-    `<strong>${entries.length}</strong> z <strong>${allEntries.length}</strong> wpisów`;
+  const recentCount=allEntries.filter(isRecent).length;
+  const archiveCount=allEntries.length-recentCount;
+  document.getElementById('statsLine').innerHTML= showArchive
+    ? `<strong>${entries.length}</strong> w archiwum (starsze niż tydzień)`
+    : `<strong>${entries.length}</strong> z ostatniego tygodnia &nbsp;·&nbsp; <strong>${archiveCount}</strong> w archiwum`;
 
   if(!entries.length){
-    document.getElementById('cards').innerHTML=
-      `<div class="empty">Brak wpisów pasujących do filtrów.</div>`;
+    document.getElementById('cards').innerHTML= showArchive
+      ? `<div class="empty">Archiwum jest puste.</div>`
+      : `<div class="empty">Brak nowych wpisów z ostatniego tygodnia. Sprawdź <a href="#" onclick="document.getElementById('archiveToggle').click();return false;">archiwum</a>.</div>`;
     return;
   }
   document.getElementById('cards').innerHTML=entries.map(e=>{
@@ -327,6 +351,12 @@ document.getElementById('searchInput').addEventListener('input',render);
 document.getElementById('tagFilter').addEventListener('change',render);
 document.getElementById('articleTypeFilter').addEventListener('change',render);
 document.getElementById('typeFilter').addEventListener('change',render);
+document.getElementById('archiveToggle').addEventListener('click',function(){
+  showArchive=!showArchive;
+  this.classList.toggle('on',showArchive);
+  this.textContent=showArchive?'◀ Ostatni tydzień':'📦 Archiwum';
+  render();
+});
 init();
 </script>
 </body>
