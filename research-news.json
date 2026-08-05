@@ -1,6 +1,143 @@
 {
-  "generated_at": "2026-08-04T08:35:01+00:00",
+  "generated_at": "2026-08-05T08:34:49+00:00",
   "entries": [
+    {
+      "type": "narzedzie",
+      "source": "GitHub · aipoch/open-science",
+      "title": "open-science nightly",
+      "description": "Automated build of the latest `main` (7388d3f0826ae6cda0d9deefda6f2041434552c7). ⚠️ Unstable pre-release. macOS builds are ad-hoc signed (not notarized): on first launch right-click → Open, or run `xattr -dr com.apple.quarantine \"<app>\"`.",
+      "url": "https://github.com/aipoch/open-science/releases/tag/nightly",
+      "date": "2026-08-05",
+      "tags": [
+        "narzedzia"
+      ],
+      "id": "research-2026-001"
+    },
+    {
+      "type": "narzedzie",
+      "source": "Zenodo · software",
+      "title": "KaryoScope: rapid, alignment-free sequence annotation for the pangenome era",
+      "description": "Building a KaryoScope database no longer needs a bespoke script per dataset, and the two shipped databases can now be rebuilt from published sources end to end.\nAdded\nkaryoscope prep-bed converts a source annotation…",
+      "url": "",
+      "date": "2026-08-05",
+      "tags": [
+        "genomika",
+        "bazy-danych",
+        "narzedzia"
+      ],
+      "article_type": null,
+      "id": "research-2026-002"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "Assessing the influence of different alignment tools on the accuracy of a forensic epigenetic clock.",
+      "description": "<h4>Motivation</h4>DNA methylation (DNAm) has long been a commonly investigated biomarker in biomedical research.",
+      "url": "https://doi.org/10.1093/bioinformatics/btag582",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika",
+        "narzedzia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-003"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "DeepGeSeq: Deep learning library for Genomic Sequence modeling and analysis.",
+      "description": "<h4>Motivation</h4>Deep learning methods have demonstrated significant potential in genomics, enabling broad applications such as sequence activity prediction, regulatory rule identification, and variant effect…",
+      "url": "https://doi.org/10.1093/bioinformatics/btag584",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika",
+        "single-cell",
+        "ai-ml",
+        "narzedzia",
+        "bazy-danych"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-004"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "Trans-dimensional Bayesian model averaging for 13C-metabolic flux analysis: Evidence-based flux inference under structural model uncertainty.",
+      "description": "<h4>Motivation</h4>Accurate quantification of intracellular metabolic fluxes is central to systems biology and biotechnology.",
+      "url": "https://doi.org/10.1093/bioinformatics/btag587",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika",
+        "sieci-systemy"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-005"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "AniAnn's: alignment-free annotation of tandem repeat arrays using fast average nucleotide identity estimates.",
+      "description": "<h4>Motivation</h4>Satellite DNA has long posed challenges for genome assembly and analysis due to its low sequence complexity and poor mappability.",
+      "url": "https://doi.org/10.1093/bioinformatics/btag581",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika",
+        "narzedzia"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-006"
+    },
+    {
+      "type": "research",
+      "source": "PLOS Computational Biology",
+      "title": "Quantifying the impact of vaccination on pertussis dynamics in Sweden.",
+      "description": "The last few decades have witnessed a resurgence in pertussis notifications in a number of countries with high vaccine coverage, including Sweden.",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014538",
+      "date": "2026-08-04",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-007"
+    },
+    {
+      "type": "research",
+      "source": "PLOS Computational Biology",
+      "title": "A fast numerical integration scheme for clonal expansion processes on graphs.",
+      "description": "Compound birth-death processes are widely used to model the age-incidence curves of many cancers.",
+      "url": "https://doi.org/10.1371/journal.pcbi.1012784",
+      "date": "2026-08-04",
+      "tags": [
+        "leki"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-008"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · snakemake/snakemake",
+      "title": "snakemake v9.25.1",
+      "description": "## [9.25.1](https://github.com/snakemake/snakemake/compare/v9.25.0...v9.25.1) (2026-08-04) ### Bug Fixes * fix f-string parsing at file end ([#4269](https://github.com/snakemake/snakemake/issues/4269)) ([eab8d26](https://github.com/snakemake/snakemake/commit/eab8d2639b3bb7ff7737c",
+      "url": "https://github.com/snakemake/snakemake/releases/tag/v9.25.1",
+      "date": "2026-08-04",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "id": "research-2026-009"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · snakemake/snakemake",
+      "title": "snakemake v9.25.0",
+      "description": "## [9.25.0](https://github.com/snakemake/snakemake/compare/v9.24.0...v9.25.0) (2026-08-04) ### Features * allow first positional parameter of lookup function to be used as both query and dpath ([#4263](https://github.com/snakemake/snakemake/issues/4263)) ([08d1d26](https://github",
+      "url": "https://github.com/snakemake/snakemake/releases/tag/v9.25.0",
+      "date": "2026-08-04",
+      "tags": [
+        "narzedzia"
+      ],
+      "id": "research-2026-010"
+    },
     {
       "type": "narzedzie",
       "source": "GitHub · xuzhougeng/wisp-science",
@@ -11,32 +148,46 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-001"
+      "id": "research-2026-011"
     },
     {
       "type": "narzedzie",
       "source": "GitHub · aipoch/open-science",
-      "title": "open-science nightly",
-      "description": "Automated build of the latest `main` (937799b0475dbf8c76034fe344bd33d86382a40d). ⚠️ Unstable pre-release. macOS builds are ad-hoc signed (not notarized): on first launch right-click → Open, or run `xattr -dr com.apple.quarantine \"<app>\"`.",
-      "url": "https://github.com/aipoch/open-science/releases/tag/nightly",
+      "title": "open-science v0.10.1",
+      "description": "# Open Science v0.10.1 > Branch any conversation into a fresh session, search GitHub for skills by keyword, import and export specialist packages, and keep oversized data files out of model context — while a provider turn-adapter pattern unifies how each agent framework drives th",
+      "url": "https://github.com/aipoch/open-science/releases/tag/v0.10.1",
       "date": "2026-08-04",
       "tags": [
-        "narzedzia"
+        "narzedzia",
+        "bazy-danych"
       ],
-      "id": "research-2026-002"
+      "id": "research-2026-012"
     },
     {
       "type": "narzedzie",
-      "source": "GitHub · ngless-toolkit/ngless",
-      "title": "ngless v1.6.0",
-      "description": "## NGLess 1.6.0 Starting with this version, **NGLess is written in [Rust](https://www.rust-lang.org/)**: versions up to 1.5 were written in Haskell, and 1.6 replaces that implementation entirely. The motivation was to simplify building, installing and contributing to NGLess, rath",
-      "url": "https://github.com/ngless-toolkit/ngless/releases/tag/v1.6.0",
+      "source": "GitHub · broadinstitute/viral-ngs",
+      "title": "viral-ngs v3.0.20",
+      "description": "## What's Changed * Unblock the CVE auto-fix bot: verify conda availability before triage by @dpark01 in https://github.com/broadinstitute/viral-ngs/pull/1108 * Add .trivyignore entry for CVE-2025-47273 (phantom setuptools from pip's vendored SBOM) by @dpark01 in https://github.c",
+      "url": "https://github.com/broadinstitute/viral-ngs/releases/tag/v3.0.20",
       "date": "2026-08-04",
       "tags": [
-        "genomika",
+        "inne",
         "narzedzia"
       ],
-      "id": "research-2026-003"
+      "id": "research-2026-013"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · neuhausi/canvasXpress",
+      "title": "canvasXpress 65.1",
+      "description": "CanvasXpress Version 65.1",
+      "url": "https://github.com/neuhausi/canvasXpress/releases/tag/65.1",
+      "date": "2026-08-04",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "id": "research-2026-014"
     },
     {
       "type": "narzedzie",
@@ -49,7 +200,159 @@
         "inne",
         "narzedzia"
       ],
-      "id": "research-2026-004"
+      "id": "research-2026-015"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Omega-S: A Functional Resilience Index for LLM Fine-Tuning",
+      "description": "Fine-tuning a large language model on new data degrades what it previously learned.",
+      "url": "http://arxiv.org/abs/2608.03887v1",
+      "date": "2026-08-04",
+      "tags": [
+        "ai-ml"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-016"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Population Structures with Positive Feedback and Asymmetric Division",
+      "description": "In bioreactor experiments, budding yeast can manifest stable metabolic oscillations. In some instances these oscillations involve the cell cycle and are associated with a dynamical phenomenon called temporal clustering.",
+      "url": "http://arxiv.org/abs/2608.03604v1",
+      "date": "2026-08-04",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-017"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Identifiability of phylogenetic networks and quintet concordance factors",
+      "description": "Several statistical methods of phylogenetic network inference and testing for non-tree-like relationships are based on assessing genomic data through quartet Concordance Factors, the frequencies of 4-taxon topological…",
+      "url": "http://arxiv.org/abs/2608.03544v1",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-018"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Synergy and Complementarity: The Generative Basis of Chemical Organizations",
+      "description": "Identifying structural features ensuring the persistence of a reaction network is fundamental for understanding the evolution and complexification of biological entities.",
+      "url": "http://arxiv.org/abs/2608.03541v1",
+      "date": "2026-08-04",
+      "tags": [
+        "ewolucja",
+        "bazy-danych"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-019"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Active wetting/de-wetting of focal adhesions on viscoelastic substrates",
+      "description": "Cell adhesion to viscoelastic substrates is mediated by focal adhesions (FAs), which dynamically couple actomyosin contractility to the extracellular matrix.",
+      "url": "http://arxiv.org/abs/2608.03393v1",
+      "date": "2026-08-04",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "przeglad",
+      "id": "research-2026-020"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Stochastic partial differential equation model for environmental DNA dynamics in river environments",
+      "description": "Environmental DNA (eDNA) has emerged as a novel tool for quantifying the seasonal abundance of aquatic species in water bodies; however, its mathematical modeling is still at a germinating stage because of its…",
+      "url": "http://arxiv.org/abs/2608.03364v1",
+      "date": "2026-08-04",
+      "tags": [
+        "narzedzia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-021"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Persistent homology broadens the controllable subspace in human structural connectomes",
+      "description": "Network control theory applied to structural connectomes typically ranks brain regions as candidate driver nodes by their structural connectivity strength, and evaluates performance through scalar control energy.",
+      "url": "http://arxiv.org/abs/2608.03181v1",
+      "date": "2026-08-04",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-022"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Spatial proteomics guided by H&E-based AI reveals recurrence-risk niches in triple-negative breast cancer",
+      "description": "Deep learning models can predict cancer recurrence from H&E stained slides, but the localized molecular states underlying these predictions remain largely obscured.",
+      "url": "http://arxiv.org/abs/2608.03145v1",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika",
+        "proteomika",
+        "ai-ml"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-023"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "A Landau-Ginzburg Phenomenology of Sleep-Stage Transitions",
+      "description": "Sleep staging provides a reproducible clinical description, but it does not by itself explain why some boundaries are abrupt while others are graded, or why transition windows contain instability, synchrony, and…",
+      "url": "http://arxiv.org/abs/2608.03000v1",
+      "date": "2026-08-04",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-024"
+    },
+    {
+      "type": "narzedzie",
+      "source": "Zenodo · software",
+      "title": "monarch-initiative/mondo: v2026-08-04",
+      "description": "&lt;details&gt;\n&lt;summary&gt;New terms: 10&lt;/summary&gt;\n| Mondo ID | Label | Definition |\n|:---|:---|:---|\n| MONDO:1060234 | P2RY12-related platelet disorder, autosomal dominant | A platelet type bleeding disorder…",
+      "url": "",
+      "date": "2026-08-04",
+      "tags": [
+        "genomika",
+        "struktury",
+        "narzedzia"
+      ],
+      "article_type": null,
+      "id": "research-2026-025"
+    },
+    {
+      "type": "research",
+      "source": "Zenodo · dataset",
+      "title": "Data for: Mechanistic Insight into Chaperone GRP78 Protein Inhibition: Bio-Informatics Perspective",
+      "description": "Glucose-regulation protein 78, GRP78, belongs to the HSPA protein family, ATP-dependent chaperones engagedin an unfolded protein response and prevention from the accumulation of misfolded proteins.",
+      "url": "",
+      "date": "2026-08-04",
+      "tags": [
+        "struktury",
+        "leki",
+        "ewolucja",
+        "narzedzia",
+        "bazy-danych"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-026"
     },
     {
       "type": "narzedzie",
@@ -63,7 +366,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-005"
+      "id": "research-2026-027"
     },
     {
       "type": "research",
@@ -78,7 +381,222 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-006"
+      "id": "research-2026-028"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Fetal signatures in the 3D genome of iPSC-derived neurons and their implications for disease modeling.",
+      "description": "Induced pluripotent stem cells (iPSCs) have revolutionized neuroscience, providing an approach to generate patient-specific neurons for modeling of neurological diseases.",
+      "url": "https://doi.org/10.1101/gr.281488.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "bazy-danych"
+      ],
+      "article_type": "benchmark",
+      "id": "research-2026-029"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Multisource omic alignment and biological feature discovery with Performer encoder and triplet networks.",
+      "description": "Advances in single-cell sequencing technologies greatly enhance our understanding of molecular and cellular features.",
+      "url": "https://doi.org/10.1101/gr.281629.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "single-cell",
+        "wielo-omika",
+        "ai-ml",
+        "narzedzia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-030"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Mosaic integration of spatial multiomic data based on hierarchical graph contrastive learning with SpatialMOSI.",
+      "description": "Spatial omic technologies have revolutionized tissue analysis by enabling multimodal molecular coprofiling within their native tissue context.",
+      "url": "https://doi.org/10.1101/gr.281568.125",
+      "date": "2026-08-03",
+      "tags": [
+        "wielo-omika",
+        "ai-ml"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-031"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "ComicGTN infers disease-associated rare cell states from single-cell multiomic data using DNA sequence-augmented graph transformer networks.",
+      "description": "Single-cell multiomic technology makes it possible to profile both the transcriptome and epigenome within individual cells.",
+      "url": "https://doi.org/10.1101/gr.281661.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "single-cell",
+        "wielo-omika",
+        "ai-ml"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-032"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Genome-wide crossover analysis in the holocentric pantry moth reveals strong crossover assurance and interference during spermatogenesis.",
+      "description": "Meiosis relies on programmed DNA double-strand breaks (DSBs) to initiate recombination between homologous chromosomes.",
+      "url": "https://doi.org/10.1101/gr.281913.126",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "transkryptomika"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-033"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "An RNA polymerase III tissue and tumor atlas uncovers context-specific activities linked to 3D epigenome regulatory mechanisms.",
+      "description": "RNA polymerase III (Pol III) produces a plethora of small noncoding RNA species involved in diverse cellular processes, from transcription regulation and splicing to RNA stability, translation, and proteostasis.",
+      "url": "https://doi.org/10.1101/gr.281419.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "transkryptomika",
+        "bazy-danych"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-034"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Biobank-scale genotype similarity search and dynamic patient-matched cohort creation with GenoSiS.",
+      "description": "Many patients do not experience optimal benefits from medical advances because clinical research does not adequately represent them.",
+      "url": "https://doi.org/10.1101/gr.280278.124",
+      "date": "2026-08-03",
+      "tags": [
+        "ai-ml"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-035"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Complete sequencing of medaka genomes reveals the architecture of centromeric satellites, giant mobile elements, and sex chromosomes.",
+      "description": "Medaka (<i>Oryzias latipes</i>) is a small freshwater teleost widely used as a vertebrate model organism.",
+      "url": "https://doi.org/10.1101/gr.281813.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "bazy-danych"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-036"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "A unified analysis of cell-type- and trajectory-associated pathways in single-cell data using Phoenix.",
+      "description": "Single-cell RNA sequencing has transformed our ability to resolve complex cellular heterogeneity within biospecimens at the molecular level.",
+      "url": "https://doi.org/10.1101/gr.281411.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "single-cell",
+        "sieci-systemy",
+        "narzedzia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-037"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Telomere-driven replicative crisis is driven by large-scale changes in genomic architecture.",
+      "description": "Telomere-driven replicative crisis transforms the architecture of the evolving cancer genome, yet the mechanisms and consequences remain incompletely resolved, with potential biomarkers undiscovered.",
+      "url": "https://doi.org/10.1101/gr.281373.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "transkryptomika",
+        "wielo-omika",
+        "narzedzia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-038"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "&lt;i&gt;Resf1&lt;/i&gt; is required for proper placental development and configuration of trophoblast cell-specific heterochromatin.",
+      "description": "Retroelement silencing factor 1 (<i>Resf1</i>) is involved in retroelement silencing in cooperation with H3K9 methyltransferase SETDB1 by regulating H3K9 methylation in mouse embryonic stem cells (mESCs).",
+      "url": "https://doi.org/10.1101/gr.281507.125",
+      "date": "2026-08-03",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-039"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Tracing genome size dynamics in sharks and rays with inclusive sequence analysis by the Squalomix Consortium.",
+      "description": "Genomes have maintained relatively stable gene sets during evolution, whereas chromosome organization and genome size vary drastically, even among vertebrates.",
+      "url": "https://doi.org/10.1101/gr.281149.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "ewolucja"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-040"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Covariation of genetic and epigenetic divergence in barn swallows.",
+      "description": "As populations diverge, genetic differences accumulate across the genome. Although genetic differentiation is well documented, evolutionary change in epigenetic modifications is less well understood.",
+      "url": "https://doi.org/10.1101/gr.281470.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-041"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Elevated DNA insertion rate in &lt;i&gt;Cyanophora paradoxa&lt;/i&gt; reveals unique repair signature.",
+      "description": "Understanding mutation rate evolution is essential for elucidating evolutionary processes.",
+      "url": "https://doi.org/10.1101/gr.281517.125",
+      "date": "2026-08-03",
+      "tags": [
+        "ewolucja"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-042"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "A comparison of ancient DNA yields across ossicles and the petrous bone reveals the best preservation in the stapes and incus.",
+      "description": "The petrous bone is considered the most efficient source of endogenous DNA across skeletal tissues in ancient DNA (aDNA) research as well as in forensic work.",
+      "url": "https://doi.org/10.1101/gr.281213.125",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika"
+      ],
+      "article_type": "benchmark",
+      "id": "research-2026-043"
     },
     {
       "type": "research",
@@ -91,7 +609,7 @@
         "narzedzia"
       ],
       "article_type": "protokol",
-      "id": "research-2026-007"
+      "id": "research-2026-044"
     },
     {
       "type": "research",
@@ -107,7 +625,7 @@
         "ewolucja"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-008"
+      "id": "research-2026-045"
     },
     {
       "type": "research",
@@ -120,7 +638,7 @@
         "inne"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-009"
+      "id": "research-2026-046"
     },
     {
       "type": "research",
@@ -134,7 +652,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-010"
+      "id": "research-2026-047"
     },
     {
       "type": "research",
@@ -147,13 +665,13 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-011"
+      "id": "research-2026-048"
     },
     {
       "type": "research",
       "source": "PLOS Computational Biology",
       "title": "Impact of insecticide resistance evolution on malaria vector control.",
-      "description": "Insecticide-treated nets (ITNs) are the staple of malaria vector control. Given their importance, insecticide resistance (IR) is extremely concerning.",
+      "description": "<h4>Background</h4>Insecticide-treated nets (ITNs) are the staple of malaria vector control. Given their importance, insecticide resistance (IR) is extremely concerning.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014612",
       "date": "2026-08-03",
       "tags": [
@@ -161,7 +679,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-012"
+      "id": "research-2026-049"
     },
     {
       "type": "research",
@@ -175,20 +693,20 @@
         "epidemiologia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-013"
+      "id": "research-2026-050"
     },
     {
       "type": "research",
       "source": "PLOS Computational Biology",
       "title": "Real-time GPU-accelerated coupled cardiac system: Integrating bidirectional interactions between living optogenetic monolayers and computational simulations.",
-      "description": "Reentrant arrhythmias are life-threatening cardiac events that are difficult to study due to limited experimental control over the complex circuit dynamics.",
+      "description": "<h4>Objective</h4>Reentrant arrhythmias are life-threatening cardiac events that are difficult to study due to limited experimental control over the complex circuit dynamics.",
       "url": "https://doi.org/10.1371/journal.pcbi.1014590",
       "date": "2026-08-03",
       "tags": [
         "inne"
       ],
       "article_type": "protokol",
-      "id": "research-2026-014"
+      "id": "research-2026-051"
     },
     {
       "type": "research",
@@ -204,7 +722,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-015"
+      "id": "research-2026-052"
     },
     {
       "type": "research",
@@ -217,33 +735,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-016"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · klebgenomics/Kaptive",
-      "title": "Kaptive v3.3.1",
-      "description": "## What's Changed * Merge pull request #2 from klebgenomics/master by @tomdstanton in https://github.com/klebgenomics/Kaptive/pull/69 **Full Changelog**: https://github.com/klebgenomics/Kaptive/compare/v3.3.0...v3.3.1",
-      "url": "https://github.com/klebgenomics/Kaptive/releases/tag/v3.3.1",
-      "date": "2026-08-03",
-      "tags": [
-        "inne",
-        "narzedzia"
-      ],
-      "id": "research-2026-017"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · genome-spy/genome-spy",
-      "title": "genome-spy v0.82.0",
-      "description": "# [0.82.0](https://github.com/genome-spy/genome-spy/compare/v0.81.0...v0.82.0) (2026-08-03) ### Bug Fixes * **app:** show root parameters in view settings ([f1aedf9](https://github.com/genome-spy/genome-spy/commit/f1aedf9849a2fd7d141bd91db97008bc19b6044e)) by @tuner * **core:** a",
-      "url": "https://github.com/genome-spy/genome-spy/releases/tag/v0.82.0",
-      "date": "2026-08-03",
-      "tags": [
-        "genomika",
-        "narzedzia"
-      ],
-      "id": "research-2026-018"
+      "id": "research-2026-053"
     },
     {
       "type": "narzedzie",
@@ -256,7 +748,128 @@
         "narzedzia",
         "bazy-danych"
       ],
-      "id": "research-2026-019"
+      "id": "research-2026-054"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · genome-spy/genome-spy",
+      "title": "genome-spy v0.82.0",
+      "description": "# [0.82.0](https://github.com/genome-spy/genome-spy/compare/v0.81.0...v0.82.0) (2026-08-03) ### Bug Fixes * **app:** show root parameters in view settings ([f1aedf9](https://github.com/genome-spy/genome-spy/commit/f1aedf9849a2fd7d141bd91db97008bc19b6044e)) by @tuner * **core:** a",
+      "url": "https://github.com/genome-spy/genome-spy/releases/tag/v0.82.0",
+      "date": "2026-08-03",
+      "tags": [
+        "genomika",
+        "narzedzia"
+      ],
+      "id": "research-2026-055"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Scaling an Autoregressive Transformer for Single-Cell Generation",
+      "description": "We study a self-supervised generation task for single-cell gene expression vectors: given a set of vectors from a cell type, we aim to generate additional gene expression vectors of that cell type.",
+      "url": "http://arxiv.org/abs/2608.02961v1",
+      "date": "2026-08-03",
+      "tags": [
+        "single-cell",
+        "transkryptomika",
+        "ai-ml"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-056"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Modelling temporal dynamics of suicidal ideation and behaviour across pre- to early adolescence using a Markov framework",
+      "description": "Understanding the dynamics of suicidal ideation and behaviour in youth and the factors associated with transitions from thoughts to behaviours is critical for early identification, monitoring, and prevention.",
+      "url": "http://arxiv.org/abs/2608.02896v1",
+      "date": "2026-08-03",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "benchmark",
+      "id": "research-2026-057"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Expanding Protein Structure Prediction into Conformational State Space",
+      "description": "Recent AI advances have enabled protein structure prediction at near-experimental accuracy, largely solving the problem of identifying a dominant conformation from sequence.",
+      "url": "http://arxiv.org/abs/2608.02866v1",
+      "date": "2026-08-03",
+      "tags": [
+        "ai-ml",
+        "struktury"
+      ],
+      "article_type": "przeglad",
+      "id": "research-2026-058"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "A concentration-independent paradigm rendering weak interactions inherently quantifiable",
+      "description": "A vast class of weak, millimolar-affinity molecular interactions governs cellular function, yet their quantitative characterization has remained largely beyond conventional methods.",
+      "url": "http://arxiv.org/abs/2608.02865v1",
+      "date": "2026-08-03",
+      "tags": [
+        "leki"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-059"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Experimental access to molarity's blind spot in macroscopic assays",
+      "description": "Chemical kinetics has long inferred local molecular behaviour through the flask-and-molarity pairing, where well-mixed concentrations serve as the experimental readout.",
+      "url": "http://arxiv.org/abs/2608.02864v1",
+      "date": "2026-08-03",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-060"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Detecting high-frequency brain disorder signals using dynamic mode decomposition from EEG",
+      "description": "Recent studies have reported clearly identifiable dynamical changes in the high-frequency range of EEG signals recorded during specific stimuli, such as visual or auditory inputs, or in cases of brain disorders like…",
+      "url": "http://arxiv.org/abs/2608.02804v1",
+      "date": "2026-08-03",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-061"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "REDE: A Quantitative Framework for Differential-Expression Reproducibility and Diagnostic Transfer Across Nine Cohorts and Three Cancers",
+      "description": "Differential-expression analyses often turn cohort-specific significance into claims of stable gene signatures or diagnostic biomarkers.",
+      "url": "http://arxiv.org/abs/2608.02796v1",
+      "date": "2026-08-03",
+      "tags": [
+        "transkryptomika",
+        "proteomika"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-062"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "A method for comparing inferred evolutionary accumulation dynamics across covariates and model structures",
+      "description": "In this note we describe a method for comparing inferred dynamics in evolutionary accumulation models (EvAMs).",
+      "url": "http://arxiv.org/abs/2608.02781v1",
+      "date": "2026-08-03",
+      "tags": [
+        "ewolucja"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-063"
     },
     {
       "type": "research",
@@ -269,7 +882,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-020"
+      "id": "research-2026-064"
     },
     {
       "type": "research",
@@ -282,7 +895,20 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-021"
+      "id": "research-2026-065"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "Predictive Set Theory: A Generative Framework for Cognitive Architecture with Operationalized Core Mechanisms",
+      "description": "Predictive processing theories portray the brain as a hierarchical prediction engine that minimizes prediction error, yet they lack operational definitions for the structure of a \"prediction,\" the standardized response…",
+      "url": "http://arxiv.org/abs/2608.02704v1",
+      "date": "2026-08-03",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-066"
     },
     {
       "type": "research",
@@ -296,7 +922,7 @@
         "ai-ml"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-022"
+      "id": "research-2026-067"
     },
     {
       "type": "research",
@@ -309,7 +935,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-023"
+      "id": "research-2026-068"
     },
     {
       "type": "research",
@@ -322,7 +948,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-024"
+      "id": "research-2026-069"
     },
     {
       "type": "research",
@@ -335,7 +961,21 @@
         "ewolucja"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-025"
+      "id": "research-2026-070"
+    },
+    {
+      "type": "research",
+      "source": "arXiv (q-bio)",
+      "title": "A Blind Spot in Alignment: Quantifying Biosecurity Risks in Large Language Models",
+      "description": "Large Language Models (LLMs) are accelerating biological research, yet this same capability poses a critical biosecurity threat: models that assist in protein engineering can equally be prompted to generate predicted…",
+      "url": "http://arxiv.org/abs/2608.02684v1",
+      "date": "2026-08-03",
+      "tags": [
+        "ai-ml",
+        "narzedzia"
+      ],
+      "article_type": "protokol",
+      "id": "research-2026-071"
     },
     {
       "type": "research",
@@ -348,7 +988,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-026"
+      "id": "research-2026-072"
     },
     {
       "type": "narzedzie",
@@ -363,7 +1003,7 @@
         "bazy-danych"
       ],
       "article_type": null,
-      "id": "research-2026-027"
+      "id": "research-2026-073"
     },
     {
       "type": "narzedzie",
@@ -377,7 +1017,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-028"
+      "id": "research-2026-074"
     },
     {
       "type": "narzedzie",
@@ -392,7 +1032,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-029"
+      "id": "research-2026-075"
     },
     {
       "type": "narzedzie",
@@ -406,7 +1046,7 @@
         "bazy-danych"
       ],
       "article_type": null,
-      "id": "research-2026-030"
+      "id": "research-2026-076"
     },
     {
       "type": "narzedzie",
@@ -419,7 +1059,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-031"
+      "id": "research-2026-077"
     },
     {
       "type": "narzedzie",
@@ -432,7 +1072,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-032"
+      "id": "research-2026-078"
     },
     {
       "type": "narzedzie",
@@ -445,7 +1085,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-033"
+      "id": "research-2026-079"
     },
     {
       "type": "narzedzie",
@@ -458,7 +1098,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-034"
+      "id": "research-2026-080"
     },
     {
       "type": "research",
@@ -474,7 +1114,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-035"
+      "id": "research-2026-081"
     },
     {
       "type": "narzedzie",
@@ -488,53 +1128,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-036"
-    },
-    {
-      "type": "research",
-      "source": "Zenodo · dataset",
-      "title": "Supplementary data and code for oxygenated polycyclic aromatic hydrocarbon (OPAH)-induced colorectal cancer (CRC) study",
-      "description": "This dataset contains the custom analytical scripts and data files generated for the study titled: \"Deciphering molecular mechanisms underlying oxygenated polycyclic aromatic hydrocarbon exposure-induced colorectal…",
-      "url": "",
-      "date": "2026-08-03",
-      "tags": [
-        "genomika",
-        "wielo-omika",
-        "struktury",
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-037"
-    },
-    {
-      "type": "narzedzie",
-      "source": "Zenodo · software",
-      "title": "DPCexplorer: A Django Web Application for Interactive Exploration of DPCfam and DPCstruct Protein Domain Classifications",
-      "description": "DPCexplorer is an open-source Django 6.0.1 web application that provides interactive browser-based access to two large, unsupervised protein domain family classifications: DPCfam (81,384 sequence-based metaclusters…",
-      "url": "",
-      "date": "2026-08-03",
-      "tags": [
-        "struktury",
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": null,
-      "id": "research-2026-038"
-    },
-    {
-      "type": "research",
-      "source": "Zenodo · dataset",
-      "title": "Reproducibility package for rsx: a high-performance streaming toolkit for RAD-seq sex determination",
-      "description": "Reproducibility package for the rsx software paper: the Snakemake workflow and results tree, the rsx source at its tagged release, and the exact external input archives used for the Rana berlandieri, SEX-DETector++ and…",
-      "url": "",
-      "date": "2026-08-03",
-      "tags": [
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-039"
+      "id": "research-2026-082"
     },
     {
       "type": "narzedzie",
@@ -547,7 +1141,7 @@
         "narzedzia",
         "bazy-danych"
       ],
-      "id": "research-2026-040"
+      "id": "research-2026-083"
     },
     {
       "type": "narzedzie",
@@ -559,19 +1153,7 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-041"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · aipoch/open-science",
-      "title": "open-science v0.9.2",
-      "description": "# Open Science v0.9.2 > Hand off to a specialist the moment you switch, see which agent framework and model ran each completed turn, and keep your context-usage indicator across restarts — while the Windows renderer recovers from native crashes, the notebook control plane and ACP",
-      "url": "https://github.com/aipoch/open-science/releases/tag/v0.9.2",
-      "date": "2026-08-02",
-      "tags": [
-        "narzedzia"
-      ],
-      "id": "research-2026-042"
+      "id": "research-2026-084"
     },
     {
       "type": "research",
@@ -584,7 +1166,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-043"
+      "id": "research-2026-085"
     },
     {
       "type": "research",
@@ -597,7 +1179,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-044"
+      "id": "research-2026-086"
     },
     {
       "type": "research",
@@ -611,20 +1193,20 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-045"
+      "id": "research-2026-087"
     },
     {
       "type": "research",
       "source": "arXiv (q-bio)",
-      "title": "Smart membrane: high content in situ monitoring barrier on chip with artificial neuronal network",
+      "title": "Smart membrane: high content in situ monitoring barrier on chip with artificial neural network",
       "description": "Conventional transepithelial electrical resistance (TEER) technique provides only a low-content analysis of cell-layer conditions, necessitating repeated microscopic assessments of morphology and cell-cell contacts…",
-      "url": "http://arxiv.org/abs/2608.01239v1",
+      "url": "http://arxiv.org/abs/2608.01239v2",
       "date": "2026-08-02",
       "tags": [
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-046"
+      "id": "research-2026-088"
     },
     {
       "type": "research",
@@ -638,7 +1220,7 @@
         "ewolucja"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-047"
+      "id": "research-2026-089"
     },
     {
       "type": "research",
@@ -651,7 +1233,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-048"
+      "id": "research-2026-090"
     },
     {
       "type": "research",
@@ -667,7 +1249,7 @@
         "ai-ml"
       ],
       "article_type": "protokol",
-      "id": "research-2026-049"
+      "id": "research-2026-091"
     },
     {
       "type": "research",
@@ -681,7 +1263,21 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-050"
+      "id": "research-2026-092"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "BCAR: a fast and indel-tolerant barcode-sequence mapper.",
+      "description": "<h4>Motivation</h4>DNA barcodes are commonly used as a tool to distinguish genuine mutations from sequencing errors in sequencing-based assays.",
+      "url": "https://doi.org/10.1093/bioinformatics/btag557",
+      "date": "2026-08-01",
+      "tags": [
+        "genomika",
+        "narzedzia"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-093"
     },
     {
       "type": "research",
@@ -697,7 +1293,7 @@
         "bazy-danych"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-051"
+      "id": "research-2026-094"
     },
     {
       "type": "research",
@@ -711,7 +1307,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-052"
+      "id": "research-2026-095"
     },
     {
       "type": "research",
@@ -725,7 +1321,20 @@
         "transkryptomika"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-053"
+      "id": "research-2026-096"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "Multiscale higher-order molecular simplicial complex embedding for drug response prediction.",
+      "description": "<h4>Motivation</h4>Accurately predicting anticancer drug response is a central challenge in precision oncology.",
+      "url": "https://doi.org/10.1093/bioinformatics/btag539",
+      "date": "2026-08-01",
+      "tags": [
+        "ai-ml"
+      ],
+      "article_type": "benchmark",
+      "id": "research-2026-097"
     },
     {
       "type": "research",
@@ -740,7 +1349,21 @@
         "ewolucja"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-054"
+      "id": "research-2026-098"
+    },
+    {
+      "type": "research",
+      "source": "Bioinformatics (OUP)",
+      "title": "Momentum contrast-enhanced multimodal representation learning for drug synergy prediction.",
+      "description": "<h4>Motivation</h4>Accurate prediction of synergistic drug combinations can accelerate anticancer combination discovery.",
+      "url": "https://doi.org/10.1093/bioinformatics/btag530",
+      "date": "2026-08-01",
+      "tags": [
+        "wielo-omika",
+        "ai-ml"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-099"
     },
     {
       "type": "research",
@@ -753,7 +1376,7 @@
         "inne"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-055"
+      "id": "research-2026-100"
     },
     {
       "type": "research",
@@ -766,7 +1389,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-056"
+      "id": "research-2026-101"
     },
     {
       "type": "research",
@@ -780,7 +1403,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-057"
+      "id": "research-2026-102"
     },
     {
       "type": "research",
@@ -794,7 +1417,7 @@
         "mikrobiom"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-058"
+      "id": "research-2026-103"
     },
     {
       "type": "research",
@@ -807,7 +1430,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-059"
+      "id": "research-2026-104"
     },
     {
       "type": "research",
@@ -820,7 +1443,7 @@
         "transkryptomika"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-060"
+      "id": "research-2026-105"
     },
     {
       "type": "grant",
@@ -834,7 +1457,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-061"
+      "id": "research-2026-106"
     },
     {
       "type": "grant",
@@ -848,7 +1471,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-062"
+      "id": "research-2026-107"
     },
     {
       "type": "grant",
@@ -863,7 +1486,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-063"
+      "id": "research-2026-108"
     },
     {
       "type": "research",
@@ -876,7 +1499,7 @@
         "narzedzia"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-064"
+      "id": "research-2026-109"
     },
     {
       "type": "research",
@@ -891,51 +1514,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-065"
-    },
-    {
-      "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "BoolForge: Controlled Generation and Analysis of Boolean Functions and Networks.",
-      "description": "<h4>Motivation</h4>Boolean networks are a widely used modeling framework in systems biology for studying gene regulation, signal transduction, and cellular decision-making.",
-      "url": "https://doi.org/10.1093/bioinformatics/btag576",
-      "date": "2026-07-31",
-      "tags": [
-        "sieci-systemy",
-        "narzedzia"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-066"
-    },
-    {
-      "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "Accelerating inference in genomic and proteomic foundation models via speculative decoding.",
-      "description": "<h4>Motivation</h4>Genomic and protein foundation models (GFMs and PFMs) have demonstrated strong performance in learning the language of DNA and proteins, but their use in large-scale sequence generation is limited by…",
-      "url": "https://doi.org/10.1093/bioinformatics/btag579",
-      "date": "2026-07-31",
-      "tags": [
-        "genomika",
-        "proteomika",
-        "ai-ml"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-067"
-    },
-    {
-      "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "Taming the reference genome jungle: the refget sequence collection standard.",
-      "description": "<h4>Motivation</h4>Reference genomes are foundational to genomics but suffer from widespread ambiguity and incompatibility due to inconsistent naming, undocumented differences, and lack of formal mechanisms for…",
-      "url": "https://doi.org/10.1093/bioinformatics/btag554",
-      "date": "2026-07-31",
-      "tags": [
-        "genomika",
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-068"
+      "id": "research-2026-110"
     },
     {
       "type": "research",
@@ -948,7 +1527,7 @@
         "struktury"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-069"
+      "id": "research-2026-111"
     },
     {
       "type": "research",
@@ -962,7 +1541,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-070"
+      "id": "research-2026-112"
     },
     {
       "type": "research",
@@ -977,7 +1556,7 @@
         "immunoinformatyka"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-071"
+      "id": "research-2026-113"
     },
     {
       "type": "research",
@@ -991,7 +1570,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-072"
+      "id": "research-2026-114"
     },
     {
       "type": "narzedzie",
@@ -1004,21 +1583,7 @@
         "inne",
         "narzedzia"
       ],
-      "id": "research-2026-073"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · klebgenomics/Kaptive",
-      "title": "Kaptive v3.3.0",
-      "description": "## What's new? ### Decentralised databases 📦 - Kaptive v3.3.0 fully decouples databases from the tool. - Fully versioned databases. - Only install the databases you need. - Easier for curators to maintain their databases. ### A new core 🍎 - Kaptive v3.3.0 is built around a new ul",
-      "url": "https://github.com/klebgenomics/Kaptive/releases/tag/v3.3.0",
-      "date": "2026-07-31",
-      "tags": [
-        "ai-ml",
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "id": "research-2026-074"
+      "id": "research-2026-115"
     },
     {
       "type": "narzedzie",
@@ -1030,7 +1595,7 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-075"
+      "id": "research-2026-116"
     },
     {
       "type": "narzedzie",
@@ -1043,7 +1608,7 @@
         "inne",
         "narzedzia"
       ],
-      "id": "research-2026-076"
+      "id": "research-2026-117"
     },
     {
       "type": "research",
@@ -1056,7 +1621,7 @@
         "ai-ml"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-077"
+      "id": "research-2026-118"
     },
     {
       "type": "research",
@@ -1069,290 +1634,63 @@
         "inne"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-078"
+      "id": "research-2026-119"
     },
     {
       "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Cross-Task Dissociation in Frontier Vision-Language Model Theory of Mind",
-      "description": "Do frontier vision-language models present a coherent Theory-of-Mind (ToM) profile across tasks, matching the same human reference group, or does that profile fragment from one paradigm to the next? We evaluate a shared…",
-      "url": "http://arxiv.org/abs/2608.00261v1",
-      "date": "2026-07-31",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-079"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Dynamical principles of habituation across substrates and scales",
-      "description": "Habituation is a basic form of learning in which a system's response to repeated stimulation progressively diminishes but eventually recovers when the stimulus is withheld.",
-      "url": "http://arxiv.org/abs/2608.00249v1",
-      "date": "2026-07-31",
-      "tags": [
-        "ai-ml"
-      ],
-      "article_type": "przeglad",
-      "id": "research-2026-080"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Timescale disparity and the reduction of the chemical master equation: A geometric approach via the linear noise approximation",
-      "description": "The chemical master equation dictates the stochastic behavior of chemical reaction networks in small volumes that are well-mixed and homogeneous.",
-      "url": "http://arxiv.org/abs/2608.00154v1",
-      "date": "2026-07-31",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-081"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Quantifying the cost of network computations to unpack structure-function relationships in the brain",
-      "description": "The brain supports computations through coordinated patterns of activity on an underlying network.",
-      "url": "http://arxiv.org/abs/2607.29537v1",
-      "date": "2026-07-31",
-      "tags": [
-        "ai-ml"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-082"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Multi-Source Multi-View Graph Domain Adaptation with Hyperbolic Residual Encoding for Cross-Site MDD Identification from rs-fMRI",
-      "description": "Cross-site identification of major depressive disorder (MDD) from resting-state functional magnetic resonance imaging (rs-fMRI) is hindered by inter-site distribution shifts and heterogeneous functional connectivity…",
-      "url": "http://arxiv.org/abs/2607.29531v1",
-      "date": "2026-07-31",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-083"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "A Quantum Reservoir for Neurodynamical Forecasting",
-      "description": "Forecasting neural activity from short recordings remains a fundamental challenge.",
-      "url": "http://arxiv.org/abs/2608.00139v1",
-      "date": "2026-07-31",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-084"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Resource depletion accelerates rate learning but not composition learning in patch foraging",
-      "description": "Foraging is a universal animal behavior that has increasingly attracted the interest of both experimentalists and theorists.",
-      "url": "http://arxiv.org/abs/2607.29476v1",
-      "date": "2026-07-31",
-      "tags": [
-        "bazy-danych"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-085"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Fleming-Viot Selection of the Yaglom Limit for Age-Structured Bellman-Harris Processes, with Application to Livestock Epidemic Surveillance",
-      "description": "In this paper, we construct a Fleming-Viot particle system for a class of subcritical Bellman-Harris processes. We prove that it selects the Yaglom limit at a polynomial rate in the number of particles.",
-      "url": "http://arxiv.org/abs/2607.29251v1",
-      "date": "2026-07-31",
-      "tags": [
-        "epidemiologia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-086"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Quaternionic Response Geometry for Proteins: Toward a Noncommutative Theory of Ordered Deformations",
-      "description": "Protein function may depend on both endpoint conformations and the ordered deformation histories by which they are reached.",
-      "url": "http://arxiv.org/abs/2607.29101v1",
-      "date": "2026-07-31",
-      "tags": [
-        "ai-ml"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-087"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "metasignal: A Python Package for Comprehensive Metacognitive Analysis and Decision-Making",
-      "description": "Metasignal is an open-source Python package for signal detection theory (SDT) and metacognitive measurement.",
-      "url": "http://arxiv.org/abs/2607.29093v1",
-      "date": "2026-07-31",
-      "tags": [
-        "narzedzia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-088"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Critical Flicker Fusion Frequency As A Falsifiable Boundary Between Plastic And Non-Plastic Neural Systems",
-      "description": "Experience-dependent neural plasticity is fundamental to adaptive behaviour, yet certain perceptual abilities resist modification despite extensive training.",
-      "url": "http://arxiv.org/abs/2607.29068v1",
-      "date": "2026-07-31",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "przeglad",
-      "id": "research-2026-089"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Improving scDiffusion with Sparsity-Biased Classifier-Free Guidance",
-      "description": "Single-cell RNA sequencing (scRNA-seq) has become an essential tool in modern cellular biology, and generating accurate synthetic scRNA-seq data is becoming increasingly important.",
-      "url": "http://arxiv.org/abs/2607.29043v1",
-      "date": "2026-07-31",
-      "tags": [
-        "genomika",
-        "single-cell",
-        "transkryptomika",
-        "ai-ml",
-        "narzedzia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-090"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "What Carries the Signal in Pathology Foundation-Model Atlases? A Patient-Level Controlled Benchmark in Breast Cancer",
-      "description": "Pathology foundation models are reported to encode molecular programmes in tissue morphology, but the evidence is usually a cohort-wide ranked gene list rather than a prediction for a held-out patient.",
-      "url": "http://arxiv.org/abs/2608.00105v1",
-      "date": "2026-07-31",
-      "tags": [
-        "transkryptomika",
-        "ai-ml",
-        "narzedzia"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-091"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "EasyBCI Agent: Towards Universal Neural Data Preprocessing for Brain-Computer Interfaces",
-      "description": "Brain-computer interfaces translate neural activity into device commands, yet their performance hinges on preprocessing that remains manual, expert-dependent and poorly reproducible.",
-      "url": "http://arxiv.org/abs/2607.29007v2",
-      "date": "2026-07-31",
-      "tags": [
-        "ai-ml",
-        "narzedzia"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-092"
-    },
-    {
-      "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "robustocs: Robust optimal contribution selection.",
-      "description": "<h4>Summary</h4>Optimal contribution selection (OCS) is a selective breeding method that manages the conversion of genetic variation into genetic gain to facilitate short-term competitiveness and long-term…",
-      "url": "https://doi.org/10.1093/bioinformatics/btag569",
-      "date": "2026-07-30",
-      "tags": [
-        "narzedzia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-093"
-    },
-    {
-      "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "Supporting Workflow Reproducibility by Linking Bioinformatics Tools across Papers and Executable Code.",
-      "description": "<h4>Motivation</h4>The rapid growth of biological data has intensified the need for transparent, reproducible, and well-documented computational workflows.",
-      "url": "https://doi.org/10.1093/bioinformatics/btag565",
+      "source": "medRxiv",
+      "title": "Keyphrase Identification Using Minimal Labeled Data with Hierarchical Contexts and Transfer Learning",
+      "description": "BackgroundInteroperable clinical decision support system (CDSS) rules provide a pathway to interoperability, a well-recognized challenge in health information technology.",
+      "url": "https://doi.org/10.1101/2023.01.26.23285060",
       "date": "2026-07-30",
       "tags": [
         "tekst-i-nlp",
         "ai-ml",
-        "narzedzia"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-094"
-    },
-    {
-      "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "NicheDeSig: Niche-aware Deconvolution and Adaptive Signature Analysis for Spatial Transcriptomics.",
-      "description": "<h4>Motivation</h4>For spot-based spatial transcriptomics (ST), accurate cell-type deconvolution is essential for downstream analysis since each spot captures mixtures of multiple cell types.",
-      "url": "https://doi.org/10.1093/bioinformatics/btag578",
-      "date": "2026-07-30",
-      "tags": [
-        "single-cell"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-095"
-    },
-    {
-      "type": "research",
-      "source": "Genome Research",
-      "title": "Moderated designs can balance between batch-effect mitigation and cell loss due to hashtag-assisted pooling in single-cell experiments.",
-      "description": "Minimizing experimental noise is integral to robust data generation in single-cell omics.",
-      "url": "https://doi.org/10.1101/gr.281624.125",
-      "date": "2026-07-30",
-      "tags": [
-        "single-cell",
-        "leki"
-      ],
-      "article_type": "protokol",
-      "id": "research-2026-096"
-    },
-    {
-      "type": "research",
-      "source": "Genome Research",
-      "title": "Cross-species variant-to-function analyses implicate &lt;i&gt;MEIS1&lt;/i&gt; in conferring sleep abnormalities and impaired cerebellar development.",
-      "description": "Genome-wide association studies (GWAS) have identified numerous loci for insomnia, yet functional validation of effector genes remains limited because most risk variants lie in noncoding regions, and the true causal…",
-      "url": "https://doi.org/10.1101/gr.281655.125",
-      "date": "2026-07-30",
-      "tags": [
-        "genomika"
+        "narzedzia",
+        "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-097"
+      "id": "research-2026-120"
     },
     {
       "type": "research",
-      "source": "PLOS Computational Biology",
-      "title": "Computational insights on the interplay between electrotaxis and mechanotaxis.",
-      "description": "Understanding how cells migrate in response to external cues has important implications for biology, medicine, and bioengineering.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014511",
+      "source": "medRxiv",
+      "title": "Genetically nominated cardiovascular-kidney-metabolic features are not preferentially responsive to weight-loss and cardiometabolic interventions",
+      "description": "BackgroundSubstantial cardiovascular and kidney risk persists after successful weight loss.",
+      "url": "https://doi.org/10.64898/2026.07.27.26358659",
+      "date": "2026-07-30",
+      "tags": [
+        "genomika",
+        "proteomika"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-121"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Polygenic burden of ubiquitin system genes in schizophrenia: focus on prenatal neurodevelopment",
+      "description": "Schizophrenia (SZ) is a highly heritable psychiatric disorder with neurodevelopmental origins and a marked impact on cognition.",
+      "url": "https://doi.org/10.64898/2026.07.28.26359147",
       "date": "2026-07-30",
       "tags": [
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-098"
+      "id": "research-2026-122"
     },
     {
       "type": "research",
-      "source": "PLOS Computational Biology",
-      "title": "Combining sampling and attractor dynamics in spiking models of head direction systems.",
-      "description": "Neural populations can maintain stable representations of navigation-related variables while integrating uncertain sensory signals.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014577",
+      "source": "medRxiv",
+      "title": "ArchSpiral: An iPad-Based Digital Archimedean Spiral Assessment for Objective Motor Evaluation in Rare Diseases",
+      "description": "ObjectivesWe developed and evaluated ArchSpiral, an iPad application that digitizes the International Cooperative Ataxia Rating Scale (ICARS) spiral tracing task to address the need for portable rare disease assessment…",
+      "url": "https://doi.org/10.64898/2026.07.27.26358872",
       "date": "2026-07-30",
       "tags": [
-        "ai-ml"
+        "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-099"
+      "id": "research-2026-123"
     },
     {
       "type": "narzedzie",
@@ -1365,7 +1703,20 @@
         "inne",
         "narzedzia"
       ],
-      "id": "research-2026-100"
+      "id": "research-2026-124"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · cogent3/cogent3",
+      "title": "cogent3 2026.7.30a0",
+      "description": "",
+      "url": "https://github.com/cogent3/cogent3/releases/tag/2026.7.30a0",
+      "date": "2026-07-30",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "id": "research-2026-125"
     },
     {
       "type": "narzedzie",
@@ -1377,87 +1728,160 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-101"
+      "id": "research-2026-126"
     },
     {
       "type": "narzedzie",
-      "source": "GitHub · neuhausi/canvasXpress",
-      "title": "canvasXpress 64.8",
-      "description": "CanvasXpress Version 64.8",
-      "url": "https://github.com/neuhausi/canvasXpress/releases/tag/64.8",
+      "source": "GitHub · lh3/minibwa",
+      "title": "minibwa v0.6",
+      "description": "Notable changes: * Bugfix: option `-I` was not working (#57 and #58) (0.6: 30 July 2026, r416)",
+      "url": "https://github.com/lh3/minibwa/releases/tag/v0.6",
       "date": "2026-07-30",
       "tags": [
         "inne",
         "narzedzia"
       ],
-      "id": "research-2026-102"
+      "id": "research-2026-127"
     },
     {
       "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "But What Behavior?",
-      "description": "What is a natural behavior? I argue that the study of natural behaviors is often the study of the spontaneous behaviors of animals placed in quantifiably different environments.",
-      "url": "http://arxiv.org/abs/2607.28898v1",
-      "date": "2026-07-30",
+      "source": "bioRxiv",
+      "title": "Ontology-guided harmonization enables unified discovery of public metabolomics studies within and across repositories",
+      "description": "Public metabolomics repositories contain thousands of studies, but differences in metadata structure, vocabulary, and repository-specific terms still limit reliable search, comparison, and reuse within and across…",
+      "url": "https://doi.org/10.64898/2026.07.23.740366",
+      "date": "2026-07-29",
       "tags": [
-        "inne"
+        "ai-ml",
+        "narzedzia",
+        "bazy-danych"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-128"
+    },
+    {
+      "type": "research",
+      "source": "bioRxiv",
+      "title": "Metabarcoding replicate detection frequency tracks ddPCR copy number for cod and herring eDNA in ancient marine sediments",
+      "description": "O_LIDetecting environmental DNA (eDNA) from rare or low-abundance aquatic species remains a major challenge, particularly when it is highly degraded, present at low concentrations, and dominated by DNA from non-target…",
+      "url": "https://doi.org/10.64898/2026.07.03.736335",
+      "date": "2026-07-29",
+      "tags": [
+        "genomika"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-103"
+      "id": "research-2026-129"
     },
     {
       "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "LLMBDC: Language Model for Biological Domains Oriented Clustering of Gene Ontology",
-      "description": "Gene Ontology (GO) enrichment analysis is a foundational tool for translating large-scale genomic data into biological insights, but typically yields hundreds of redundant terms that obscure overarching themes.",
-      "url": "http://arxiv.org/abs/2608.00099v1",
-      "date": "2026-07-30",
+      "source": "bioRxiv",
+      "title": "Directing hierarchical cell fate decisions through sequential pulses of minimal signaling alphabets",
+      "description": "Inductive signals can direct cell fate decisions, yet the diversity of cell identities far exceeds the available signaling repertoire.",
+      "url": "https://doi.org/10.64898/2026.07.28.741174",
+      "date": "2026-07-29",
+      "tags": [
+        "sieci-systemy"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-130"
+    },
+    {
+      "type": "research",
+      "source": "bioRxiv",
+      "title": "Coordinated immune, chloroplast and chemical defences underpin multilayered resistance to barley yellow dwarf virus and its aphid vector associated with the Hordeum bulbosum-derived Ryd4 introgression in barley",
+      "description": "Barley yellow dwarf virus (BYDV), transmitted by the bird cherry-oat aphid (Rhopalosiphum padi L.), is among the most damaging viral diseases of barley, but the mechanisms underlying resistance to both the virus and its…",
+      "url": "https://doi.org/10.64898/2026.07.28.741184",
+      "date": "2026-07-29",
+      "tags": [
+        "transkryptomika",
+        "wielo-omika"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-131"
+    },
+    {
+      "type": "research",
+      "source": "bioRxiv",
+      "title": "Light-dependent metabolism and proteome allocation in Synechocystis sp. PCC 6803: an enzyme-constrained metabolic model across light intensities",
+      "description": "Genome-scale metabolic models (GEMs) are widely used to relate genotype to phenotype and to study how organisms respond to their environment, but conventional flux-balance analysis relies on simplifying assumptions that…",
+      "url": "https://doi.org/10.64898/2026.07.28.741177",
+      "date": "2026-07-29",
       "tags": [
         "genomika",
-        "ai-ml",
-        "narzedzia"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-104"
-    },
-    {
-      "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "Bits per Spike as a Betting Game: An Interpretable Unit for Held-Out Log-Likelihood in Neural Data Analysis",
-      "description": "Held-out log-likelihood is the standard currency for comparing statistical models of neural spike trains, and is often reported as bits per spike relative to a homogeneous Poisson baseline.",
-      "url": "http://arxiv.org/abs/2607.28779v1",
-      "date": "2026-07-30",
-      "tags": [
-        "inne"
+        "proteomika"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-105"
+      "id": "research-2026-132"
     },
     {
       "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "GRAIN: Molecules Are Not the Right Granularity -- Active-Ingredient Modeling for Safe Medication Recommendation",
-      "description": "Medication recommendation from electronic health records must balance predictive accuracy against the risk of adverse drug-drug interactions (DDIs) under polypharmacy.",
-      "url": "http://arxiv.org/abs/2608.00098v1",
-      "date": "2026-07-30",
+      "source": "bioRxiv",
+      "title": "Coevolution-driven reconstruction of multi-taxa siderophore interaction networks reveals topological diversity of microbial exploitation",
+      "description": "Microbial communities are shaped by secreted metabolites that mediate ecological interactions, yet predicting these interactions from genomic sequences remains difficult, because the specific recognition between…",
+      "url": "https://doi.org/10.64898/2026.07.28.741125",
+      "date": "2026-07-29",
       "tags": [
-        "inne"
+        "genomika"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-106"
+      "id": "research-2026-133"
     },
     {
       "type": "research",
-      "source": "arXiv (q-bio)",
-      "title": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
-      "description": "Clinical risk models routinely achieve strong aggregate performance while producing materially different error rates across patient subgroups.",
-      "url": "http://arxiv.org/abs/2607.28608v1",
-      "date": "2026-07-30",
+      "source": "bioRxiv",
+      "title": "Single-cell foundation modeling with species-nativeprotein tokens links regenerative competence across frog and mouse",
+      "description": "Appendage regenerative capacity varies dramatically across species, developmental stages, and anatomical sites, yet comparing functional transitions across organisms remains difficult because gene vocabularies diverge.",
+      "url": "https://doi.org/10.64898/2026.07.27.740807",
+      "date": "2026-07-29",
       "tags": [
-        "narzedzia"
+        "genomika",
+        "single-cell",
+        "ai-ml"
       ],
-      "article_type": "benchmark",
-      "id": "research-2026-107"
+      "article_type": "eksperymentalne",
+      "id": "research-2026-134"
+    },
+    {
+      "type": "research",
+      "source": "bioRxiv",
+      "title": "Stepwise expansion of recombination suppression on sex chromosomes and other supergenes through lower load advantage and deleterious mutation sheltering",
+      "description": "Many organisms possess sex chromosomes with non-recombining regions that have expanded progressively. Yet, the causes of this stepwise expansion remain poorly understood.",
+      "url": "https://doi.org/10.1101/2025.06.27.661902",
+      "date": "2026-07-29",
+      "tags": [
+        "genomika",
+        "ewolucja"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-135"
+    },
+    {
+      "type": "research",
+      "source": "bioRxiv",
+      "title": "Evolutionary Advantage of Diversity-Generating Retroelements in Switching Environments",
+      "description": "Diversity-Generating Retroelements (DGRs) create rapid, targeted variation within specific genomic regions in phages and bacteria.",
+      "url": "https://doi.org/10.64898/2026.02.18.706561",
+      "date": "2026-07-29",
+      "tags": [
+        "genomika",
+        "ewolucja"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-136"
+    },
+    {
+      "type": "research",
+      "source": "bioRxiv",
+      "title": "The limits of Bayesian estimates of divergence times in measurably evolving populations",
+      "description": "Bayesian inference of divergence times for extant species using molecular data is an unconventional statistical problem: Divergence times and molecular rates are confounded, and only their product, the molecular branch…",
+      "url": "https://doi.org/10.64898/2026.02.28.708707",
+      "date": "2026-07-29",
+      "tags": [
+        "genomika",
+        "epidemiologia",
+        "ewolucja"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-137"
     },
     {
       "type": "research",
@@ -1471,7 +1895,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-108"
+      "id": "research-2026-138"
     },
     {
       "type": "research",
@@ -1484,7 +1908,7 @@
         "genomika"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-109"
+      "id": "research-2026-139"
     },
     {
       "type": "research",
@@ -1497,7 +1921,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-110"
+      "id": "research-2026-140"
     },
     {
       "type": "research",
@@ -1510,7 +1934,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-111"
+      "id": "research-2026-141"
     },
     {
       "type": "research",
@@ -1523,7 +1947,20 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-112"
+      "id": "research-2026-142"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Dual foundation models for accelerometry predict future health",
+      "description": "Wrist accelerometers are ubiquitous and capture activity, sleep, and cardiorespiratory motion, but how this relates to future disease across the phenome is unclear.",
+      "url": "https://doi.org/10.64898/2026.07.24.26358894",
+      "date": "2026-07-29",
+      "tags": [
+        "ai-ml"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-143"
     },
     {
       "type": "research",
@@ -1536,7 +1973,7 @@
         "narzedzia"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-113"
+      "id": "research-2026-144"
     },
     {
       "type": "research",
@@ -1550,7 +1987,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-114"
+      "id": "research-2026-145"
     },
     {
       "type": "research",
@@ -1563,7 +2000,7 @@
         "epidemiologia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-115"
+      "id": "research-2026-146"
     },
     {
       "type": "research",
@@ -1577,7 +2014,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-116"
+      "id": "research-2026-147"
     },
     {
       "type": "research",
@@ -1591,21 +2028,126 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-117"
+      "id": "research-2026-148"
     },
     {
       "type": "research",
-      "source": "Bioinformatics (OUP)",
-      "title": "CASCADE: Criticality Avalanche Spike Cross-platform Analysis Detection Engine, a Multi-Manufacturer MEA Bash Analysis Pipeline.",
-      "description": "<h4>Summary</h4>Multi-electrode array (MEA) recordings are widely utilized to characterize neuronal network activity.",
-      "url": "https://doi.org/10.1093/bioinformatics/btag570",
+      "source": "medRxiv",
+      "title": "Quantifying drug-related problems in community pharmacy practice: A pharmacoepidemiological study from Greece",
+      "description": "INTRODUCTIONDrug-related-problems (DRPs) are encountered daily in prescription medicines at the community pharmacy but they are neither documented nor evaluated systematically.",
+      "url": "https://doi.org/10.64898/2026.07.28.26359112",
       "date": "2026-07-29",
       "tags": [
-        "narzedzia",
-        "bazy-danych"
+        "narzedzia"
+      ],
+      "article_type": "przeglad",
+      "id": "research-2026-149"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Distribution and Patterns of Device-Measured Movement Behaviours in middle-aged to older Australian adults: the ABC Accelerometer Sub-Study",
+      "description": "ObjectivesTo describe device-measured movement behaviours in a large sample of middle-aged and older Australian adults using complementary posture- and intensity-based accelerometers, examine variation across…",
+      "url": "https://doi.org/10.64898/2026.07.26.26358971",
+      "date": "2026-07-29",
+      "tags": [
+        "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-118"
+      "id": "research-2026-150"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Estimating Within- and Between-Family Polygenic Effects For Psychiatric Disorders Under Non-random Ascertainment",
+      "description": "BackgroundPolygenic scores (PGSs) are increasingly used to investigate the genetic architecture of complex traits.",
+      "url": "https://doi.org/10.64898/2026.07.28.26359090",
+      "date": "2026-07-29",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-151"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "From Seroprevalence to Measles Outbreak Risk: A Multicountry Epidemiological Proof of Concept",
+      "description": "BackgroundHigh national vaccination coverage may conceal age-specific and spatially concentrated measles susceptibility.\n\nObjectiveTo assess whether published age-specific seropositivity results can be converted into a…",
+      "url": "https://doi.org/10.64898/2026.07.28.26359095",
+      "date": "2026-07-29",
+      "tags": [
+        "immunoinformatyka",
+        "epidemiologia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-152"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Modelling the effectiveness of attractive targeted sugar baits in reducing clinical malaria",
+      "description": "Attractive targeted sugar baits (ATSBs) are a novel vector intervention targeting the sugar feeding behaviour of mosquitos by providing toxic sugar meals.",
+      "url": "https://doi.org/10.64898/2026.07.28.26359124",
+      "date": "2026-07-29",
+      "tags": [
+        "inne"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-153"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Genetic decoding reveals druggable biology implicitly learned by a medical-history foundation model",
+      "description": "Foundation models trained on electronic healthcare records (EHRs) have gained traction with the aim to transform personalised medicine.",
+      "url": "https://doi.org/10.64898/2026.07.28.26359117",
+      "date": "2026-07-29",
+      "tags": [
+        "genomika",
+        "ai-ml"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-154"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "The Coupled Stochastic Dynamical System: A Generative Model for Simulating and Forecasting Youth Mental Health Trajectories",
+      "description": "Mechanism-informed models that can simulate counterfactual mental-health trajectories remain scarce in digital phenotyping.",
+      "url": "https://doi.org/10.64898/2026.07.26.26358943",
+      "date": "2026-07-29",
+      "tags": [
+        "ai-ml"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-155"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Association Between Clinical Outcome Measures and Sonomyography-Derived Metrics in Individuals with Spinal Cord Injury",
+      "description": "BackgroundTo examine the association between ultrasound-based muscle activity detection, or sonomyography (SMG)-derived metrics, and clinical measures of upper-extremity function in individuals with cervical spinal cord…",
+      "url": "https://doi.org/10.64898/2026.07.27.26358334",
+      "date": "2026-07-29",
+      "tags": [
+        "narzedzia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-156"
+    },
+    {
+      "type": "research",
+      "source": "medRxiv",
+      "title": "Urogenital Schistosomiasis Among Pre-School and School-Age Children During a Community-Based Control Programme in the Lake Chad Basin: Implications for Preventive Chemotherapy and Integrated Control",
+      "description": "BackgroundUrogenital schistosomiasis control programmes have traditionally focused preventive chemotherapy (PC) on school-aged children (SAC, 5-14 years).",
+      "url": "https://doi.org/10.64898/2026.07.28.26359151",
+      "date": "2026-07-29",
+      "tags": [
+        "epidemiologia"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-157"
     },
     {
       "type": "research",
@@ -1619,7 +2161,7 @@
         "immunoinformatyka"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-119"
+      "id": "research-2026-158"
     },
     {
       "type": "research",
@@ -1633,7 +2175,7 @@
         "struktury"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-120"
+      "id": "research-2026-159"
     },
     {
       "type": "narzedzie",
@@ -1646,7 +2188,7 @@
         "genomika",
         "narzedzia"
       ],
-      "id": "research-2026-121"
+      "id": "research-2026-160"
     },
     {
       "type": "narzedzie",
@@ -1658,7 +2200,7 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-122"
+      "id": "research-2026-161"
     },
     {
       "type": "narzedzie",
@@ -1670,308 +2212,7 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-123"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Identifying spatially variable genes by projecting to morphologically relevant curves",
-      "description": "Spatial transcriptomics enables high-resolution gene expression measurements while preserving the two-dimensional spatial organization of the biological sample.",
-      "url": "https://doi.org/10.1101/2024.11.21.624653",
-      "date": "2026-07-28",
-      "tags": [
-        "single-cell",
-        "transkryptomika"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-124"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "When Does Reaction Norm GWAS Discover Plasticity? The Residual Channel in Environmental Index-Based Genetic Dissection",
-      "description": "CERIS-JGRA replaces the environmental mean in Finlay-Wilkinson regression with a climate-derived index, so that reaction norm association mapping can dissect the genetics of phenotypic plasticity.",
-      "url": "https://doi.org/10.64898/2026.07.27.741005",
-      "date": "2026-07-28",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-125"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "ProNA3D: Distance-Based Analysis of Nucleic Acid-Containing Interfaces",
-      "description": "1.Biomolecular interactions are central to many essential cellular processes, but RNA-containing complexes remain challenging to resolve structurally, even as experimental methods and AI-based prediction have expanded…",
-      "url": "https://doi.org/10.64898/2026.04.16.719043",
-      "date": "2026-07-28",
-      "tags": [
-        "immunoinformatyka",
-        "struktury",
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-126"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Beige/brown fat-mediated cardiac protection from high-fat diet is dependent on adipocyte beta3-adrenergic receptor",
-      "description": "Cardiometabolic diseases associated with obesity are continuously increasing worldwide. Yet, current therapeutic strategies remain insufficient to improve patient outcomes.",
-      "url": "https://doi.org/10.64898/2026.07.27.739389",
-      "date": "2026-07-28",
-      "tags": [
-        "wielo-omika"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-127"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Unlocking substrate specificities of human solute carrier proteins using untargeted metabolomics",
-      "description": "The limited understanding of transporter substrate spectra constrains our ability to interpret cell and membrane function, highlighting the need for methods that enable transporter deorphanization and characterization…",
-      "url": "https://doi.org/10.64898/2026.07.27.740914",
-      "date": "2026-07-28",
-      "tags": [
-        "narzedzia"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-128"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Cross-Species Efficacy of Combinatorial Gene Therapy for Osteoarthritis and Correction of Neuro-Inflammatory Pain Mechanisms",
-      "description": "Osteoarthritis is a leading cause of chronic pain and disability, which lacks disease-modifying treatment.",
-      "url": "https://doi.org/10.64898/2026.07.27.740924",
-      "date": "2026-07-28",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-129"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Proteome-wide QTL mapping enables gene-protein-phenotype metabolic network construction in a genetically diverse MASLD mouse model",
-      "description": "The limited treatment options available for the estimated 38% of adults worldwide affected by Metabolic Dysfunction Associated Steatotic Liver Disease (MASLD) are largely due to an incomplete understanding of the…",
-      "url": "https://doi.org/10.64898/2026.07.26.740836",
-      "date": "2026-07-28",
-      "tags": [
-        "genomika",
-        "proteomika",
-        "bazy-danych"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-130"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Genomic signatures of reproductive isolation are decoupled from floral divergence in a long-standing hybrid zone",
-      "description": "A central goal in evolutionary biology is to understand how species boundaries are maintained despite gene flow.",
-      "url": "https://doi.org/10.64898/2026.01.17.700129",
-      "date": "2026-07-28",
-      "tags": [
-        "genomika"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-131"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Scalable single-cell isoform profiling with sequencing-by-expansion",
-      "description": "Single-cell RNA sequencing has transformed our understanding of cellular systems, yet the reliance on short-read sequencing restricts analysis to gene-level quantification and obscures the immense biological diversity…",
-      "url": "https://doi.org/10.64898/2026.07.15.738809",
-      "date": "2026-07-28",
-      "tags": [
-        "genomika",
-        "single-cell",
-        "transkryptomika"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-132"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "scINTILLA: Single-Cell Integrated Inference, Labelling, and Landscape Analysis for Cell-Type Annotation Quality Assessment",
-      "description": "Single-cell RNA sequencing has enabled the construction of comprehensive cell atlases, yet the quality and coherence of the cell-type annotations within these atlases remain largely unexamined.",
-      "url": "https://doi.org/10.64898/2026.07.27.740477",
-      "date": "2026-07-28",
-      "tags": [
-        "genomika",
-        "single-cell",
-        "ai-ml"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-133"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "HPAI H5N1 risk in Australia: a model for the prediction of poultry outbreaks",
-      "description": "The panzootic highly pathogenic avian influenza (HPAI) H5N1 virus has now been detected on the Australian mainland, with incursions from the sub-Antarctic region posing an increasing threat to domestic wildlife and…",
-      "url": "https://doi.org/10.64898/2026.07.27.740638",
-      "date": "2026-07-28",
-      "tags": [
-        "epidemiologia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-134"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "Engineering antigen-driven co-stimulation and T helper cell activity into TCR-T cells with CD8-41BB fusion receptors enhances anti-tumor activity",
-      "description": "1Adoptive cell therapy using tumor antigen-targeting T cell receptors (TCRs) offers a compelling approach to treat both hematological cancers and solid tumors due to broad antigen accessibility and the ability to target…",
-      "url": "https://doi.org/10.64898/2026.07.27.739613",
-      "date": "2026-07-28",
-      "tags": [
-        "immunoinformatyka",
-        "narzedzia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-135"
-    },
-    {
-      "type": "research",
-      "source": "bioRxiv",
-      "title": "A targeted plasma-proteomic axis separates autoimmune thyroid disease from growth-hormone deficiency",
-      "description": "Targeted mass spectrometry (multiple-reaction monitoring, MRM) enables reproducible, multiplexed quantification of plasma proteins, but whether a fixed targeted panel can resolve endocrine disorders with overlapping…",
-      "url": "https://doi.org/10.64898/2026.07.27.741048",
-      "date": "2026-07-28",
-      "tags": [
-        "transkryptomika",
-        "proteomika",
-        "ai-ml"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-136"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Digital Health Adoption, eHealth Literacy, and Trust in AI Among Generation Z University Students in Sri Lanka: An Empirical Study",
-      "description": "BackgroundDigital health technologies--spanning mobile applications, telemedicine, and AI-driven platforms--are rapidly reshaping healthcare delivery globally.",
-      "url": "https://doi.org/10.64898/2026.07.22.26358733",
-      "date": "2026-07-28",
-      "tags": [
-        "narzedzia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-137"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Dual foundation models for accelerometry predict future health",
-      "description": "Wrist accelerometers are ubiquitous and capture activity, sleep, and cardiorespiratory motion, but how this relates to future disease across the phenome is unclear.",
-      "url": "https://doi.org/10.64898/2026.07.24.26358894",
-      "date": "2026-07-28",
-      "tags": [
-        "ai-ml"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-138"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Design tensions in a two-sided marketplace for reusable digital therapeutics software components: a qualitative interview study",
-      "description": "ObjectivesTo identify stakeholder-perceived design tensions in a two-sided marketplace for reusable digital therapeutics (DTx) software components and to use these tensions to propose alternative marketplace…",
-      "url": "https://doi.org/10.64898/2026.07.17.26358332",
-      "date": "2026-07-28",
-      "tags": [
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-139"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Etiology and incidence of diarrhea requiring hospitalization in children under 5 years of age in 31 low- and middle-income countries: findings from the Global Pediatric Diarrhea Surveillance network, 2017-2022",
-      "description": "BackgroundDiarrhea remains a leading cause of child morbidity and mortality.",
-      "url": "https://doi.org/10.64898/2026.07.26.26358975",
-      "date": "2026-07-28",
-      "tags": [
-        "epidemiologia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-140"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Rapid diagnosis of fever etiology using wearable temperature monitoring and machine learning",
-      "description": "IntroductionDistinct temperature patterns have long been recognized to correlate with fevers of differing etiologies.",
-      "url": "https://doi.org/10.64898/2026.07.27.26359010",
-      "date": "2026-07-28",
-      "tags": [
-        "ai-ml"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-141"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Can non-routine data collection help decision-making for gambiense sleeping sickness? Using active adaptive management to assess the potential of vector control",
-      "description": "Gambiense human African trypanosomiasis (gHAT) is a vector-borne disease, spread by tsetse, found in West and Central Africa.",
-      "url": "https://doi.org/10.64898/2026.07.27.26359007",
-      "date": "2026-07-28",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-142"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Deep Learning-Based Pretreatment Cardiovascular Risk Stratification in Women with Breast Cancer",
-      "description": "BackgroundCardiovascular disease is a leading non-cancer cause of morbidity and mortality among breast cancer (BC) survivors.",
-      "url": "https://doi.org/10.64898/2026.07.26.26350307",
-      "date": "2026-07-28",
-      "tags": [
-        "ai-ml",
-        "narzedzia"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-143"
-    },
-    {
-      "type": "research",
-      "source": "medRxiv",
-      "title": "Changing epidemiology and transmission dynamics of measles in Ho Chi Minh City: a comparison of the 2018-2020 and 2024-2025 outbreaks",
-      "description": "IntroductionMeasles remains a major public health threat worldwide. Following a resurgence of cases, Ho Chi Minh City (HCMC) experienced a severe outbreak in 2024-2025 that differed from the 2018-2020 epidemic.",
-      "url": "https://doi.org/10.64898/2026.07.27.26358995",
-      "date": "2026-07-28",
-      "tags": [
-        "epidemiologia"
-      ],
-      "article_type": "benchmark",
-      "id": "research-2026-144"
-    },
-    {
-      "type": "research",
-      "source": "Genome Research",
-      "title": "&lt;i&gt;Resf1&lt;/i&gt; is required for proper placental development and configuration of trophoblast cell-specific heterochromatin.",
-      "description": "Retroelement silencing factor 1 (<i>Resf1</i>) is involved in retroelement silencing in cooperation with H3K9 methyltransferase SETDB1 by regulating H3K9 methylation in mouse embryonic stem cells (mESCs).",
-      "url": "https://doi.org/10.1101/gr.281507.125",
-      "date": "2026-07-28",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-145"
+      "id": "research-2026-162"
     },
     {
       "type": "narzedzie",
@@ -1984,7 +2225,7 @@
         "genomika",
         "narzedzia"
       ],
-      "id": "research-2026-146"
+      "id": "research-2026-163"
     },
     {
       "type": "narzedzie",
@@ -1998,7 +2239,7 @@
         "transkryptomika",
         "narzedzia"
       ],
-      "id": "research-2026-147"
+      "id": "research-2026-164"
     },
     {
       "type": "narzedzie",
@@ -2011,7 +2252,20 @@
         "genomika",
         "narzedzia"
       ],
-      "id": "research-2026-148"
+      "id": "research-2026-165"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · lh3/minibwa",
+      "title": "minibwa v0.5",
+      "description": "Notable changes: * Improvement: theoretically better mapping quality (mapQ) for paired-end reads. Bwa-mem overestimates mapQ in a rare case, which is an oversight. The new release fixes the issue. On real-world SNP calling, the change increases precision but reduces sensivity. Se",
+      "url": "https://github.com/lh3/minibwa/releases/tag/v0.5",
+      "date": "2026-07-26",
+      "tags": [
+        "genomika",
+        "narzedzia"
+      ],
+      "id": "research-2026-166"
     },
     {
       "type": "narzedzie",
@@ -2024,7 +2278,7 @@
         "single-cell",
         "narzedzia"
       ],
-      "id": "research-2026-149"
+      "id": "research-2026-167"
     },
     {
       "type": "narzedzie",
@@ -2037,7 +2291,33 @@
         "single-cell",
         "narzedzia"
       ],
-      "id": "research-2026-150"
+      "id": "research-2026-168"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · broadinstitute/viral-ngs",
+      "title": "viral-ngs v3.0.19",
+      "description": "## What's Changed * Pin rpds-py 2026.6.3 to fix PyO3 vulnerability by @dpark01 in https://github.com/broadinstitute/viral-ngs/pull/1106 **Full Changelog**: https://github.com/broadinstitute/viral-ngs/compare/v3.0.18...v3.0.19",
+      "url": "https://github.com/broadinstitute/viral-ngs/releases/tag/v3.0.19",
+      "date": "2026-07-23",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "id": "research-2026-169"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · broadinstitute/viral-ngs",
+      "title": "viral-ngs v3.0.18",
+      "description": "## What's Changed * Bump CVE-triage CI from Claude Sonnet 4.6 to Sonnet 5 by @dpark01 in https://github.com/broadinstitute/viral-ngs/pull/1100 * ci: fix CVE-triage Sonnet 5 compat, bump build-push-action to Node 24, pin Trivy to v0.72.0 by @dpark01 in https://github.com/broadinst",
+      "url": "https://github.com/broadinstitute/viral-ngs/releases/tag/v3.0.18",
+      "date": "2026-07-23",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "id": "research-2026-170"
     },
     {
       "type": "grant",
@@ -2055,7 +2335,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-151"
+      "id": "research-2026-171"
     },
     {
       "type": "grant",
@@ -2069,7 +2349,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-152"
+      "id": "research-2026-172"
     },
     {
       "type": "grant",
@@ -2084,7 +2364,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-153"
+      "id": "research-2026-173"
     },
     {
       "type": "grant",
@@ -2099,7 +2379,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-154"
+      "id": "research-2026-174"
     },
     {
       "type": "grant",
@@ -2113,7 +2393,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-155"
+      "id": "research-2026-175"
     },
     {
       "type": "grant",
@@ -2127,7 +2407,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-156"
+      "id": "research-2026-176"
     },
     {
       "type": "grant",
@@ -2141,7 +2421,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-157"
+      "id": "research-2026-177"
     },
     {
       "type": "grant",
@@ -2157,7 +2437,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-158"
+      "id": "research-2026-178"
     },
     {
       "type": "grant",
@@ -2173,7 +2453,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-159"
+      "id": "research-2026-179"
     },
     {
       "type": "grant",
@@ -2187,7 +2467,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-160"
+      "id": "research-2026-180"
     },
     {
       "type": "grant",
@@ -2202,7 +2482,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-161"
+      "id": "research-2026-181"
     },
     {
       "type": "grant",
@@ -2219,7 +2499,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-162"
+      "id": "research-2026-182"
     }
   ]
 }
