@@ -1,17 +1,58 @@
 {
-  "generated_at": "2026-08-22T06:37:28+00:00",
+  "generated_at": "2026-08-23T06:39:09+00:00",
   "entries": [
     {
       "type": "narzedzie",
-      "source": "GitHub · oncologylab/fp-tools",
-      "title": "fp-tools v0.2.0rc14",
-      "description": "## What's Changed * Simplify and harden the fp-tools GUI by @YaoxiangLi in https://github.com/oncologylab/fp-tools/pull/55 **Full Changelog**: https://github.com/oncologylab/fp-tools/compare/v0.2.0rc13...v0.2.0rc14",
-      "url": "https://github.com/oncologylab/fp-tools/releases/tag/v0.2.0rc14",
+      "source": "GitHub · xuzhougeng/wisp-science",
+      "title": "wisp-science v1.6.0",
+      "description": "<!-- release-title: v1.6.0: Browse --> # wisp-science v1.6.0 `v1.6.0` is the Browse release. The agent can drive a real Chrome session: your daily shared browser and an isolated workspace profile, article scans, hashed asset harvest, ChatGPT one-shot on a logged-in tab, and auto-",
+      "url": "https://github.com/xuzhougeng/wisp-science/releases/tag/v1.6.0",
+      "date": "2026-08-22",
+      "tags": [
+        "ai-ml",
+        "narzedzia"
+      ],
+      "id": "research-2026-001"
+    },
+    {
+      "type": "narzedzie",
+      "source": "Zenodo · software",
+      "title": "FigTreeKit: A Python toolkit for programmatic FigTree styling, taxonomic analysis, and rendering of phylogenetic trees",
+      "description": "FigTreeKit is a Python library that programmatically generates FigTree-compatible Nexus annotation files for phylogenetic tree visualization.",
+      "url": "",
+      "date": "2026-08-22",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "article_type": null,
+      "id": "research-2026-002"
+    },
+    {
+      "type": "narzedzie",
+      "source": "Zenodo · software",
+      "title": "PyiTOL",
+      "description": "A Python CLI tool for iTOL phylogenetic tree visualization automation",
+      "url": "",
       "date": "2026-08-22",
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-001"
+      "article_type": null,
+      "id": "research-2026-003"
+    },
+    {
+      "type": "narzedzie",
+      "source": "Zenodo · software",
+      "title": "Rclade: Automated Deep-Time Phylogenetic Tree Collapsing and Visualization",
+      "description": "An R package for production-ready automated taxonomic collapsing and visualization of phylogenetic trees with geological timescales.",
+      "url": "",
+      "date": "2026-08-22",
+      "tags": [
+        "narzedzia"
+      ],
+      "article_type": null,
+      "id": "research-2026-004"
     },
     {
       "type": "narzedzie",
@@ -24,7 +65,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-002"
+      "id": "research-2026-005"
     },
     {
       "type": "research",
@@ -37,7 +78,7 @@
         "genomika"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-003"
+      "id": "research-2026-006"
     },
     {
       "type": "research",
@@ -52,7 +93,75 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-004"
+      "id": "research-2026-007"
+    },
+    {
+      "type": "research",
+      "source": "Genome Research",
+      "title": "Bayesian inference of lineage trees by joint analysis of single-cell multimodal lineage-tracing data with BiLinT.",
+      "description": "The advent of single-cell lineage-tracing technologies has enabled the simultaneous profiling of gene expression and lineage barcodes.",
+      "url": "https://doi.org/10.1101/gr.281460.125",
+      "date": "2026-08-21",
+      "tags": [
+        "single-cell",
+        "transkryptomika",
+        "ewolucja"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-008"
+    },
+    {
+      "type": "research",
+      "source": "PLOS Computational Biology",
+      "title": "The perils of omitting omissions when modeling evidence accumulation.",
+      "description": "Response deadlines are commonly imposed in decision-making research to incentivize speedy decisions and sustained attention.",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014667",
+      "date": "2026-08-21",
+      "tags": [
+        "narzedzia"
+      ],
+      "article_type": "narzedzie-art",
+      "id": "research-2026-009"
+    },
+    {
+      "type": "research",
+      "source": "PLOS Computational Biology",
+      "title": "An in silico framework for dissecting the mechanistic origins of in vivo recorded neuronal activity.",
+      "description": "How can we identify the mechanistic origins of the electrophysiological activity that is recorded from neurons in the living brain? A promising strategy for addressing this question is to generate biologically realistic…",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014617",
+      "date": "2026-08-21",
+      "tags": [
+        "narzedzia",
+        "bazy-danych"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-010"
+    },
+    {
+      "type": "research",
+      "source": "PLOS Computational Biology",
+      "title": "Non-Markovian dynamics and effective reproduction number in COVID-19: Evidence from Cyprus contact tracing data.",
+      "description": "Using contact tracing data provided by the Cyprus Ministry of Health, infection trees for the first four waves of the COVID-19 epidemic are constructed.",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014578",
+      "date": "2026-08-21",
+      "tags": [
+        "ewolucja"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-011"
+    },
+    {
+      "type": "research",
+      "source": "PLOS Computational Biology",
+      "title": "Eleven quick tips for Biomedical Federated Learning.",
+      "description": "Modern statistical and machine learning techniques are effective at describing, testing hypotheses and making predictions from complex data.",
+      "url": "https://doi.org/10.1371/journal.pcbi.1014530",
+      "date": "2026-08-21",
+      "tags": [
+        "ai-ml"
+      ],
+      "article_type": "eksperymentalne",
+      "id": "research-2026-012"
     },
     {
       "type": "research",
@@ -66,31 +175,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-005"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · oncologylab/fp-tools",
-      "title": "fp-tools v0.2.0rc13",
-      "description": "## What's Changed * Fix GUI rendering, responsive navigation, and config synchronization by @YaoxiangLi in https://github.com/oncologylab/fp-tools/pull/53 **Full Changelog**: https://github.com/oncologylab/fp-tools/compare/v0.2.0rc12...v0.2.0rc13",
-      "url": "https://github.com/oncologylab/fp-tools/releases/tag/v0.2.0rc13",
-      "date": "2026-08-21",
-      "tags": [
-        "narzedzia"
-      ],
-      "id": "research-2026-006"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · oncologylab/fp-tools",
-      "title": "fp-tools v0.2.0rc12",
-      "description": "## What's Changed * Fix match-motifs logging and native desktop apps by @YaoxiangLi in https://github.com/oncologylab/fp-tools/pull/49 **Full Changelog**: https://github.com/oncologylab/fp-tools/compare/v0.2.0rc11...v0.2.0rc12",
-      "url": "https://github.com/oncologylab/fp-tools/releases/tag/v0.2.0rc12",
-      "date": "2026-08-21",
-      "tags": [
-        "narzedzia"
-      ],
-      "id": "research-2026-007"
+      "id": "research-2026-013"
     },
     {
       "type": "research",
@@ -104,7 +189,7 @@
         "polska"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-008"
+      "id": "research-2026-014"
     },
     {
       "type": "research",
@@ -120,7 +205,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-009"
+      "id": "research-2026-015"
     },
     {
       "type": "narzedzie",
@@ -134,47 +219,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-010"
-    },
-    {
-      "type": "narzedzie",
-      "source": "Zenodo · software",
-      "title": "PyiTOL",
-      "description": "A Python CLI tool for iTOL phylogenetic tree visualization automation",
-      "url": "",
-      "date": "2026-08-21",
-      "tags": [
-        "narzedzia"
-      ],
-      "article_type": null,
-      "id": "research-2026-011"
-    },
-    {
-      "type": "narzedzie",
-      "source": "Zenodo · software",
-      "title": "FigTreeKit: A Python toolkit for programmatic FigTree styling, taxonomic analysis, and rendering of phylogenetic trees",
-      "description": "FigTreeKit is a Python library that programmatically generates FigTree-compatible Nexus annotation files for phylogenetic tree visualization.",
-      "url": "",
-      "date": "2026-08-21",
-      "tags": [
-        "inne",
-        "narzedzia"
-      ],
-      "article_type": null,
-      "id": "research-2026-012"
-    },
-    {
-      "type": "narzedzie",
-      "source": "Zenodo · software",
-      "title": "Rclade: Automated Deep-Time Phylogenetic Tree Collapsing and Visualization",
-      "description": "An R package for production-ready automated taxonomic collapsing and visualization of phylogenetic trees with geological timescales.",
-      "url": "",
-      "date": "2026-08-21",
-      "tags": [
-        "narzedzia"
-      ],
-      "article_type": null,
-      "id": "research-2026-013"
+      "id": "research-2026-016"
     },
     {
       "type": "research",
@@ -190,7 +235,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-014"
+      "id": "research-2026-017"
     },
     {
       "type": "narzedzie",
@@ -204,7 +249,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-015"
+      "id": "research-2026-018"
     },
     {
       "type": "research",
@@ -219,7 +264,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-016"
+      "id": "research-2026-019"
     },
     {
       "type": "narzedzie",
@@ -233,38 +278,7 @@
         "narzedzia"
       ],
       "article_type": null,
-      "id": "research-2026-017"
-    },
-    {
-      "type": "narzedzie",
-      "source": "Zenodo · software",
-      "title": "Marsilea",
-      "description": "What's Changed\n\nfix: NaN padding, warning stacklevels, and Zero* data sources by @Mr-Milk in https://github.com/Marsilea-viz/marsilea/pull/112\n\nFull Changelog…",
-      "url": "",
-      "date": "2026-08-21",
-      "tags": [
-        "inne",
-        "narzedzia"
-      ],
-      "article_type": null,
-      "id": "research-2026-018"
-    },
-    {
-      "type": "research",
-      "source": "Zenodo · dataset",
-      "title": "Molecular Docking Dataset for Native Ligand Validation (38Z/SCH772984) and Comparative Analysis of ASN007, Tizaterkib, Temuterkib, Rineterkib, and Ravoxertinib against Wild-Type Human MAPK3/ERK1 (PDB ID: 4QTB)",
-      "description": "This dataset provides a complete, reproducible, and standardized computational workflow for native ligand validation test (38Z/SCH772984) and comparative molecular docking analysis of five inhibitor compounds (ASN007…",
-      "url": "",
-      "date": "2026-08-21",
-      "tags": [
-        "genomika",
-        "struktury",
-        "leki",
-        "narzedzia",
-        "bazy-danych"
-      ],
-      "article_type": "protokol",
-      "id": "research-2026-019"
+      "id": "research-2026-020"
     },
     {
       "type": "research",
@@ -279,7 +293,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-020"
+      "id": "research-2026-021"
     },
     {
       "type": "research",
@@ -294,7 +308,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-021"
+      "id": "research-2026-022"
     },
     {
       "type": "research",
@@ -308,7 +322,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-022"
+      "id": "research-2026-023"
     },
     {
       "type": "research",
@@ -322,7 +336,7 @@
         "leki"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-023"
+      "id": "research-2026-024"
     },
     {
       "type": "research",
@@ -335,7 +349,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-024"
+      "id": "research-2026-025"
     },
     {
       "type": "research",
@@ -352,7 +366,7 @@
         "bazy-danych"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-025"
+      "id": "research-2026-026"
     },
     {
       "type": "research",
@@ -367,7 +381,7 @@
         "bazy-danych"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-026"
+      "id": "research-2026-027"
     },
     {
       "type": "narzedzie",
@@ -379,7 +393,7 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-027"
+      "id": "research-2026-028"
     },
     {
       "type": "research",
@@ -393,7 +407,7 @@
         "epidemiologia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-028"
+      "id": "research-2026-029"
     },
     {
       "type": "research",
@@ -406,7 +420,7 @@
         "ewolucja"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-029"
+      "id": "research-2026-030"
     },
     {
       "type": "research",
@@ -419,7 +433,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-030"
+      "id": "research-2026-031"
     },
     {
       "type": "research",
@@ -433,7 +447,7 @@
         "narzedzia"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-031"
+      "id": "research-2026-032"
     },
     {
       "type": "research",
@@ -446,7 +460,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-032"
+      "id": "research-2026-033"
     },
     {
       "type": "research",
@@ -459,7 +473,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-033"
+      "id": "research-2026-034"
     },
     {
       "type": "research",
@@ -473,7 +487,7 @@
         "epidemiologia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-034"
+      "id": "research-2026-035"
     },
     {
       "type": "research",
@@ -486,7 +500,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-035"
+      "id": "research-2026-036"
     },
     {
       "type": "research",
@@ -499,7 +513,7 @@
         "ai-ml"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-036"
+      "id": "research-2026-037"
     },
     {
       "type": "research",
@@ -512,7 +526,7 @@
         "narzedzia"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-037"
+      "id": "research-2026-038"
     },
     {
       "type": "research",
@@ -528,7 +542,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-038"
+      "id": "research-2026-039"
     },
     {
       "type": "research",
@@ -541,7 +555,7 @@
         "epidemiologia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-039"
+      "id": "research-2026-040"
     },
     {
       "type": "research",
@@ -555,7 +569,7 @@
         "bazy-danych"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-040"
+      "id": "research-2026-041"
     },
     {
       "type": "research",
@@ -571,7 +585,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-041"
+      "id": "research-2026-042"
     },
     {
       "type": "research",
@@ -585,7 +599,7 @@
         "narzedzia"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-042"
+      "id": "research-2026-043"
     },
     {
       "type": "research",
@@ -599,7 +613,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-043"
+      "id": "research-2026-044"
     },
     {
       "type": "research",
@@ -613,7 +627,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-044"
+      "id": "research-2026-045"
     },
     {
       "type": "research",
@@ -627,7 +641,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-045"
+      "id": "research-2026-046"
     },
     {
       "type": "research",
@@ -640,20 +654,6 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-046"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · ucscGenomeBrowser/kent",
-      "title": "kent v502_branch.2",
-      "description": "- hgBlat facelift, gated: a single-page results view with a redesigned table, share-a-link, info icons on results, sortable results, a rename modal, and an XSS fix - hgc alignment viewer facelift, gated: a table-free single-page view with a share dialog, chromAlias support, consi",
-      "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v502_branch.2",
-      "date": "2026-08-19",
-      "tags": [
-        "genomika",
-        "narzedzia",
-        "bazy-danych"
-      ],
       "id": "research-2026-047"
     },
     {
@@ -670,6 +670,20 @@
       "id": "research-2026-048"
     },
     {
+      "type": "narzedzie",
+      "source": "GitHub · ucscGenomeBrowser/kent",
+      "title": "kent v502_branch.2",
+      "description": "- hgBlat facelift, gated: a single-page results view with a redesigned table, share-a-link, info icons on results, sortable results, a rename modal, and an XSS fix - hgc alignment viewer facelift, gated: a table-free single-page view with a share dialog, chromAlias support, consi",
+      "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v502_branch.2",
+      "date": "2026-08-19",
+      "tags": [
+        "genomika",
+        "narzedzia",
+        "bazy-danych"
+      ],
+      "id": "research-2026-049"
+    },
+    {
       "type": "research",
       "source": "arXiv (q-bio)",
       "title": "Longitudinal Bayesian Learning of Continuous Disease Position across the Alzheimer's Disease Continuum",
@@ -680,7 +694,7 @@
         "ewolucja"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-049"
+      "id": "research-2026-050"
     },
     {
       "type": "research",
@@ -695,7 +709,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-050"
+      "id": "research-2026-051"
     },
     {
       "type": "research",
@@ -708,7 +722,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-051"
+      "id": "research-2026-052"
     },
     {
       "type": "research",
@@ -721,7 +735,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-052"
+      "id": "research-2026-053"
     },
     {
       "type": "research",
@@ -734,7 +748,7 @@
         "sieci-systemy"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-053"
+      "id": "research-2026-054"
     },
     {
       "type": "research",
@@ -748,7 +762,7 @@
         "ai-ml"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-054"
+      "id": "research-2026-055"
     },
     {
       "type": "research",
@@ -761,7 +775,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-055"
+      "id": "research-2026-056"
     },
     {
       "type": "research",
@@ -774,7 +788,7 @@
         "struktury"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-056"
+      "id": "research-2026-057"
     },
     {
       "type": "research",
@@ -788,7 +802,7 @@
         "narzedzia"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-057"
+      "id": "research-2026-058"
     },
     {
       "type": "research",
@@ -801,7 +815,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-058"
+      "id": "research-2026-059"
     },
     {
       "type": "research",
@@ -814,7 +828,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-059"
+      "id": "research-2026-060"
     },
     {
       "type": "research",
@@ -827,7 +841,7 @@
         "ai-ml"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-060"
+      "id": "research-2026-061"
     },
     {
       "type": "research",
@@ -841,7 +855,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-061"
+      "id": "research-2026-062"
     },
     {
       "type": "research",
@@ -855,7 +869,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-062"
+      "id": "research-2026-063"
     },
     {
       "type": "research",
@@ -872,7 +886,7 @@
         "bazy-danych"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-063"
+      "id": "research-2026-064"
     },
     {
       "type": "research",
@@ -885,7 +899,7 @@
         "genomika"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-064"
+      "id": "research-2026-065"
     },
     {
       "type": "research",
@@ -899,7 +913,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-065"
+      "id": "research-2026-066"
     },
     {
       "type": "research",
@@ -912,7 +926,7 @@
         "inne"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-066"
+      "id": "research-2026-067"
     },
     {
       "type": "research",
@@ -926,7 +940,7 @@
         "struktury"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-067"
+      "id": "research-2026-068"
     },
     {
       "type": "research",
@@ -939,7 +953,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-068"
+      "id": "research-2026-069"
     },
     {
       "type": "research",
@@ -952,7 +966,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-069"
+      "id": "research-2026-070"
     },
     {
       "type": "research",
@@ -966,7 +980,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-070"
+      "id": "research-2026-071"
     },
     {
       "type": "research",
@@ -980,7 +994,7 @@
         "sieci-systemy"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-071"
+      "id": "research-2026-072"
     },
     {
       "type": "narzedzie",
@@ -993,7 +1007,7 @@
         "genomika",
         "narzedzia"
       ],
-      "id": "research-2026-072"
+      "id": "research-2026-073"
     },
     {
       "type": "narzedzie",
@@ -1006,7 +1020,7 @@
         "inne",
         "narzedzia"
       ],
-      "id": "research-2026-073"
+      "id": "research-2026-074"
     },
     {
       "type": "narzedzie",
@@ -1020,7 +1034,7 @@
         "narzedzia",
         "bazy-danych"
       ],
-      "id": "research-2026-074"
+      "id": "research-2026-075"
     },
     {
       "type": "research",
@@ -1033,7 +1047,7 @@
         "ewolucja"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-075"
+      "id": "research-2026-076"
     },
     {
       "type": "research",
@@ -1046,7 +1060,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-076"
+      "id": "research-2026-077"
     },
     {
       "type": "research",
@@ -1060,7 +1074,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-077"
+      "id": "research-2026-078"
     },
     {
       "type": "research",
@@ -1073,7 +1087,7 @@
         "epidemiologia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-078"
+      "id": "research-2026-079"
     },
     {
       "type": "research",
@@ -1086,7 +1100,7 @@
         "struktury"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-079"
+      "id": "research-2026-080"
     },
     {
       "type": "research",
@@ -1099,7 +1113,7 @@
         "bazy-danych"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-080"
+      "id": "research-2026-081"
     },
     {
       "type": "research",
@@ -1112,7 +1126,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-081"
+      "id": "research-2026-082"
     },
     {
       "type": "research",
@@ -1125,7 +1139,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-082"
+      "id": "research-2026-083"
     },
     {
       "type": "research",
@@ -1139,7 +1153,7 @@
         "ai-ml"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-083"
+      "id": "research-2026-084"
     },
     {
       "type": "research",
@@ -1152,7 +1166,7 @@
         "struktury"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-084"
+      "id": "research-2026-085"
     },
     {
       "type": "research",
@@ -1167,7 +1181,7 @@
         "transkryptomika"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-085"
+      "id": "research-2026-086"
     },
     {
       "type": "research",
@@ -1181,7 +1195,7 @@
         "struktury"
       ],
       "article_type": "benchmark",
-      "id": "research-2026-086"
+      "id": "research-2026-087"
     },
     {
       "type": "research",
@@ -1196,7 +1210,7 @@
         "transkryptomika"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-087"
+      "id": "research-2026-088"
     },
     {
       "type": "research",
@@ -1210,7 +1224,7 @@
         "sieci-systemy"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-088"
+      "id": "research-2026-089"
     },
     {
       "type": "research",
@@ -1224,7 +1238,7 @@
         "bazy-danych"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-089"
+      "id": "research-2026-090"
     },
     {
       "type": "research",
@@ -1237,7 +1251,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-090"
+      "id": "research-2026-091"
     },
     {
       "type": "research",
@@ -1250,46 +1264,7 @@
         "inne"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-091"
-    },
-    {
-      "type": "research",
-      "source": "PLOS Computational Biology",
-      "title": "The limitations of non-mechanistic methods for characterizing pathogen-pathogen interactions: A simulation study.",
-      "description": "Pathogen-pathogen interactions occur when infection with one pathogen influences one's chance of infection or disease due to another.",
-      "url": "https://doi.org/10.1371/journal.pcbi.1013859",
-      "date": "2026-08-17",
-      "tags": [
-        "epidemiologia"
-      ],
-      "article_type": "eksperymentalne",
       "id": "research-2026-092"
-    },
-    {
-      "type": "research",
-      "source": "PLOS Computational Biology",
-      "title": "IBAS: Interaction-bridged association studies discovering novel genes underlying complex traits.",
-      "description": "Genetic contributions to complex traits are often mediated through coordinated gene-gene interaction networks, yet most existing association frameworks focus on marginal single-gene effects and overlook higher-order…",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014640",
-      "date": "2026-08-17",
-      "tags": [
-        "genomika"
-      ],
-      "article_type": "narzedzie-art",
-      "id": "research-2026-093"
-    },
-    {
-      "type": "research",
-      "source": "PLOS Computational Biology",
-      "title": "Ten simple rules for effective use of generative AI for code development in environmental science.",
-      "description": "",
-      "url": "https://doi.org/10.1371/journal.pcbi.1014627",
-      "date": "2026-08-17",
-      "tags": [
-        "inne"
-      ],
-      "article_type": "eksperymentalne",
-      "id": "research-2026-094"
     },
     {
       "type": "research",
@@ -1304,7 +1279,7 @@
         "sieci-systemy"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-095"
+      "id": "research-2026-093"
     },
     {
       "type": "research",
@@ -1318,7 +1293,7 @@
         "ai-ml"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-096"
+      "id": "research-2026-094"
     },
     {
       "type": "research",
@@ -1332,7 +1307,7 @@
         "wielo-omika"
       ],
       "article_type": "przeglad",
-      "id": "research-2026-097"
+      "id": "research-2026-095"
     },
     {
       "type": "research",
@@ -1347,7 +1322,7 @@
         "narzedzia"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-098"
+      "id": "research-2026-096"
     },
     {
       "type": "narzedzie",
@@ -1359,19 +1334,7 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-099"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · K-Dense-AI/scientific-agent-skills",
-      "title": "scientific-agent-skills v2.64.0",
-      "description": "## What's Changed Changes since v2.63.0: * Update version to 2.64.0 and enhance README with skill count increase (9e8b0cb) * Add waypoint skill (204eef5) * Update README to include Star History chart (4934681) * chore: update security scan report [skip ci] (28f5603) * Update lab ",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.64.0",
-      "date": "2026-08-17",
-      "tags": [
-        "narzedzia"
-      ],
-      "id": "research-2026-100"
+      "id": "research-2026-097"
     },
     {
       "type": "research",
@@ -1384,7 +1347,7 @@
         "inne"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-101"
+      "id": "research-2026-098"
     },
     {
       "type": "research",
@@ -1397,7 +1360,7 @@
         "inne"
       ],
       "article_type": "narzedzie-art",
-      "id": "research-2026-102"
+      "id": "research-2026-099"
     },
     {
       "type": "research",
@@ -1410,7 +1373,7 @@
         "ai-ml"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-103"
+      "id": "research-2026-100"
     },
     {
       "type": "research",
@@ -1424,7 +1387,7 @@
         "narzedzia"
       ],
       "article_type": "eksperymentalne",
-      "id": "research-2026-104"
+      "id": "research-2026-101"
     },
     {
       "type": "research",
@@ -1437,7 +1400,7 @@
         "inne"
       ],
       "article_type": "protokol",
-      "id": "research-2026-105"
+      "id": "research-2026-102"
     },
     {
       "type": "grant",
@@ -1452,19 +1415,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-106"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · xuzhougeng/wisp-science",
-      "title": "wisp-science v1.3.0",
-      "description": "# wisp-science v1.3.0 `v1.3.0` focuses on long-running conversations and the model experience: it adds real long-context memory evaluations, a dynamic context-usage gauge, and per-model reasoning-effort controls. It also improves slash commands, global habits, and end-of-turn han",
-      "url": "https://github.com/xuzhougeng/wisp-science/releases/tag/v1.3.0",
-      "date": "2026-08-14",
-      "tags": [
-        "narzedzia"
-      ],
-      "id": "research-2026-107"
+      "id": "research-2026-103"
     },
     {
       "type": "grant",
@@ -1479,20 +1430,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-108"
-    },
-    {
-      "type": "narzedzie",
-      "source": "GitHub · K-Dense-AI/scientific-agent-skills",
-      "title": "scientific-agent-skills v2.63.0",
-      "description": "## What's Changed Changes since v2.62.0: * Update documentation and versioning for Agent Plugins compliance (5ad4aae) * Remove Star History chart from README. (f2f77ff) * feat: enhance skill security scan for forked PRs (3956e54) * Update imaging-data-commons skill from v1.4.0 to",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.63.0",
-      "date": "2026-08-12",
-      "tags": [
-        "inne",
-        "narzedzia"
-      ],
-      "id": "research-2026-109"
+      "id": "research-2026-104"
     },
     {
       "type": "narzedzie",
@@ -1504,7 +1442,21 @@
       "tags": [
         "narzedzia"
       ],
-      "id": "research-2026-110"
+      "id": "research-2026-105"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · DoctorDean/lazarus",
+      "title": "lazarus v0.5.0",
+      "description": "# Lazarus v0.5.0 — Four dead tools, one real drug pocket > 🧬 The **flagship** milestone: revived code stops being a museum and becomes a *supply chain*. Four independently-resurrected tools — spanning **2010→2023, C→Python, CPU→GPU, geometry→learned→generative** — run as one pipe",
+      "url": "https://github.com/DoctorDean/lazarus/releases/tag/v0.5.0",
+      "date": "2026-08-11",
+      "tags": [
+        "immunoinformatyka",
+        "struktury",
+        "narzedzia"
+      ],
+      "id": "research-2026-106"
     },
     {
       "type": "narzedzie",
@@ -1517,7 +1469,20 @@
         "leki",
         "narzedzia"
       ],
-      "id": "research-2026-111"
+      "id": "research-2026-107"
+    },
+    {
+      "type": "narzedzie",
+      "source": "GitHub · hail-is/hail",
+      "title": "hail 0.2.139",
+      "description": "Hail version 0.2.139 [Change log](https://hail.is/docs/0.2/change_log.html#version-0-2-139)",
+      "url": "https://github.com/hail-is/hail/releases/tag/0.2.139",
+      "date": "2026-08-10",
+      "tags": [
+        "inne",
+        "narzedzia"
+      ],
+      "id": "research-2026-108"
     },
     {
       "type": "grant",
@@ -1532,7 +1497,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-112"
+      "id": "research-2026-109"
     },
     {
       "type": "grant",
@@ -1547,7 +1512,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-113"
+      "id": "research-2026-110"
     },
     {
       "type": "grant",
@@ -1561,7 +1526,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-114"
+      "id": "research-2026-111"
     },
     {
       "type": "grant",
@@ -1576,7 +1541,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-115"
+      "id": "research-2026-112"
     },
     {
       "type": "grant",
@@ -1592,7 +1557,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-116"
+      "id": "research-2026-113"
     },
     {
       "type": "grant",
@@ -1608,7 +1573,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-117"
+      "id": "research-2026-114"
     },
     {
       "type": "grant",
@@ -1626,7 +1591,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-118"
+      "id": "research-2026-115"
     },
     {
       "type": "grant",
@@ -1643,7 +1608,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-119"
+      "id": "research-2026-116"
     },
     {
       "type": "grant",
@@ -1661,7 +1626,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-120"
+      "id": "research-2026-117"
     },
     {
       "type": "grant",
@@ -1676,7 +1641,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-121"
+      "id": "research-2026-118"
     },
     {
       "type": "grant",
@@ -1692,7 +1657,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-122"
+      "id": "research-2026-119"
     },
     {
       "type": "grant",
@@ -1708,7 +1673,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-123"
+      "id": "research-2026-120"
     },
     {
       "type": "grant",
@@ -1725,7 +1690,7 @@
         "granty"
       ],
       "article_type": null,
-      "id": "research-2026-124"
+      "id": "research-2026-121"
     }
   ]
 }
