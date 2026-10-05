@@ -20,6 +20,7 @@ Każda sekcja ma własną podstronę z pełną listą, wyszukiwarką i archiwum.
 | `projects.html` | 🌿 Projekty do współpracy |
 | `other.html` | ✦ Inne inicjatywy |
 | `submit.html` | Formularz zgłoszeń (Formspree) |
+| `research.html` | 📄 Newsy badawcze + archiwum miesięczne |
 | `news.json` | Dane — tu edytujesz wpisy |
 
 ---
@@ -77,27 +78,45 @@ Otwórz `news.json` i dodaj obiekt do tablicy `entries`:
 
 ### Archiwizacja
 
-- **Automatyczna** — ustaw `date_end` i po tej dacie wpis znika z głównej listy i trafia do archiwum (dostępnego przez przycisk na podstronie)
-- **Ręczna** — ustaw `"archived": true`
+- **Automatyczna** — ustaw `date_end`; wpis jest aktywny do końca tego dnia, potem trafia do archiwum (przycisk na podstronie)
+- **Ręczna** — ustaw `"archived": true` albo użyj akcji **Add entry → archive_id**
+- Wydarzenie (`meetup`, `course-dated`) bez żadnej daty nigdy nie zniknie samo — walidacja to zgłasza
 
 ---
 
-## Formspree
+## Dodawanie wpisów
 
-Formularz zgłoszeń jest podpięty pod endpoint `xnjrzdnz`.  
-Zgłoszenia przychodzą na e-mail — po weryfikacji edytujesz `news.json` ręcznie i pushujesz.
+Zgłoszenia z `submit.html` przychodzą mailem przez Formspree (endpoint `xnjrzdnz`). Na końcu maila jest pole **`admin_json`**.
+
+1. Sprawdź zgłoszenie; popraw opis albo daty bezpośrednio w `admin_json`.
+2. GitHub → **Actions → Add entry → Run workflow** → wklej `admin_json` w pole **entry_json**.
+3. id (`ROK-NNN`) i data dodania nadają się same. Po ok. minucie wpis jest na stronie.
+
+Ręczna edycja `news.json` dalej działa — po każdym pushu workflow sprawdza plik (zdublowane id, format dat, linki). Lokalnie: `python3 scripts/add_entry.py --check`.
 
 ---
 
-## Deploy na GitHub Pages
+## Newsy badawcze (automatyczne)
 
-```bash
-git add .
-git commit -m "update news.json"
-git push origin main
-```
+`fetch_news.py` uruchamia się codziennie o 6:00 UTC (GitHub Actions) i pobiera: bioRxiv, medRxiv, Europe PMC (wybrane czasopisma), arXiv q-bio, GitHub Releases, PyPI, Nauka w Polsce, NIH RePORTER (granty) i Zenodo.
 
-Strona odświeża się automatycznie po ~1 minucie.
+| Plik | Zawartość |
+|------|-----------|
+| `research-news.json` | ostatnie 30 dni — to ładują strony |
+| `archive/research-RRRR-MM.json` | **wszystkie** pobrane wpisy z danego miesiąca, na zawsze |
+| `archive/index.json` | lista miesięcy dla przełącznika archiwum na `research.html` |
+
+Wpisy dostają tagi tematyczne słownikowo (`CATEGORY_KEYWORDS` w `fetch_news.py`) i typ artykułu (przeglądowy, benchmark…). Wpisy bez linku są pomijane. Jeśli wszystkie źródła danego dnia zawiodą, pliki zostają bez zmian.
+
+---
+
+## Pliki front-endu
+
+| Plik | Rola |
+|------|------|
+| `assets/common.js` | wspólne funkcje: karty, daty, tagi, escapowanie danych |
+| `assets/section.js` | logika pięciu podstron sekcji (typ z `data-type` w tagu `<script>`) |
+| `index.html`, `research.html` | strona główna i newsy |
 
 ---
 
@@ -105,6 +124,7 @@ Strona odświeża się automatycznie po ~1 minucie.
 
 | Strona | Link |
 |--------|------|
+| 🧬 BioinfoSites | [biokoderka.github.io/bioinfosites](https://biokoderka.github.io/bioinfosites/) |
 | 🧬 BioInfoNews | [biokoderka.github.io/bioinfo-news](https://biokoderka.github.io/bioinfo-news) |
 | 💼 BioInfoJobs | [biokoderka.github.io/bioinfo-jobs](https://biokoderka.github.io/bioinfo-jobs) |
 | 🎓 BioInfoUni | [biokoderka.github.io/bioinfo-uni](https://biokoderka.github.io/bioinfo-uni) |

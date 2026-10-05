@@ -21,6 +21,8 @@ Wyjście: research-news.json — osobny plik, w formacie zgodnym ze
   z istniejącymi wpisami albo renderować obok nich).
 """
 
+import hashlib
+import html
 import json
 import os
 import re
@@ -31,6 +33,7 @@ import urllib.error
 import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 USER_AGENT = "BioInfoNews-fetcher/1.0 (+https://biokoderka.github.io/bioinfo-news/)"
 
@@ -81,7 +84,7 @@ CATEGORY_KEYWORDS = {
                           "encoder network", "attention mechanism", "representation learning",
                           "triplet network", "association prediction", "link prediction",
                           "self-supervised", "multi-agent", "llm agent", "agent-based",
-                          "mixture of experts"],
+                          "mixture of experts", "language model", "agentic"],
     "struktury":        ["protein structure", "alphafold", "esmfold", "folding", "docking",
                           "cryo-em", "molecular dynamics", "protein design", "crystal structure",
                           "nmr structure", "binding affinity", "structure prediction"],
@@ -89,6 +92,17 @@ CATEGORY_KEYWORDS = {
                           "drug target", "pharmacogenom", "drug repurposing", "molecule generation"],
     "epidemiologia":    ["epidemiolog", "outbreak", "surveillance", "phylodynamic", "pandemic"],
     "ewolucja":         ["phylogen", "evolution", "selection pressure", "comparative genomic"],
+    "neuronauka":       ["neuron", "neural dynamics", "neural activity", "brain", "eeg", "fmri",
+                          "cognitive", "cognition", "synaptic", "cortex", "cortical",
+                          "working memory", "decision making", "decision polic", "neuroscience"],
+    "modelowanie":      ["mathematical model", "compartmental model", "dynamical system",
+                          "differential equation", "stochastic model", "agent-based model",
+                          "pattern formation", "traveling wave", "travelling wave",
+                          "population dynamics", "mechanistic model", "kinetic model",
+                          "likelihood-ratio test", "bayesian inference"],
+    "kliniczne":        ["clinical", "patient", "cohort", "hospital", "mortality", "prevalence",
+                          "diagnosis", "diagnostic", "cancer", "tumor", "tumour", "oncolog",
+                          "electronic health record", "ehr", "randomized controlled", "public health"],
     "narzedzia":        ["tool", "package", "software", "pipeline", "workflow", "webserver",
                           "release"],
     "bazy-danych":      ["database", "repository", "api release", "data standard", "resource"],
@@ -196,7 +210,12 @@ def _keyword_pattern(keywords):
     Zapobiega falszywym trafieniom typu 'evolution' wewnatrz 'revolutionizes'.
     Doklejone opcjonalne 's' na koncu kazdej frazy, zeby liczba mnoga
     (np. 'progression models') dalej pasowala do liczby pojedynczej w slowniku."""
-    parts = [re.escape(k.strip()) + "s?" for k in keywords]
+    # Krotkie skroty (wes, snp, mhc, llm...) musza pasowac dokladnie, inaczej
+    # "wes" trafialoby w "western". Dluzsze frazy dzialaja jak rdzen:
+    # "epidemiolog" -> "epidemiological", "phylogen" -> "phylogenetic",
+    # "transcriptom" -> "transcriptomic". Wczesniej koncowe \b blokowalo
+    # wszystkie takie rdzenie i duza czesc wpisow wpadala do "inne".
+    parts = [re.escape(k.strip()) + (r"\w*" if len(k.strip()) >= 5 else "s?") for k in keywords]
     return re.compile(r"\b(?:" + "|".join(parts) + r")\b")
 
 
@@ -601,8 +620,8 @@ def fetch_nih_reporter(days_back=30, limit=15):
             },
         },
         "include_fields": [
-            "ProjectTitle", "AbstractText", "OrgName", "AwardAmount",
-            "ProjectStartDate", "ProjectEndDate", "ContactPiName", "ProjectNum",
+            "ProjectTitle", "AbstractText", "Organization", "AwardAmount",
+            "AwardNoticeDate", "ProjectStartDate", "ContactPiName", "ProjectNum",
         ],
         "offset": 0,
         "limit": limit,
@@ -625,19 +644,25 @@ def fetch_nih_reporter(days_back=30, limit=15):
     for item in data.get("results", []):
         title = (item.get("project_title") or "").strip()
         abstract = (item.get("abstract_text") or "").strip()
-        org = item.get("org_name") or ""
+        # API v2 zwraca instytucje jako obiekt {"org_name": ...}, nie plaskie pole
+        # - stad wczesniej puste "NIH RePORTER ·  · $...".
+        org = ((item.get("organization") or {}).get("org_name") or item.get("org_name") or "").strip().title()
         amount = item.get("award_amount")
         amount_str = f" · ${amount:,.0f}" if isinstance(amount, (int, float)) else ""
         proj_num = item.get("project_num") or ""
-        start_date = (item.get("project_start_date") or "")[:10]
+        # Data przyznania tej transzy, NIE start projektu (projekty ciagnace sie
+        # od 1997 r. pokazywaly sie jako "newsy" sprzed 29 lat).
+        notice_date = (item.get("award_notice_date") or "")[:10]
+        if not title or not notice_date or notice_date < start.isoformat():
+            continue
 
         entries.append({
             "type": "grant",
-            "source": f"NIH RePORTER · {org}{amount_str}",
+            "source": "NIH RePORTER" + (f" · {org}" if org else "") + amount_str,
             "title": title,
             "description": truncate_summary(abstract),
             "url": f"https://reporter.nih.gov/project-details/{proj_num}" if proj_num else "https://reporter.nih.gov/",
-            "date": start_date or end.isoformat(),
+            "date": notice_date,
             "tags": add_tag(tag_entry(title, abstract), "granty"),
             "article_type": None,
         })
@@ -679,13 +704,20 @@ def fetch_zenodo(days_back=14, max_results=20):
         title = (meta.get("title") or "").strip()
         description = re.sub(r"<[^>]+>", "", meta.get("description") or "").strip()
         entry_type = "narzedzie" if resource_type == "software" else "research"
+        # wyszukiwarka Zenodo dla "bioinformatics" zwraca tez rzeczy zupelnie
+        # obok tematu (np. dowody w Lean) - bez zadnego tematu = pomijamy
+        if tag_entry(title, description) == [FALLBACK_TAG]:
+            continue
 
         entries.append({
             "type": entry_type,
             "source": f"Zenodo · {resource_type}",
             "title": title,
             "description": truncate_summary(description),
-            "url": (hit.get("links", {}) or {}).get("html", ""),
+            # nowe API Zenodo nie zawsze ma links.html - wtedy budujemy link z id rekordu
+            "url": ((hit.get("links", {}) or {}).get("self_html")
+                    or (hit.get("links", {}) or {}).get("html")
+                    or (f"https://zenodo.org/records/{hit['id']}" if hit.get("id") else "")),
             "date": pub_dt.date().isoformat(),
             "tags": add_tag(tag_entry(title, description), "narzedzia" if resource_type == "software" else "bazy-danych"),
             "article_type": classify_article_type(title, description) if entry_type == "research" else None,
@@ -694,16 +726,38 @@ def fetch_zenodo(days_back=14, max_results=20):
     return entries
 
 
+def norm_key(e):
+    """Klucz deduplikacji: URL (bez parametrow i koncowego /), a gdy go brak - tytul."""
+    url = (e.get("url") or "").split("?")[0].split("#")[0].rstrip("/").lower()
+    return url or e["title"].strip().lower()
+
+
 def dedupe(entries):
-    seen = set()
-    unique = []
+    seen_keys, seen_titles, unique = set(), set(), []
     for e in entries:
-        key = e["title"].strip().lower()
-        if key in seen:
+        k, t = norm_key(e), e["title"].strip().lower()
+        if k in seen_keys or t in seen_titles:
             continue
-        seen.add(key)
+        seen_keys.add(k)
+        seen_titles.add(t)
         unique.append(e)
     return unique
+
+
+def clean_text(t):
+    t = html.unescape(re.sub(r"<[^>]+>", " ", t or ""))
+    t = t.replace("<", "‹").replace(">", "›")
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def sanitize(e):
+    """Strony wstawiaja te pola przez innerHTML - czyscimy je tutaj, u zrodla."""
+    for k in ("title", "description", "source"):
+        e[k] = clean_text(e.get(k))
+    url = (e.get("url") or "").strip()
+    e["url"] = url if re.match(r"^https?://", url, re.I) and not re.search(r"[\"'<>\s]", url) else ""
+    e["id"] = "r-" + hashlib.md5(norm_key(e).encode("utf-8")).hexdigest()[:12]
+    return e
 
 
 def run_source(label, fn):
@@ -721,39 +775,80 @@ def run_source(label, fn):
         return []
 
 
+FEED_PATH = Path("research-news.json")
+ARCHIVE_DIR = Path("archive")
+FEED_DAYS = 30   # research-news.json = ostatnie 30 dni (to laduja strony)
+
+
+def load_entries(path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("entries", [])
+    except (FileNotFoundError, ValueError):
+        return []
+
+
+def write_json(path, obj):
+    path.write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def update_archive(entries):
+    """Kazdy wpis trafia na zawsze do archive/research-YYYY-MM.json (wg daty),
+    archive/index.json trzyma liste miesiecy dla strony."""
+    ARCHIVE_DIR.mkdir(exist_ok=True)
+    by_month = {}
+    for e in entries:
+        if e.get("date"):
+            by_month.setdefault(e["date"][:7], []).append(e)
+    for month, items in by_month.items():
+        path = ARCHIVE_DIR / f"research-{month}.json"
+        merged = dedupe(items + load_entries(path))   # nowe wersje wygrywaja
+        merged.sort(key=lambda x: x.get("date", ""), reverse=True)
+        write_json(path, {"month": month, "count": len(merged), "entries": merged})
+    months = []
+    for path in sorted(ARCHIVE_DIR.glob("research-*.json"), reverse=True):
+        months.append({"month": path.stem.replace("research-", ""), "count": len(load_entries(path))})
+    write_json(ARCHIVE_DIR / "index.json", {"months": months})
+
+
 def main():
-    all_entries = []
-    all_entries += run_source("bioRxiv", fetch_biorxiv)
-    all_entries += run_source("medRxiv", fetch_medrxiv)
-    all_entries += run_source("Europe PMC", fetch_europepmc)
+    fresh = []
+    fresh += run_source("bioRxiv", fetch_biorxiv)
+    fresh += run_source("medRxiv", fetch_medrxiv)
+    fresh += run_source("Europe PMC", fetch_europepmc)
 
     # GitHub: sztywna lista + dynamicznie odkryte repo po temacie, w jednym
     # przebiegu sprawdzania release'ow (mniej wywolan do API niz osobno)
     topic_repos = run_source("GitHub-topic-discovery", discover_github_topic_repos)
     combined_repos = list(dict.fromkeys(GITHUB_REPOS + topic_repos))  # dedupe, zachowaj kolejnosc
-    all_entries += run_source("GitHub Releases", lambda: fetch_github_releases(repos=combined_repos))
+    fresh += run_source("GitHub Releases", lambda: fetch_github_releases(repos=combined_repos))
 
-    all_entries += run_source("PyPI", fetch_pypi_releases)
-    all_entries += run_source("Nauka w Polsce", fetch_naukawpolsce)
-    all_entries += run_source("arXiv", fetch_arxiv)
-    all_entries += run_source("NIH RePORTER", fetch_nih_reporter)
-    all_entries += run_source("Zenodo", fetch_zenodo)
+    fresh += run_source("PyPI", fetch_pypi_releases)
+    fresh += run_source("Nauka w Polsce", fetch_naukawpolsce)
+    fresh += run_source("arXiv", fetch_arxiv)
+    fresh += run_source("NIH RePORTER", fetch_nih_reporter)
+    fresh += run_source("Zenodo", fetch_zenodo)
 
-    all_entries = dedupe(all_entries)
-    all_entries.sort(key=lambda e: e.get("date", ""), reverse=True)
+    # bez tytułu albo bez działającego linku karta jest bezużyteczna
+    fresh = [e for e in (sanitize(e) for e in fresh if (e.get("title") or "").strip()) if e["url"]]
+    if not fresh:
+        print("Zadne zrodlo nic nie zwrocilo - zostawiam pliki bez zmian", file=sys.stderr)
+        return
 
-    for i, e in enumerate(all_entries, start=1):
-        e["id"] = f"research-{datetime.now(timezone.utc).year}-{i:03d}"
+    # Nowe wpisy + to, co juz bylo w feedzie: jesli jakies zrodlo padnie na
+    # jeden dzien, jego wpisy nie znikaja ze strony.
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=FEED_DAYS)).date().isoformat()
+    previous = [e for e in (sanitize(e) for e in load_entries(FEED_PATH)) if e["url"]]
+    feed = dedupe(fresh + previous)
+    feed = [e for e in feed if e.get("date", "") >= cutoff]
+    feed.sort(key=lambda e: e.get("date", ""), reverse=True)
 
-    output = {
+    write_json(FEED_PATH, {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "entries": all_entries,
-    }
-
-    with open("research-news.json", "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
-
-    print(f"Zapisano {len(all_entries)} wpisow do research-news.json", file=sys.stderr)
+        "days": FEED_DAYS,
+        "entries": feed,
+    })
+    update_archive(fresh + previous)
+    print(f"Zapisano {len(feed)} wpisow do {FEED_PATH} (+ archiwum miesieczne)", file=sys.stderr)
 
 
 if __name__ == "__main__":

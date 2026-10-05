@@ -3,8 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BioInfoNews — projekty, kursy, meetupy i inicjatywy dla społeczności bioinformatycznej w Polsce.">
-<title>BioInfoNews by @biokoderka</title>
+<title>BioInfoNews — bioinformatyka w Polsce: wydarzenia, kursy, newsy</title>
+<meta name="description" content="Meetupy, konferencje, kursy i projekty dla społeczności bioinformatycznej w Polsce, plus codzienny przegląd preprintów, publikacji i nowych wersji narzędzi.">
+<link rel="canonical" href="https://biokoderka.github.io/bioinfo-news/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BioInfoNews">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="BioInfoNews — bioinformatyka w Polsce: wydarzenia, kursy, newsy">
+<meta property="og:description" content="Meetupy, konferencje, kursy i projekty dla społeczności bioinformatycznej w Polsce, plus codzienny przegląd preprintów, publikacji i nowych wersji narzędzi.">
+<meta property="og:url" content="https://biokoderka.github.io/bioinfo-news/">
+<meta property="og:image" content="https://biokoderka.github.io/bioinfo-news/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d0a1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d0a1a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">
+<script defer src="https://umami-rose-alpha.vercel.app/script.js" data-website-id="0f8a4bbd-7790-437c-912f-15149106ebab"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -204,6 +218,9 @@ header{
 .pill.wielo-omika      {background:rgba(16,185,129,.1);  border:1px solid rgba(16,185,129,.22); color:#a7f3d0}
 .pill.tekst-i-nlp      {background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.2);  color:#fde68a}
 .pill.bazy-danych, .pill.inne{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.pill.neuronauka{background:rgba(236,72,153,.1);border:1px solid rgba(236,72,153,.25);color:#f9a8d4}
+.pill.modelowanie{background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);color:#67e8f9}
+.pill.kliniczne{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.25);color:#fca5a5}
 .pill.granty{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);color:#6ee7b7}
 .pill.polska{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#fca5a5}
 .pill.art-przeglad       {background:rgba(168,85,247,.1); border:1px solid rgba(168,85,247,.3); color:#c084fc; font-weight:700}
@@ -254,8 +271,9 @@ footer a:hover{color:var(--purple2)}
   .header-inner{padding:0}
   header{padding:0 1rem}
 }
+.card-title{overflow-wrap:anywhere}
 </style>
-<script defer src="https://umami-rose-alpha.vercel.app/script.js" data-website-id="0f8a4bbd-7790-437c-912f-15149106ebab"></script>
+
 </head>
 <body>
 
@@ -272,6 +290,7 @@ footer a:hover{color:var(--purple2)}
       <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
       <a href="research.html">📄 Newsy</a>
+      <a href="https://biokoderka.github.io/bioinfosites/">🧬 Wszystkie strony</a>
       <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
   </div>
@@ -310,6 +329,7 @@ footer a:hover{color:var(--purple2)}
 <footer>
   🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
   <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
+  <a href="https://biokoderka.github.io/bioinfosites/">🧬 BioinfoSites</a> &nbsp;·&nbsp;
   <a href="submit.html">Zgłoś wpis</a> &nbsp;·&nbsp;
   <a href="https://biokoderka.github.io/bioinfo-jobs/">BioInfoJobs</a> &nbsp;·&nbsp;
   <a href="https://biokoderka.github.io/bioinfo-uni/">BioInfoUni</a>
@@ -317,6 +337,7 @@ footer a:hover{color:var(--purple2)}
   <a href="privacy.html">Privacy &amp; Terms</a>
 </footer>
 
+<script src="assets/common.js?v=2"></script>
 <script>
 const SECTIONS = [
   { type:'meetup',       emoji:'🤝', label:'Meetupy i wydarzenia',   page:'meetups.html' },
@@ -326,164 +347,68 @@ const SECTIONS = [
   { type:'other',        emoji:'✦',  label:'Inne inicjatywy',         page:'other.html' },
 ];
 
-const TYPE_META = {
-  'project':      {label:'🌿 Projekt',        cls:'project'},
-  'course-free':  {label:'📚 Kurs stały',      cls:'course-free'},
-  'course-dated': {label:'🗓️ Kurs z terminem', cls:'course-dated'},
-  'meetup':       {label:'🤝 Meetup',          cls:'meetup'},
-  'other':        {label:'✦ Inne',             cls:'other'},
-};
-
-function isArchived(e){
-  if(e.archived) return true;
-  if(e.date_end) return new Date(e.date_end) < new Date();
-  return false;
-}
-function fmtDate(s){
-  return new Date(s).toLocaleDateString('pl-PL',{day:'numeric',month:'short',year:'numeric'});
-}
-function renderCard(e){
-  const tm = TYPE_META[e.type]||TYPE_META['other'];
-  let pills='';
-  if(e.free)        pills+=`<span class="pill free">✓ bezpłatne</span>`;
-  if(e.lang)        pills+=`<span class="pill lang">${e.lang}</span>`;
-  if(e.date_start)  pills+=`<span class="pill date">📅 ${fmtDate(e.date_start)}</span>`;
-  if(e.deadline)    pills+=`<span class="pill deadline">⏰ do ${fmtDate(e.deadline)}</span>`;
-  if(e.location)    pills+=`<span class="pill loc">📍 ${e.location}</span>`;
-  return `<article class="card">
-    <span class="type-pill ${tm.cls}">${tm.label}</span>
-    <div class="card-title">${e.title}</div>
-    ${e.org?`<div class="card-org">${e.org}</div>`:''}
-    <div class="card-desc">${e.description}</div>
-    ${pills?`<div class="card-meta">${pills}</div>`:''}
-    ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Więcej info →</a>`:''}
-  </article>`;
-}
-const RESEARCH_TYPE_META={
-  'research':  {label:'📄 Artykuł',   cls:'research'},
-  'narzedzie': {label:'🔧 Narzędzie', cls:'narzedzie'},
-  'grant':     {label:'💰 Grant',     cls:'grant'},
-};
-function timeAgo(dateStr){
-  if(!dateStr) return '';
-  const diffH=Math.floor((Date.now()-new Date(dateStr).getTime())/3600000);
-  if(diffH<1) return 'przed chwilą';
-  if(diffH<24) return `${diffH}h temu`;
-  return `${Math.floor(diffH/24)}d temu`;
-}
-const ARTICLE_TYPE_META={
-  'przeglad':        {label:'📖 przeglądowy',    cls:'art-przeglad'},
-  'eksperymentalne': {label:'🧪 eksperymentalny', cls:'art-eksperymentalne'},
-  'narzedzie-art':   {label:'🔧 opis narzędzia',  cls:'art-narzedzie-art'},
-  'benchmark':       {label:'📊 benchmark',       cls:'art-benchmark'},
-  'protokol':        {label:'🧾 protokół',        cls:'art-protokol'},
-};
-const TAG_LABELS={
-  'genomika':'genomika','single-cell':'single-cell','transkryptomika':'transkryptomika',
-  'proteomika':'proteomika','mikrobiom':'mikrobiom','ai-ml':'AI / ML','struktury':'struktury',
-  'leki':'leki','epidemiologia':'epidemiologia','ewolucja':'ewolucja','narzedzia':'narzędzia',
-  'bazy-danych':'bazy danych','immunoinformatyka':'immunoinformatyka','sieci-systemy':'sieci i systemy','wielo-omika':'multi-omika','tekst-i-nlp':'text mining / NLP','inne':'inne','polska':'🇵🇱 polskie źródło','granty':'💰 granty',
-};
-function renderResearchCard(e){
-  const tm=RESEARCH_TYPE_META[e.type]||RESEARCH_TYPE_META['research'];
-  const at=ARTICLE_TYPE_META[e.article_type];
-  const tagPills=(e.tags||[]).slice(0,2).map(t=>`<span class="pill ${t}">${TAG_LABELS[t]||t}</span>`).join('');
-  return `<article class="card">
-    <span class="type-pill ${tm.cls}">${tm.label}</span>
-    ${at?`<span class="pill ${at.cls}" style="margin-left:-4px">${at.label}</span>`:''}
-    <div class="card-title">${e.title}</div>
-    ${e.source?`<div class="card-org">${e.source}</div>`:''}
-    <div class="card-desc">${e.description||''}</div>
-    <div class="card-meta">${tagPills}<span class="pill date">🕐 ${timeAgo(e.date)}</span></div>
-    ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Czytaj więcej →</a>`:''}
-  </article>`;
-}
-
+// najbliższe terminy pierwsze; wpisy bez daty (np. kursy stałe) — od najnowszych
 function sortActive(entries){
   return [...entries].sort((a,b)=>{
-    // entries without date_start go to the end (TBA)
-    const da=a.date_start?new Date(a.date_start):new Date('2099-01-01');
-    const db=b.date_start?new Date(b.date_start):new Date('2099-01-01');
-    return da-db;
+    if(a.date_start && b.date_start) return a.date_start.localeCompare(b.date_start);
+    if(a.date_start) return -1;
+    if(b.date_start) return 1;
+    return (b.added||'').localeCompare(a.added||'');
   });
 }
 
 async function init(){
-  const r = await fetch('news.json?v='+Date.now());
-  const data = await r.json();
-  const active = data.entries.filter(e=>!isArchived(e));
+  const data = await fetch('news.json?v='+Date.now()).then(r=>r.json());
+  const active = (data.entries||[]).filter(e=>!isArchived(e));
 
-  // fill stats
   SECTIONS.forEach(sec=>{
-    const count = active.filter(e=>e.type===sec.type).length;
     const el = document.getElementById('s-'+sec.type);
-    if(el) el.textContent = count;
+    if(el) el.textContent = active.filter(e=>e.type===sec.type).length;
   });
 
-  // research-news.json - osobne zrodlo, nie blokuje reszty strony jesli
-  // plik jeszcze nie istnieje (np. workflow sie jeszcze nie wykonal)
+  // research-news.json — osobne źródło; brak pliku nie blokuje reszty strony
   let rentries = [];
   try{
     const rr = await fetch('research-news.json?v='+Date.now());
-    if(!rr.ok) throw new Error('brak pliku');
-    const rdata = await rr.json();
-    rentries = rdata.entries || [];
-  }catch(err){ /* zostaje pusta lista, panel pokaze stan "w toku" */ }
+    if(rr.ok) rentries = (await rr.json()).entries || [];
+  }catch(err){}
+  const weekAgo = new Date(Date.now()-7*86400000).toISOString().slice(0,10);
+  const recent = rentries.filter(e => (e.date||'') >= weekAgo);
   const sEl = document.getElementById('s-research');
-  if(sEl) sEl.textContent = rentries.length || '–';
+  if(sEl) sEl.textContent = recent.length || rentries.length || '–';
 
   function researchSectionHtml(){
-    const WEEK_MS = 7*24*3600*1000;
-    const recent = rentries.filter(e => e.date && (Date.now()-new Date(e.date).getTime())<=WEEK_MS);
     const top3 = (recent.length ? recent : rentries).slice(0,3);
-    let h = `<section class="section">
+    return `<section class="section">
       <div class="section-head">
         <span class="section-emoji">📄</span>
         <span class="section-title">Newsy</span>
         <span class="section-badge">${recent.length} w tym tygodniu</span>
-        ${rentries.length>0?`<a class="see-all" href="research.html">Zobacz wszystkie →</a>`:''}
-      </div>`;
-    h += top3.length===0
-      ? `<div class="empty-section">Jeszcze nic nie pobrano — pierwszy przebieg pobierania w toku.</div>`
-      : `<div class="cards-grid">${top3.map(renderResearchCard).join('')}</div>`;
-    h += `</section>`;
-    return h;
+        ${rentries.length?`<a class="see-all" href="research.html">Zobacz wszystkie →</a>`:''}
+      </div>
+      ${top3.length
+        ? `<div class="cards-grid">${top3.map(e=>researchCard(e,{maxTags:2})).join('')}</div>`
+        : `<div class="empty-section">Jeszcze nic nie pobrano — pierwszy przebieg pobierania w toku.</div>`}
+    </section>`;
   }
 
-  const container = document.getElementById('sections-container');
-  let html='';
-
-  SECTIONS.forEach((sec,i)=>{
+  const parts = [];
+  SECTIONS.forEach(sec=>{
     const all = sortActive(active.filter(e=>e.type===sec.type));
-    const top3 = all.slice(0,3);
-    const count = all.length;
-
-    html+=`<section class="section">
+    parts.push(`<section class="section">
       <div class="section-head">
         <span class="section-emoji">${sec.emoji}</span>
         <span class="section-title">${sec.label}</span>
-        <span class="section-badge">${count} aktywne</span>
-        ${count>0?`<a class="see-all" href="${sec.page}">Zobacz wszystkie →</a>`:''}
-      </div>`;
-
-    if(top3.length===0){
-      html+=`<div class="empty-section">Brak aktywnych wpisów — <a href="submit.html">zgłoś pierwszy</a></div>`;
-    } else {
-      html+=`<div class="cards-grid">${top3.map(renderCard).join('')}</div>`;
-    }
-    html+=`</section>`;
-    html+=`<hr class="section-divider">`;
-
-    // panel "Artykuly i newsy" zaraz po sekcji Meetupy (pierwsza w SECTIONS)
-    if(sec.type==='meetup'){
-      html += researchSectionHtml();
-      html += `<hr class="section-divider">`;
-    }
+        <span class="section-badge">${all.length} aktywne</span>
+        ${all.length?`<a class="see-all" href="${sec.page}">Zobacz wszystkie →</a>`:''}
+      </div>
+      ${all.length
+        ? `<div class="cards-grid">${all.slice(0,3).map(e=>newsCard(e)).join('')}</div>`
+        : `<div class="empty-section">Brak aktywnych wpisów — <a href="submit.html">zgłoś pierwszy</a></div>`}
+    </section>`);
+    if(sec.type==='meetup') parts.push(researchSectionHtml());   // newsy zaraz po meetupach
   });
-  // usun ewentualny nadmiarowy separator na samym koncu
-  html = html.replace(/<hr class="section-divider">$/, '');
-
-  container.innerHTML=html;
+  document.getElementById('sections-container').innerHTML = parts.join('<hr class="section-divider">');
 }
 
 init().catch(()=>{

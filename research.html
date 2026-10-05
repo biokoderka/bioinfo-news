@@ -3,7 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📄 Newsy — BioInfoNews</title>
+<title>Newsy bioinformatyczne — preprinty, publikacje, narzędzia | BioInfoNews</title>
+<meta name="description" content="Codziennie aktualizowany przegląd preprintów (bioRxiv, medRxiv, arXiv), publikacji, grantów i nowych wersji narzędzi bioinformatycznych, z tagami tematycznymi i archiwum.">
+<link rel="canonical" href="https://biokoderka.github.io/bioinfo-news/research.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BioInfoNews">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Newsy bioinformatyczne — preprinty, publikacje, narzędzia | BioInfoNews">
+<meta property="og:description" content="Codziennie aktualizowany przegląd preprintów (bioRxiv, medRxiv, arXiv), publikacji, grantów i nowych wersji narzędzi bioinformatycznych, z tagami tematycznymi i archiwum.">
+<meta property="og:url" content="https://biokoderka.github.io/bioinfo-news/research.html">
+<meta property="og:image" content="https://biokoderka.github.io/bioinfo-news/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d0a1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d0a1a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">
+<script defer src="https://umami-rose-alpha.vercel.app/script.js" data-website-id="0f8a4bbd-7790-437c-912f-15149106ebab"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -126,6 +141,9 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-
 .pill.wielo-omika      {background:rgba(16,185,129,.1);  border:1px solid rgba(16,185,129,.22); color:#a7f3d0}
 .pill.tekst-i-nlp      {background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.2);  color:#fde68a}
 .pill.bazy-danych, .pill.inne{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.pill.neuronauka{background:rgba(236,72,153,.1);border:1px solid rgba(236,72,153,.25);color:#f9a8d4}
+.pill.modelowanie{background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);color:#67e8f9}
+.pill.kliniczne{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.25);color:#fca5a5}
 .pill.granty{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);color:#6ee7b7}
 .pill.polska{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:#fca5a5}
 .pill.date{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--dim)}
@@ -155,6 +173,7 @@ footer a:hover{color:var(--purple2)}
   .filters-panel{flex-direction:column}
   .filters-panel input{min-width:0;width:100%}
 }
+.card-title{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -172,6 +191,7 @@ footer a:hover{color:var(--purple2)}
       <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
       <a href="research.html">📄 Newsy</a>
+      <a href="https://biokoderka.github.io/bioinfosites/">🧬 Wszystkie strony</a>
       <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
   </div>
@@ -180,7 +200,7 @@ footer a:hover{color:var(--purple2)}
 <div class="hero">
   <a class="back-link" href="index.html">← Strona główna</a>
   <h1><span class="icon">📄</span> Newsy</h1>
-  <p class="hero-sub">Publikacje, preprinty i release'y narzędzi — pobierane automatycznie z bioRxiv, Europe PMC i GitHub</p>
+  <p class="hero-sub">Publikacje, preprinty i release'y narzędzi — pobierane codziennie z bioRxiv, medRxiv, Europe PMC, arXiv, GitHub, Zenodo i innych źródeł</p>
   <nav class="subnav">
     <a href="meetups.html" class="">🤝 Meetupy</a>
     <a href="courses-dated.html" class="">🗓️ Kursy z terminem</a>
@@ -212,7 +232,12 @@ footer a:hover{color:var(--purple2)}
       <option value="tekst-i-nlp">text mining / NLP</option>
       <option value="narzedzia">narzędzia</option>
       <option value="bazy-danych">bazy danych</option>
+      <option value="neuronauka">neuronauka</option>
+      <option value="modelowanie">modelowanie</option>
+      <option value="kliniczne">medycyna / kliniczne</option>
+      <option value="granty">💰 granty</option>
       <option value="polska">🇵🇱 polskie źródła</option>
+      <option value="inne">inne</option>
     </select>
     <select id="articleTypeFilter">
       <option value="">Rodzaj: dowolny</option>
@@ -232,7 +257,10 @@ footer a:hover{color:var(--purple2)}
 
   <div class="controls-row">
     <span class="stats-text" id="statsLine">Ładowanie…</span>
-    <button class="archive-btn" id="archiveToggle">📦 Archiwum</button>
+    <span style="display:flex;gap:8px;align-items:center">
+      <select id="monthSelect" hidden aria-label="Miesiąc archiwum" style="width:auto"></select>
+      <button class="archive-btn" id="archiveToggle">📦 Archiwum</button>
+    </span>
   </div>
 
   <div class="cards" id="cards">
@@ -243,119 +271,88 @@ footer a:hover{color:var(--purple2)}
 <footer>
   🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
   <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
+  <a href="https://biokoderka.github.io/bioinfosites/">🧬 BioinfoSites</a> &nbsp;·&nbsp;
   <a href="index.html">Strona główna</a> &nbsp;·&nbsp;
   <a href="submit.html">Zgłoś wpis</a>
 </footer>
 
+<script src="assets/common.js?v=2"></script>
 <script>
-const TYPE_META={
-  'research':  {label:'📄 Artykuł',   cls:'research'},
-  'narzedzie': {label:'🔧 Narzędzie', cls:'narzedzie'},
-  'grant':     {label:'💰 Grant',     cls:'grant'},
-};
-const ARTICLE_TYPE_META={
-  'przeglad':        {label:'📖 przeglądowy',    cls:'art-przeglad'},
-  'eksperymentalne': {label:'🧪 eksperymentalny', cls:'art-eksperymentalne'},
-  'narzedzie-art':   {label:'🔧 opis narzędzia',  cls:'art-narzedzie-art'},
-  'benchmark':       {label:'📊 benchmark',       cls:'art-benchmark'},
-  'protokol':        {label:'🧾 protokół',        cls:'art-protokol'},
-};
-let allEntries=[];
-let showArchive=false;
-const WEEK_MS = 7*24*3600*1000;
+// Widok domyślny: ostatnie 7 dni z research-news.json (feed trzyma 30 dni).
+// Archiwum: archive/research-YYYY-MM.json — każdy pobrany wpis zostaje tam na zawsze.
+const $ = id => document.getElementById(id);
+let feed = [], archiveCache = {}, showArchive = false;
+const weekAgo = () => new Date(Date.now()-7*86400000).toISOString().slice(0,10);
 
-function isRecent(e){
-  if(!e.date) return false;
-  return (Date.now() - new Date(e.date).getTime()) <= WEEK_MS;
+function currentList(){
+  if(!showArchive) return feed.filter(e => (e.date||'') >= weekAgo());
+  return archiveCache[$('monthSelect').value] || [];
 }
 
-function timeAgo(dateStr){
-  if(!dateStr) return '';
-  const d=new Date(dateStr);
-  const diffH=Math.floor((Date.now()-d.getTime())/3600000);
-  if(diffH<1) return 'przed chwilą';
-  if(diffH<24) return `${diffH}h temu`;
-  return `${Math.floor(diffH/24)}d temu`;
-}
-const TAG_LABELS={
-  'genomika':'genomika','single-cell':'single-cell','transkryptomika':'transkryptomika',
-  'proteomika':'proteomika','mikrobiom':'mikrobiom','ai-ml':'AI / ML','struktury':'struktury',
-  'leki':'leki','epidemiologia':'epidemiologia','ewolucja':'ewolucja','narzedzia':'narzędzia',
-  'bazy-danych':'bazy danych','immunoinformatyka':'immunoinformatyka','sieci-systemy':'sieci i systemy','wielo-omika':'multi-omika','tekst-i-nlp':'text mining / NLP','inne':'inne','polska':'🇵🇱 polskie źródło','granty':'💰 granty',
-};
-function tagPills(tags){
-  return (tags||[]).map(t=>`<span class="pill ${t}">${TAG_LABELS[t]||t}</span>`).join('');
-}
-function articleTypePill(e){
-  const at = ARTICLE_TYPE_META[e.article_type];
-  return at ? `<span class="pill ${at.cls}">${at.label}</span>` : '';
-}
 function render(){
-  const q=document.getElementById('searchInput').value.toLowerCase();
-  const tag=document.getElementById('tagFilter').value;
-  const artType=document.getElementById('articleTypeFilter').value;
-  const type=document.getElementById('typeFilter').value;
-
-  let entries=allEntries.filter(e=>{
-    if(showArchive===isRecent(e))return false;  // archiwum=starsze niz tydzien, inaczej=ostatni tydzien
+  const q=$('searchInput').value.toLowerCase();
+  const tag=$('tagFilter').value, artType=$('articleTypeFilter').value, type=$('typeFilter').value;
+  const base = currentList();
+  const entries = base.filter(e=>{
     if(q&&!JSON.stringify(e).toLowerCase().includes(q))return false;
     if(tag&&!(e.tags||[]).includes(tag))return false;
     if(artType&&e.article_type!==artType)return false;
     if(type&&e.type!==type)return false;
     return true;
-  });
-  entries.sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));
+  }).sort((a,b)=>(b.date||'').localeCompare(a.date||''));
 
-  const recentCount=allEntries.filter(isRecent).length;
-  const archiveCount=allEntries.length-recentCount;
-  document.getElementById('statsLine').innerHTML= showArchive
-    ? `<strong>${entries.length}</strong> w archiwum (starsze niż tydzień)`
-    : `<strong>${entries.length}</strong> z ostatniego tygodnia &nbsp;·&nbsp; <strong>${archiveCount}</strong> w archiwum`;
+  const monthLabel = m => m ? parseDay(m+'-01').toLocaleDateString('pl-PL',{month:'long',year:'numeric'}) : '';
+  $('statsLine').innerHTML = showArchive
+    ? `<strong>${entries.length}</strong> wpisów · ${esc(monthLabel($('monthSelect').value))}`
+    : `<strong>${entries.length}</strong> z ostatniego tygodnia`;
 
-  if(!entries.length){
-    document.getElementById('cards').innerHTML= showArchive
-      ? `<div class="empty">Archiwum jest puste.</div>`
-      : `<div class="empty">Brak nowych wpisów z ostatniego tygodnia. Sprawdź <a href="#" onclick="document.getElementById('archiveToggle').click();return false;">archiwum</a>.</div>`;
-    return;
+  $('cards').innerHTML = entries.length
+    ? entries.map(e=>researchCard(e)).join('')
+    : showArchive
+      ? `<div class="empty">Brak wpisów dla tych filtrów.</div>`
+      : `<div class="empty">Brak nowych wpisów z ostatniego tygodnia. Sprawdź <a href="#" id="toArchive">archiwum</a>.</div>`;
+  const link = $('toArchive'); if(link) link.onclick = ev => { ev.preventDefault(); $('archiveToggle').click(); };
+}
+
+async function loadMonth(m){
+  if(!m || archiveCache[m]) return;
+  try{
+    const r = await fetch(`archive/research-${m}.json?v=${Date.now()}`);
+    archiveCache[m] = r.ok ? ((await r.json()).entries || []) : [];
+  }catch(e){ archiveCache[m] = []; }
+}
+
+async function openArchive(){
+  if(!$('monthSelect').options.length){
+    try{
+      const idx = await fetch('archive/index.json?v='+Date.now()).then(r=>r.json());
+      $('monthSelect').innerHTML = (idx.months||[]).map(m =>
+        `<option value="${esc(m.month)}">${esc(parseDay(m.month+'-01').toLocaleDateString('pl-PL',{month:'long',year:'numeric'}))} (${m.count})</option>`).join('');
+    }catch(e){}
   }
-  document.getElementById('cards').innerHTML=entries.map(e=>{
-    const tm=TYPE_META[e.type]||TYPE_META['research'];
-    return `<article class="card">
-      <div class="card-header">
-        <span class="type-pill ${tm.cls}">${tm.label}</span>
-        ${articleTypePill(e)}
-        <div class="card-title">${e.title}</div>
-      </div>
-      ${e.source?`<div class="card-org">${e.source}</div>`:''}
-      ${e.description?`<div class="card-desc">${e.description}</div>`:''}
-      <div class="card-meta">${tagPills(e.tags)}<span class="pill date">🕐 ${timeAgo(e.date)}</span></div>
-      ${e.url?`<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Czytaj więcej →</a>`:''}
-    </article>`;
-  }).join('');
+  await loadMonth($('monthSelect').value);
 }
 
 async function init(){
   try{
     const r=await fetch('research-news.json?v='+Date.now());
     if(!r.ok) throw new Error('brak pliku');
-    const data=await r.json();
-    allEntries=data.entries||[];
+    feed=(await r.json()).entries||[];
   }catch(err){
-    document.getElementById('cards').innerHTML=
-      `<div class="empty">Nie udało się wczytać research-news.json.<br>Poczekaj na pierwszy przebieg GitHub Actions albo uruchom fetch_news.py ręcznie.</div>`;
-    document.getElementById('statsLine').textContent='';
+    $('cards').innerHTML='<div class="empty">Nie udało się wczytać newsów — odśwież stronę.</div>';
+    $('statsLine').textContent='';
     return;
   }
   render();
 }
-document.getElementById('searchInput').addEventListener('input',render);
-document.getElementById('tagFilter').addEventListener('change',render);
-document.getElementById('articleTypeFilter').addEventListener('change',render);
-document.getElementById('typeFilter').addEventListener('change',render);
-document.getElementById('archiveToggle').addEventListener('click',function(){
+['searchInput','tagFilter','articleTypeFilter','typeFilter'].forEach(id=>$(id).addEventListener('input',render));
+$('monthSelect').addEventListener('change', async ()=>{ await loadMonth($('monthSelect').value); render(); });
+$('archiveToggle').addEventListener('click', async function(){
   showArchive=!showArchive;
   this.classList.toggle('on',showArchive);
   this.textContent=showArchive?'◀ Ostatni tydzień':'📦 Archiwum';
+  $('monthSelect').hidden = !showArchive;
+  if(showArchive) await openArchive();
   render();
 });
 init();
