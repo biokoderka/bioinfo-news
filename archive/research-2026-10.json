@@ -1,7 +1,104 @@
 {
  "month": "2026-10",
- "count": 73,
+ "count": 80,
  "entries": [
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "github.com/broadinstitute/warp/JointGenotyping",
+   "description": "Welcome to WARP WARP (WDL Analysis Research Pipelines) repository is a collection of cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform and collaborators. The…",
+   "url": "https://zenodo.org/records/23165434",
+   "date": "2026-10-05",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "neuronauka",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-2014d0f5bc8a"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "github.com/broadinstitute/warp/IlluminaGenotypingArray",
+   "description": "Welcome to WARP WARP (WDL Analysis Research Pipelines) repository is a collection of cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform and collaborators. The…",
+   "url": "https://zenodo.org/records/23165427",
+   "date": "2026-10-05",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "neuronauka",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-d26ba9c371ae"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "stGPTNet: fine-tuning foundation models enables transferable domains in spatial transcriptomics",
+   "description": "stGPTNet is a supervised spatial representation learning framework that combines a pretrained transcriptomic foundation model (scGPT) with spatial graph learning for spatial domain identification and transfer in spatial…",
+   "url": "https://zenodo.org/records/23163672",
+   "date": "2026-10-05",
+   "tags": [
+    "single-cell",
+    "transkryptomika",
+    "ai-ml",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-c20f138e14c5"
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "Synthetic Dataset for PRIVAGEN-SHIELD: Privacy-Preserving Genomic Anomaly Detection",
+   "description": "Dataset Description This repository contains the synthetic genomic workflow dataset generated and used for the experimental evaluation of the PRIVAGEN-SHIELD framework, “PRIVAGEN-SHIELD: Privacy-Preserving Genomic…",
+   "url": "https://zenodo.org/records/23163040",
+   "date": "2026-10-05",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-087f579e75b6"
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "PanRes: A database of latent and acquired antimicrobial resistance allowing 3D-based protein homology search",
+   "description": "PanRes is a structure-informed antimicrobial resistance database that integrates resistance genes, protein translations, predicted protein structures, structure-based clusters, multiple sequence alignments, and 3D-based…",
+   "url": "https://zenodo.org/records/22876216",
+   "date": "2026-10-05",
+   "tags": [
+    "genomika",
+    "struktury",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-f9625acf9f53"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "cy3sbml - SBML for Cytoscape",
+   "description": "This repository provides the source code of cy3sbml. If you have any questions or problems please open an issue FundingMatthias König was supported by the Federal Ministry of Education and Research (BMBF, Germany)…",
+   "url": "https://zenodo.org/records/23159231",
+   "date": "2026-10-05",
+   "tags": [
+    "bazy-danych",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-6ffce915a68d"
+  },
   {
    "type": "narzedzie",
    "source": "GitHub · aipoch/open-science",
@@ -10,6 +107,10 @@
    "url": "https://github.com/aipoch/open-science/releases/tag/v0.35.0",
    "date": "2026-10-04",
    "tags": [
+    "genomika",
+    "immunoinformatyka",
+    "ai-ml",
+    "kliniczne",
     "narzedzia"
    ],
    "id": "r-17b421a7ca7f"
@@ -35,12 +136,14 @@
    "url": "https://doi.org/10.1093/bioinformatics/btag717",
    "date": "2026-10-03",
    "tags": [
+    "genomika",
+    "single-cell",
     "transkryptomika",
     "kliniczne",
     "narzedzia",
     "bazy-danych"
    ],
-   "article_type": "narzedzie-art",
+   "article_type": "benchmark",
    "id": "r-5263d49844fe"
   },
   {
@@ -51,7 +154,9 @@
    "url": "https://doi.org/10.1093/bioinformatics/btag706",
    "date": "2026-10-03",
    "tags": [
+    "genomika",
     "single-cell",
+    "transkryptomika",
     "narzedzia"
    ],
    "article_type": "narzedzie-art",
@@ -91,9 +196,10 @@
    "url": "https://doi.org/10.1016/j.cels.2026.101738",
    "date": "2026-10-02",
    "tags": [
+    "single-cell",
     "transkryptomika"
    ],
-   "article_type": "protokol",
+   "article_type": "benchmark",
    "id": "r-e9f55c9fa223"
   },
   {
@@ -104,9 +210,23 @@
    "url": "https://github.com/genomoncology/biomcp/releases/tag/v0.9.1",
    "date": "2026-10-02",
    "tags": [
+    "inne",
     "narzedzia"
    ],
    "id": "r-202e9047cd06"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · globalbioticinteractions/globalbioticinteractions",
+   "title": "globalbioticinteractions v0.30.0",
+   "description": "## Features n/a ## Improvements * many library upgrades associated with the neo4j 3.5 -› neo4j 5.2 LTS upgrade #1035. This includes an upgrade to lucene 9.11 for instance. ## Bugs * now parsing tsv values according to IANA tsv, *without* treating double quote like special value .",
+   "url": "https://github.com/globalbioticinteractions/globalbioticinteractions/releases/tag/v0.30.0",
+   "date": "2026-10-02",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-8a7647978a85"
   },
   {
    "type": "narzedzie",
@@ -116,6 +236,7 @@
    "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.12.0",
    "date": "2026-10-02",
    "tags": [
+    "kliniczne",
     "narzedzia"
    ],
    "id": "r-d6fa0cef9d7d"
@@ -128,6 +249,9 @@
    "url": "https://github.com/scverse/pertpy/releases/tag/1.4.0",
    "date": "2026-10-02",
    "tags": [
+    "genomika",
+    "transkryptomika",
+    "leki",
     "narzedzia"
    ],
    "id": "r-f93853fdd5aa"
@@ -140,7 +264,8 @@
    "url": "http://arxiv.org/abs/2610.03712v1",
    "date": "2026-10-02",
    "tags": [
-    "inne"
+    "ai-ml",
+    "struktury"
    ],
    "article_type": "benchmark",
    "id": "r-690006ce4302"
@@ -180,7 +305,8 @@
    "url": "http://arxiv.org/abs/2610.03410v1",
    "date": "2026-10-02",
    "tags": [
-    "ai-ml"
+    "ai-ml",
+    "neuronauka"
    ],
    "article_type": "eksperymentalne",
    "id": "r-a95b90669e52"
@@ -194,6 +320,7 @@
    "date": "2026-10-02",
    "tags": [
     "immunoinformatyka",
+    "kliniczne",
     "narzedzia"
    ],
    "article_type": "narzedzie-art",
@@ -208,8 +335,9 @@
    "date": "2026-10-02",
    "tags": [
     "genomika",
-    "bazy-danych",
-    "narzedzia"
+    "ewolucja",
+    "narzedzia",
+    "bazy-danych"
    ],
    "article_type": "eksperymentalne",
    "id": "r-24d12d64e365"
@@ -250,7 +378,7 @@
    "url": "https://doi.org/10.1093/bioinformatics/btag733",
    "date": "2026-10-01",
    "tags": [
-    "inne"
+    "ai-ml"
    ],
    "article_type": "eksperymentalne",
    "id": "r-7e77f2285a5a"
@@ -292,6 +420,8 @@
    "url": "https://doi.org/10.1093/bioinformatics/btag719",
    "date": "2026-10-01",
    "tags": [
+    "genomika",
+    "single-cell",
     "transkryptomika",
     "kliniczne",
     "narzedzia"
@@ -348,6 +478,7 @@
    "url": "https://doi.org/10.1093/bioinformatics/btag670",
    "date": "2026-10-01",
    "tags": [
+    "genomika",
     "kliniczne"
    ],
    "article_type": "narzedzie-art",
@@ -378,6 +509,7 @@
    "tags": [
     "genomika",
     "mikrobiom",
+    "ai-ml",
     "narzedzia"
    ],
    "article_type": "narzedzie-art",
@@ -404,6 +536,7 @@
    "url": "https://doi.org/10.1101/gr.282257.126",
    "date": "2026-10-01",
    "tags": [
+    "genomika",
     "ewolucja"
    ],
    "article_type": "narzedzie-art",
@@ -433,6 +566,9 @@
    "url": "https://doi.org/10.1101/gr.281596.125",
    "date": "2026-10-01",
    "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
     "kliniczne"
    ],
    "article_type": "eksperymentalne",
@@ -462,7 +598,7 @@
    "url": "https://doi.org/10.1101/gr.281656.125",
    "date": "2026-10-01",
    "tags": [
-    "inne"
+    "ai-ml"
    ],
    "article_type": "benchmark",
    "id": "r-65c34e8bbbeb"
@@ -475,7 +611,9 @@
    "url": "https://doi.org/10.1101/gr.281431.125",
    "date": "2026-10-01",
    "tags": [
+    "genomika",
     "single-cell",
+    "ai-ml",
     "kliniczne"
    ],
    "article_type": "narzedzie-art",
@@ -491,7 +629,9 @@
    "tags": [
     "single-cell",
     "transkryptomika",
-    "ai-ml"
+    "ai-ml",
+    "neuronauka",
+    "kliniczne"
    ],
    "article_type": "narzedzie-art",
    "id": "r-0e740b7969d8"
@@ -535,6 +675,7 @@
    "tags": [
     "genomika",
     "single-cell",
+    "transkryptomika",
     "narzedzia"
    ],
    "article_type": "benchmark",
@@ -549,9 +690,12 @@
    "date": "2026-10-01",
    "tags": [
     "genomika",
+    "single-cell",
+    "ai-ml",
+    "kliniczne",
     "narzedzia"
    ],
-   "article_type": "narzedzie-art",
+   "article_type": "benchmark",
    "id": "r-4322632e61bd"
   },
   {
@@ -562,7 +706,8 @@
    "url": "https://doi.org/10.1101/gr.282066.126",
    "date": "2026-10-01",
    "tags": [
-    "genomika"
+    "genomika",
+    "transkryptomika"
    ],
    "article_type": "eksperymentalne",
    "id": "r-56c9375a5766"
@@ -575,6 +720,7 @@
    "url": "https://doi.org/10.1101/gr.282246.126",
    "date": "2026-10-01",
    "tags": [
+    "single-cell",
     "transkryptomika"
    ],
    "article_type": "eksperymentalne",
@@ -590,6 +736,7 @@
    "tags": [
     "single-cell",
     "transkryptomika",
+    "ewolucja",
     "modelowanie"
    ],
    "article_type": "narzedzie-art",
@@ -603,7 +750,9 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014798",
    "date": "2026-10-01",
    "tags": [
-    "leki"
+    "ai-ml",
+    "leki",
+    "neuronauka"
    ],
    "article_type": "eksperymentalne",
    "id": "r-635c816197b4"
@@ -616,7 +765,8 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014319",
    "date": "2026-10-01",
    "tags": [
-    "epidemiologia"
+    "epidemiologia",
+    "modelowanie"
    ],
    "article_type": "eksperymentalne",
    "id": "r-5bbb6483da4b"
@@ -629,7 +779,12 @@
    "url": "https://doi.org/10.1093/gigascience/giag095",
    "date": "2026-10-01",
    "tags": [
+    "genomika",
+    "transkryptomika",
+    "proteomika",
     "immunoinformatyka",
+    "sieci-systemy",
+    "ewolucja",
     "kliniczne",
     "narzedzia"
    ],
@@ -645,36 +800,14 @@
    "date": "2026-10-01",
    "tags": [
     "genomika",
+    "single-cell",
+    "ai-ml",
+    "leki",
+    "kliniczne",
     "narzedzia",
     "bazy-danych"
    ],
    "id": "r-241c051f3b3c"
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · genome-spy/genome-spy",
-   "title": "genome-spy v1.0.0",
-   "description": "# [1.0.0](https://github.com/genome-spy/genome-spy/compare/v0.90.0...v1.0.0) (2026-10-01) **Note:** Version bump only for package root",
-   "url": "https://github.com/genome-spy/genome-spy/releases/tag/v1.0.0",
-   "date": "2026-10-01",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "id": "r-b49965bdc45c"
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · genome-spy/genome-spy",
-   "title": "genome-spy v0.90.0",
-   "description": "# [0.90.0](https://github.com/genome-spy/genome-spy/compare/v0.89.0...v0.90.0) (2026-10-01) ### Bug Fixes * **app:** avoid reloading sample tracks when sorting ([70c88c6](https://github.com/genome-spy/genome-spy/commit/70c88c6fd44aed15abb3f555e6152a2d5d8f5327)) by @tuner * **core",
-   "url": "https://github.com/genome-spy/genome-spy/releases/tag/v0.90.0",
-   "date": "2026-10-01",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "id": "r-1f176893dc39"
   },
   {
    "type": "narzedzie",
@@ -696,6 +829,7 @@
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.72.0",
    "date": "2026-10-01",
    "tags": [
+    "inne",
     "narzedzia"
    ],
    "id": "r-4826de503d2c"
@@ -708,6 +842,7 @@
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.71.0",
    "date": "2026-10-01",
    "tags": [
+    "kliniczne",
     "narzedzia",
     "bazy-danych"
    ],
@@ -774,7 +909,8 @@
    "url": "http://arxiv.org/abs/2610.01891v1",
    "date": "2026-10-01",
    "tags": [
-    "inne"
+    "ai-ml",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-39621daa0f2e"
@@ -801,7 +937,7 @@
    "url": "http://arxiv.org/abs/2610.01663v1",
    "date": "2026-10-01",
    "tags": [
-    "inne"
+    "genomika"
    ],
    "article_type": "narzedzie-art",
    "id": "r-5fec962765d7"
@@ -814,6 +950,7 @@
    "url": "http://arxiv.org/abs/2610.01636v1",
    "date": "2026-10-01",
    "tags": [
+    "epidemiologia",
     "modelowanie",
     "narzedzia"
    ],
@@ -843,6 +980,7 @@
    "url": "http://arxiv.org/abs/2610.01358v2",
    "date": "2026-10-01",
    "tags": [
+    "ai-ml",
     "struktury",
     "narzedzia"
    ],
@@ -883,7 +1021,8 @@
    "url": "http://arxiv.org/abs/2610.01111v1",
    "date": "2026-10-01",
    "tags": [
-    "epidemiologia"
+    "epidemiologia",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-c00bdfa710e8"
@@ -896,7 +1035,7 @@
    "url": "http://arxiv.org/abs/2610.01086v1",
    "date": "2026-10-01",
    "tags": [
-    "inne"
+    "ai-ml"
    ],
    "article_type": "benchmark",
    "id": "r-4b51b11d9b46"
@@ -910,7 +1049,8 @@
    "date": "2026-10-01",
    "tags": [
     "genomika",
-    "proteomika"
+    "proteomika",
+    "neuronauka"
    ],
    "article_type": "eksperymentalne",
    "id": "r-372e30ee713b"
@@ -936,7 +1076,7 @@
    "url": "http://arxiv.org/abs/2610.00988v1",
    "date": "2026-10-01",
    "tags": [
-    "inne"
+    "ai-ml"
    ],
    "article_type": "narzedzie-art",
    "id": "r-f9464abce8d2"
@@ -962,6 +1102,8 @@
    "url": "http://arxiv.org/abs/2610.00866v1",
    "date": "2026-10-01",
    "tags": [
+    "ai-ml",
+    "neuronauka",
     "kliniczne"
    ],
    "article_type": "eksperymentalne",
@@ -988,11 +1130,38 @@
    "url": "http://arxiv.org/abs/2610.00860v1",
    "date": "2026-10-01",
    "tags": [
+    "ai-ml",
     "neuronauka",
     "narzedzia"
    ],
-   "article_type": "narzedzie-art",
+   "article_type": "przeglad",
    "id": "r-77577f696a7c"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · genome-spy/genome-spy",
+   "title": "genome-spy v1.0.0",
+   "description": "# [1.0.0](https://github.com/genome-spy/genome-spy/compare/v0.90.0...v1.0.0) (2026-10-01) **Note:** Version bump only for package root",
+   "url": "https://github.com/genome-spy/genome-spy/releases/tag/v1.0.0",
+   "date": "2026-10-01",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-b49965bdc45c"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · genome-spy/genome-spy",
+   "title": "genome-spy v0.90.0",
+   "description": "# [0.90.0](https://github.com/genome-spy/genome-spy/compare/v0.89.0...v0.90.0) (2026-10-01) ### Bug Fixes * **app:** avoid reloading sample tracks when sorting ([70c88c6](https://github.com/genome-spy/genome-spy/commit/70c88c6fd44aed15abb3f555e6152a2d5d8f5327)) by @tuner * **core",
+   "url": "https://github.com/genome-spy/genome-spy/releases/tag/v0.90.0",
+   "date": "2026-10-01",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-1f176893dc39"
   }
  ]
 }

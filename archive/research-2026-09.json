@@ -1,6 +1,6 @@
 {
  "month": "2026-09",
- "count": 88,
+ "count": 101,
  "entries": [
   {
    "type": "research",
@@ -10,7 +10,8 @@
    "url": "https://doi.org/10.1093/bioinformatics/btag718",
    "date": "2026-09-30",
    "tags": [
-    "inne"
+    "ai-ml",
+    "ewolucja"
    ],
    "article_type": "narzedzie-art",
    "id": "r-dbe416519a2e"
@@ -23,6 +24,7 @@
    "url": "https://doi.org/10.1093/nar/gkag933",
    "date": "2026-09-30",
    "tags": [
+    "genomika",
     "single-cell",
     "proteomika",
     "bazy-danych"
@@ -38,6 +40,7 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014774",
    "date": "2026-09-30",
    "tags": [
+    "sieci-systemy",
     "modelowanie",
     "narzedzia"
    ],
@@ -65,7 +68,8 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014832",
    "date": "2026-09-30",
    "tags": [
-    "neuronauka"
+    "neuronauka",
+    "narzedzia"
    ],
    "article_type": "eksperymentalne",
    "id": "r-424177554558"
@@ -78,7 +82,9 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014344",
    "date": "2026-09-30",
    "tags": [
-    "ai-ml"
+    "genomika",
+    "ai-ml",
+    "struktury"
    ],
    "article_type": "benchmark",
    "id": "r-e817b2727e0b"
@@ -132,6 +138,7 @@
    "date": "2026-09-30",
    "tags": [
     "ai-ml",
+    "epidemiologia",
     "kliniczne"
    ],
    "article_type": "eksperymentalne",
@@ -145,6 +152,9 @@
    "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.10.0",
    "date": "2026-09-30",
    "tags": [
+    "ai-ml",
+    "struktury",
+    "leki",
     "narzedzia"
    ],
    "id": "r-69d8303ee88b"
@@ -184,6 +194,7 @@
    "url": "http://arxiv.org/abs/2610.00742v1",
    "date": "2026-09-30",
    "tags": [
+    "genomika",
     "ai-ml"
    ],
    "article_type": "narzedzie-art",
@@ -197,6 +208,8 @@
    "url": "http://arxiv.org/abs/2610.00719v1",
    "date": "2026-09-30",
    "tags": [
+    "ai-ml",
+    "neuronauka",
     "narzedzia"
    ],
    "article_type": "eksperymentalne",
@@ -223,7 +236,8 @@
    "url": "http://arxiv.org/abs/2610.00672v1",
    "date": "2026-09-30",
    "tags": [
-    "ai-ml"
+    "ai-ml",
+    "kliniczne"
    ],
    "article_type": "protokol",
    "id": "r-1f099dd6378d"
@@ -249,6 +263,7 @@
    "url": "http://arxiv.org/abs/2610.00616v1",
    "date": "2026-09-30",
    "tags": [
+    "ai-ml",
     "neuronauka"
    ],
    "article_type": "benchmark",
@@ -262,6 +277,7 @@
    "url": "http://arxiv.org/abs/2610.00602v1",
    "date": "2026-09-30",
    "tags": [
+    "ai-ml",
     "kliniczne"
    ],
    "article_type": "narzedzie-art",
@@ -275,6 +291,7 @@
    "url": "http://arxiv.org/abs/2610.00597v1",
    "date": "2026-09-30",
    "tags": [
+    "ai-ml",
     "neuronauka"
    ],
    "article_type": "eksperymentalne",
@@ -288,6 +305,7 @@
    "url": "http://arxiv.org/abs/2609.40359v1",
    "date": "2026-09-30",
    "tags": [
+    "ai-ml",
     "neuronauka"
    ],
    "article_type": "benchmark",
@@ -328,7 +346,10 @@
    "url": "https://doi.org/10.64898/2026.08.25.26361232",
    "date": "2026-09-29",
    "tags": [
-    "inne"
+    "genomika",
+    "wielo-omika",
+    "epidemiologia",
+    "kliniczne"
    ],
    "article_type": "przeglad",
    "id": "r-06019e8ae213"
@@ -369,6 +390,7 @@
    "date": "2026-09-29",
    "tags": [
     "epidemiologia",
+    "kliniczne",
     "bazy-danych"
    ],
    "article_type": "narzedzie-art",
@@ -422,7 +444,9 @@
    "url": "https://doi.org/10.64898/2026.09.23.26363800",
    "date": "2026-09-29",
    "tags": [
-    "inne"
+    "genomika",
+    "single-cell",
+    "immunoinformatyka"
    ],
    "article_type": "eksperymentalne",
    "id": "r-8201ca977721"
@@ -435,7 +459,9 @@
    "url": "https://doi.org/10.64898/2026.09.26.26364064",
    "date": "2026-09-29",
    "tags": [
-    "genomika"
+    "genomika",
+    "transkryptomika",
+    "proteomika"
    ],
    "article_type": "eksperymentalne",
    "id": "r-26e4004656ef"
@@ -503,6 +529,7 @@
    "date": "2026-09-29",
    "tags": [
     "single-cell",
+    "transkryptomika",
     "narzedzia",
     "bazy-danych"
    ],
@@ -543,6 +570,7 @@
    "url": "https://github.com/nextflow-io/nextflow/releases/tag/v25.10.8",
    "date": "2026-09-29",
    "tags": [
+    "inne",
     "narzedzia"
    ],
    "id": "r-6dabca97fbfd"
@@ -555,9 +583,26 @@
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.70.0",
    "date": "2026-09-29",
    "tags": [
+    "genomika",
     "narzedzia"
    ],
    "id": "r-506332e44639"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Yale University · $202,223",
+   "title": "Core C: Bioinformatics and Biostatistics Core",
+   "description": "BIOINFORMATICS AND BIOSTATISTICS CORE: SUMMARY The goal of the Bioinformatics and Biostatistics Core (CORE C) is to address the statistical design and data analysis needs of the Yale-UNC Head and Neck SPORE…",
+   "url": "https://reporter.nih.gov/project-details/9P50DE036901-06",
+   "date": "2026-09-29",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-574dc0c2f1aa"
   },
   {
    "type": "research",
@@ -583,6 +628,7 @@
    "tags": [
     "neuronauka",
     "modelowanie",
+    "kliniczne",
     "bazy-danych"
    ],
    "article_type": "eksperymentalne",
@@ -596,7 +642,7 @@
    "url": "https://doi.org/10.64898/2026.09.24.754258",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "single-cell"
    ],
    "article_type": "eksperymentalne",
    "id": "r-782353f8634c"
@@ -609,6 +655,7 @@
    "url": "https://doi.org/10.64898/2026.09.25.751968",
    "date": "2026-09-28",
    "tags": [
+    "ai-ml",
     "narzedzia"
    ],
    "article_type": "narzedzie-art",
@@ -622,7 +669,8 @@
    "url": "https://doi.org/10.64898/2026.09.23.753770",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "ai-ml",
+    "ewolucja"
    ],
    "article_type": "eksperymentalne",
    "id": "r-c08d19333ec4"
@@ -636,6 +684,7 @@
    "date": "2026-09-28",
    "tags": [
     "genomika",
+    "transkryptomika",
     "ewolucja",
     "bazy-danych"
    ],
@@ -664,7 +713,12 @@
    "url": "https://doi.org/10.64898/2026.09.22.753659",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "sieci-systemy",
+    "struktury",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-211826833c82"
@@ -678,6 +732,7 @@
    "date": "2026-09-28",
    "tags": [
     "genomika",
+    "ai-ml",
     "ewolucja"
    ],
    "article_type": "narzedzie-art",
@@ -694,7 +749,7 @@
     "genomika",
     "narzedzia"
    ],
-   "article_type": "eksperymentalne",
+   "article_type": "benchmark",
    "id": "r-aa725fdcd73f"
   },
   {
@@ -731,7 +786,8 @@
    "url": "https://doi.org/10.64898/2026.08.28.747878",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "neuronauka",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-ab782eca87a1"
@@ -757,7 +813,8 @@
    "url": "https://doi.org/10.64898/2026.02.12.705626",
    "date": "2026-09-28",
    "tags": [
-    "struktury"
+    "struktury",
+    "ewolucja"
    ],
    "article_type": "narzedzie-art",
    "id": "r-1d265a62e073"
@@ -818,7 +875,9 @@
    "date": "2026-09-28",
    "tags": [
     "genomika",
-    "transkryptomika"
+    "transkryptomika",
+    "neuronauka",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-14af486da043"
@@ -832,6 +891,8 @@
    "date": "2026-09-28",
    "tags": [
     "genomika",
+    "ai-ml",
+    "leki",
     "kliniczne"
    ],
    "article_type": "eksperymentalne",
@@ -845,7 +906,10 @@
    "url": "https://doi.org/10.64898/2026.09.26.26364056",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "neuronauka"
    ],
    "article_type": "przeglad",
    "id": "r-04af8cef3aad"
@@ -858,7 +922,10 @@
    "url": "https://doi.org/10.64898/2026.09.26.26364080",
    "date": "2026-09-28",
    "tags": [
+    "genomika",
     "proteomika",
+    "neuronauka",
+    "kliniczne",
     "narzedzia"
    ],
    "article_type": "narzedzie-art",
@@ -872,7 +939,8 @@
    "url": "https://doi.org/10.64898/2026.09.08.26362522",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "neuronauka",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-6c3b92de69c0"
@@ -898,6 +966,7 @@
    "url": "https://doi.org/10.64898/2026.09.24.26363920",
    "date": "2026-09-28",
    "tags": [
+    "ai-ml",
     "kliniczne",
     "narzedzia",
     "bazy-danych"
@@ -913,7 +982,8 @@
    "url": "https://doi.org/10.64898/2026.09.26.26364065",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "transkryptomika",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-7ef4955a1d88"
@@ -926,9 +996,10 @@
    "url": "https://doi.org/10.64898/2026.09.26.26364084",
    "date": "2026-09-28",
    "tags": [
+    "epidemiologia",
     "kliniczne"
    ],
-   "article_type": "narzedzie-art",
+   "article_type": "benchmark",
    "id": "r-6583523bee86"
   },
   {
@@ -952,7 +1023,7 @@
    "url": "https://doi.org/10.64898/2026.09.25.26364009",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-1ff29f721d21"
@@ -965,7 +1036,10 @@
    "url": "https://doi.org/10.64898/2026.09.26.26364091",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "genomika",
+    "proteomika",
+    "wielo-omika",
+    "kliniczne"
    ],
    "article_type": "eksperymentalne",
    "id": "r-9bd9127ef4a1"
@@ -979,6 +1053,7 @@
    "date": "2026-09-28",
    "tags": [
     "genomika",
+    "kliniczne",
     "narzedzia",
     "bazy-danych"
    ],
@@ -1022,6 +1097,7 @@
    "url": "https://doi.org/10.64898/2026.09.27.26364110",
    "date": "2026-09-28",
    "tags": [
+    "proteomika",
     "kliniczne"
    ],
    "article_type": "narzedzie-art",
@@ -1035,7 +1111,7 @@
    "url": "https://doi.org/10.1101/2025.11.27.25341151",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "kliniczne"
    ],
    "article_type": "przeglad",
    "id": "r-dda98a71eeaa"
@@ -1048,7 +1124,8 @@
    "url": "https://doi.org/10.1093/nar/gkag896",
    "date": "2026-09-28",
    "tags": [
-    "transkryptomika"
+    "transkryptomika",
+    "proteomika"
    ],
    "article_type": "protokol",
    "id": "r-1069762b8eb0"
@@ -1074,6 +1151,7 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014309",
    "date": "2026-09-28",
    "tags": [
+    "immunoinformatyka",
     "narzedzia"
    ],
    "article_type": "eksperymentalne",
@@ -1087,7 +1165,10 @@
    "url": "https://doi.org/10.1371/journal.pcbi.1014835",
    "date": "2026-09-28",
    "tags": [
-    "inne"
+    "single-cell",
+    "transkryptomika",
+    "neuronauka",
+    "kliniczne"
    ],
    "article_type": "benchmark",
    "id": "r-5565eb417a39"
@@ -1113,6 +1194,7 @@
    "url": "https://github.com/nextflow-io/nextflow/releases/tag/v26.09.1-edge",
    "date": "2026-09-25",
    "tags": [
+    "inne",
     "narzedzia"
    ],
    "id": "r-b509a03a123a"
@@ -1125,6 +1207,7 @@
    "url": "https://github.com/COMBINE-lab/salmon/releases/tag/v2.8.0",
    "date": "2026-09-25",
    "tags": [
+    "genomika",
     "narzedzia"
    ],
    "id": "r-18623b404084"
@@ -1155,6 +1238,90 @@
    "id": "r-3221c9266bdf"
   },
   {
+   "type": "grant",
+   "source": "NIH RePORTER · University Of Minnesota · $50,114",
+   "title": "Identification of causal DNA variants that influence gene expression in trans",
+   "description": "PROJECT SUMMARY Genetic variation underlies much of the phenotypic variation in important traits, including morphological and physiological phenotypes as well as risk for common diseases, among individuals.",
+   "url": "https://reporter.nih.gov/project-details/1F31HG015201-01",
+   "date": "2026-09-23",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "kliniczne",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-4a1d2465f37f"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · University Of Pittsburgh At Pittsburgh · $568,938",
+   "title": "Spermatogonial stem cell transplantation and culture in patients",
+   "description": "Medical treatments for cancer or other conditions can cause infertility. Sperm cryopreservation is an effective option for adult men to preserve their fertility.",
+   "url": "https://reporter.nih.gov/project-details/6R01HD114856-03",
+   "date": "2026-09-23",
+   "tags": [
+    "leki",
+    "kliniczne",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-722e9f7ffab0"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · University Of Nebraska Lincoln · $123,678",
+   "title": "Identify the Unknown: A Long Read Bioinformatics Exercise for Vet LIRN Laboratory Analysis Pipelines",
+   "description": "Project Summary/Abstract Rapid advances in long-read sequencing technologies are transforming pathogen genomics and diagnostics by enabling improved assembly, structural variant detection, enhanced discovery…",
+   "url": "https://reporter.nih.gov/project-details/1U18FD008911-01",
+   "date": "2026-09-23",
+   "tags": [
+    "genomika",
+    "epidemiologia",
+    "kliniczne",
+    "narzedzia",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-56853f45a5dc"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Washington University · $227,035",
+   "title": "Biobanking and Phenotyping Core",
+   "description": "Project Summary/Abstract—Biobank & Phenotyping Core (BPC) Translational research will continue to play a central role in the 21st century research and clinical practice, but substantial barriers exist to accessing…",
+   "url": "https://reporter.nih.gov/project-details/5P30AR073752-09",
+   "date": "2026-09-23",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "proteomika",
+    "kliniczne",
+    "narzedzia",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-2b767e458604"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Medical University Of South Carolina · $257,621",
+   "title": "Improving Health in Rheumatic Diseases (ImHeaRD)",
+   "description": "Project Summary – Methodologic Core Addressing racial disparities in rheumatic diseases as complex as systemic lupus erythematosus and systemic sclerosis requires interdisciplinary approaches that involve strong…",
+   "url": "https://reporter.nih.gov/project-details/5P30AR072582-10",
+   "date": "2026-09-23",
+   "tags": [
+    "epidemiologia",
+    "kliniczne",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-c21ac4965647"
+  },
+  {
    "type": "narzedzie",
    "source": "GitHub · nextflow-io/nextflow",
    "title": "nextflow v26.09.0-edge",
@@ -1162,10 +1329,59 @@
    "url": "https://github.com/nextflow-io/nextflow/releases/tag/v26.09.0-edge",
    "date": "2026-09-22",
    "tags": [
-    "bazy-danych",
-    "narzedzia"
+    "narzedzia",
+    "bazy-danych"
    ],
    "id": "r-d76ace748932"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · University Of Michigan At Ann Arbor · $401,115",
+   "title": "Tackling tumor recurrence in pediatric brain tumors: identification of epigenetic memory and tumor microenvironment conducive to tumor recurrence in an inducible and reversible H3K27M murine model.",
+   "description": "PROJECT SUMMARY Tumor recurrence remains a major obstacle to the successful clinical management of H3K27M-altered diffuse midline glioma (DMG), a pediatric high-grade tumor arising in the brain stem.",
+   "url": "https://reporter.nih.gov/project-details/1R21CA308699-01A1",
+   "date": "2026-09-22",
+   "tags": [
+    "transkryptomika",
+    "neuronauka",
+    "kliniczne",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-a973973f65c1"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Vanderbilt University Medical Center · $53,464",
+   "title": "Career Enhancement Core",
+   "description": "Project Summary The Severe Cutaneous Adverse Reaction Clinical Research Consortium (SCAR CRC) Career Enhancement Core (CEC) is dedicated to recruiting, training and retaining a robust, multidisciplinary research…",
+   "url": "https://reporter.nih.gov/project-details/1U54AI205728-01",
+   "date": "2026-09-22",
+   "tags": [
+    "kliniczne",
+    "narzedzia",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-b722d13af972"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · University Of Maryland Baltimore · $155,500",
+   "title": "High Throughput Profiling of the In Vivo Tumor Neo-antigen Specific Antibody Reactivity Landscape using PhIP-Seq",
+   "description": "Project Summary The overall goal of this explorative pilot project is to determine whether a recently developed systems immunology technique called PhIP-Seq can be applied to improve melanoma tumor specific antigen…",
+   "url": "https://reporter.nih.gov/project-details/1R03CA304848-01A1",
+   "date": "2026-09-22",
+   "tags": [
+    "genomika",
+    "immunoinformatyka",
+    "kliniczne",
+    "narzedzia",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-47421e3e0090"
   },
   {
    "type": "narzedzie",
@@ -1179,6 +1395,79 @@
     "narzedzia"
    ],
    "id": "r-d94bb169f70f"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · University Of Pennsylvania · $215,546",
+   "title": "Meaningful data integration, visualization and distribution for Human Pain Associated Genes & Cells Datasets",
+   "description": "Project Summary: The PRECISION Human Pain project has a primary goal to develop a comprehensive datasets of molecular signature cell types, and cellular function phenotypes or signatures that underlie human pain…",
+   "url": "https://reporter.nih.gov/project-details/3U24NS135547-02S1",
+   "date": "2026-09-21",
+   "tags": [
+    "neuronauka",
+    "narzedzia",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-56001b4c555e"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Washington University · $621,995",
+   "title": "Core Grant for Vision Research",
+   "description": "Project Summary/Abstract Sight-threatening diseases pose a substantial and growing human and economic burden in the United States. More than 12 million Americans are visually impaired, including over 1 million who are…",
+   "url": "https://reporter.nih.gov/project-details/2P30EY002687-47",
+   "date": "2026-09-19",
+   "tags": [
+    "kliniczne",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-bf6417618893"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Northwestern University · $1,600,000",
+   "title": "Consortium for Hereditary Epidermal Differentiation Disorders (CHEDD)",
+   "description": "PROJECT SUMMARY Epidermal differentiation disorders (EDD) are a group of rare inherited disorders, commonly called ichthyosis and palmoplantar keratodermas (PPKs), characterized by scaling and underlying inflammation.",
+   "url": "https://reporter.nih.gov/project-details/1U54AR089183-01",
+   "date": "2026-09-19",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "proteomika",
+    "mikrobiom",
+    "wielo-omika",
+    "ai-ml",
+    "leki",
+    "epidemiologia",
+    "kliniczne",
+    "narzedzia",
+    "bazy-danych",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-e27bbddd89c2"
+  },
+  {
+   "type": "grant",
+   "source": "NIH RePORTER · Washington University · $58,460",
+   "title": "Center for Research in Emerging Infectious Diseases - Epidemiology, Surveillance and Pathogenesis",
+   "description": "SUMMARY To better understand the global threat posed by emerging viruses, including to Americans both domestically and abroad, the Center for Research in Emerging Infectious Diseases-Epidemiology, Surveillance and…",
+   "url": "https://reporter.nih.gov/project-details/3U01AI151810-06S5",
+   "date": "2026-09-19",
+   "tags": [
+    "immunoinformatyka",
+    "epidemiologia",
+    "kliniczne",
+    "narzedzia",
+    "granty"
+   ],
+   "article_type": null,
+   "id": "r-da6e1c3eaeac"
   }
  ]
 }
