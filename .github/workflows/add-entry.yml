@@ -1,0 +1,49 @@
+name: Add entry
+
+# Zgłoszenia z submit.html przychodzą mailem (Formspree). Po weryfikacji:
+# Actions → "Add entry" → Run workflow → wklej pole admin_json z maila.
+# Działa też w aplikacji GitHub na telefonie.
+
+on:
+  workflow_dispatch:
+    inputs:
+      entry_json:
+        description: "Wklej admin_json z maila Formspree (możesz w nim poprawić opis / daty)"
+        required: false
+      archive_id:
+        description: "…albo: id wpisu do archiwum (np. 2026-058)"
+        required: false
+
+concurrency:
+  group: bioinfo-news-data
+  cancel-in-progress: false
+
+jobs:
+  entry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Add or archive entry
+        env:
+          ENTRY_JSON: ${{ inputs.entry_json }}
+          ARCHIVE_ID: ${{ inputs.archive_id }}
+        run: |
+          if [ -n "$ARCHIVE_ID" ]; then
+            python scripts/add_entry.py --archive "$ARCHIVE_ID"
+          else
+            python scripts/add_entry.py --json "$ENTRY_JSON"
+          fi
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news.json
+          git diff --cached --quiet && exit 0
+          git commit -m "➕ News entry update"
+          git pull --rebase origin main
+          git push origin main
