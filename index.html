@@ -274,6 +274,7 @@ footer a:hover{color:var(--purple2)}
 .card-title{overflow-wrap:anywhere}
 </style>
 
+<link rel="stylesheet" href="assets/newsletter.css?v=2">
 </head>
 <body>
 
@@ -290,6 +291,7 @@ footer a:hover{color:var(--purple2)}
       <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
       <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
       <a href="research.html">📄 Newsy</a>
+      <a href="https://biokoderka.beehiiv.com/" class="nl-link" target="_blank" rel="noopener" data-umami-event="newsletter-click">📬 Newsletter</a>
       <a href="https://biokoderka.github.io/bioinfosites/">🧬 Wszystkie strony</a>
       <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
     </nav>
@@ -313,6 +315,17 @@ footer a:hover{color:var(--purple2)}
   </div>
 </div>
 
+<div class="nl-band">
+  <div class="nl-band-inner">
+    <div>
+      <div class="nl-eyebrow">📬 Newsletter · co tydzień</div>
+      <div class="nl-title">Bioinformatyka i tech w pigułce — raz w tygodniu</div>
+      <div class="nl-text">Najciekawsze preprinty, publikacje i nowe narzędzia z tego tygodnia, plus nadchodzące meetupy i kursy. Wybrane i opisane po polsku przez @biokoderka.</div>
+    </div>
+    <a class="nl-btn" href="https://biokoderka.beehiiv.com/" target="_blank" rel="noopener" data-umami-event="newsletter-click">Zapisz się za darmo →</a>
+  </div>
+</div>
+
 <div id="sections-container"></div>
 
 <div style="max-width:1200px;margin:0 auto;padding:0 2rem 40px;position:relative;z-index:1">
@@ -320,7 +333,7 @@ footer a:hover{color:var(--purple2)}
     <div>
       <div style="font-size:11px;font-family:Inter,sans-serif;color:var(--purple2);letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:6px">✦ 1:1 z @biokoderka</div>
       <div style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:6px">Chcesz wejść do bioinformatyki albo rozwinąć karierę?</div>
-      <div style="font-size:13px;color:var(--muted);line-height:1.6;max-width:560px">Umów się na 45-minutową konsultację kariery — przegląd CV, strategia szukania pracy i konkretny plan działania dopasowany do Ciebie i rynku, który naprawdę istnieje.</div>
+      <div style="font-size:13px;color:var(--muted);line-height:1.6;max-width:560px">Umów się na 90-minutową konsultację kariery — przegląd CV, strategia szukania pracy i konkretny plan działania dopasowany do Ciebie i rynku, który naprawdę istnieje.</div>
     </div>
     <a href="https://www.naffy.io/biokoderka/konsultacja-kariery-bioinformatycznej-o9b8" target="_blank" rel="noopener" style="flex-shrink:0;background:linear-gradient(135deg,var(--purple),var(--purple2));color:#fff;font-family:Inter,sans-serif;font-size:13px;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none;box-shadow:0 0 20px rgba(124,58,237,.35);white-space:nowrap">Umów konsultację →</a>
   </div>
@@ -330,6 +343,7 @@ footer a:hover{color:var(--purple2)}
   🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
   <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
   <a href="https://biokoderka.github.io/bioinfosites/">🧬 BioinfoSites</a> &nbsp;·&nbsp;
+  <a href="https://biokoderka.beehiiv.com/" target="_blank" rel="noopener">📬 Newsletter</a> &nbsp;·&nbsp;
   <a href="submit.html">Zgłoś wpis</a> &nbsp;·&nbsp;
   <a href="https://biokoderka.github.io/bioinfo-jobs/">BioInfoJobs</a> &nbsp;·&nbsp;
   <a href="https://biokoderka.github.io/bioinfo-uni/">BioInfoUni</a>
@@ -384,6 +398,7 @@ async function init(){
         <span class="section-emoji">📄</span>
         <span class="section-title">Newsy</span>
         <span class="section-badge">${recent.length} w tym tygodniu</span>
+        <a class="see-all nl-inline" href="https://biokoderka.beehiiv.com/" target="_blank" rel="noopener" data-umami-event="newsletter-click">📬 Co tydzień na maila</a>
         ${rentries.length?`<a class="see-all" href="research.html">Zobacz wszystkie →</a>`:''}
       </div>
       ${top3.length
