@@ -1,7 +1,120 @@
 {
  "month": "2026-10",
- "count": 135,
+ "count": 172,
  "entries": [
+  {
+   "type": "narzedzie",
+   "source": "GitHub · OpenGene/fastp",
+   "title": "fastp v1.4.0",
+   "description": "Fixed the hang issue #721",
+   "url": "https://github.com/OpenGene/fastp/releases/tag/v1.4.0",
+   "date": "2026-10-07",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-f4141668f2db"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · xuzhougeng/wisp-science",
+   "title": "wisp-science v1.18.0",
+   "description": "# wisp-science v1.18.0 — Subagents **Hand a focused task to its own conversation, watch it work, and get the result back in the conversation that asked.** A conversation's agent can now start a **subagent**: a separate conversation for one tas",
+   "url": "https://github.com/xuzhougeng/wisp-science/releases/tag/v1.18.0",
+   "date": "2026-10-07",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-edd00d16f95d"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · biodatageeks/polars-bio",
+   "title": "polars-bio 0.36.1",
+   "description": "### [0.36.1](https://github.com/biodatageeks/polars-bio/compare/0.36.0...0.36.1) (2026-10-07) ### Bug Fixes * honour projection in depth() and raise polars floor to 1.40 ([#477](https://github.com/biodatageeks/polars-bio/issues/477)) ([17e9310](https://github.com/biodatageeks/pol",
+   "url": "https://github.com/biodatageeks/polars-bio/releases/tag/0.36.1",
+   "date": "2026-10-07",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-ea604b64323c"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · neuhausi/canvasXpress",
+   "title": "canvasXpress 71.1.0",
+   "description": "CanvasXpress Version 71.1",
+   "url": "https://github.com/neuhausi/canvasXpress/releases/tag/71.1.0",
+   "date": "2026-10-07",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-2cf0971d5b91"
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "Adaptive Temporal Graph Neural Network with Contrastive Learning for Dynamic Brain Protein Interaction Prediction",
+   "description": "Abstract – The protein interaction networks are dynamic biological systems whose topology evolves over time owing to mutations, pathway perturbations, and regulatory processes.",
+   "url": "https://zenodo.org/records/23207328",
+   "date": "2026-10-07",
+   "tags": [
+    "sieci-systemy",
+    "ai-ml",
+    "ewolucja",
+    "neuronauka",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-6e7c8e8805aa"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "spxtacular: Mass spectrometry spectrum processing in Python",
+   "description": "spxtacular is a Python library for general mass-spectrum processing through chainable Spectrum and MsnSpectrum objects.",
+   "url": "https://zenodo.org/records/23203523",
+   "date": "2026-10-07",
+   "tags": [
+    "proteomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-b3b167f9796a"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Donor-aware Transcriptomic reanalysis of Dupuytren disease",
+   "description": "This archive contains the reproducible computational materials for a donor-aware reanalysis of public transcriptomic data in Dupuytren disease.It includes R and Python analysis scripts, configuration files…",
+   "url": "https://zenodo.org/records/23202916",
+   "date": "2026-10-07",
+   "tags": [
+    "transkryptomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-3cfdae72c136"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Trisomy 21 Model Atlas: Analysis Code",
+   "description": "R-based statistical analysis and visualization code for the Trisomy 21 Model Atlas, an openly accessible resource of transcriptomic and histopathological data from mouse and human iPSC-derived models of Down syndrome.",
+   "url": "https://zenodo.org/records/23198763",
+   "date": "2026-10-07",
+   "tags": [
+    "transkryptomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-ee4eca70c1fc"
+  },
   {
    "type": "narzedzie",
    "source": "GitHub · nextflow-io/nextflow",
@@ -16,16 +129,30 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · replikation/What_the_Phage",
-   "title": "What_the_Phage v2.0.0",
-   "description": "## What's Changed ## What the Phage v2.0 — backbone rework This release is a ground-up rework of the WtP backbone: a modular 7-module pipeline, a new interactive report, Nextflow 26 support, and an extended tool panel. ### Modular workflow WtP v2.0 is split into independent Nextf",
-   "url": "https://github.com/replikation/What_the_Phage/releases/tag/v2.0.0",
+   "source": "GitHub · ucscGenomeBrowser/kent",
+   "title": "kent v504_branch.1",
+   "description": "- The position box now accepts bare codon numbers and codon ranges (separated by an underscore or a hyphen) after gene symbols and NM_/ENST accessions - RefSeq transcripts now show a \"!\" and orange codons where the transcript's codon count differs from the genome's because the tr",
+   "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v504_branch.1",
    "date": "2026-10-06",
    "tags": [
+    "genomika",
     "narzedzia",
     "bazy-danych"
    ],
-   "id": "r-83c075ecd403"
+   "id": "r-5472e9abba42"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · neuhausi/canvasXpress",
+   "title": "canvasXpress 71.0.0",
+   "description": "CanvasXpress Version 71.0",
+   "url": "https://github.com/neuhausi/canvasXpress/releases/tag/71.0.0",
+   "date": "2026-10-06",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-499185354f5a"
   },
   {
    "type": "narzedzie",
@@ -39,6 +166,299 @@
     "narzedzia"
    ],
    "id": "r-07184daad2c1"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Neural Petri flows for chemical reactions",
+   "description": "Petri nets have been used to describe chemical processes such as reactions.They map well to chemistry: Places are the bonds between atoms and the free valence of each atom, a token is a unit of bond order, a transition…",
+   "url": "http://arxiv.org/abs/2610.08750v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ai-ml"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-eea058e32800"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Sliding-scale Insulin Does Not Control Steroid-induced Hyperglycemia in a Non-diabetic Patient, No Matter How You Tune It",
+   "description": "Sliding-scale correction insulin is the standard hospital response to high blood glucose.",
+   "url": "http://arxiv.org/abs/2610.08730v1",
+   "date": "2026-10-06",
+   "tags": [
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-c3c5c4d34981"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Language-model ratings of depression reflect the rater more than the patient",
+   "description": "Depression has no diagnostic blood test. Language models promise tireless, consistent assessment, but can accurate raters disagree about individuals? We pre-registered 880 language-model raters, crossing 11 open models…",
+   "url": "http://arxiv.org/abs/2610.08501v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ai-ml",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-287c572f96ba"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Information-Dense Synthesis for Molecular Discovery",
+   "description": "Machine learning can accelerate molecular discovery by designing molecules and planning experiments.",
+   "url": "http://arxiv.org/abs/2610.08495v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ai-ml"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-2af23821b41c"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "From the Drosophila Visual Connectome to General-Purpose Computer Vision",
+   "description": "Biological connectomes encode structured solutions to visual computation that may provide reusable inductive biases for artificial vision.",
+   "url": "http://arxiv.org/abs/2610.08418v1",
+   "date": "2026-10-06",
+   "tags": [
+    "neuronauka"
+   ],
+   "article_type": "benchmark",
+   "id": "r-251e569d26b7"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "A Time-Resolved Framework for Quantifying Neuronal Network State Transitions",
+   "description": "Electrophysiological recordings provide powerful tools for characterizing the dynamics of neuronal networks.",
+   "url": "http://arxiv.org/abs/2610.08392v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ewolucja",
+    "neuronauka",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-eeafab0e61fb"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "HRPv2: an automated and enhanced method for full-length homology-based R-gene prediction",
+   "description": "Motivation: Plant disease resistance genes, particularly those encoding NB-LRR proteins, are important targets for crop improvement.",
+   "url": "http://arxiv.org/abs/2610.08376v1",
+   "date": "2026-10-06",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "protokol",
+   "id": "r-9535fee6005c"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Confidence-Ordering Reversal under Contextual Priors in Neural Decoding",
+   "description": "Contextual priors improve neural-to-language decoding by reshaping candidate scores.",
+   "url": "http://arxiv.org/abs/2610.08229v1",
+   "date": "2026-10-06",
+   "tags": [
+    "inne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-eba1767dd4ba"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Neural networks as decision trees: an analytical solution for learning and neural selectivity",
+   "description": "Nonlinear neural networks develop structured internal representations, yet how their geometry is determined by the tasks being learned remains poorly understood.",
+   "url": "http://arxiv.org/abs/2610.08228v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ai-ml",
+    "neuronauka"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-92737c4ec6a5"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Effects of Periodic Migration on Selection in Subdivided Populations",
+   "description": "Migration and selection jointly shape evolutionary outcomes in spatially structured populations. Migration can vary over time as ecological shifts, such as changes in sea level, alter habitat connectivity.",
+   "url": "http://arxiv.org/abs/2610.08160v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-ab4b77954749"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "ReGraph: A Computational Account of Emergent Generalization in the \"what\" and \"where\" Dual Visual Streams",
+   "description": "Where generalization capacity--the ability to extract context-invariant relational structures--first emerges remains a central question in AI and neuroscience.",
+   "url": "http://arxiv.org/abs/2610.07962v1",
+   "date": "2026-10-06",
+   "tags": [
+    "genomika",
+    "neuronauka"
+   ],
+   "article_type": "benchmark",
+   "id": "r-330b7d3b18be"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Encoding level-3 semi-directed phylogenetic networks by quarnets and quinnets",
+   "description": "Phylogenetic networks generalize phylogenetic trees as models of evolutionary history, allowing lineages to merge as well as to diverge.",
+   "url": "http://arxiv.org/abs/2610.07855v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-addbc1a9faad"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "CANDLE: Cortical Null-Space Decomposition for Noninvasive Brain Source Imaging",
+   "description": "Electrophysiological source imaging (ESI) aims to estimate cortical source activity from noninvasive electrophysiological measurements such as electroencephalogram (EEG).",
+   "url": "http://arxiv.org/abs/2610.07824v1",
+   "date": "2026-10-06",
+   "tags": [
+    "neuronauka"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-383ea6749b70"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Mathematical Invariant-Enabled Topological Neural Networks for Molecular and Materials Property Prediction",
+   "description": "Existing molecular and materials learning approaches often rely on a limited set of structural representations, which may capture only selected aspects of complex three-dimensional structure.",
+   "url": "http://arxiv.org/abs/2610.07712v1",
+   "date": "2026-10-06",
+   "tags": [
+    "ai-ml"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-43f6e496dbfc"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution",
+   "description": "Model-guided directed evolution seeks to identify high-fitness protein variants under limited oracle budgets.",
+   "url": "http://arxiv.org/abs/2610.07607v1",
+   "date": "2026-10-06",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "ewolucja"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-34b5d6e0d2a2"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "ucscGenomeBrowser/kent: v504 Release",
+   "description": "The position box now accepts bare codon numbers and codon ranges (separated by an underscore or a hyphen) after gene symbols and NM_/ENST accessions RefSeq transcripts now show a \"!\" and orange codons where…",
+   "url": "https://zenodo.org/records/23199002",
+   "date": "2026-10-06",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-962dab3e30a5"
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "Benchmark dataset and analysis artifacts for zsasa v0.9.0",
+   "description": "Curated benchmark dataset and analysis artifacts for zsasa v0.9.0, a high-throughput solvent-accessible surface area (SASA) engine.",
+   "url": "https://zenodo.org/records/23184113",
+   "date": "2026-10-06",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-6b688e11e976"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "monarch-initiative/mondo: v2026-10-06",
+   "description": "‹details› ‹summary›New terms: 40‹/summary› | Mondo ID | Label | Definition | |:---|:---|:---| | MONDO:0700514 | inferior vena cava leiomyosarcoma | An aggressive malignant smooth muscle neoplasm…",
+   "url": "https://zenodo.org/records/23196684",
+   "date": "2026-10-06",
+   "tags": [
+    "genomika",
+    "immunoinformatyka",
+    "struktury",
+    "leki",
+    "neuronauka",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-f364fe4557db"
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "DFI-Bioinformatics/liver_transplant_Enterococcus: LT_enterococcus",
+   "description": "First release of the LT enterococcus paper.",
+   "url": "https://zenodo.org/records/23196125",
+   "date": "2026-10-06",
+   "tags": [
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-c45daa470f95"
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "LEAF-1 pretraining corpus: cfDNA fragments",
+   "description": "This record documents the cell-free DNA (cfDNA) portion of the pretraining corpus of LEAF-1, a DNA language model of cell-free DNA and chromatin-accessibility fragments.",
+   "url": "https://zenodo.org/records/23195882",
+   "date": "2026-10-06",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-6a30de86c07b"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · replikation/What_the_Phage",
+   "title": "What_the_Phage v2.0.0",
+   "description": "## What's Changed ## What the Phage v2.0 — backbone rework This release is a ground-up rework of the WtP backbone: a modular 7-module pipeline, a new interactive report, Nextflow 26 support, and an extended tool panel. ### Modular workflow WtP v2.0 is split into independent Nextf",
+   "url": "https://github.com/replikation/What_the_Phage/releases/tag/v2.0.0",
+   "date": "2026-10-06",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-83c075ecd403"
   },
   {
    "type": "narzedzie",
@@ -83,17 +503,32 @@
   },
   {
    "type": "research",
-   "source": "Zenodo · dataset",
-   "title": "Benchmark dataset and analysis artifacts for zsasa v0.9.0",
-   "description": "Curated benchmark dataset and analysis artifacts for zsasa v0.9.0, supporting the associated manuscript on high-throughput solvent-accessible surface area (SASA) analysis for structural bioinformatics workflows. This…",
-   "url": "https://zenodo.org/records/23175149",
-   "date": "2026-10-06",
+   "source": "arXiv (q-bio)",
+   "title": "IMPPAT 3.0: An updated FAIR database of phytochemicals and formulations of Indian Medicinal plants",
+   "description": "Ayurvedic formulations represent a rich source of traditional knowledge, encompassing distinct therapeutic approaches, medicinal ingredients, and underlying principles of drug action.",
+   "url": "http://arxiv.org/abs/2610.07478v1",
+   "date": "2026-10-05",
    "tags": [
-    "narzedzia",
+    "leki",
+    "kliniczne",
     "bazy-danych"
    ],
-   "article_type": "benchmark",
-   "id": "r-0c547a069cbc"
+   "article_type": "narzedzie-art",
+   "id": "r-f2fae65931e0"
+  },
+  {
+   "type": "research",
+   "source": "arXiv (q-bio)",
+   "title": "Identifiability of a linear dynamical reaction-diffusion system with directed interactions from the second-order statistics of a single snapshot",
+   "description": "A single spatial snapshot of a system with multiple interacting populations captures positions but not the underlying dynamics that have led to the observation.",
+   "url": "http://arxiv.org/abs/2610.07341v1",
+   "date": "2026-10-05",
+   "tags": [
+    "sieci-systemy",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-1475241e9a69"
   },
   {
    "type": "research",
@@ -372,20 +807,6 @@
   {
    "type": "narzedzie",
    "source": "Zenodo · software",
-   "title": "Donor-aware Transcriptomic reanalysis of Dupuytren disease",
-   "description": "This archive contains the reproducible computational materials for a donor-aware reanalysis of public transcriptomic data in Dupuytren disease.It includes R and Python analysis scripts, configuration files…",
-   "url": "https://zenodo.org/records/23170775",
-   "date": "2026-10-05",
-   "tags": [
-    "transkryptomika",
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-5abfac93e580"
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
    "title": "Disulfidptosis-associated signature in diabetic nephropathy: analysis code and results",
    "description": "Analysis code, result tables and figures for a computational study of disulfidptosis-related transcriptional programs in diabetic nephropathy (DN).",
    "url": "https://zenodo.org/records/23170444",
@@ -653,6 +1074,19 @@
    "id": "r-17b421a7ca7f"
   },
   {
+   "type": "narzedzie",
+   "source": "GitHub · xuzhougeng/wisp-science",
+   "title": "wisp-science v1.17.0",
+   "description": "# wisp-science v1.17.0 — Research Assistant **Keep one conversation for your research plans, delegate work to projects, and receive the results on your desktop or in WeChat.** The new **Research assistant** brings project activity, saved plan",
+   "url": "https://github.com/xuzhougeng/wisp-science/releases/tag/v1.17.0",
+   "date": "2026-10-03",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-d855aeca0ea5"
+  },
+  {
    "type": "research",
    "source": "Bioinformatics (OUP)",
    "title": "Katalyst: Knowledge-Guided Semantic Alignment via Contrastive Learning for Enzyme Turnover Prediction.",
@@ -781,6 +1215,47 @@
    "id": "r-99be17695a2a"
   },
   {
+   "type": "narzedzie",
+   "source": "GitHub · genomoncology/biomcp",
+   "title": "biomcp v0.9.1",
+   "description": "",
+   "url": "https://github.com/genomoncology/biomcp/releases/tag/v0.9.1",
+   "date": "2026-10-02",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-202e9047cd06"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · scverse/pertpy",
+   "title": "pertpy 1.4.0",
+   "description": "### 🚀 Features * Add signature reversal scoring to enrichment ([#1082](https://github.com/scverse/pertpy/pull/1082)) @daveringelberg * Add native Hill dose-response fitting ([#1097](https://github.com/scverse/pertpy/pull/1097)) @daveringelberg * Expose datasets as `pt.ds` in addi",
+   "url": "https://github.com/scverse/pertpy/releases/tag/1.4.0",
+   "date": "2026-10-02",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "leki",
+    "narzedzia"
+   ],
+   "id": "r-f93853fdd5aa"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · moritztng/tt-bio",
+   "title": "tt-bio v0.12.0",
+   "description": "## [0.12.0] - 2026-10-02 BindCraft 2 reaches 864 tokens on one Wormhole Galaxy chip, where 0.11.0 stopped at 512, so the EGFR ectodomain plus a 150 aa binder (800 tokens) folds uncropped. The 768-token axis that crashes 0.11.0 on Blackhole now runs at the default, and a p150a ser",
+   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.12.0",
+   "date": "2026-10-02",
+   "tags": [
+    "kliniczne",
+    "narzedzia"
+   ],
+   "id": "r-d6fa0cef9d7d"
+  },
+  {
    "type": "research",
    "source": "Cell Systems",
    "title": "FLIGHTED: Inferring fitness landscapes from noisy high-throughput experimental data.",
@@ -807,32 +1282,6 @@
    ],
    "article_type": "benchmark",
    "id": "r-e9f55c9fa223"
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · genomoncology/biomcp",
-   "title": "biomcp v0.9.1",
-   "description": "",
-   "url": "https://github.com/genomoncology/biomcp/releases/tag/v0.9.1",
-   "date": "2026-10-02",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-202e9047cd06"
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · moritztng/tt-bio",
-   "title": "tt-bio v0.12.0",
-   "description": "## [0.12.0] - 2026-10-02 BindCraft 2 reaches 864 tokens on one Wormhole Galaxy chip, where 0.11.0 stopped at 512, so the EGFR ectodomain plus a 150 aa binder (800 tokens) folds uncropped. The 768-token axis that crashes 0.11.0 on Blackhole now runs at the default, and a p150a ser",
-   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.12.0",
-   "date": "2026-10-02",
-   "tags": [
-    "kliniczne",
-    "narzedzia"
-   ],
-   "id": "r-d6fa0cef9d7d"
   },
   {
    "type": "narzedzie",
@@ -1010,21 +1459,6 @@
    "id": "r-8a7647978a85"
   },
   {
-   "type": "narzedzie",
-   "source": "GitHub · scverse/pertpy",
-   "title": "pertpy 1.4.0",
-   "description": "### 🚀 Features * Add signature reversal scoring to enrichment ([#1082](https://github.com/scverse/pertpy/pull/1082)) @daveringelberg * Add native Hill dose-response fitting ([#1097](https://github.com/scverse/pertpy/pull/1097)) @daveringelberg * Expose datasets as `pt.ds` in addi",
-   "url": "https://github.com/scverse/pertpy/releases/tag/1.4.0",
-   "date": "2026-10-02",
-   "tags": [
-    "genomika",
-    "transkryptomika",
-    "leki",
-    "narzedzia"
-   ],
-   "id": "r-f93853fdd5aa"
-  },
-  {
    "type": "research",
    "source": "arXiv (q-bio)",
    "title": "Broken scale symmetries in undercomplete linear autoencoders",
@@ -1109,6 +1543,101 @@
    ],
    "article_type": "narzedzie-art",
    "id": "r-83099fbef1ec"
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Crowdsourcing AI solutions in early rehospitalisation as a pilot for healthcare regulatory sandbox",
+   "description": "The uptake of new digital and AI based technologies in the healthcare setting, including digital diagnostics, has been comparatively slower than in other sectors.",
+   "url": "https://doi.org/10.64898/2026.09.10.26362629",
+   "date": "2026-10-01",
+   "tags": [
+    "ai-ml",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-7a593e5d742f"
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Age-Stratified Patterns of Diagnostic Delay in Pertussis",
+   "description": "BackgroundPertussis has resurged in the post-COVID-19 era, yet diagnostic delay remains a barrier to timely treatment and transmission interruption, particularly among adults. MethodsRetrospective observational cohort…",
+   "url": "https://doi.org/10.64898/2026.09.25.26364016",
+   "date": "2026-10-01",
+   "tags": [
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-4bca8c983212"
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Occupational endotoxin exposure, DNA methylation changes, and immune-cell remodeling: an epigenome-wide association study in two cohorts",
+   "description": "BackgroundMillions of textile and agricultural workers inhale organic dust containing endotoxin, an exposure associated with impaired respiratory function. However, the underlying biological pathways remain unclear.",
+   "url": "https://doi.org/10.64898/2026.09.29.26364351",
+   "date": "2026-10-01",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "benchmark",
+   "id": "r-ca944e7d8448"
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Potential impact of changes in influenza vaccination coverage and effectiveness on pediatric influenza burden in the United States, 2022/23-2024/25",
+   "description": "Background and ObjectivesInfluenza vaccination has a strong safety record and is effective in reducing pediatric influenza-associated morbidity and mortality.",
+   "url": "https://doi.org/10.64898/2026.09.25.26363797",
+   "date": "2026-10-01",
+   "tags": [
+    "modelowanie",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-71dc97b05491"
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Clonal Hematopoiesis Accelerates Frailty and Functional Decline",
+   "description": "Frailty reflects declining physiological reserve across multiple organ systems with aging, yet the underlying biological mechanisms contributing to frailty remain poorly understood.",
+   "url": "https://doi.org/10.64898/2026.09.24.26363888",
+   "date": "2026-10-01",
+   "tags": [
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-3469cd795400"
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · moritztng/tt-bio",
+   "title": "tt-bio v0.11.0",
+   "description": "## [0.11.0] - 2026-10-01 ### Added - **BindCraft 2 runs complexes up to 864 tokens on a Blackhole p150a, against 576 before, and the 544-token axis is no longer slow.** The fused triangle-attention forward had no legal chunk configuration at a padded length of 32 x p for a prime",
+   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.11.0",
+   "date": "2026-10-01",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-877498f97b6a"
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "DOPAMICS | TargetFlow benchmarking datasets",
+   "description": "These datasets provide the benchmarking data used to evaluate the performance of the TargetFlow pipeline across different targeted-enrichment datasets and bioinformatics pipelines.",
+   "url": "https://zenodo.org/records/23089013",
+   "date": "2026-10-01",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-e96c4fda3c16"
   },
   {
    "type": "research",
@@ -1530,18 +2059,6 @@
    ],
    "article_type": "narzedzie-art",
    "id": "r-b02f8b1f5818"
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · moritztng/tt-bio",
-   "title": "tt-bio v0.11.0",
-   "description": "## [0.11.0] - 2026-10-01 ### Added - **BindCraft 2 runs complexes up to 864 tokens on a Blackhole p150a, against 576 before, and the 544-token axis is no longer slow.** The fused triangle-attention forward had no legal chunk configuration at a padded length of 32 x p for a prime",
-   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.11.0",
-   "date": "2026-10-01",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-877498f97b6a"
   },
   {
    "type": "narzedzie",
