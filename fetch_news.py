@@ -133,7 +133,7 @@ ARTICLE_TYPE_LABELS = {
 
 JOURNAL_QUERIES = {
     "Bioinformatics (OUP)":         'JOURNAL:"Bioinformatics" AND (FIRST_PDATE:[{start} TO {end}])',
-    "Genome Biology":               'JOURNAL:"Genome Biology" AND (FIRST_PDATE:[{start} TO {end}])',
+    "Genome Biology":               'ISSN:"1474-760X" AND (FIRST_PDATE:[{start} TO {end}])',  # po nazwie nic nie zwracal
     "Genome Research":              'JOURNAL:"Genome Research" AND (FIRST_PDATE:[{start} TO {end}])',
     "Nucleic Acids Research":       'JOURNAL:"Nucleic Acids Research" AND (FIRST_PDATE:[{start} TO {end}])',
     "PLOS Computational Biology":   'JOURNAL:"PLoS computational biology" AND (FIRST_PDATE:[{start} TO {end}])',
@@ -155,9 +155,10 @@ BIORXIV_CATEGORIES = {
 # nazwy z taksonomii medRxiv, male litery. Wybrane pod katem bioinformatyki
 # klinicznej/epidemiologii obliczeniowej, nie caly medRxiv (za szeroki).
 MEDRXIV_CATEGORIES = {
-    "epidemiology", "health informatics", "genetic and genomic medicine",
-    "infectious diseases (except hiv/aids)",
+    "health informatics", "genetic and genomic medicine",
 }
+# (pazdziernik 2026) "epidemiology" i "infectious diseases" wypadly - dawaly
+# glownie badania czestosci chorob bez zwiazku z bioinformatyka.
 
 GITHUB_REPOS = [
     "Bioconductor/BiocManager",
@@ -320,6 +321,21 @@ def fetch_medrxiv(days_back=7, max_pages=3):
 # ---------------------------------------------------------------------------
 # 2) Europe PMC — opublikowane artykuły z wybranych czasopism
 # ---------------------------------------------------------------------------
+def europepmc_url(item):
+    """DOI, a gdy go brak: pierwszy link z fullTextUrlList, a na koniec strona
+    artykulu w Europe PMC. (fullTextUrlList to slownik, nie adres - wczesniej
+    trafial w pole url i wywracal sanitize().)"""
+    if item.get("doi"):
+        return f"https://doi.org/{item['doi']}"
+    for ft in ((item.get("fullTextUrlList") or {}).get("fullTextUrl") or []):
+        u = (ft or {}).get("url")
+        if isinstance(u, str) and u.startswith("http"):
+            return u
+    if item.get("source") and item.get("id"):
+        return f"https://europepmc.org/article/{item['source']}/{item['id']}"
+    return ""
+
+
 def fetch_europepmc(days_back=7, page_size=15):
     end = datetime.now(timezone.utc).date()
     start = end - timedelta(days=days_back)
@@ -348,7 +364,7 @@ def fetch_europepmc(days_back=7, page_size=15):
                 "source": journal_name,
                 "title": title,
                 "description": truncate_summary(abstract),
-                "url": f"https://doi.org/{doi}" if doi else item.get("fullTextUrlList", {}),
+                "url": europepmc_url(item),
                 "date": item.get("firstPublicationDate", ""),
                 "tags": tag_entry(title, abstract),
                 "article_type": classify_article_type(title, abstract),
@@ -552,7 +568,8 @@ def fetch_arxiv(days_back=7, max_results=40):
     entries = []
     url = (
         "https://export.arxiv.org/api/query"
-        "?search_query=cat:q-bio.*"
+        # tylko podkategorie blisko bioinformatyki (bez q-bio.NC neuro, q-bio.PE populacje)
+        "?search_query=cat:q-bio.GN+OR+cat:q-bio.QM+OR+cat:q-bio.BM+OR+cat:q-bio.MN+OR+cat:q-bio.CB"
         "&sortBy=submittedDate&sortOrder=descending"
         f"&max_results={max_results}"
     )
@@ -726,6 +743,235 @@ def fetch_zenodo(days_back=14, max_results=20):
     return entries
 
 
+# ---------------------------------------------------------------------------
+# 10) Duze czasopisma i branza (pazdziernik 2026) - to, z czego zyje newsletter:
+#     Nature/Science/Cell, decyzje FDA, rundy finansowania, ogloszenia firm.
+#     Jeden wspolny czytnik RSS 2.0 / RSS 1.0 (RDF, uzywa go Nature) / Atom.
+# ---------------------------------------------------------------------------
+RSS_SOURCES = [
+    # (etykieta, URL, typ wpisu, czy filtrowac tematycznie)
+    ("Nature",               "https://www.nature.com/nature.rss",            "research", True),
+    ("Nature Biotechnology", "https://www.nature.com/nbt.rss",               "research", False),
+    ("Nature Methods",       "https://www.nature.com/nmeth.rss",             "research", False),
+    ("Nature Genetics",      "https://www.nature.com/ng.rss",                "research", False),
+    ("Nature Medicine",      "https://www.nature.com/nm.rss",                "research", True),
+    ("Science",              "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science", "research", True),
+    ("Cell",                 "https://www.cell.com/cell/inpress.rss",        "research", True),
+    ("STAT",                 "https://www.statnews.com/feed/",               "branza",   True),
+    ("Endpoints News",       "https://endpts.com/feed/",                     "branza",   True),
+    ("Fierce Biotech",       "https://www.fiercebiotech.com/rss/xml",        "branza",   True),
+    ("GEN",                  "https://www.genengnews.com/feed/",             "branza",   True),
+    ("MIT Technology Review", "https://www.technologyreview.com/topic/biotechnology/feed", "branza", True),
+    ("FDA",                  "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml", "branza", True),
+]
+
+# Branza: oprocz tematow z CATEGORY_KEYWORDS przepuszczamy typowe newsy biznesowe/regulacyjne
+INDUSTRY_PATTERN = re.compile(
+    r"\b(fda|ema|approv\w*|clearance|clinical trial\w*|phase (1|2|3|i|ii|iii)\b|biotech\w*|"
+    r"gene therap\w*|cell therap\w*|crispr|antibod\w*|vaccine\w*|drug discovery|"
+    r"raises?|funding|series [a-e]\b|ipo\b|acqui\w*|licens\w*|partnership|"
+    r"\bai\b|artificial intelligence|machine learning|genom\w*|sequenc\w*|diagnostic\w*)", re.I)
+SKIP_TITLE = re.compile(r"^(author correction|publisher correction|correction|corrigendum|erratum|retraction|"
+                        r"daily briefing|reply to|matters arising|editorial expression)", re.I)
+
+_NS = {
+    "rss1": "http://purl.org/rss/1.0/",
+    "atom": "http://www.w3.org/2005/Atom",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "content": "http://purl.org/rss/1.0/modules/content/",
+}
+
+
+def _parse_date(raw):
+    raw = (raw or "").strip()
+    if not raw:
+        return None
+    try:                                           # ISO 8601 (Atom, dc:date)
+        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except ValueError:
+        pass
+    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z", "%a, %d %b %Y %H:%M %z"):
+        try:                                       # RFC 822 (RSS 2.0)
+            dt = datetime.strptime(raw, fmt)
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+    return None
+
+
+def parse_feed(xml_bytes):
+    """Zwraca liste (title, link, description, datetime|None) dla RSS 2.0, RSS 1.0 i Atom."""
+    root = ET.fromstring(xml_bytes)
+    items = []
+    for it in root.iter("item"):                                   # RSS 2.0
+        items.append((it.findtext("title"), it.findtext("link"),
+                      it.findtext("description") or it.findtext("content:encoded", namespaces=_NS),
+                      _parse_date(it.findtext("pubDate") or it.findtext("dc:date", namespaces=_NS))))
+    for it in root.iter("{%s}item" % _NS["rss1"]):                 # RSS 1.0 / RDF (Nature)
+        items.append((it.findtext("rss1:title", namespaces=_NS), it.findtext("rss1:link", namespaces=_NS),
+                      it.findtext("rss1:description", namespaces=_NS),
+                      _parse_date(it.findtext("dc:date", namespaces=_NS))))
+    for it in root.iter("{%s}entry" % _NS["atom"]):                # Atom
+        link_el = it.find("atom:link[@rel='alternate']", _NS)
+        if link_el is None:
+            link_el = it.find("atom:link", _NS)
+        items.append((it.findtext("atom:title", namespaces=_NS),
+                      link_el.get("href") if link_el is not None else "",
+                      it.findtext("atom:summary", namespaces=_NS) or it.findtext("atom:content", namespaces=_NS),
+                      _parse_date(it.findtext("atom:updated", namespaces=_NS) or it.findtext("atom:published", namespaces=_NS))))
+    return items
+
+
+def fetch_rss_sources(days_back=7):
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; BioInfoNews/1.0; +https://biokoderka.github.io/bioinfo-news/)",
+               "Accept": "application/rss+xml, application/xml, text/xml, */*"}
+    entries = []
+    for label, url, etype, filtered in RSS_SOURCES:
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                items = parse_feed(resp.read())
+        except Exception as e:   # jedno zrodlo nie moze zatrzymac reszty
+            print(f"[{label}] pominiete: {e}", file=sys.stderr)
+            continue
+        kept = 0
+        for title, link, desc, dt in items:
+            title = clean_text(title)
+            desc = clean_text(desc)
+            if not title or SKIP_TITLE.match(title):
+                continue
+            if dt is not None and dt < cutoff:
+                continue
+            tags = tag_entry(title, desc)
+            if filtered and tags == [FALLBACK_TAG] and not INDUSTRY_PATTERN.search(f"{title} {desc}"):
+                continue
+            entries.append({
+                "type": etype,
+                "source": label,
+                "title": title,
+                "description": truncate_summary(desc),
+                "url": (link or "").strip(),
+                "date": (dt or datetime.now(timezone.utc)).date().isoformat(),
+                "tags": tags,
+                "article_type": classify_article_type(title, desc) if etype == "research" else None,
+            })
+            kept += 1
+        print(f"[{label}] {kept} wpisow", file=sys.stderr)
+        time.sleep(0.5)
+    return entries
+
+
+# ---------------------------------------------------------------------------
+# Filtry szumu, laczenie tej samej historii z kilku serwisow i ocena waznosci
+# ---------------------------------------------------------------------------
+CORE_TAGS = {"genomika", "single-cell", "transkryptomika", "proteomika", "mikrobiom", "ai-ml",
+             "struktury", "leki", "immunoinformatyka", "sieci-systemy", "wielo-omika",
+             "tekst-i-nlp", "bazy-danych", "narzedzia", "ewolucja"}
+
+
+def drop_noise(entries):
+    """medRxiv i arXiv: tylko wpisy z co najmniej jednym tematem bioinformatycznym.
+    GitHub/PyPI: tylko najnowsze wydanie danego narzedzia."""
+    out, latest_tool = [], {}
+    for e in entries:
+        src = e.get("source", "")
+        if SKIP_TITLE.match(e.get("title", "")):
+            continue
+        if src.startswith(("medRxiv", "arXiv")) and not (set(e.get("tags", [])) & CORE_TAGS):
+            continue
+        if src.startswith(("GitHub ·", "PyPI")):
+            key = src
+            if key not in latest_tool or e.get("date", "") > latest_tool[key].get("date", ""):
+                latest_tool[key] = e
+            continue
+        out.append(e)
+    return out + list(latest_tool.values())
+
+
+SOURCE_WEIGHT = [
+    (r"^(Nature|Science|Cell)$", 5.0), (r"^FDA$", 5.0), (r"^Nature ", 4.0),
+    (r"^(STAT|Endpoints News|Fierce Biotech|GEN|MIT Technology Review)$", 3.0),
+    (r"^Nauka w Polsce", 3.0),
+    (r"^(Genome Biology|Genome Research|Nucleic Acids Research|Cell Systems)", 2.5),
+    (r"^(Bioinformatics|PLOS|GigaScience|BMC)", 2.0), (r"^bioRxiv", 2.0),
+    (r"^(medRxiv|arXiv)", 1.0), (r"^GitHub", 1.0), (r"^PyPI", 0.5),
+    (r"^(Zenodo|NIH)", 0.3),
+]
+BOOSTS = [
+    (re.compile(r"\b(fda|ema)\b|approv(es|ed|al)|clearance", re.I), 2.0),
+    (re.compile(r"\b(ai|llm|language model|machine learning|deep learning|agent\w*)\b", re.I), 1.0),
+    (re.compile(r"raises?|funding|series [a-e]\b|\$\s?\d+(\.\d+)?\s?(m|bn|b|million|billion)\b|acqui", re.I), 1.5),
+    (re.compile(r"\b(first|breakthrough|landmark|record)\b", re.I), 0.5),
+]
+_STOP = set("the a an of in on for and to with from by at as is are its new study using via how why what this that "
+            "into over after than more less".split())
+
+
+_GENERIC_CAPS = set("study new how why what first panel test drug data model watermarking researchers scientists "
+                    "report reports company companies trial phase".split())
+
+
+def _words(title):
+    return {w for w in re.findall(r"[a-z0-9]+", title.lower()) if len(w) > 3 and w not in _STOP}
+
+
+def _names(title):
+    # nazwy wlasne (Roche, Galleri, DeepMind, FDA...). Pierwsze slowo tytulu tez
+    # sie liczy ("Grail's Galleri..."), o ile nie jest zwyklym slowem.
+    toks = re.findall(r"[A-Za-z][A-Za-z0-9\-]+", title)
+    return {t.lower() for t in toks if t[0].isupper() and len(t) > 1
+            and t.lower() not in _STOP and t.lower() not in _GENERIC_CAPS}
+
+
+def merge_coverage(entries):
+    """Ta sama historia z kilku serwisow (np. STAT + Fierce + Endpoints o tym samym
+    panelu FDA) staje sie jednym wpisem z lista "also". Liczba serwisow podbija ocene."""
+    newsy = [e for e in entries if e["type"] == "branza" or e.get("source") in ("Nature", "Science", "Cell")]
+    rest = [e for e in entries if e not in newsy]
+    newsy.sort(key=lambda e: source_weight(e), reverse=True)
+    groups = []
+    for e in newsy:
+        w, n = _words(e["title"]), _names(e["title"])
+        for g in groups:
+            gw, gn = g["_w"], g["_n"]
+            jacc = len(w & gw) / max(1, len(w | gw))
+            if jacc >= 0.4 or len(n & gn) >= 2:
+                g["also"].append({"source": e["source"], "url": e["url"]})
+                g["_w"] |= w
+                g["_n"] |= n
+                break
+        else:
+            e = dict(e, also=[], _w=w, _n=n)
+            groups.append(e)
+    for g in groups:
+        g.pop("_w"), g.pop("_n")
+        if not g["also"]:
+            g.pop("also")
+    return groups + rest
+
+
+def source_weight(e):
+    src = e.get("source", "")
+    for pat, w in SOURCE_WEIGHT:
+        if re.search(pat, src):
+            return w
+    return 1.0
+
+
+def score_entry(e):
+    s = source_weight(e)
+    text = e.get("title", "")
+    for pat, b in BOOSTS:
+        if pat.search(text):
+            s += b
+    if "polska" in e.get("tags", []):
+        s += 2.0
+    s += 2.0 * len(e.get("also", []))
+    return round(s, 2)
+
+
 def norm_key(e):
     """Klucz deduplikacji: URL (bez parametrow i koncowego /), a gdy go brak - tytul."""
     url = (e.get("url") or "").split("?")[0].split("#")[0].rstrip("/").lower()
@@ -753,8 +999,10 @@ def clean_text(t):
 def sanitize(e):
     """Strony wstawiaja te pola przez innerHTML - czyscimy je tutaj, u zrodla."""
     for k in ("title", "description", "source"):
-        e[k] = clean_text(e.get(k))
-    url = (e.get("url") or "").strip()
+        v = e.get(k)
+        e[k] = clean_text(v if isinstance(v, str) else "")
+    url = e.get("url")
+    url = url.strip() if isinstance(url, str) else ""   # zrodlo zwrocilo cos innego niz tekst -> pomijamy
     e["url"] = url if re.match(r"^https?://", url, re.I) and not re.search(r"[\"'<>\s]", url) else ""
     e["id"] = "r-" + hashlib.md5(norm_key(e).encode("utf-8")).hexdigest()[:12]
     return e
@@ -827,9 +1075,13 @@ def main():
     fresh += run_source("arXiv", fetch_arxiv)
     fresh += run_source("NIH RePORTER", fetch_nih_reporter)
     fresh += run_source("Zenodo", fetch_zenodo)
+    fresh += run_source("Czasopisma i branza (RSS)", fetch_rss_sources)
 
     # bez tytułu albo bez działającego linku karta jest bezużyteczna
     fresh = [e for e in (sanitize(e) for e in fresh if (e.get("title") or "").strip()) if e["url"]]
+    fresh = merge_coverage(drop_noise(fresh))
+    for e in fresh:
+        e["score"] = score_entry(e)
     if not fresh:
         print("Zadne zrodlo nic nie zwrocilo - zostawiam pliki bez zmian", file=sys.stderr)
         return
@@ -840,6 +1092,9 @@ def main():
     previous = [e for e in (sanitize(e) for e in load_entries(FEED_PATH)) if e["url"]]
     feed = dedupe(fresh + previous)
     feed = [e for e in feed if e.get("date", "") >= cutoff]
+    feed = drop_noise(feed)          # czysci tez wpisy zapisane przed tymi filtrami
+    for e in feed:
+        e["score"] = score_entry(e)
     feed.sort(key=lambda e: e.get("date", ""), reverse=True)
 
     write_json(FEED_PATH, {
