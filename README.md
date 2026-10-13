@@ -84,14 +84,15 @@ Staże nie trafiają do archiwum po dacie — programy wracają co roku, więc z
 
 | Pole | Opis | Wymagane |
 |------|------|----------|
-| `status` | `open` (nabór otwarty), `rolling` (nabór ciągły / pisz bezpośrednio), `closed` (zamknięty, wraca cyklicznie), `check` (starsza edycja — sprawdź) | ✅ |
+| `status` | `open` (nabór otwarty — wymaga `deadline`), `yearround` (rekrutacja całoroczna — **tylko gdy organizator sam to deklaruje**), `closed` (nabór zamknięty), `direct` (brak programu, wyślij CV), `check` (brak aktualnych terminów, stara edycja) | ✅ |
 | `region` | `PL`, `EU` albo `remote` | ✅ |
+| `last_round` | Ostatni potwierdzony nabór, np. `do 21 marca 2026 (start lipiec 2026)` — wymagane dla `closed` i `check` | — |
+| `next_round` | Zapowiedziany następny nabór, np. `1 listopada 2026 – 1 lutego 2027` (tylko gdy organizator go ogłosił) | — |
+| `typical_window` | Kiedy zwykle jest nabór, np. `czerwiec–lipiec` (tylko z oficjalnego źródła) | — |
 | `eligibility` | Dla kogo, jednym zdaniem | — |
-| `typical_window` | Kiedy zwykle jest nabór, np. `listopad–marzec` | — |
-| `edition` | Edycja, z której pochodzi opis, np. `2026` | — |
 | `deadline` | Przy `status: open` — po tej dacie karta sama pokazuje „nabór zamknięty” | — |
 
-Nie ustawiaj `date_end` (wpis zniknąłby do archiwum) — walidacja to zgłasza. Gdy nabór rusza: zmień `status` na `open` i dodaj `deadline`; po terminie przestaw z powrotem na `closed`.
+Nie zgadujemy terminów: jeśli nie ma oficjalnej informacji o rekrutacji całorocznej, podaj datę ostatniego naboru. Nie ustawiaj `date_end` (wpis zniknąłby do archiwum) — walidacja to zgłasza. Gdy nabór rusza: zmień `status` na `open` i dodaj `deadline`; po terminie przestaw z powrotem na `closed`.
 
 ### Archiwizacja
 

@@ -19,11 +19,12 @@
       return true;
     }).sort((a, b) =>
       rank(a) - rank(b) ||
+      (b.next_round ? 1 : 0) - (a.next_round ? 1 : 0) ||   // zapowiedziany nabór wyżej
       (REGION_ORDER[a.region] ?? 9) - (REGION_ORDER[b.region] ?? 9) ||
       String(a.title).localeCompare(String(b.title), 'pl'));
 
-    const live = all.filter(e => ['open', 'rolling'].includes(internStatus(e))).length;
-    $('statsLine').innerHTML = `<strong>${all.length}</strong> programów &nbsp;·&nbsp; <strong>${live}</strong> z otwartym lub ciągłym naborem`;
+    const live = all.filter(e => ['open', 'yearround'].includes(internStatus(e))).length;
+    $('statsLine').innerHTML = `<strong>${all.length}</strong> programów &nbsp;·&nbsp; <strong>${live}</strong> z otwartym naborem lub rekrutacją całoroczną`;
     $('cards').innerHTML = list.length
       ? list.map(e => newsCard(e)).join('')
       : `<div class="empty">Brak staży dla tych filtrów.<br><a href="submit.html">Znasz program? Zgłoś go →</a></div>`;

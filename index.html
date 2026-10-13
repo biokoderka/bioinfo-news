@@ -275,7 +275,7 @@ footer a:hover{color:var(--purple2)}
 </style>
 
 <link rel="stylesheet" href="assets/newsletter.css?v=2">
-<link rel="stylesheet" href="assets/internships.css?v=1">
+<link rel="stylesheet" href="assets/internships.css?v=3">
 </head>
 <body>
 
@@ -353,7 +353,7 @@ footer a:hover{color:var(--purple2)}
   <a href="privacy.html">Prywatność i regulamin</a>
 </footer>
 
-<script src="assets/common.js?v=3"></script>
+<script src="assets/common.js?v=6"></script>
 <script>
 const SECTIONS = [
   { type:'meetup',       emoji:'🤝', label:'Meetupy i wydarzenia',   page:'meetups.html' },
@@ -419,7 +419,7 @@ async function init(){
       <div class="section-head">
         <span class="section-emoji">${sec.emoji}</span>
         <span class="section-title">${sec.label}</span>
-        <span class="section-badge">${sec.type==='internship' ? all.filter(e=>['open','rolling'].includes(internStatus(e))).length+' z naborem' : all.length+' aktywne'}</span>
+        <span class="section-badge">${sec.type==='internship' ? all.filter(e=>['open','yearround'].includes(internStatus(e))).length+' z naborem' : all.length+' aktywne'}</span>
         ${all.length?`<a class="see-all" href="${sec.page}">Zobacz wszystkie →</a>`:''}
       </div>
       ${all.length

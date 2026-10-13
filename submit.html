@@ -223,6 +223,7 @@ document.getElementById('submitForm').addEventListener('submit',async function(e
     if(entry.date_end && !entry.deadline) entry.deadline=entry.date_end;
     delete entry.date_end;
     entry.status=entry.deadline?'open':'check';
+    if(!entry.deadline) entry.last_round='uzupełnij';
     entry.region='PL';
   }
   document.getElementById('adminJson').value=JSON.stringify(entry);

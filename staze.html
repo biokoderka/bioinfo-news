@@ -161,7 +161,7 @@ footer a:hover{color:var(--purple2)}
 .card-title{overflow-wrap:anywhere}
 </style>
 <link rel="stylesheet" href="assets/newsletter.css?v=2">
-<link rel="stylesheet" href="assets/internships.css?v=1">
+<link rel="stylesheet" href="assets/internships.css?v=3">
 </head>
 <body>
 
@@ -201,13 +201,14 @@ footer a:hover{color:var(--purple2)}
 </div>
 
 <div class="content">
-  <p class="hero-note">Programy wracają co roku, więc zostawiamy też <b>zamknięte nabory i starsze edycje</b> — pokazują, gdzie i kiedy szukać. Status mówi, czy da się aplikować teraz. Aktywne oferty pracy znajdziesz w <a href="https://biokoderka.github.io/bioinfo-jobs/" style="color:var(--purple2);font-weight:600">BioInfoJobs</a>.</p>
+  <p class="hero-note">Programy wracają co roku, więc zostawiamy też <b>zamknięte nabory i starsze edycje</b> — z datą ostatniego naboru, żeby było wiadomo, kiedy wrócić. „Rekrutacja całoroczna” tylko tam, gdzie organizator sam to deklaruje. Aktywne oferty pracy znajdziesz w <a href="https://biokoderka.github.io/bioinfo-jobs/" style="color:var(--purple2);font-weight:600">BioInfoJobs</a>.</p>
 
   <div class="status-legend">
     <span class="pill st-open">🟢 Nabór otwarty</span>
-    <span class="pill st-rolling">🔄 Nabór ciągły — oferty na bieżąco albo pisz bezpośrednio</span>
-    <span class="pill st-closed">⏸ Nabór zamknięty · wraca cyklicznie</span>
-    <span class="pill st-check">🔎 Starsza edycja — sprawdź aktualny nabór</span>
+    <span class="pill st-yearround">🔄 Rekrutacja całoroczna — potwierdzona przez organizatora</span>
+    <span class="pill st-closed">⏸ Nabór zamknięty — patrz „ostatni nabór”</span>
+    <span class="pill st-direct">✉️ Brak programu — wyślij CV</span>
+    <span class="pill st-check">🔎 Sprawdź aktualny nabór — brak potwierdzonych dat</span>
   </div>
 
   <div class="filters-panel">
@@ -221,8 +222,9 @@ footer a:hover{color:var(--purple2)}
     <select id="statusFilter">
       <option value="">Status: dowolny</option>
       <option value="open">🟢 Nabór otwarty</option>
-      <option value="rolling">🔄 Nabór ciągły</option>
+      <option value="yearround">🔄 Rekrutacja całoroczna</option>
       <option value="closed">⏸ Nabór zamknięty</option>
+      <option value="direct">✉️ Wyślij CV</option>
       <option value="check">🔎 Sprawdź nabór</option>
     </select>
   </div>
@@ -237,11 +239,10 @@ footer a:hover{color:var(--purple2)}
 
   <section class="usa-box">
     <h2>🇺🇸 Dlaczego nie ma tu staży z USA?</h2>
-    <p>Popularne listy z LinkedIna (Amgen, Biogen, BMS, J&amp;J, Merck, Genentech, AstraZeneca US) dotyczą programów w Stanach. Wymagają prawa do pracy w USA bez sponsoringu wizy, więc dla studentów z Polski są praktycznie zamknięte.</p>
+    <p>Popularne listy z LinkedIna (Amgen, Biogen, BMS, J&amp;J, Merck, Genentech, AstraZeneca US) dotyczą programów w Stanach. Takie staże wymagają prawa do pracy w USA, a firmy z reguły nie sponsorują wiz stażystom — dla studentów z Polski są więc praktycznie zamknięte.</p>
     <ul>
-      <li>J&amp;J zaznacza, że nawet studenci na CPT/OPT zwykle nie spełniają wymagań, bo potrzebowaliby później sponsoringu (<a href="https://www.careers.jnj.com/en/jobs/r-074283/warsaw-medtest-co-op/" target="_blank" rel="noopener">ogłoszenie</a>).</li>
-      <li>BMS wymaga powrotu na uczelnię po stażu i dostaje ok. 16 tys. aplikacji na cykl (<a href="https://www.extern.com/post/bristol-myers-squibb-internship-guide" target="_blank" rel="noopener">przewodnik</a>).</li>
-      <li>Te same firmy mają programy w Polsce i w Europie — znajdziesz je na liście powyżej.</li>
+      <li>Te same firmy prowadzą programy w Polsce i w Europie: AstraZeneca i J&amp;J w Warszawie, Roche (właściciel Genentech) w Szwajcarii, Novartis w Bazylei — znajdziesz je na liście powyżej.</li>
+      <li>Zanim zaaplikujesz do programu za granicą, sprawdź w ogłoszeniu wymóg „right to work” albo „work authorization”.</li>
     </ul>
   </section>
 </div>
@@ -256,7 +257,7 @@ footer a:hover{color:var(--purple2)}
   <a href="submit.html">Zgłoś wpis</a>
 </footer>
 
-<script src="assets/common.js?v=3"></script>
-<script src="assets/internships.js?v=1"></script>
+<script src="assets/common.js?v=6"></script>
+<script src="assets/internships.js?v=3"></script>
 </body>
 </html>

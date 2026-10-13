@@ -53,11 +53,13 @@ const TYPE_META = {
 };
 
 // Staże: status naboru zamiast archiwum — programy wracają co roku, więc zostają widoczne.
+// Zasada: "yearround" tylko gdy organizator sam pisze o rekrutacji całorocznej; inaczej podaj last_round.
 const INTERN_STATUS = {
-  'open':    { label: '🟢 Nabór otwarty',               cls: 'st-open',    rank: 0 },
-  'rolling': { label: '🔄 Nabór ciągły',                cls: 'st-rolling', rank: 1 },
-  'closed':  { label: '⏸ Nabór zamknięty · wraca',      cls: 'st-closed',  rank: 2 },
-  'check':   { label: '🔎 Sprawdź aktualny nabór',      cls: 'st-check',   rank: 3 },
+  'open':      { label: '🟢 Nabór otwarty',                cls: 'st-open',      rank: 0 },
+  'yearround': { label: '🔄 Rekrutacja całoroczna',        cls: 'st-yearround', rank: 1 },
+  'closed':    { label: '⏸ Nabór zamknięty',               cls: 'st-closed',    rank: 2 },
+  'direct':    { label: '✉️ Brak programu — wyślij CV',     cls: 'st-direct',    rank: 3 },
+  'check':     { label: '🔎 Sprawdź aktualny nabór',       cls: 'st-check',     rank: 4 },
 };
 const REGION_LABELS = { 'PL': '🇵🇱 Polska', 'EU': '🇪🇺 Europa', 'remote': '💻 Zdalnie' };
 // "open" z minionym deadline'em pokazujemy jako zamknięty — bez ręcznej zmiany w JSON-ie.
@@ -97,8 +99,9 @@ function newsCard(e, { showArchivedBadge = false } = {}) {
     const st = INTERN_STATUS[internStatus(e)];
     pills += `<span class="pill ${st.cls}">${st.label}</span>`;
     if (REGION_LABELS[e.region]) pills += `<span class="pill region">${REGION_LABELS[e.region]}</span>`;
-    if (e.typical_window) pills += `<span class="pill window">🗓️ nabór: ${esc(e.typical_window)}</span>`;
-    if (e.edition) pills += `<span class="pill edition">edycja: ${esc(e.edition)}</span>`;
+    if (e.next_round) pills += `<span class="pill nextround">📅 następny nabór: ${esc(e.next_round)}</span>`;
+    if (e.last_round) pills += `<span class="pill lastround">🕓 ostatni nabór: ${esc(e.last_round)}</span>`;
+    if (e.typical_window) pills += `<span class="pill window">🗓️ zwykle: ${esc(e.typical_window)}</span>`;
   }
   if (e.free)       pills += `<span class="pill free">✓ bezpłatne</span>`;
   if (e.lang)       pills += `<span class="pill lang">${esc(e.lang)}</span>`;

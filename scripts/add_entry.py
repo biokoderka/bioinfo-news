@@ -17,12 +17,12 @@ from pathlib import Path
 
 NEWS = Path(__file__).parent.parent / "news.json"
 TYPES = {"meetup", "course-dated", "course-free", "project", "other", "internship"}
-STATUSES = {"open", "rolling", "closed", "check"}
+STATUSES = {"open", "yearround", "closed", "direct", "check"}
 REGIONS = {"PL", "EU", "remote"}
 DATE_FIELDS = ("date_start", "date_end", "deadline", "added")
 FIELDS = ("type", "title", "org", "description", "url", "free", "lang", "location",
           "date_start", "date_end", "deadline",
-          "status", "region", "eligibility", "typical_window", "edition")   # ostatnie 5: staże
+          "status", "region", "eligibility", "typical_window", "last_round", "next_round")   # ostatnie 5: staże
 DAY = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
@@ -56,6 +56,10 @@ def problems(e):
             p.append(f"staż: status musi być jednym z: {', '.join(sorted(STATUSES))}")
         if e.get("region") not in REGIONS:
             p.append(f"staż: region musi być jednym z: {', '.join(sorted(REGIONS))}")
+        if e.get("status") == "open" and not e.get("deadline"):
+            p.append("staż: status open wymaga deadline — inaczej użyj yearround (tylko gdy organizator to deklaruje)")
+        if e.get("status") in ("closed", "check") and not e.get("last_round"):
+            p.append("staż: dla closed/check podaj last_round, np. 'do 21 marca 2026'")
         if e.get("date_end"):
             p.append("staż: nie ustawiaj date_end (wpis zniknąłby do archiwum) — użyj deadline + status open")
     return p
