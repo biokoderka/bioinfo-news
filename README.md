@@ -18,6 +18,7 @@ Każda sekcja ma własną podstronę z pełną listą, wyszukiwarką i archiwum.
 | `courses-dated.html` | 🗓 Kursy z terminem |
 | `courses-free.html` | 📚 Kursy stałe i zasoby |
 | `projects.html` | 🌿 Projekty do współpracy |
+| `staze.html` | 🎓 Staże dla studentów (status naboru zamiast archiwum) |
 | `other.html` | ✦ Inne inicjatywy |
 | `submit.html` | Formularz zgłoszeń (Formspree) |
 | `research.html` | 📄 Newsy badawcze + archiwum miesięczne |
@@ -55,6 +56,7 @@ Otwórz `news.json` i dodaj obiekt do tablicy `entries`:
 | `course-dated` | Kursy z konkretnym terminem |
 | `course-free` | Kursy stałe / platformy bez terminu |
 | `project` | Projekty do współpracy |
+| `internship` | Staże i programy dla studentów (patrz niżej) |
 | `other` | Hackathony, konkursy, inne |
 
 ### Wszystkie pola
@@ -75,6 +77,21 @@ Otwórz `news.json` i dodaj obiekt do tablicy `entries`:
 | `date_start` | Data rozpoczęcia `YYYY-MM-DD` | — |
 | `date_end` | **Po tej dacie wpis trafia do archiwum automatycznie** | — |
 | `deadline` | Deadline zgłoszeń `YYYY-MM-DD` | — |
+
+### Staże (`type: "internship"`)
+
+Staże nie trafiają do archiwum po dacie — programy wracają co roku, więc zostają widoczne na `staze.html`, a o aktualności mówi status. Dodatkowe pola:
+
+| Pole | Opis | Wymagane |
+|------|------|----------|
+| `status` | `open` (nabór otwarty), `rolling` (nabór ciągły / pisz bezpośrednio), `closed` (zamknięty, wraca cyklicznie), `check` (starsza edycja — sprawdź) | ✅ |
+| `region` | `PL`, `EU` albo `remote` | ✅ |
+| `eligibility` | Dla kogo, jednym zdaniem | — |
+| `typical_window` | Kiedy zwykle jest nabór, np. `listopad–marzec` | — |
+| `edition` | Edycja, z której pochodzi opis, np. `2026` | — |
+| `deadline` | Przy `status: open` — po tej dacie karta sama pokazuje „nabór zamknięty” | — |
+
+Nie ustawiaj `date_end` (wpis zniknąłby do archiwum) — walidacja to zgłasza. Gdy nabór rusza: zmień `status` na `open` i dodaj `deadline`; po terminie przestaw z powrotem na `closed`.
 
 ### Archiwizacja
 

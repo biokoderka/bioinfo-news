@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staże w bioinformatyce i biotech dla studentów z Polski | BioInfoNews</title>
+<meta name="description" content="Staże i programy dla przyszłych bioinformatyków — w Polsce, w Europie i zdalnie. Ze statusem naboru, warunkami i linkami.">
+<link rel="canonical" href="https://biokoderka.github.io/bioinfo-news/staze.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BioInfoNews">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Staże w bioinformatyce i biotech dla studentów z Polski | BioInfoNews">
+<meta property="og:description" content="Staże i programy dla przyszłych bioinformatyków — w Polsce, w Europie i zdalnie. Ze statusem naboru, warunkami i linkami.">
+<meta property="og:url" content="https://biokoderka.github.io/bioinfo-news/staze.html">
+<meta property="og:image" content="https://biokoderka.github.io/bioinfo-news/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d0a1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d0a1a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">
+<script defer src="https://umami-rose-alpha.vercel.app/script.js" data-website-id="0f8a4bbd-7790-437c-912f-15149106ebab"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0a1a;--bg2:#130f25;--bg3:#1a1535;
+  --card:#15112a;--card2:#1d1840;
+  --border:rgba(139,92,246,.18);--border2:rgba(139,92,246,.35);
+  --text:#e8e4f8;--muted:#8b7faa;--dim:#4a4268;
+  --purple:#7c3aed;--purple2:#a855f7;--pink:#ec4899;
+  --green:#10b981;--yellow:#f59e0b;--red:#ef4444;--cyan:#06b6d4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 0%,rgba(124,58,237,.12) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 30% at 80% 10%,rgba(168,85,247,.08) 0%,transparent 50%);
+}
+a{text-decoration:none}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;height:56px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.logo-text{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.3px}
+.logo-text span{color:var(--purple2)}
+.logo-sub{font-size:11px;color:var(--muted);font-weight:500}
+.header-nav{display:flex;gap:6px;margin-left:auto;align-items:center}
+.header-nav a{font-size:12px;font-weight:600;color:var(--muted);padding:5px 12px;border-radius:999px;border:1px solid transparent;transition:all .15s;white-space:nowrap}
+.header-nav a:hover{color:var(--text);border-color:var(--border2)}
+.header-nav a.cta{background:linear-gradient(135deg,var(--purple),var(--purple2));color:#fff}
+.header-nav a.cta:hover{opacity:.85}
+
+/* HERO */
+.hero{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:48px 2rem 32px}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--dim);margin-bottom:20px;transition:color .15s}
+.back-link:hover{color:var(--purple2)}
+.hero h1{
+  font-size:clamp(28px,5vw,56px);font-weight:900;line-height:1;letter-spacing:-1.5px;margin-bottom:8px;
+  background:linear-gradient(135deg,#fff 30%,#c084fc 65%,#ec4899 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero h1 .icon{-webkit-text-fill-color:initial;-webkit-background-clip:initial;background:none;display:inline-block}
+.hero-sub{font-size:14px;color:var(--muted);margin-bottom:24px}
+
+/* SUBNAV */
+.subnav{display:flex;gap:6px;flex-wrap:wrap;padding-bottom:28px;border-bottom:1px solid var(--border);margin-bottom:28px}
+.subnav a{font-size:12px;font-weight:600;color:var(--muted);padding:6px 14px;border-radius:999px;border:1px solid var(--border);transition:all .15s}
+.subnav a:hover{color:var(--text);border-color:var(--border2)}
+.subnav a.active{background:rgba(124,58,237,.2);border-color:rgba(124,58,237,.4);color:var(--purple2)}
+
+/* FILTERS */
+.filters-panel{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.filters-panel input,
+.filters-panel select{
+  background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  padding:8px 12px;color:var(--text);font:inherit;font-size:13px;
+  outline:none;transition:border-color .15s;
+}
+.filters-panel input{flex:1;min-width:180px}
+.filters-panel input::placeholder{color:var(--dim)}
+.filters-panel select{cursor:pointer}
+.filters-panel input:focus,
+.filters-panel select:focus{border-color:var(--border2)}
+.filters-panel select option{background:var(--bg2)}
+
+/* STATS + ARCHIVE */
+.controls-row{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.stats-text{font-size:13px;color:var(--dim)}
+.stats-text strong{color:var(--muted)}
+.archive-btn{
+  margin-left:auto;font-size:12px;font-weight:700;color:var(--muted);
+  padding:6px 14px;border-radius:999px;border:1px solid var(--border);
+  background:none;cursor:pointer;font-family:inherit;transition:all .15s;
+}
+.archive-btn:hover{color:var(--purple2);border-color:var(--border2)}
+.archive-btn.on{background:rgba(124,58,237,.15);color:var(--purple2);border-color:rgba(124,58,237,.35)}
+
+/* CARDS */
+.cards{display:grid;gap:12px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:18px;position:relative;overflow:hidden;
+  transition:border-color .2s,background .2s;
+}
+.card::before{
+  content:'';position:absolute;inset:0;border-radius:14px;
+  background:linear-gradient(135deg,rgba(124,58,237,.04),transparent 60%);
+  pointer-events:none;
+}
+.card:hover{border-color:var(--border2);background:var(--card2)}
+.card.archived{opacity:.5}
+.archived-badge{
+  position:absolute;top:14px;right:14px;
+  font-size:10px;font-weight:800;color:var(--dim);letter-spacing:.06em;
+  background:rgba(255,255,255,.05);border:1px solid var(--border);
+  padding:2px 8px;border-radius:999px;text-transform:uppercase;
+}
+
+.card-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.type-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.type-pill.project     {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.25); color:#34d399}
+.type-pill.course-free {background:rgba(6,182,212,.12);  border:1px solid rgba(6,182,212,.25);  color:#22d3ee}
+.type-pill.course-dated{background:rgba(245,158,11,.12); border:1px solid rgba(245,158,11,.25); color:#fbbf24}
+.type-pill.meetup      {background:rgba(236,72,153,.12); border:1px solid rgba(236,72,153,.25); color:#f472b6}
+.type-pill.other       {background:rgba(124,58,237,.12); border:1px solid rgba(124,58,237,.3);  color:#a78bfa}
+
+.card-title{font-size:15px;font-weight:700;color:var(--text);flex:1;line-height:1.3;letter-spacing:-.1px}
+.card-org{font-size:12px;color:var(--muted);margin-bottom:8px}
+.card-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px}
+.card-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.pill{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;display:inline-flex;align-items:center;gap:3px}
+.pill.free    {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.2); color:#34d399}
+.pill.lang    {background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.pill.date    {background:rgba(245,158,11,.1);  border:1px solid rgba(245,158,11,.2); color:#fbbf24}
+.pill.deadline{background:rgba(239,68,68,.1);   border:1px solid rgba(239,68,68,.2);  color:#f87171}
+.pill.loc     {background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:var(--dim)}
+
+.card-link{font-size:12px;font-weight:700;color:var(--purple2);display:inline-flex;align-items:center;gap:4px;transition:color .15s}
+.card-link:hover{color:var(--pink)}
+
+.empty{text-align:center;padding:60px 2rem;color:var(--dim);font-size:14px}
+.empty a{color:var(--purple2);font-weight:700}
+
+footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:20px 2rem;text-align:center;font-size:12px;color:var(--dim)}
+footer a{color:var(--muted);font-weight:600}
+footer a:hover{color:var(--purple2)}
+
+.content{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 2rem 56px}
+@media(max-width:600px){
+  .hero{padding:32px 1.2rem 24px}
+  .content{padding:0 1.2rem 40px}
+  header{padding:0 1rem}
+  .filters-panel{flex-direction:column}
+  .filters-panel input{min-width:0;width:100%}
+}
+.card-title{overflow-wrap:anywhere}
+</style>
+<link rel="stylesheet" href="assets/newsletter.css?v=2">
+<link rel="stylesheet" href="assets/internships.css?v=1">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">🧬</div>
+      <div>
+        <div class="logo-text">BioInfo<span>News</span></div>
+        <div class="logo-sub">by @biokoderka</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="https://biokoderka.github.io/bioinfo-jobs/">💼 Jobs</a>
+      <a href="https://biokoderka.github.io/bioinfo-uni/">🎓 Uczelnie</a>
+      <a href="research.html">📄 Newsy</a>
+      <a href="https://biokoderka.beehiiv.com/" class="nl-link" target="_blank" rel="noopener" data-umami-event="newsletter-click">📬 Newsletter</a>
+      <a href="https://biokoderka.github.io/bioinfosites/">🧬 Wszystkie strony</a>
+      <a href="submit.html" class="cta">✦ Zgłoś wpis</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <a class="back-link" href="index.html">← Strona główna</a>
+  <h1><span class="icon">🎓</span> Staże dla studentów</h1>
+  <p class="hero-sub">Polska · Europa · zdalnie · curated by <a href="https://instagram.com/biokoderka" style="color:var(--purple2);font-weight:600">@biokoderka</a></p>
+  <nav class="subnav">
+    <a href="meetups.html" class="">🤝 Meetupy</a>
+      <a href="courses-dated.html" class="">🗓️ Kursy z terminem</a>
+      <a href="courses-free.html" class="">📚 Kursy stałe</a>
+      <a href="projects.html" class="">🌿 Projekty</a>
+      <a href="staze.html" class="active">🎓 Staże</a>
+      <a href="other.html" class="">✦ Inne</a>
+      <a href="research.html" class="">📄 Newsy</a>
+  </nav>
+</div>
+
+<div class="content">
+  <p class="hero-note">Programy wracają co roku, więc zostawiamy też <b>zamknięte nabory i starsze edycje</b> — pokazują, gdzie i kiedy szukać. Status mówi, czy da się aplikować teraz. Aktywne oferty pracy znajdziesz w <a href="https://biokoderka.github.io/bioinfo-jobs/" style="color:var(--purple2);font-weight:600">BioInfoJobs</a>.</p>
+
+  <div class="status-legend">
+    <span class="pill st-open">🟢 Nabór otwarty</span>
+    <span class="pill st-rolling">🔄 Nabór ciągły — oferty na bieżąco albo pisz bezpośrednio</span>
+    <span class="pill st-closed">⏸ Nabór zamknięty · wraca cyklicznie</span>
+    <span class="pill st-check">🔎 Starsza edycja — sprawdź aktualny nabór</span>
+  </div>
+
+  <div class="filters-panel">
+    <input type="text" id="searchInput" placeholder="Szukaj: firma, miasto, NGS, Python…">
+    <select id="regionFilter">
+      <option value="">Region: wszystkie</option>
+      <option value="PL">🇵🇱 Polska</option>
+      <option value="EU">🇪🇺 Europa</option>
+      <option value="remote">💻 Zdalnie</option>
+    </select>
+    <select id="statusFilter">
+      <option value="">Status: dowolny</option>
+      <option value="open">🟢 Nabór otwarty</option>
+      <option value="rolling">🔄 Nabór ciągły</option>
+      <option value="closed">⏸ Nabór zamknięty</option>
+      <option value="check">🔎 Sprawdź nabór</option>
+    </select>
+  </div>
+
+  <div class="controls-row">
+    <span class="stats-text" id="statsLine">Ładowanie…</span>
+  </div>
+
+  <div class="cards" id="cards">
+    <div class="empty">Ładowanie…</div>
+  </div>
+
+  <section class="usa-box">
+    <h2>🇺🇸 Dlaczego nie ma tu staży z USA?</h2>
+    <p>Popularne listy z LinkedIna (Amgen, Biogen, BMS, J&amp;J, Merck, Genentech, AstraZeneca US) dotyczą programów w Stanach. Wymagają prawa do pracy w USA bez sponsoringu wizy, więc dla studentów z Polski są praktycznie zamknięte.</p>
+    <ul>
+      <li>J&amp;J zaznacza, że nawet studenci na CPT/OPT zwykle nie spełniają wymagań, bo potrzebowaliby później sponsoringu (<a href="https://www.careers.jnj.com/en/jobs/r-074283/warsaw-medtest-co-op/" target="_blank" rel="noopener">ogłoszenie</a>).</li>
+      <li>BMS wymaga powrotu na uczelnię po stażu i dostaje ok. 16 tys. aplikacji na cykl (<a href="https://www.extern.com/post/bristol-myers-squibb-internship-guide" target="_blank" rel="noopener">przewodnik</a>).</li>
+      <li>Te same firmy mają programy w Polsce i w Europie — znajdziesz je na liście powyżej.</li>
+    </ul>
+  </section>
+</div>
+
+<div class="nl-strip"><a href="https://biokoderka.beehiiv.com/" target="_blank" rel="noopener" data-umami-event="newsletter-click">📬 <span>Najważniejsze newsy, wydarzenia i kursy <b>raz w tygodniu w Twojej skrzynce</b> — zapisz się do newslettera →</span></a></div>
+
+<footer>
+  🧬 <strong style="color:var(--muted)">BioInfoNews</strong> by
+  <a href="https://instagram.com/biokoderka">@biokoderka</a> &nbsp;·&nbsp;
+  <a href="https://biokoderka.github.io/bioinfosites/">🧬 BioinfoSites</a> &nbsp;·&nbsp;
+  <a href="index.html">Strona główna</a> &nbsp;·&nbsp;
+  <a href="submit.html">Zgłoś wpis</a>
+</footer>
+
+<script src="assets/common.js?v=3"></script>
+<script src="assets/internships.js?v=1"></script>
+</body>
+</html>

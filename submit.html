@@ -121,6 +121,7 @@ footer a:hover{color:var(--purple2)}
           <option value="course-free">📚 Kurs stały (platforma, zasoby bez terminu)</option>
           <option value="course-dated">🗓️ Kurs z konkretnym terminem</option>
           <option value="meetup">🤝 Meetup / konferencja / warsztat</option>
+          <option value="internship">🎓 Staż / praktyki / program dla studentów</option>
           <option value="other">✦ Inne (hackathon, konkurs, inicjatywa)</option>
         </select>
       </div>
@@ -217,6 +218,13 @@ document.getElementById('submitForm').addEventListener('submit',async function(e
   const entry={};
   pick.forEach(k=>{const v=(fd.get(k)||'').toString().trim(); if(v) entry[k]=v;});
   if(fd.get('free')) entry.free=true;
+  if(entry.type==='internship'){
+    // staże nie archiwizują się po date_end; status i region admin poprawia w admin_json
+    if(entry.date_end && !entry.deadline) entry.deadline=entry.date_end;
+    delete entry.date_end;
+    entry.status=entry.deadline?'open':'check';
+    entry.region='PL';
+  }
   document.getElementById('adminJson').value=JSON.stringify(entry);
   btn.textContent='Wysyłanie…';btn.disabled=true;
   try{

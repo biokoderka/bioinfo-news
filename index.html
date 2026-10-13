@@ -275,6 +275,7 @@ footer a:hover{color:var(--purple2)}
 </style>
 
 <link rel="stylesheet" href="assets/newsletter.css?v=2">
+<link rel="stylesheet" href="assets/internships.css?v=1">
 </head>
 <body>
 
@@ -310,6 +311,7 @@ footer a:hover{color:var(--purple2)}
     <div class="stat"><span class="stat-num" id="s-course-dated">–</span><div class="stat-label">Kursy z terminem</div></div>
     <div class="stat"><span class="stat-num" id="s-course-free">–</span><div class="stat-label">Kursy stałe</div></div>
     <div class="stat"><span class="stat-num" id="s-project">–</span><div class="stat-label">Projekty</div></div>
+    <div class="stat"><span class="stat-num" id="s-internship">–</span><div class="stat-label">Staże</div></div>
     <div class="stat"><span class="stat-num" id="s-other">–</span><div class="stat-label">Inne</div></div>
     <div class="stat"><span class="stat-num" id="s-research">–</span><div class="stat-label">Newsy</div></div>
   </div>
@@ -351,19 +353,22 @@ footer a:hover{color:var(--purple2)}
   <a href="privacy.html">Prywatność i regulamin</a>
 </footer>
 
-<script src="assets/common.js?v=2"></script>
+<script src="assets/common.js?v=3"></script>
 <script>
 const SECTIONS = [
   { type:'meetup',       emoji:'🤝', label:'Meetupy i wydarzenia',   page:'meetups.html' },
   { type:'course-dated', emoji:'🗓️', label:'Kursy z terminem',        page:'courses-dated.html' },
   { type:'course-free',  emoji:'📚', label:'Kursy stałe i zasoby',    page:'courses-free.html' },
   { type:'project',      emoji:'🌿', label:'Projekty do współpracy',  page:'projects.html' },
+  { type:'internship',   emoji:'🎓', label:'Staże dla studentów',     page:'staze.html' },
   { type:'other',        emoji:'✦',  label:'Inne inicjatywy',         page:'other.html' },
 ];
 
 // najbliższe terminy pierwsze; wpisy bez daty (np. kursy stałe) — od najnowszych
 function sortActive(entries){
   return [...entries].sort((a,b)=>{
+    if(a.type==='internship' && b.type==='internship')   // staże: otwarte nabory pierwsze
+      return INTERN_STATUS[internStatus(a)].rank - INTERN_STATUS[internStatus(b)].rank;
     if(a.date_start && b.date_start) return a.date_start.localeCompare(b.date_start);
     if(a.date_start) return -1;
     if(b.date_start) return 1;
@@ -414,7 +419,7 @@ async function init(){
       <div class="section-head">
         <span class="section-emoji">${sec.emoji}</span>
         <span class="section-title">${sec.label}</span>
-        <span class="section-badge">${all.length} aktywne</span>
+        <span class="section-badge">${sec.type==='internship' ? all.filter(e=>['open','rolling'].includes(internStatus(e))).length+' z naborem' : all.length+' aktywne'}</span>
         ${all.length?`<a class="see-all" href="${sec.page}">Zobacz wszystkie →</a>`:''}
       </div>
       ${all.length

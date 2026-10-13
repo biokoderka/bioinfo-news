@@ -49,7 +49,22 @@ const TYPE_META = {
   'course-dated': { label: '🗓️ Kurs z terminem',  cls: 'course-dated' },
   'meetup':       { label: '🤝 Meetup',           cls: 'meetup' },
   'other':        { label: '✦ Inne',              cls: 'other' },
+  'internship':   { label: '🎓 Staż',             cls: 'internship' },
 };
+
+// Staże: status naboru zamiast archiwum — programy wracają co roku, więc zostają widoczne.
+const INTERN_STATUS = {
+  'open':    { label: '🟢 Nabór otwarty',               cls: 'st-open',    rank: 0 },
+  'rolling': { label: '🔄 Nabór ciągły',                cls: 'st-rolling', rank: 1 },
+  'closed':  { label: '⏸ Nabór zamknięty · wraca',      cls: 'st-closed',  rank: 2 },
+  'check':   { label: '🔎 Sprawdź aktualny nabór',      cls: 'st-check',   rank: 3 },
+};
+const REGION_LABELS = { 'PL': '🇵🇱 Polska', 'EU': '🇪🇺 Europa', 'remote': '💻 Zdalnie' };
+// "open" z minionym deadline'em pokazujemy jako zamknięty — bez ręcznej zmiany w JSON-ie.
+function internStatus(e) {
+  if (e.status === 'open' && e.deadline && e.deadline < todayLocal()) return 'closed';
+  return INTERN_STATUS[e.status] ? e.status : 'check';
+}
 const RESEARCH_TYPE_META = {
   'research':  { label: '📄 Artykuł',   cls: 'research' },
   'narzedzie': { label: '🔧 Narzędzie', cls: 'narzedzie' },
@@ -76,7 +91,15 @@ const tagClass = t => String(t).replace(/[^a-z0-9-]/gi, '');
 function newsCard(e, { showArchivedBadge = false } = {}) {
   const tm = TYPE_META[e.type] || TYPE_META.other;
   const archived = showArchivedBadge && isArchived(e);
+  const intern = e.type === 'internship';
   let pills = '';
+  if (intern) {
+    const st = INTERN_STATUS[internStatus(e)];
+    pills += `<span class="pill ${st.cls}">${st.label}</span>`;
+    if (REGION_LABELS[e.region]) pills += `<span class="pill region">${REGION_LABELS[e.region]}</span>`;
+    if (e.typical_window) pills += `<span class="pill window">🗓️ nabór: ${esc(e.typical_window)}</span>`;
+    if (e.edition) pills += `<span class="pill edition">edycja: ${esc(e.edition)}</span>`;
+  }
   if (e.free)       pills += `<span class="pill free">✓ bezpłatne</span>`;
   if (e.lang)       pills += `<span class="pill lang">${esc(e.lang)}</span>`;
   if (e.date_start) pills += `<span class="pill date">📅 ${esc(fmtRange(e.date_start, e.date_end))}</span>`;
@@ -91,6 +114,7 @@ function newsCard(e, { showArchivedBadge = false } = {}) {
     </div>
     ${e.org ? `<div class="card-org">${esc(e.org)}</div>` : ''}
     <div class="card-desc">${esc(e.description)}</div>
+    ${intern && e.eligibility ? `<div class="card-elig"><b>Dla kogo:</b> ${esc(e.eligibility)}</div>` : ''}
     ${pills ? `<div class="card-meta">${pills}</div>` : ''}
     ${url ? `<a class="card-link" href="${esc(url)}" target="_blank" rel="noopener">Więcej info →</a>` : ''}
   </article>`;
