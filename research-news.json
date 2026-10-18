@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T10:12:02+00:00",
+ "generated_at": "2026-10-18T10:27:11+00:00",
  "days": 30,
  "entries": [
   {
@@ -8,7 +8,7 @@
    "title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
    "description": "The U.S. Food and Drug Administration, a division within the U.S.",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "inne"
    ],
@@ -56,7 +56,7 @@
    "title": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
    "description": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "kliniczne"
    ],
@@ -88,7 +88,7 @@
    "title": "FDA Seeks Public Input to Support Ibogaine Research",
    "description": "The U.S. Food and Drug Administration today announced a request for information (RFI) describing approaches the agency is considering for the design of early-phase clinical trials of ibogaine drug products and seeking…",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-seeks-public-input-support-ibogaine-research",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "kliniczne"
    ],
@@ -102,7 +102,7 @@
    "title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
    "description": "The U.S. Attorney’s Office for the Middle District of Florida and the Criminal Division of the U.S.",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "inne"
    ],
@@ -122,7 +122,7 @@
    "title": "FDA intends to evaluate changes to the PMTA regulatory framework",
    "description": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit filed in the U.S.",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "inne"
    ],
@@ -136,7 +136,7 @@
    "title": "FDA Updates Regulations to Advance Innovative Alternatives to Animal Testing",
    "description": "The FDA today issued a direct final rule that updates its regulations to clarify that non-animal methods can be used where appropriate for testing the safety of drugs and biological products intended for human use…",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-updates-regulations-advance-innovative-alternatives-animal-testing",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "inne"
    ],
@@ -150,13 +150,75 @@
    "title": "FDA Takes Steps to Maintain Newborn Access to Life-Saving Starter Nutrition Products",
    "description": "The U.S. Food and Drug Administration today announced it is taking action, consistent with the Trump administration’s commitment to protecting vulnerable patients and maintaining access to critical medical products, to…",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-takes-steps-maintain-newborn-access-life-saving-starter-nutrition-products",
-   "date": "2026-10-17",
+   "date": "2026-10-18",
    "tags": [
     "kliniczne"
    ],
    "article_type": null,
    "id": "r-38ab6966fb11",
    "score": 7.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Recore",
+   "description": "Post-hoc rescue and quality control of pangenome presence/absence matrices.",
+   "url": "https://zenodo.org/records/23448591",
+   "date": "2026-10-18",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-f5c36860965f",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "rnaseq-flow offline Singularity container bundle (v1.7.0)",
+   "description": "rnaseq-flow offline Singularity container bundle (v1.7.0) A complete set of Singularity/Apptainer container images for running the rnaseq-flow bulk RNA-seq pipeline on systems with no internet access — Trusted…",
+   "url": "https://zenodo.org/records/23444578",
+   "date": "2026-10-18",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-444d60fa53d6",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "DeCodeDNA",
+   "description": "DeCodeDNA is an end-to-end eDNA metabarcoding analysis pipeline that can be run on everyday laptops.",
+   "url": "https://zenodo.org/records/23443437",
+   "date": "2026-10-18",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-4ee4b7dd04a5",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · biotite-dev/biotite",
+   "title": "biotite v2.0.0",
+   "description": "# Changelog # ## Additions ## - Added `J` (leucine or isoleucine) to the ambiguous `ProteinSequence` alphabet and the substitution matrices. (#958) - Note that this changes the symbol codes of `X` and `*`. - Added `structure.PSeaElement` and `application.dssp.DsspElement` enums t",
+   "url": "https://github.com/biotite-dev/biotite/releases/tag/v2.0.0",
+   "date": "2026-10-18",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-b0715bdcc7c7",
+   "score": 1.0
   },
   {
    "type": "branza",
@@ -175,6 +237,51 @@
   {
    "type": "narzedzie",
    "source": "Zenodo · software",
+   "title": "Reproducibility package: age confounding in public musculoskeletal transcriptome cohorts",
+   "description": "‹p›‹strong›Reproducibility package for‹/strong› &ldquo;Age confounding in public musculoskeletal transcriptome cohorts: an empirical methodological study with a calibrated null simulation…",
+   "url": "https://zenodo.org/records/23438007",
+   "date": "2026-10-17",
+   "tags": [
+    "transkryptomika",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-448623ac7dd8",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model of hydrochlorothiazide",
+   "description": "This repository provides the hydrochlorothiazide (hctz) physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model. If you have any questions or problems please open an issue FundingMatthias König was…",
+   "url": "https://zenodo.org/records/23442185",
+   "date": "2026-10-17",
+   "tags": [
+    "bazy-danych",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-c904bb0e35df",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "strainselect: Select Bacterial Strains to Sequence Based on Their Metadata",
+   "description": "R package that helps choosing which bacterial strains to sequence from a collection described by categorical metadata, using either a clustering method (Gower distance, hierarchical clustering and silhouette width) or a…",
+   "url": "https://zenodo.org/records/23439527",
+   "date": "2026-10-17",
+   "tags": [
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-de599bb8879d",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
    "title": "EP_annotator: Annotating enhancer-promoter interactions using Hi-C and CUT&Tag data",
    "description": "EP_annotator is a bioinformatics tool for annotating enhancer–promoter (EP) interactions by integrating Hi-C chromatin interaction data with CUT&Tag histone modification signals (H3K27ac).",
    "url": "https://zenodo.org/records/23430485",
@@ -185,21 +292,6 @@
    ],
    "article_type": null,
    "id": "r-f3bd4490d7b6",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "Physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model of hydrochlorothiazide",
-   "description": "This repository provides the hydrochlorothiazide (hctz) physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model. If you have any questions or problems please open an issue FundingMatthias König was…",
-   "url": "https://zenodo.org/records/23430029",
-   "date": "2026-10-17",
-   "tags": [
-    "bazy-danych",
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-e1fe3b848e70",
    "score": 0.3
   },
   {
@@ -235,19 +327,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · mmagnus/rna-tools",
-   "title": "rna-tools 3.28",
-   "description": "In total, 92 files changed (+26,329 / −316). Here's what changed, grouped by area: **ClaRNA / INF (performance)** - clarna_rs: ClaRNA (base pairs and stacking) ported to Rust, about 20–40× faster. - ClaRNA: new --batch mode, a fixed (deterministic) order for neighbouring residues",
-   "url": "https://github.com/mmagnus/rna-tools/releases/tag/3.28",
-   "date": "2026-10-17",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-141c037ffb6d",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · moritztng/tt-bio",
    "title": "tt-bio v0.19.0",
    "description": "## [0.19.0] - 2026-10-17 ### Changed - **Nesso-1's normal mode runs the fused triangle kernels** (triangle multiplication, including the 256-token crops, the triangle attention tail and the fused pair transition). A 532-token forward on a Wormhole chip at 1000 MHz takes 7.1-7.2 s",
@@ -258,6 +337,19 @@
     "narzedzia"
    ],
    "id": "r-6d0daed97a0c",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · mmagnus/rna-tools",
+   "title": "rna-tools 3.28",
+   "description": "In total, 92 files changed (+26,329 / −316). Here's what changed, grouped by area: **ClaRNA / INF (performance)** - clarna_rs: ClaRNA (base pairs and stacking) ported to Rust, about 20–40× faster. - ClaRNA: new --batch mode, a fixed (deterministic) order for neighbouring residues",
+   "url": "https://github.com/mmagnus/rna-tools/releases/tag/3.28",
+   "date": "2026-10-17",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-141c037ffb6d",
    "score": 1.0
   },
   {
@@ -597,7 +689,7 @@
    "type": "branza",
    "source": "MIT Technology Review",
    "title": "This implant can restore sight for patients with macular degeneration",
-   "description": "More than 5 million people around the world with age-related macular degeneration (AMD) experience atrophy in their retinas. And until now, no treatment could restore their vision.",
+   "description": "More than 5 million people around the world have an advanced form of age-related macular degeneration (AMD) called geographic atrophy, in which cells in the retinas die off.",
    "url": "https://www.technologyreview.com/2026/10/16/1145840/prima-implant-restores-sight-macular-degeneration-patients/",
    "date": "2026-10-16",
    "tags": [
@@ -620,6 +712,22 @@
    "article_type": null,
    "id": "r-69afaf19993a",
    "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "Scalable subclonal reconstruction of cancer cells in DNA sequencing data using a penalized likelihood model",
+   "description": "Subclonal reconstruction results produced with CliPP 1.4 for three datasets:5,424 tumors from TCGA, 2,008 whole-genome tumors from PCAWG, and CliPPSim4k, a cohort of 4,000 simulated tumors with known ground truth.",
+   "url": "https://zenodo.org/records/23424567",
+   "date": "2026-10-16",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-cd66f11fcfd7",
+   "score": 0.3
   },
   {
    "type": "narzedzie",
@@ -728,54 +836,6 @@
   },
   {
    "type": "research",
-   "source": "Zenodo · dataset",
-   "title": "PolyTamGen Data, Base Language Model, DPO Checkpoint, and Benchmark Results",
-   "description": "Release artifacts for PolyTamGen, a sequence-based molecule generator conditioned on multiple protein targets. The companion paper is Polypharmacological Target-Aware Molecule Generation (Bioinformatics, 2026).",
-   "url": "https://zenodo.org/records/23417382",
-   "date": "2026-10-16",
-   "tags": [
-    "ai-ml",
-    "struktury",
-    "leki",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "article_type": "benchmark",
-   "id": "r-dde906366abc",
-   "score": 1.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "openalexPro/openalexConvert: openalexConvert 0.0.5",
-   "description": "First release since v0.0.3, so this covers 0.0.4 and 0.0.5. Both concern DOI correctness and the tests that guard it.",
-   "url": "https://zenodo.org/records/23418121",
-   "date": "2026-10-16",
-   "tags": [
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-fd556159fcfb",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "Gli3 limb regulatory genomics reproducibility repository",
-   "description": "Reproducibility repository for a locus-resolved integrative analysis of 13 curated functionally supported Gli3 limb enhancers and 41 VISTA Gli3-region comparison elements with reported non-limb activity and no limb…",
-   "url": "https://zenodo.org/records/23416725",
-   "date": "2026-10-16",
-   "tags": [
-    "genomika",
-    "bazy-danych",
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-7efd72563c5c",
-   "score": 0.3
-  },
-  {
-   "type": "research",
    "source": "Nature Methods",
    "title": "Recent developments of fluorescent proteins and biosensors driven by cross-disciplinary insights",
    "description": "",
@@ -833,6 +893,54 @@
    "score": 4.0
   },
   {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "PolyTamGen Data, Base Language Model, DPO Checkpoint, and Benchmark Results",
+   "description": "Release artifacts for PolyTamGen, a sequence-based molecule generator conditioned on multiple protein targets. The companion paper is Polypharmacological Target-Aware Molecule Generation (Bioinformatics, 2026).",
+   "url": "https://zenodo.org/records/23417382",
+   "date": "2026-10-16",
+   "tags": [
+    "ai-ml",
+    "struktury",
+    "leki",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-dde906366abc",
+   "score": 1.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "openalexPro/openalexConvert: openalexConvert 0.0.5",
+   "description": "First release since v0.0.3, so this covers 0.0.4 and 0.0.5. Both concern DOI correctness and the tests that guard it.",
+   "url": "https://zenodo.org/records/23418121",
+   "date": "2026-10-16",
+   "tags": [
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-fd556159fcfb",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Gli3 limb regulatory genomics reproducibility repository",
+   "description": "Reproducibility repository for a locus-resolved integrative analysis of 13 curated functionally supported Gli3 limb enhancers and 41 VISTA Gli3-region comparison elements with reported non-limb activity and no limb…",
+   "url": "https://zenodo.org/records/23416725",
+   "date": "2026-10-16",
+   "tags": [
+    "genomika",
+    "bazy-danych",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-7efd72563c5c",
+   "score": 0.3
+  },
+  {
    "type": "narzedzie",
    "source": "Zenodo · software",
    "title": "openalexPro/openalexPro: openalexPro 0.13.0",
@@ -861,20 +969,6 @@
    "article_type": null,
    "id": "r-5f05e7521bc2",
    "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · biotite-dev/biotite",
-   "title": "biotite v1.8.0",
-   "description": "# Changelog # ## Additions ## - Added support for Python 3.15. (#959) - Added `biotite.application_v2`, a redesign of the application interface. (#941) - An application is now a reusable handle to the installed software: A run is launched by calling a method with all its inputs,",
-   "url": "https://github.com/biotite-dev/biotite/releases/tag/v1.8.0",
-   "date": "2026-10-16",
-   "tags": [
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-d56e72251eb8",
-   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -3902,6 +3996,675 @@
    "article_type": "benchmark",
    "id": "r-13662c793464",
    "score": 0.3
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Scalable methylome-transcriptome profiling resolves clonal organization in human hematopoiesis",
+   "description": "Understanding human tissue maintenance and remodeling requires linking clonal ancestry to molecular state, yet scalable joint measurement remains challenging.",
+   "url": "https://doi.org/10.64898/2026.10.08.757494",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-51f47ebfa9c3",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "An iPSC-based experimental framework for investigating phenotypic variation associated with Jomon ancestry in the present-day Japanese population",
+   "description": "Ancestry-related genomic variation may contribute to phenotypic diversity. However, its cellular consequences remain difficult to evaluate.",
+   "url": "https://doi.org/10.64898/2026.10.07.756619",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "kliniczne"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-37a7ff4d8ae6",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Cromosomal genomes assemblies of twelve sheep breeds",
+   "description": "The sheep research community benefits from a genome assembly that has been refined over the last 15 years.",
+   "url": "https://doi.org/10.64898/2026.10.08.757562",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-e52c8da41f68",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "The Genetic Landscape of Structural Variants in Aspergillus flavus using ONT and PacBio Sequencing",
+   "description": "Genetic rearrangement in the absence of selection is poorly understood. Long-read, high-depth sequencing has enabled analysis of the genetic landscape of spontaneous structural variants.",
+   "url": "https://doi.org/10.64898/2026.10.05.756768",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-f0e510bc3f89",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "GenDiMug: a generic inclusive multigraph framework to analyze genomic organizations and -omics data at multiple scales",
+   "description": "After decades of investigation, analyses of genome organization remain challenging.",
+   "url": "https://doi.org/10.64898/2026.10.06.756533",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "wielo-omika",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-67d59c8d89a2",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Inferring ecDNA Evolution from Allele Frequency Spectra",
+   "description": "Extrachromosomal DNA (ecDNA) can arise early in the development of aggressive tumors or later upon progression, but the impact of chronology on patient outcome is not known.",
+   "url": "https://doi.org/10.64898/2026.10.09.758054",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-a78fe203a335",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "In silico subtractive genomics and reverse vaccinology approach reveal outer membrane proteins OMP47 and LptD as dual-purpose drug and vaccine targets in Pasteurella multocida Pm70",
+   "description": "Drug targets and vaccines for bacterial diseases are challenging to develop. Computational subtractive genomics and reverse vaccinology offer a viable substitute for conventional drug and vaccine development approaches.",
+   "url": "https://doi.org/10.64898/2026.10.07.757254",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "immunoinformatyka",
+    "sieci-systemy",
+    "leki",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-0af210928404",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Version-aware question answering over living oncology guidelines",
+   "description": "Living clinical guidelines revise recommendations as evidence emerges, so an AI answer can be faithful to a real guideline and still be out of date.",
+   "url": "https://doi.org/10.64898/2026.10.04.756483",
+   "date": "2026-10-11",
+   "tags": [
+    "kliniczne"
+   ],
+   "article_type": "przeglad",
+   "id": "r-c8d5ca104f32",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "AI-Driven Design of Next-Generation Immunoinformatics Multi-Epitope Subunit Vaccine Targeting the Most Virulent Mpox Proteome: A Structural and Kinetic Validation Framework",
+   "description": "The resurgence of the Mpox virus (MPXV) highlights the urgent need for scalable, mutation-resistant countermeasures.",
+   "url": "https://doi.org/10.64898/2026.10.04.756542",
+   "date": "2026-10-11",
+   "tags": [
+    "immunoinformatyka",
+    "ai-ml",
+    "modelowanie",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-626f367361b5",
+   "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "El Niño, capture success, and wing fluctuating asymmetry in Drosophila sturtevanti Duda, 1927",
+   "description": "Fluctuating asymmetry (FA) is widely used as a proxy for developmental instability, although reduced rather than increased FA, has occasionally been reported under particularly challenging conditions, possibly because…",
+   "url": "https://doi.org/10.64898/2026.10.09.757947",
+   "date": "2026-10-11",
+   "tags": [
+    "inne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-e87846f2c2ff",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Contrasting phylogeographic patterns between geographically restricted and widespread mitochondrial lineages of the water strider Aquarius paludum in the Japanese archipelago",
+   "description": "Aim To investigate how repeated historical connections between continental islands and the mainland have shaped the phylogeographic structure and genetic diversity of populations, using the widespread water strider…",
+   "url": "https://doi.org/10.64898/2026.10.09.757895",
+   "date": "2026-10-11",
+   "tags": [
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-32d16412c454",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Living representatives of the spiralian ancestral karyotype revealed by two Lima genomes",
+   "description": "Conserved synteny enables the reconstruction of ancestral chromosome organization across deeply diverged lineages, as demonstrated across metazoans.",
+   "url": "https://doi.org/10.64898/2026.10.09.757954",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-d7a324cc0be8",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Exploring protein duplication across Archaea genomes",
+   "description": "Gene duplication is a major driver of genomic innovation, but whether paralog accumulation scales uniformly with increasing genome size across the domain Archaea remains unclear.",
+   "url": "https://doi.org/10.64898/2026.10.09.758139",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-f60e489eb92b",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "An improved Trypanosoma vivax genome assembly confirms the distinct organisation of its variant antigen repertoire",
+   "description": "Trypanosoma vivax is a unicellular parasite spread by biting flies and an important livestock pathogen across sub-Saharan Africa and South America. Alongside its better known relative, T.",
+   "url": "https://doi.org/10.64898/2026.10.08.757617",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "proteomika",
+    "kliniczne"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-ebc10046704b",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Spatiotemporal AI modeling of gene regulation and variant effects in the developing human brain",
+   "description": "Understanding how genetic variation shapes gene regulation in the developing human brain remains a central challenge in neuroscience, particularly in transient cell types and developmental stages where data are limited.",
+   "url": "https://doi.org/10.64898/2026.10.09.757610",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "neuronauka",
+    "kliniczne"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-b2a498438efa",
+   "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Contrasting gene gain and loss shape metabolic diversification in the Ralstonia solanacearum species complex",
+   "description": "Metabolic repertoires are continually remodeled by gene acquisition and loss, but how these contrasting processes jointly generate phenotypic diversity within bacterial species complexes remains poorly understood.",
+   "url": "https://doi.org/10.64898/2026.10.09.757798",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-2f359c71fcf5",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Cellular and molecular census of the pleiotropic disease locus Negr1 in zebrafish",
+   "description": "A major challenge in precision medicine is to understand the cellular origin of disease-causing genetic alterations.",
+   "url": "https://doi.org/10.64898/2026.10.08.757516",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "neuronauka"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-fb76cdd99c0e",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Goat genome assemblies, nine breeds for pangenome contribution",
+   "description": "The goat research community benefits from one of the most comprehensive livestock genome assemblies, ARS1.",
+   "url": "https://doi.org/10.64898/2026.10.08.757565",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b0c01ef84b75",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Genome sequence data of Ascogaster reticulata (Hymenoptera: Braconidae)",
+   "description": "Parasitoid wasps develop in or on other arthropods and have evolved a wide range of strategies for exploiting their hosts.",
+   "url": "https://doi.org/10.64898/2026.10.06.756916",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-d136dce1d7b7",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "From APTs to advanced persistent biological threats (APBTs): a taxonomy and large-scale metadata audit of genomic surveillance infrastructure",
+   "description": "Open genomic repositories have become critical infrastructure for pathogen surveillance, variant tracking, outbreak reconstruction, and public health decision making.",
+   "url": "https://doi.org/10.64898/2026.10.09.757979",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "epidemiologia",
+    "neuronauka",
+    "kliniczne",
+    "bazy-danych"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-f4e468951931",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Ayahuasca plant genomes reveal retrotransposon-derived centromeres and contrasting routes to DMT and β-carbolines",
+   "description": "Ayahuasca, used religiously for centuries by Amazonian Indigenous peoples and increasingly studied for its therapeutic potential, owes its psychoactivity to two plants: Psychotria viridis supplies N,N-dimethyltryptamine…",
+   "url": "https://doi.org/10.64898/2026.10.06.754717",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-5474b7da8db6",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Genome assemblies and annotations of the poneroid ants Platythyrea mocquerysi (Ponerinae) and Stigmatomma oregonense (Amblyoponinae)",
+   "description": "We present draft genome assemblies for two poneroid ant species with distinctive life history traits: Platythyrea mocquerysi Emery, 1899 (Ponerinae) and Stigmatomma oregonense Wheeler, 1915 (Amblyoponinae).",
+   "url": "https://doi.org/10.64898/2026.10.08.757030",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "bazy-danych"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-66d77f974efc",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Gene functional-state covariance reveals modular structure in the Arabidopsis thaliana dispensable genome",
+   "description": "Classical multilocus theory predicts that selection acting on combinations of loci can maintain non-random associations among allelic states, causing selection to act on multilocus genotypes rather than individual…",
+   "url": "https://doi.org/10.64898/2026.10.08.757691",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "sieci-systemy",
+    "ewolucja",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-9679a9ce3207",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Disrupted chromatin architecture blocks B lymphopoiesis in Down syndrome",
+   "description": "Human fetal haematopoiesis requires developmental potential to be encoded before lineage identity becomes transcriptionally apparent, but whether three-dimensional genome architecture provides such information is…",
+   "url": "https://doi.org/10.64898/2026.10.07.757425",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "single-cell"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-d2728bede33f",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "BoNTax: a curated genome-based framework for taxonomic classification and characterization of Clostridium botulinum Group I and Clostridium sporogenes",
+   "description": "Clostridium botulinum Group I and Clostridium sporogenes are closely related genomic lineages for which historical toxin-based nomenclature can obscure species-level relationships.",
+   "url": "https://doi.org/10.64898/2026.10.06.757027",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-9666c21ee519",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Massively scaled variant effect mapping across the MAPK pathway reveals the importance of molecular and cellular context",
+   "description": "Variation alters inherent protein properties like thermodynamic stability and catalytic activity, and these intrinsic effects are shaped by the complex cellular environment.",
+   "url": "https://doi.org/10.64898/2026.10.04.756099",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-feb957056ae9",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A Plasmid-Derived Machinery Drives Chromosomal Replication Initiation in the Colorectal Cancer-Associated Bacterium Fusobacterium nucleatum and Its Close Relatives",
+   "description": "Chromosome replication initiation in bacterial genomes typically occurs at a single origin, called oriC, through the binding of the DnaA initiator protein to specific chromosomal repeats known as DnaA-boxes.",
+   "url": "https://doi.org/10.64898/2026.10.08.757545",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-78ede2dda3ea",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A unified framework for quantitative splicing and transcript prediction",
+   "description": "RNA splicing is frequently disrupted by genetic variation, contributing to a wide range of human diseases. Identifying the variants responsible for altered splicing is therefore crucial but has long been challenging.",
+   "url": "https://doi.org/10.64898/2026.10.08.757673",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ai-ml",
+    "kliniczne"
+   ],
+   "article_type": "benchmark",
+   "id": "r-567d82585625",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Forecasting next-year change in antimicrobial resistance genes in Klebsiella pneumoniae and Acinetobacter baumannii from genomic surveillance data",
+   "description": "Background: Surveillance tells laboratories which antimicrobial resistance genes are circulating now, but not which will change next.",
+   "url": "https://doi.org/10.64898/2026.10.10.758085",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "epidemiologia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-2e311189d528",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Structural variants from donor-specific assemblies affect recurrent chromatin contact divergence in humans",
+   "description": "Structural variants (SVs) are a major source of human genetic diversity, yet their contribution to three-dimensional (3D) genome organization remains difficult to resolve using a standard reference genome.",
+   "url": "https://doi.org/10.64898/2026.10.05.756789",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-0c010378d2de",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A Unified Comparison of 10X Genomics and Parse Biosciences scRNA-seq Technologies",
+   "description": "Droplet-based and split-pool barcoding are the two dominant high-throughput single-cell RNA-seq paradigms, yet their systematic biases remain incompletely characterized.",
+   "url": "https://doi.org/10.64898/2026.10.09.758116",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika"
+   ],
+   "article_type": "benchmark",
+   "id": "r-3f7c62b83eb2",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Gene-environment interaction loci with signatures of mid- to late Holocene selection show evidence for diet-dependent genetic effects",
+   "description": "Environmental change is a major driver of adaptation, yet most evolutionary studies assume that genetic effects remain constant across environments.",
+   "url": "https://doi.org/10.64898/2026.10.05.756704",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b30754d6c24b",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A mathematical model of the HPA axis demonstrates bifurcations under varying stress and systemic conditions",
+   "description": "In this study, we develop a mathematical model of the hypothalamic pituitary adrenal (HPA) axis and systematically investigate the model complexity required to reproduce observed hormone dynamics.",
+   "url": "https://doi.org/10.64898/2026.10.07.757338",
+   "date": "2026-10-11",
+   "tags": [
+    "modelowanie"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-dd522a526186",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Cause-excluded Effect Evaluation: a framework for the faithful assessment of genetic perturbation target identification",
+   "description": "Identifying which gene drives a desired cell-state transition is a foundational inverse problem in target discovery and cell-state engineering, yet far less developed than forward prediction.",
+   "url": "https://doi.org/10.64898/2026.10.03.752923",
+   "date": "2026-10-11",
+   "tags": [
+    "single-cell",
+    "ai-ml"
+   ],
+   "article_type": "benchmark",
+   "id": "r-b6a90646dce6",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Linking somatic variants to altered methylation profiles in nanopore-derived breast and pancreatic cancer genomes using unduliner",
+   "description": "Research shows that genetic variation directly influences DNA methylation, and this association has generally been explored on germline SNPs and at a population level.",
+   "url": "https://doi.org/10.64898/2026.10.08.757715",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-6b868e1f59c2",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Filling the Missing Puzzle: Integrating Interaction and Evolutionary Information to Enhance Protein Fitness Prediction in Inverse Folding",
+   "description": "Protein inverse folding, which infers compatible amino acid sequences from a given backbone structure, is central to rational protein design.",
+   "url": "https://doi.org/10.64898/2026.10.05.756918",
+   "date": "2026-10-11",
+   "tags": [
+    "ai-ml",
+    "struktury",
+    "ewolucja"
+   ],
+   "article_type": "benchmark",
+   "id": "r-755eba154aec",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Exploiting Low-Rank Structure in Genomic Relationship Matrices for Computationally Efficient Optimum Contribution Selection",
+   "description": "Motivation: Optimum contribution selection (OCS) maximizes genetic gain under a constraint on relatedness.",
+   "url": "https://doi.org/10.64898/2026.10.07.757325",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-5b9047289849",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Perturb-Seqr: Signature Search Engine Integrating Connectivity Mapping Resources",
+   "description": "High-throughput transcriptomics can be used to develop Connectivity Mapping resources for identifying potential reversers and mimickers of disease signatures for drug and target discovery.",
+   "url": "https://doi.org/10.64898/2026.10.06.757137",
+   "date": "2026-10-11",
+   "tags": [
+    "single-cell",
+    "transkryptomika",
+    "proteomika",
+    "leki",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-cc841b4317a0",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Transcriptomic reconstruction of an interregional molecular connectome in schizophrenia",
+   "description": "Background: Schizophrenia is increasingly viewed as a disorder of multi-regional brain networks, but molecular and pathophysiological hypotheses are often studied at the level of single brain regions or neurotransmitter…",
+   "url": "https://doi.org/10.64898/2026.10.05.756648",
+   "date": "2026-10-11",
+   "tags": [
+    "transkryptomika",
+    "ai-ml",
+    "neuronauka",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-87712a213547",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "SORT disentangles multilevel gene programs across heterogeneous spatial transcriptomic atlases",
+   "description": "Understanding how transcriptional programs are organized across biological contexts is essential for deciphering tissue development, disease progression, and species-specific adaptations.",
+   "url": "https://doi.org/10.64898/2026.10.04.756488",
+   "date": "2026-10-11",
+   "tags": [
+    "transkryptomika",
+    "kliniczne"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-ae34028f6f92",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "GLARE: Genomic Language model for Automated Repetitive Element classification",
+   "description": "Reliable classification of transposable elements (TEs) is important for genome annotation and evolutionary analysis, yet remains challenging: TE families differ widely across taxa, reference databases label them…",
+   "url": "https://doi.org/10.64898/2026.10.06.757139",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "ewolucja",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-82da8063de29",
+   "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "KEDROS: A Comparative Genomics and High-Resolution Phylogenetic Profiling Workspace",
+   "description": "Phylogenetic profiling infers gene function from the presence and absence of genes across genomes, but it loses resolution in eukaryotes, where many protein families contain several functionally distinct paralogs.",
+   "url": "https://doi.org/10.64898/2026.10.08.757521",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "struktury",
+    "ewolucja",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-8449ccd6d52e",
+   "score": 2.0
   },
   {
    "type": "research",
