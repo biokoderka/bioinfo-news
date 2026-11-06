@@ -1,7 +1,37 @@
 {
  "month": "2026-10",
- "count": 2120,
+ "count": 2138,
  "entries": [
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Machine Learning Based Detection of Chronic Kidney Disease using Full Blood Count from a Ghanaian Hospital Population with an Integrated Web Application",
+   "description": "Chronic kidney disease (CKD) is usually silent until advanced, and the tests confirming it are frequently unaffordable in sub-Saharan Africa, whereas the full blood count (FBC) is inexpensive and widely performed.",
+   "url": "https://doi.org/10.64898/2026.10.27.26366677",
+   "date": "2026-10-31",
+   "tags": [
+    "ai-ml",
+    "kliniczne"
+   ],
+   "article_type": "protokol",
+   "id": "r-6cb953d99d60",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Parent-of-Origin-Aware Genomic Analysis to Enhance Cascade Testing in Pancreatic Cancer: A Population-Based Study",
+   "description": "Identifying germline pathogenic variants has therapeutic value for pancreatic ductal adenocarcinoma (PDAC) patients and critical implications for cascade genetic testing in families, the latter being an increasing focus…",
+   "url": "https://doi.org/10.64898/2026.10.30.26366356",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-edb8a3d86c74",
+   "score": 1.0
+  },
   {
    "type": "research",
    "source": "Nucleic Acids Research",
@@ -625,32 +655,270 @@
   },
   {
    "type": "research",
-   "source": "Cell",
-   "title": "Age-dependent structural evolution of a functional amyloid contributes to memory impairment in Drosophila",
-   "description": "In the aging Drosophila brain, Orb2 amyloids required for long-term memory undergo structural remodeling, shifting from translation-promoting assemblies to destabilization-resistant, translation-deficient states.",
-   "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01220-1?rss=yes",
+   "source": "bioRxiv",
+   "title": "Comparative analysis of protease-inhibitor gene family counts under different counting units and genome annotations",
+   "description": "Background: Gene family sizes are often compared across species using the protein sets released with genome assemblies.",
+   "url": "https://doi.org/10.64898/2026.09.22.753331",
    "date": "2026-10-30",
    "tags": [
-    "ewolucja",
+    "genomika",
+    "leki",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-47a5e5aacddc",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "VoroTIDE: Protein domain segmentation through independent hierarchical searches using Voronoi tessellation and physical self-containment",
+   "description": "Protein domains are commonly regarded as structurally separated, functionally relevant, and evolutionarily separable units.",
+   "url": "https://doi.org/10.64898/2026.10.18.759833",
+   "date": "2026-10-30",
+   "tags": [
+    "proteomika",
+    "ai-ml",
+    "ewolucja"
+   ],
+   "article_type": "benchmark",
+   "id": "r-8e37b598d2ec",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Integrative structure determination of a human mitochondrial contact site and cristae organizing system (MICOS) sub-assembly",
+   "description": "The Mitochondrial contact site and Cristae Organizing System (MICOS) complex is an inner mitochondrial membrane (IMM) assembly present at the cristae junction.",
+   "url": "https://doi.org/10.64898/2026.07.19.739404",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "proteomika",
+    "struktury"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-88a26b9a73db",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Experimental evolution unveils a role for structural variants and sex-specificity in the genetic architecture of lifespan",
+   "description": "Insights into the genetic basis of lifespan evolution can link evolutionary theory with an understanding of health, disease and adaptation.",
+   "url": "https://doi.org/10.64898/2026.10.28.762418",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-de71d2f4bc57",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "How many mutations does it take to evolve a new function?",
+   "description": "Biochemical and genetic networks in cells evolve to produce new functions.",
+   "url": "https://doi.org/10.64898/2026.10.29.762632",
+   "date": "2026-10-30",
+   "tags": [
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-882deb930965",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "The Alzheimer's disease-associated rs28834970 variant in PTK2B impairs electrical activity and regulates Tau phosphorylation and APP processing in human neuronal cultures",
+   "description": "Background: Genome-wide association studies have identified the PTK2B gene, which encodes Proline-rich tyrosine kinase 2 (PYK2), as a genetic risk factor for Alzheimer's disease (AD).",
+   "url": "https://doi.org/10.64898/2026.10.26.761842",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "neuronauka",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-9337e4bf4735",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Variation of Human Transfer RNA Demand and Supply",
+   "description": "Codons function as translation units in open-reading-frames of genes to encode for proteins. Transfer RNAs (tRNAs) connect every codon to its cognate amino acid.",
+   "url": "https://doi.org/10.64898/2026.02.26.708130",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "transkryptomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-3c0d8625e5ab",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A 4,000-year genomic history of Bantu speakers from the Congo rainforest",
+   "description": "The Congo rainforest was the heartland of the Bantu Expansion, yet its demographic history remains partially understood.",
+   "url": "https://doi.org/10.64898/2026.10.27.762084",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "modelowanie"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-bdfbe9d7b7d3",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "E. coli-produced nanobody fusions as a pan-serotype platform for AAV purification, quantification, and detection",
+   "description": "Research, production and application of the recombinant adeno-associated virus (rAAV) require versatile tools for rapid and cost-effective advances.",
+   "url": "https://doi.org/10.64898/2026.10.28.762627",
+   "date": "2026-10-30",
+   "tags": [
+    "immunoinformatyka",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-26df3bfff36c",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Genome-wide fluctuating selection under demographic cycling in Icelandic rock ptarmigan",
+   "description": "Understanding how natural populations adapt to continuously shifting environments is central to evolutionary biology.",
+   "url": "https://doi.org/10.64898/2026.10.28.762602",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-399700be26f1",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Carrier-Limited Release Risk in Electrospun Nanofibers for Regenerative Endodontics: Constraint Discovery from 25 Formulations",
+   "description": "Regenerative endodontics needs an intracanal carrier that keeps disinfecting across a dressing interval that clinicians schedule at one to four weeks, without harming the stem cells that rebuild the pulp.",
+   "url": "https://doi.org/10.64898/2026.10.29.762783",
+   "date": "2026-10-30",
+   "tags": [
+    "ai-ml",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-583429c3605f",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Dietary fibre responses emerge through host-dietary regime interplay: Apple pectin modulates immune reactivity in adult zebrafish",
+   "description": "Dietary fibres are rarely consumed independently. Instead, they form part of an overall diet that includes dietary fibres from different sources, in varying amounts and consumed under different feeding patterns.",
+   "url": "https://doi.org/10.64898/2026.10.29.762775",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "mikrobiom",
     "neuronauka"
    ],
    "article_type": "eksperymentalne",
-   "id": "r-15312ca0be6a",
-   "score": 5.0
+   "id": "r-27d755f1622f",
+   "score": 2.0
   },
   {
-   "type": "branza",
-   "source": "MIT Technology Review",
-   "title": "Eating disorders are on the rise. GLP-1s could make things worse.",
-   "description": "GLP-1 weight-loss drugs are one of the biggest biotech breakthroughs of the last decade. But to some clinical psychologists, they can represent something more sinister—a potential trigger for eating disorders.",
-   "url": "https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/",
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Somatic variant detection using an individual-specific pangenome reference: a case study of a pediatric acute myeloid leukemia patient",
+   "description": "Background: Reference bias can cause false or missed somatic variant calls, also in clinically relevant genes. Pangenomes aim to reduce this bias, but evidence of their diagnostic benefit is lacking.",
+   "url": "https://doi.org/10.64898/2026.10.27.756267",
    "date": "2026-10-30",
    "tags": [
+    "genomika",
+    "single-cell",
+    "ewolucja",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-356a816a175c",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "A connection-level genetic atlas of human cortical functional connectivity at rest and during a task",
+   "description": "Genetic studies of cortical functional connectivity have analyzed aggregated traits, which fails to show which connections a variant acts on.",
+   "url": "https://doi.org/10.64898/2026.10.28.26366764",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "leki",
+    "neuronauka"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-2fd70ab9bf8c",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Long-range chromatin interactions nominate candidate susceptibility genes at non-coding PDAC risk loci",
+   "description": "Genome-wide association studies (GWAS) for pancreatic ductal adenocarcinoma (PDAC) have identified 31 significant or suggestive risk signals across 26 loci.",
+   "url": "https://doi.org/10.64898/2026.10.28.26366656",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "transkryptomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-aec15c2e7c94",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Deep learning reveals prognostic information beyond AJCC stage in routine histopathology of early-stage melanoma: the population-based D-ESMEL study",
+   "description": "Of all melanoma patients who develop distant metastasis over time, 41% were initially diagnosed with stage I/II. More accurate prognostic models are needed to select patients for potential (neo)adjuvant therapy.",
+   "url": "https://doi.org/10.64898/2026.10.29.26366599",
+   "date": "2026-10-30",
+   "tags": [
+    "ai-ml",
+    "neuronauka",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-233e381b9ffa",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Prototyping OSA: A New Framework for Predicting Cardiovascular Outcomes and CPAP Benefit",
+   "description": "RationaleObstructive sleep apnea (OSA) is associated with major adverse cardiac events (MACE); continuous positive airway pressure (CPAP) has not reduced MACE in randomized trials.",
+   "url": "https://doi.org/10.64898/2026.10.30.26366770",
+   "date": "2026-10-30",
+   "tags": [
+    "ai-ml",
     "kliniczne"
    ],
-   "article_type": null,
-   "id": "r-140ebb0557c9",
-   "score": 3.0
+   "article_type": "eksperymentalne",
+   "id": "r-f79ad6a32271",
+   "score": 1.0
   },
   {
    "type": "research",
@@ -835,6 +1103,35 @@
    "article_type": "eksperymentalne",
    "id": "r-3d6d07c75b65",
    "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "Cell",
+   "title": "Age-dependent structural evolution of a functional amyloid contributes to memory impairment in Drosophila",
+   "description": "In the aging Drosophila brain, Orb2 amyloids required for long-term memory undergo structural remodeling, shifting from translation-promoting assemblies to destabilization-resistant, translation-deficient states.",
+   "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01220-1?rss=yes",
+   "date": "2026-10-30",
+   "tags": [
+    "ewolucja",
+    "neuronauka"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-15312ca0be6a",
+   "score": 5.0
+  },
+  {
+   "type": "branza",
+   "source": "MIT Technology Review",
+   "title": "Eating disorders are on the rise. GLP-1s could make things worse.",
+   "description": "GLP-1 weight-loss drugs are one of the biggest biotech breakthroughs of the last decade. But to some clinical psychologists, they can represent something more sinister—a potential trigger for eating disorders.",
+   "url": "https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/",
+   "date": "2026-10-30",
+   "tags": [
+    "kliniczne"
+   ],
+   "article_type": null,
+   "id": "r-140ebb0557c9",
+   "score": 3.0
   },
   {
    "type": "branza",
@@ -1656,6 +1953,34 @@
    "score": 0.3
   },
   {
+   "type": "narzedzie",
+   "source": "PyPI · scanpy",
+   "title": "scanpy 1.12.5",
+   "description": "Single-Cell Analysis in Python.",
+   "url": "https://pypi.org/project/scanpy/",
+   "date": "2026-10-29",
+   "tags": [
+    "single-cell",
+    "narzedzia"
+   ],
+   "id": "r-f888c9bfd2d5",
+   "score": 0.5
+  },
+  {
+   "type": "narzedzie",
+   "source": "PyPI · pyfaidx",
+   "title": "pyfaidx 0.9.2.2",
+   "description": "pyfaidx: efficient pythonic random access to fasta subsequences",
+   "url": "https://pypi.org/project/pyfaidx/",
+   "date": "2026-10-29",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-6a8879affe72",
+   "score": 0.5
+  },
+  {
    "type": "research",
    "source": "bioRxiv",
    "title": "Interpreting Short Tandem Repeat Variations with Genomic Foundation Models in Olive",
@@ -2376,64 +2701,6 @@
    "article_type": "eksperymentalne",
    "id": "r-862dcf2912fb",
    "score": 2.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · moritztng/tt-bio",
-   "title": "tt-bio v0.26.1",
-   "description": "## [0.26.1] - 2026-10-29 ### Fixed - **ESMFold2 no longer runs out of device memory on a worker that has folded many different inputs.** A worker keeps its chip open across jobs, and the compiled programs for every input shape it has folded stay in device memory. After about ten",
-   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.26.1",
-   "date": "2026-10-29",
-   "tags": [
-    "struktury",
-    "narzedzia"
-   ],
-   "id": "r-88b126270b4e",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · mlin/GenomicSQLite",
-   "title": "GenomicSQLite v0.10.0-rc.1",
-   "description": "GenomicSQLite v0.10.0 is the first release since v0.9.4 (2023). It returns the project to active maintenance with agentic assistance (@Wid-L-Hacker). The release modernizes the bundled foundations, widens the supported platforms, and fixes defects that LLM audits found in the vir",
-   "url": "https://github.com/mlin/GenomicSQLite/releases/tag/v0.10.0-rc.1",
-   "date": "2026-10-29",
-   "tags": [
-    "genomika",
-    "ai-ml",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-827b93ba451b",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "PyPI · scanpy",
-   "title": "scanpy 1.12.5",
-   "description": "Single-Cell Analysis in Python.",
-   "url": "https://pypi.org/project/scanpy/",
-   "date": "2026-10-29",
-   "tags": [
-    "single-cell",
-    "narzedzia"
-   ],
-   "id": "r-f888c9bfd2d5",
-   "score": 0.5
-  },
-  {
-   "type": "narzedzie",
-   "source": "PyPI · pyfaidx",
-   "title": "pyfaidx 0.9.2.2",
-   "description": "pyfaidx: efficient pythonic random access to fasta subsequences",
-   "url": "https://pypi.org/project/pyfaidx/",
-   "date": "2026-10-29",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-6a8879affe72",
-   "score": 0.5
   },
   {
    "type": "research",
@@ -3380,6 +3647,36 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · moritztng/tt-bio",
+   "title": "tt-bio v0.26.1",
+   "description": "## [0.26.1] - 2026-10-29 ### Fixed - **ESMFold2 no longer runs out of device memory on a worker that has folded many different inputs.** A worker keeps its chip open across jobs, and the compiled programs for every input shape it has folded stay in device memory. After about ten",
+   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.26.1",
+   "date": "2026-10-29",
+   "tags": [
+    "struktury",
+    "narzedzia"
+   ],
+   "id": "r-88b126270b4e",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · mlin/GenomicSQLite",
+   "title": "GenomicSQLite v0.10.0-rc.1",
+   "description": "GenomicSQLite v0.10.0 is the first release since v0.9.4 (2023). It returns the project to active maintenance with agentic assistance (@Wid-L-Hacker). The release modernizes the bundled foundations, widens the supported platforms, and fixes defects that LLM audits found in the vir",
+   "url": "https://github.com/mlin/GenomicSQLite/releases/tag/v0.10.0-rc.1",
+   "date": "2026-10-29",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-827b93ba451b",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · stjude-rust-labs/sprocket",
    "title": "sprocket v0.33.0",
    "description": "### Security Fix * Fixed a security issue where `sprocket dev server` was failing to properly handle submitted `file://` URLs, allowing attackers to access files outside of the allowed file system paths ([GHSA-gvw2-6ff9-8364](https://github.com/stjude-rust-labs/sprocket/security/",
@@ -3434,6 +3731,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · sortmerna/sortmerna",
+   "title": "sortmerna v8.0.1",
+   "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
+   "url": "https://github.com/sortmerna/sortmerna/releases/tag/v8.0.1",
+   "date": "2026-10-28",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-38dc4d9aaf06",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · ucscGenomeBrowser/kent",
    "title": "kent v505_branch.1",
    "description": "- Redesigned home page with the 2026 branding: a new header, a search box with a loading spinner at the top of the page, a Get started row, and lighter images; static pages no longer load jQuery twice, gain a target for the menu bar's skip link, and have updated footer links - VC",
@@ -3445,20 +3756,6 @@
     "bazy-danych"
    ],
    "id": "r-b090b822b9ac",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · sortmerna/sortmerna",
-   "title": "sortmerna v8.0.1",
-   "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
-   "url": "https://github.com/sortmerna/sortmerna/releases/tag/v8.0.1",
-   "date": "2026-10-28",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-38dc4d9aaf06",
    "score": 1.0
   },
   {
@@ -14107,22 +14404,6 @@
   {
    "type": "research",
    "source": "bioRxiv",
-   "title": "BiHC: Protein domain segmentation by bidirectional hierarchical clustering using Voronoi tessellation and physical self-containment",
-   "description": "Protein domains are commonly regarded as structurally separated, functionally relevant, and evolutionarily separable units.",
-   "url": "https://doi.org/10.64898/2026.10.18.759833",
-   "date": "2026-10-20",
-   "tags": [
-    "proteomika",
-    "ai-ml",
-    "ewolucja"
-   ],
-   "article_type": "benchmark",
-   "id": "r-8e37b598d2ec",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
    "title": "Integrating Genetic Domestication and Model-Guided Kill-Switch Engineering in a Non-Model Bacterial Therapeutic",
    "description": "Engineered bacteria offer programmable cancer immunotherapies, but engineering tractability does not always align with therapeutic suitability.",
    "url": "https://doi.org/10.64898/2026.10.18.759933",
@@ -15128,6 +15409,21 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · fulcrumgenomics/fgumi",
+   "title": "fgumi v0.8.0",
+   "description": "## For those running the fgumi command line tools **v0.8.0 adds `fgumi runall`, which runs a whole UMI pipeline as one command, and makes large sorts faster on less memory. It also fixes methylation consensus, which changes that output's format.** ### New: `fgumi runall` `runall`",
+   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.8.0",
+   "date": "2026-10-20",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "id": "r-6dc4e7a502ce",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · genome-spy/genome-spy",
    "title": "genome-spy v1.2.0",
    "description": "### New features - **Core:** Run an explicit `formula`, `filter`, `sample`, `aggregate`, or `window` pipeline on viewport or interval-brush records with `ViewHandle.data.transform()`. Analysis uses an isolated flow and leaves the visualization unchanged. Input overflow rejects be",
@@ -15140,21 +15436,6 @@
     "narzedzia"
    ],
    "id": "r-b0acd333ac8b",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · fulcrumgenomics/fgumi",
-   "title": "fgumi v0.8.0",
-   "description": "## For those running the fgumi command line tools **v0.8.0 adds `fgumi runall`, which runs a whole UMI pipeline as one command, and makes large sorts faster on less memory. It also fixes methylation consensus, which changes that output's format.** ### New: `fgumi runall` `runall`",
-   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.8.0",
-   "date": "2026-10-20",
-   "tags": [
-    "genomika",
-    "kliniczne",
-    "narzedzia"
-   ],
-   "id": "r-6dc4e7a502ce",
    "score": 1.0
   },
   {
