@@ -1,7 +1,381 @@
 {
  "month": "2026-10",
- "count": 2138,
+ "count": 2160,
  "entries": [
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Reconstructing human gene regulatory evolution using deep learning",
+   "description": "Understanding the genetic changes that drove the evolution of human-specific traits is a central goal in biology.",
+   "url": "https://doi.org/10.64898/2026.10.22.760916",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ai-ml",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-cb306eb17787",
+   "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "DCAF: Unifying Data Validity, Evaluation Validity and Predictive Modeling for Single-cell Perturbation Simulation",
+   "description": "Single-cell perturbation profiling is limited by cost and throughput, while computational methods remain constrained by inconsistent evaluation and underperformance relative to simple baselines.",
+   "url": "https://doi.org/10.64898/2026.10.13.758713",
+   "date": "2026-10-31",
+   "tags": [
+    "single-cell",
+    "ai-ml",
+    "neuronauka"
+   ],
+   "article_type": "benchmark",
+   "id": "r-287477f65663",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Adaptation to complex environments is associated with higher fitness costs under benign conditions",
+   "description": "Complex environments with simultaneous change in multiple stressors is the new norm in ecosystems worldwide, and adaptive evolution will be critical for population persistence under these combined environmental…",
+   "url": "https://doi.org/10.64898/2025.12.22.695988",
+   "date": "2026-10-31",
+   "tags": [
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-5563c6751df4",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Convergent genome evolution reveals shared routes to salt tolerance in flowering plants",
+   "description": "How do plants repeatedly evolve the ability to thrive in saline environments? We analyzed ~10 million protein-coding genes from 232 angiosperm genomes spanning 55 families to identify convergent genomic signatures of…",
+   "url": "https://doi.org/10.64898/2026.10.12.758530",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-7978fefeeba1",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "StabCell: Stability selection for clustering and marker detection in single-cell RNA sequencing",
+   "description": "Conventional pipelines for differential expression analysis in single-cell RNA sequencing (scRNA-seq) data first cluster individual cells and then test for differentially expressed genes between the resulting clusters.",
+   "url": "https://doi.org/10.64898/2026.05.07.720061",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-5d01e3b791f1",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "AnchoRNA: Full virus genome alignments through conserved anchor regions",
+   "description": "Background: Multiple sequence alignment of full viral genomes can be challenging due to factors such as long sequences, large insertions/deletions (spanning several 100 nucleotides), large number of sequences, sequence…",
+   "url": "https://doi.org/10.1101/2025.01.30.635689",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-85b592a927d3",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Stochastic population growth and its implications for mutation dynamics under carrying capacity constraints",
+   "description": "Mathematical models of mutation processes often assume deterministic population growth, although biological populations are continuously subjected to random fluctuations.",
+   "url": "https://doi.org/10.64898/2026.10.21.760709",
+   "date": "2026-10-31",
+   "tags": [
+    "modelowanie"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-cf236eaa96cf",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Regulatory mode and enhancer architecture determine limits of blood DNA methylation as a molecular proxy",
+   "description": "Blood-based DNA methylation is widely used as a molecular surrogate for traits ranging from circulating protein and metabolite levels to biological aging, but whether the CpGs driving these models reflect genuine gene…",
+   "url": "https://doi.org/10.64898/2026.07.14.738581",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-103b035720ca",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Kidzoi Enables Cell-Type-Specific Regulatory Activity and Variant Effect Prediction in Kidney",
+   "description": "Sequence-to-function (S2F) deep learning models predict genome-wide functional profiles directly from DNA sequences and have significantly advanced our understanding of gene regulation.",
+   "url": "https://doi.org/10.64898/2026.09.28.746288",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b34f34f5ca46",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Shared QTLs underlie loss of a conserved trait in replicate mapping populations of Arabidopsis thaliana",
+   "description": "The evolutionary mechanisms leading to nonfunctional trait loss are not well understood.",
+   "url": "https://doi.org/10.64898/2026.07.14.738505",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-bb1e9307b200",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "QuantCell: machine learning based cell annotation integrating qualitative and quantitative imaging profiles",
+   "description": "Recent advances in spatial omics enable high-resolution, multiplexed imaging of RNA and protein expression, but cell annotation remains challenging, particularly in complex tissues with numerous markers or rare cell…",
+   "url": "https://doi.org/10.64898/2026.02.15.706033",
+   "date": "2026-10-31",
+   "tags": [
+    "ai-ml"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-996af72fff8e",
+   "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Sparse Linear Algebra Accelerates Genotype Representation Graph Computation at Biobank Scale",
+   "description": "Biobank-scale genomic analyses are increasingly constrained by computational costs, as hundreds of thousands to millions of samples and variants must be analyzed together.",
+   "url": "https://doi.org/10.64898/2026.09.10.750583",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-c646ffe7084a",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Probing Genomic Foundation Models with Splice-Variant Perturbations",
+   "description": "As benchmarks saturate, traditional validation methods fail to capture the probabilistic representations of genomic foundation models.",
+   "url": "https://doi.org/10.64898/2026.10.02.756289",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ai-ml",
+    "ewolucja"
+   ],
+   "article_type": "benchmark",
+   "id": "r-95a392e5a428",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Programmable Biochemical Logic Computation Through Repurposing Natural bZIP Protein Interaction Networks",
+   "description": "Protein dimerization networks can implement biochemical logic, but their practical realization has largely relied on designing or optimizing protein-protein interaction affinities, creating a major barrier to…",
+   "url": "https://doi.org/10.64898/2026.07.29.741539",
+   "date": "2026-10-31",
+   "tags": [
+    "proteomika",
+    "sieci-systemy",
+    "ewolucja"
+   ],
+   "article_type": "benchmark",
+   "id": "r-08ac7bdbe273",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Small molecule structure elucidation from NMR spectra with generative and reasoning models",
+   "description": "Elucidating the structures of unknown small molecules remains a major challenge in chemistry, pharmacology, and drug discovery.",
+   "url": "https://doi.org/10.64898/2026.10.29.762711",
+   "date": "2026-10-31",
+   "tags": [
+    "ai-ml",
+    "struktury",
+    "leki",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-57b58e155d55",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "EMBER: Contextualized gene representations enable compositional prediction across cellular perturbations",
+   "description": "Predicting the effects of individual and combined perturbations is central to identifying context-specific vulnerabilities and designing targeted interventions.",
+   "url": "https://doi.org/10.64898/2026.10.28.762655",
+   "date": "2026-10-31",
+   "tags": [
+    "single-cell",
+    "ai-ml"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-8792c181fda9",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "SMFnet reveals principles of combinatorial transcription factor assembly",
+   "description": "Combinatorial assembly of transcription factors (TFs) opens chromatin at cis-regulatory elements (cREs) to establish cell-type-specific gene expression.",
+   "url": "https://doi.org/10.64898/2026.10.30.762954",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ai-ml"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-41109881380f",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "ChAI-Net learns a regulatory code for chromatin co-accessibility",
+   "description": "The regulation of chromatin accessibility is critical for cell function and identity.",
+   "url": "https://doi.org/10.64898/2026.10.29.762938",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ai-ml"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-dc460034034e",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "FiberBrowser: a unified framework for single-molecule genomics",
+   "description": "Single-molecule footprinting methods are rapidly transforming chromatin biology.",
+   "url": "https://doi.org/10.64898/2026.10.29.762797",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-f133b4f2a9ee",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Pre-existing genome architecture partitions viral takeover in the smallest free-living eukaryote",
+   "description": "Nuclear DNA viruses colonize host genomes already structured into complex spatial domains, yet whether established spatial boundaries dictate viral progression remains unresolved--in part because sequence composition…",
+   "url": "https://doi.org/10.64898/2026.10.29.762491",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-985cd07e84d9",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A genomic baseline for long-term monitoring of economically important aquatic species in the Netherlands",
+   "description": "Aquatic species of economic and ecological importance are increasingly threatened by environmental change, yet their genetic diversity and population structure remain poorly characterised, limiting effective…",
+   "url": "https://doi.org/10.64898/2026.10.29.762745",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-5f9ef459751a",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Eco-evolutionary Dynamics of Colonization: When Does Source Selection Matter?",
+   "description": "Ancestral balancing selection may facilitate evolutionary rescue following migration into a new habitat by providing founder populations with adaptive alleles, even when those alleles were not the fittest in the…",
+   "url": "https://doi.org/10.64898/2026.10.29.762850",
+   "date": "2026-10-31",
+   "tags": [
+    "ewolucja",
+    "modelowanie"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-c814e36d56a8",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Single-cell foundation models transfer across deep evolutionary distances",
+   "description": "Single-cell foundation models are trained mostly on human and other vertebrate cells, yet are proposed as general-purpose models. Whether they transfer far beyond their training species is unknown.",
+   "url": "https://doi.org/10.64898/2026.10.28.762457",
+   "date": "2026-10-31",
+   "tags": [
+    "single-cell",
+    "ai-ml",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b86ad40d21c9",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "In silico codon optimization and phylogenetic analysis of various strains of Sapovirus",
+   "description": "Introduction: Sapovirus (SaV) is an emerging enteric pathogen of rising public health importance, responsible for acute gastroenteritis in people of all ages and most often in children under five.",
+   "url": "https://doi.org/10.64898/2026.10.30.762994",
+   "date": "2026-10-31",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-8fb51b16a664",
+   "score": 2.0
+  },
   {
    "type": "research",
    "source": "medRxiv",
@@ -3647,20 +4021,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · moritztng/tt-bio",
-   "title": "tt-bio v0.26.1",
-   "description": "## [0.26.1] - 2026-10-29 ### Fixed - **ESMFold2 no longer runs out of device memory on a worker that has folded many different inputs.** A worker keeps its chip open across jobs, and the compiled programs for every input shape it has folded stay in device memory. After about ten",
-   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.26.1",
-   "date": "2026-10-29",
-   "tags": [
-    "struktury",
-    "narzedzia"
-   ],
-   "id": "r-88b126270b4e",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · mlin/GenomicSQLite",
    "title": "GenomicSQLite v0.10.0-rc.1",
    "description": "GenomicSQLite v0.10.0 is the first release since v0.9.4 (2023). It returns the project to active maintenance with agentic assistance (@Wid-L-Hacker). The release modernizes the bundled foundations, widens the supported platforms, and fixes defects that LLM audits found in the vir",
@@ -3703,6 +4063,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · moritztng/tt-bio",
+   "title": "tt-bio v0.26.1",
+   "description": "## [0.26.1] - 2026-10-29 ### Fixed - **ESMFold2 no longer runs out of device memory on a worker that has folded many different inputs.** A worker keeps its chip open across jobs, and the compiled programs for every input shape it has folded stay in device memory. After about ten",
+   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.26.1",
+   "date": "2026-10-29",
+   "tags": [
+    "struktury",
+    "narzedzia"
+   ],
+   "id": "r-88b126270b4e",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "Zenodo · software",
    "title": "crolllab/genomedenovo_nf",
    "description": "Nextflow pipeline for de novo genome assembly, assembly QC and query gene search (BLAST, Exonerate) across genome panels, with CDS integrity, isoform, paralog and transposable element analyses.",
@@ -3731,20 +4105,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · sortmerna/sortmerna",
-   "title": "sortmerna v8.0.1",
-   "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
-   "url": "https://github.com/sortmerna/sortmerna/releases/tag/v8.0.1",
-   "date": "2026-10-28",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-38dc4d9aaf06",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · ucscGenomeBrowser/kent",
    "title": "kent v505_branch.1",
    "description": "- Redesigned home page with the 2026 branding: a new header, a search box with a loading spinner at the top of the page, a Get started row, and lighter images; static pages no longer load jQuery twice, gain a target for the menu bar's skip link, and have updated footer links - VC",
@@ -3756,6 +4116,19 @@
     "bazy-danych"
    ],
    "id": "r-b090b822b9ac",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · fulcrumgenomics/fgumi",
+   "title": "fgumi v0.9.0",
+   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
+   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-5ddd360735ea",
    "score": 1.0
   },
   {
@@ -5349,6 +5722,20 @@
    "article_type": "eksperymentalne",
    "id": "r-7321b6f5fdf6",
    "score": 4.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · sortmerna/sortmerna",
+   "title": "sortmerna v8.0.1",
+   "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
+   "url": "https://github.com/sortmerna/sortmerna/releases/tag/v8.0.1",
+   "date": "2026-10-28",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-38dc4d9aaf06",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -9798,23 +10185,6 @@
   {
    "type": "research",
    "source": "bioRxiv",
-   "title": "Reconstructing human gene regulatory evolution using deep learning",
-   "description": "Understanding the genetic changes that drove the evolution of human-specific traits is a central goal in biology.",
-   "url": "https://doi.org/10.64898/2026.10.22.760916",
-   "date": "2026-10-23",
-   "tags": [
-    "genomika",
-    "transkryptomika",
-    "ai-ml",
-    "ewolucja"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-cb306eb17787",
-   "score": 3.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
    "title": "Elucidating changes in gene expression driving nuclear dynamics across a foraminiferal life cycle with Pheno2Seq",
    "description": "In many microeukaryotes, conserved morphology masks transitions between haploid and diploid phases of the life cycle, making it difficult to link gene expression to development.",
    "url": "https://doi.org/10.64898/2026.10.21.760831",
@@ -10328,26 +10698,6 @@
    "article_type": "eksperymentalne",
    "id": "r-74a820e642de",
    "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "Zenodo · dataset",
-   "title": "OpenScientist: Supplementary Case Study Data",
-   "description": "Supplementary data for \"OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery.\" This dataset contains research logs, knowledge states, provenance files, and generated figures for…",
-   "url": "https://zenodo.org/records/23602910",
-   "date": "2026-10-23",
-   "tags": [
-    "genomika",
-    "transkryptomika",
-    "proteomika",
-    "ai-ml",
-    "kliniczne",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "article_type": "benchmark",
-   "id": "r-e929fa240dcc",
-   "score": 0.3
   },
   {
    "type": "research",
@@ -11135,6 +11485,26 @@
    ],
    "id": "r-6eccc910e2d3",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "OpenScientist: Supplementary Case Study Data",
+   "description": "Supplementary data for \"OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery.\" This dataset contains research logs, knowledge states, provenance files, and generated figures for…",
+   "url": "https://zenodo.org/records/23602910",
+   "date": "2026-10-23",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "proteomika",
+    "ai-ml",
+    "kliniczne",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-e929fa240dcc",
+   "score": 0.3
   },
   {
    "type": "research",
@@ -12943,22 +13313,6 @@
    ],
    "article_type": "narzedzie-art",
    "id": "r-7816e7c7685a",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
-   "title": "DCAF: Unifying Data Validity, Evaluation Validity and Predictive Modeling for Single-cell Perturbation Simulation",
-   "description": "Single-cell perturbation profiling is limited by cost and throughput, while computational methods remain constrained by inconsistent evaluation and underperformance relative to simple baselines.",
-   "url": "https://doi.org/10.64898/2026.10.13.758713",
-   "date": "2026-10-21",
-   "tags": [
-    "single-cell",
-    "ai-ml",
-    "neuronauka"
-   ],
-   "article_type": "benchmark",
-   "id": "r-287477f65663",
    "score": 2.0
   },
   {
@@ -17672,22 +18026,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "DeCodeDNA",
-   "description": "DeCodeDNA is an end-to-end eDNA metabarcoding analysis pipeline that can be run on everyday laptops.",
-   "url": "https://zenodo.org/records/23443437",
-   "date": "2026-10-18",
-   "tags": [
-    "genomika",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "article_type": null,
-   "id": "r-4ee4b7dd04a5",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · biotite-dev/biotite",
    "title": "biotite v2.0.0",
    "description": "# Changelog # ## Additions ## - Added `J` (leucine or isoleucine) to the ambiguous `ProteinSequence` alphabet and the substitution matrices. (#958) - Note that this changes the symbol codes of `X` and `*`. - Added `structure.PSeaElement` and `application.dssp.DsspElement` enums t",
@@ -17727,6 +18065,22 @@
    ],
    "id": "r-8eee01e99d1d",
    "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "DeCodeDNA",
+   "description": "DeCodeDNA is an end-to-end eDNA metabarcoding analysis pipeline that can be run on everyday laptops.",
+   "url": "https://zenodo.org/records/23443437",
+   "date": "2026-10-18",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-4ee4b7dd04a5",
+   "score": 0.3
   },
   {
    "type": "narzedzie",
@@ -22047,21 +22401,6 @@
    ],
    "article_type": "narzedzie-art",
    "id": "r-b84a753cb26e",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
-   "title": "Convergent genome evolution reveals shared routes to salt tolerance in flowering plants",
-   "description": "Transitions to saline environments pose formidable challenges to plants, yet halophytism has evolved independently across many flowering plant lineages.",
-   "url": "https://doi.org/10.64898/2026.10.12.758530",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "ewolucja"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-7978fefeeba1",
    "score": 2.0
   },
   {
