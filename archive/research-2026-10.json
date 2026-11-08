@@ -2889,21 +2889,6 @@
   {
    "type": "research",
    "source": "medRxiv",
-   "title": "Founder alleles and clonal hematopoiesis, not missing diversity, confound variant interpretation in an underrepresented population",
-   "description": "Variants absent from gnomAD are widely cited as evidence of unique variation in underrepresented populations, but absence also depends on reference size.",
-   "url": "https://doi.org/10.64898/2026.10.28.26366687",
-   "date": "2026-10-29",
-   "tags": [
-    "genomika",
-    "kliniczne"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-c95d1adcbcb4",
-   "score": 1.0
-  },
-  {
-   "type": "research",
-   "source": "medRxiv",
    "title": "Photograph-Based Skeletal Malocclusion Screening with Geometric Machine Learning: External Validation Across Turkish and Non-European Cohorts",
    "description": "A photograph-based screening classifier for skeletal malocclusion maps 100 engineered geometric feature vectors, derived from a side-profile smartphone photograph, to orthodontic class labels, enabling non-invasive…",
    "url": "https://doi.org/10.64898/2026.10.28.26366413",
@@ -4059,6 +4044,21 @@
     "narzedzia"
    ],
    "id": "r-95249a8daf42",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Founder alleles and clonal hematopoiesis, not missing diversity, confound variant interpretation in an underrepresented population",
+   "description": "Variants absent from gnomAD are widely cited as evidence of unique variation in underrepresented populations, but absence also depends on reference size.",
+   "url": "https://doi.org/10.64898/2026.10.28.26366687",
+   "date": "2026-10-29",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-c95d1adcbcb4",
    "score": 1.0
   },
   {
@@ -14609,19 +14609,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · kjolley/BIGSdb",
-   "title": "BIGSdb v_1.55.1",
-   "description": "This release: - Fixes reversion that broke submission tar downloads. - Includes linked data values in SeqTableExport plugin. - Adds a test for deadlocks when swapping cache tables. If deadlock is detected, the swap is retried multiple times. - Adds an option for a curator to emba",
-   "url": "https://github.com/kjolley/BIGSdb/releases/tag/v_1.55.1",
-   "date": "2026-10-21",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-17ca2ff94125",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · datavzrd/datavzrd",
    "title": "datavzrd v2.76.0",
    "description": "## [2.76.0](https://github.com/datavzrd/datavzrd/compare/v2.75.5...v2.76.0) (2026-10-21) ### Features * Replace plot resize buttons with width and height sliders ([#1340](https://github.com/datavzrd/datavzrd/issues/1340)) ([ebe4897](https://github.com/datavzrd/datavzrd/commit/ebe",
@@ -14646,6 +14633,19 @@
     "narzedzia"
    ],
    "id": "r-58272e9af830",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · kjolley/BIGSdb",
+   "title": "BIGSdb v_1.55.1",
+   "description": "This release: - Fixes reversion that broke submission tar downloads. - Includes linked data values in SeqTableExport plugin. - Adds a test for deadlocks when swapping cache tables. If deadlock is detected, the swap is retried multiple times. - Adds an option for a curator to emba",
+   "url": "https://github.com/kjolley/BIGSdb/releases/tag/v_1.55.1",
+   "date": "2026-10-21",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-17ca2ff94125",
    "score": 1.0
   },
   {
