@@ -1,6 +1,6 @@
 {
  "month": "2026-10",
- "count": 2160,
+ "count": 2161,
  "entries": [
   {
    "type": "research",
@@ -236,21 +236,6 @@
    ],
    "article_type": "benchmark",
    "id": "r-57b58e155d55",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
-   "title": "EMBER: Contextualized gene representations enable compositional prediction across cellular perturbations",
-   "description": "Predicting the effects of individual and combined perturbations is central to identifying context-specific vulnerabilities and designing targeted interventions.",
-   "url": "https://doi.org/10.64898/2026.10.28.762655",
-   "date": "2026-10-31",
-   "tags": [
-    "single-cell",
-    "ai-ml"
-   ],
-   "article_type": "narzedzie-art",
-   "id": "r-8792c181fda9",
    "score": 2.0
   },
   {
@@ -821,6 +806,21 @@
    "score": 1.0
   },
   {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "EMBER: Contextualized gene representations enable compositional prediction across cellular perturbations",
+   "description": "Predicting the effects of individual and combined perturbations is central to identifying context-specific vulnerabilities and designing targeted interventions.",
+   "url": "https://doi.org/10.64898/2026.10.28.762655",
+   "date": "2026-10-31",
+   "tags": [
+    "single-cell",
+    "ai-ml"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-8792c181fda9",
+   "score": 2.0
+  },
+  {
    "type": "narzedzie",
    "source": "GitHub · the-omics-os/lobster",
    "title": "lobster v1.2.1",
@@ -1026,6 +1026,34 @@
    "article_type": "eksperymentalne",
    "id": "r-ab43a58f4788",
    "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · kcleal/dysgu",
+   "title": "dysgu v1.10.0",
+   "description": "Improvements ------------ This release mainly targets paired-end reads. - Slight increase in sensitivity and precision for paired-end reads. - Genotyping overhaul for paired-end data (`--fragment-gt` option): alt/ref fragments are now re-counted from the input bam across regions",
+   "url": "https://github.com/kcleal/dysgu/releases/tag/v1.10.0",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-321b2784c456",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · tskit-dev/tskit",
+   "title": "tskit 1.0.4",
+   "description": "**Maintenance** - Add support and wheels for Python 3.15 - Require Python ›= 3.12 **Features** - CLI commands that load a tree sequence now read from stdin when the input path argument is omitted. - The returned object from ``variant.counts()`` and ``variant.frequencies()`` now s",
+   "url": "https://github.com/tskit-dev/tskit/releases/tag/1.0.4",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-292817805cdb",
+   "score": 1.0
   },
   {
    "type": "research",
@@ -2255,20 +2283,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · GMOD/jbrowse-components",
-   "title": "jbrowse-components v5.0.0-beta.19",
-   "description": "_Release notes pending._",
-   "url": "https://github.com/GMOD/jbrowse-components/releases/tag/v5.0.0-beta.19",
-   "date": "2026-10-30",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-9444541b7ccc",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · tskit-dev/msprime",
    "title": "msprime 1.4.5",
    "description": "- Add support and wheels for Python 3.15 - Drop Python 3.11 support, require Python ›= 3.12 - The ``SLiMMutationModel`` is renamed ``SLiMv5MutationModel``. The class ``SLiMMutationModel`` retains its previous behavior, but emits a FutureWarning. This change is made because mutati",
@@ -2297,16 +2311,16 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · kcleal/dysgu",
-   "title": "dysgu v1.10.0",
-   "description": "Improvements ------------ This release mainly targets paired-end reads. - Slight increase in sensitivity and precision for paired-end reads. - Genotyping overhaul for paired-end data (`--fragment-gt` option): alt/ref fragments are now re-counted from the input bam across regions",
-   "url": "https://github.com/kcleal/dysgu/releases/tag/v1.10.0",
+   "source": "GitHub · GMOD/jbrowse-components",
+   "title": "jbrowse-components v5.0.0-beta.19",
+   "description": "_Release notes pending._",
+   "url": "https://github.com/GMOD/jbrowse-components/releases/tag/v5.0.0-beta.19",
    "date": "2026-10-30",
    "tags": [
-    "genomika",
+    "inne",
     "narzedzia"
    ],
-   "id": "r-321b2784c456",
+   "id": "r-9444541b7ccc",
    "score": 1.0
   },
   {
@@ -4006,22 +4020,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · mlin/GenomicSQLite",
-   "title": "GenomicSQLite v0.10.0-rc.1",
-   "description": "GenomicSQLite v0.10.0 is the first release since v0.9.4 (2023). It returns the project to active maintenance with agentic assistance (@Wid-L-Hacker). The release modernizes the bundled foundations, widens the supported platforms, and fixes defects that LLM audits found in the vir",
-   "url": "https://github.com/mlin/GenomicSQLite/releases/tag/v0.10.0-rc.1",
-   "date": "2026-10-29",
-   "tags": [
-    "genomika",
-    "ai-ml",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-827b93ba451b",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · stjude-rust-labs/sprocket",
    "title": "sprocket v0.33.0",
    "description": "### Security Fix * Fixed a security issue where `sprocket dev server` was failing to properly handle submitted `file://` URLs, allowing attackers to access files outside of the allowed file system paths ([GHSA-gvw2-6ff9-8364](https://github.com/stjude-rust-labs/sprocket/security/",
@@ -4044,6 +4042,22 @@
     "narzedzia"
    ],
    "id": "r-95249a8daf42",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · mlin/GenomicSQLite",
+   "title": "GenomicSQLite v0.10.0-rc.1",
+   "description": "GenomicSQLite v0.10.0 is the first release since v0.9.4 (2023). It returns the project to active maintenance with agentic assistance (@Wid-L-Hacker). The release modernizes the bundled foundations, widens the supported platforms, and fixes defects that LLM audits found in the vir",
+   "url": "https://github.com/mlin/GenomicSQLite/releases/tag/v0.10.0-rc.1",
+   "date": "2026-10-29",
+   "tags": [
+    "genomika",
+    "ai-ml",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-827b93ba451b",
    "score": 1.0
   },
   {
@@ -4116,19 +4130,6 @@
     "bazy-danych"
    ],
    "id": "r-b090b822b9ac",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · fulcrumgenomics/fgumi",
-   "title": "fgumi v0.9.0",
-   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
-   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
-   "date": "2026-10-28",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-5ddd360735ea",
    "score": 1.0
   },
   {
@@ -5511,6 +5512,102 @@
    "score": 0.3
   },
   {
+   "type": "research",
+   "source": "Nature Methods",
+   "title": "Thyra: bridging mass spectrometry imaging and SpatialData for unified multimodal analysis",
+   "description": "",
+   "url": "https://www.nature.com/articles/s41592-026-03305-5",
+   "date": "2026-10-28",
+   "tags": [
+    "proteomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-6e5675781712",
+   "score": 4.0
+  },
+  {
+   "type": "research",
+   "source": "Nature Methods",
+   "title": "Cellular-resolution three-photon ultra-deep imaging (TrUDI) of neuronal population activity at 2-mm depth in the mammalian brain",
+   "description": "",
+   "url": "https://www.nature.com/articles/s41592-026-03251-2",
+   "date": "2026-10-28",
+   "tags": [
+    "neuronauka"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-1708d3fd8e0f",
+   "score": 4.0
+  },
+  {
+   "type": "research",
+   "source": "Nature Methods",
+   "title": "Aptamer-mediated multivalent endogenous ADAR1 recruitment for highly efficient RNA editing",
+   "description": "",
+   "url": "https://www.nature.com/articles/s41592-026-03284-7",
+   "date": "2026-10-28",
+   "tags": [
+    "inne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-7321b6f5fdf6",
+   "score": 4.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · fulcrumgenomics/fgumi",
+   "title": "fgumi v0.9.0",
+   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
+   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-5ddd360735ea",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · sortmerna/sortmerna",
+   "title": "sortmerna v8.0.1",
+   "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
+   "url": "https://github.com/sortmerna/sortmerna/releases/tag/v8.0.1",
+   "date": "2026-10-28",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-38dc4d9aaf06",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · depictio/depictio",
+   "title": "depictio v1.19.3",
+   "description": "### Docker Images 🐳 ```plaintext ghcr.io/depictio/depictio:1.19.3 ghcr.io/depictio/depictio:latest ghcr.io/depictio/depictio:stable ghcr.io/depictio/depictio:edge ``` Click to expand the changelog for 1.19.3 ### Changes 📜 #### Improvements 🚀 * perf: d",
+   "url": "https://github.com/depictio/depictio/releases/tag/v1.19.3",
+   "date": "2026-10-28",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-9462e768fd4b",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · amkozlov/raxml-ng",
+   "title": "raxml-ng 2.0.4",
+   "description": "## Bugfixes - fix Transfer Bootstrap ([TBE](https://github.com/amkozlov/raxml-ng/wiki/Computing-branch-support-metrics#tbe-transfer-bootstrap-expectation)) branch support computation ([#236](https://github.com/amkozlov/raxml-ng/issues/236)) - moose: fix freerate heuristic for `I+",
+   "url": "https://github.com/amkozlov/raxml-ng/releases/tag/2.0.4",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-9a0f917fd3e1",
+   "score": 1.0
+  },
+  {
    "type": "narzedzie",
    "source": "Zenodo · software",
    "title": "spxtacular: Mass spectrometry spectrum processing in Python",
@@ -5680,89 +5777,6 @@
    "article_type": null,
    "id": "r-e9cb9180665a",
    "score": 0.3
-  },
-  {
-   "type": "research",
-   "source": "Nature Methods",
-   "title": "Thyra: bridging mass spectrometry imaging and SpatialData for unified multimodal analysis",
-   "description": "",
-   "url": "https://www.nature.com/articles/s41592-026-03305-5",
-   "date": "2026-10-28",
-   "tags": [
-    "proteomika"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-6e5675781712",
-   "score": 4.0
-  },
-  {
-   "type": "research",
-   "source": "Nature Methods",
-   "title": "Cellular-resolution three-photon ultra-deep imaging (TrUDI) of neuronal population activity at 2-mm depth in the mammalian brain",
-   "description": "",
-   "url": "https://www.nature.com/articles/s41592-026-03251-2",
-   "date": "2026-10-28",
-   "tags": [
-    "neuronauka"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-1708d3fd8e0f",
-   "score": 4.0
-  },
-  {
-   "type": "research",
-   "source": "Nature Methods",
-   "title": "Aptamer-mediated multivalent endogenous ADAR1 recruitment for highly efficient RNA editing",
-   "description": "",
-   "url": "https://www.nature.com/articles/s41592-026-03284-7",
-   "date": "2026-10-28",
-   "tags": [
-    "inne"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-7321b6f5fdf6",
-   "score": 4.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · sortmerna/sortmerna",
-   "title": "sortmerna v8.0.1",
-   "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
-   "url": "https://github.com/sortmerna/sortmerna/releases/tag/v8.0.1",
-   "date": "2026-10-28",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-38dc4d9aaf06",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · depictio/depictio",
-   "title": "depictio v1.19.3",
-   "description": "### Docker Images 🐳 ```plaintext ghcr.io/depictio/depictio:1.19.3 ghcr.io/depictio/depictio:latest ghcr.io/depictio/depictio:stable ghcr.io/depictio/depictio:edge ``` Click to expand the changelog for 1.19.3 ### Changes 📜 #### Improvements 🚀 * perf: d",
-   "url": "https://github.com/depictio/depictio/releases/tag/v1.19.3",
-   "date": "2026-10-28",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-9462e768fd4b",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · amkozlov/raxml-ng",
-   "title": "raxml-ng 2.0.4",
-   "description": "## Bugfixes - fix Transfer Bootstrap ([TBE](https://github.com/amkozlov/raxml-ng/wiki/Computing-branch-support-metrics#tbe-transfer-bootstrap-expectation)) branch support computation ([#236](https://github.com/amkozlov/raxml-ng/issues/236)) - moose: fix freerate heuristic for `I+",
-   "url": "https://github.com/amkozlov/raxml-ng/releases/tag/2.0.4",
-   "date": "2026-10-28",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-9a0f917fd3e1",
-   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -8593,20 +8607,6 @@
    "score": 1.0
   },
   {
-   "type": "narzedzie",
-   "source": "GitHub · galaxyproject/galaxy",
-   "title": "galaxy v26.1.2",
-   "description": "## What's Changed ### 🚀 New Features * [26.1] Add interactivetool tensorboard by @IvoLeist in https://github.com/galaxyproject/galaxy/pull/23577 ### 🔧 Enhancements * [26.1] Name DRS-fetched dat",
-   "url": "https://github.com/galaxyproject/galaxy/releases/tag/v26.1.2",
-   "date": "2026-10-25",
-   "tags": [
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-1dfec619b13c",
-   "score": 1.0
-  },
-  {
    "type": "research",
    "source": "bioRxiv",
    "title": "Mathematical genomics of SRY proteins and their associated HMG-Box domains across mammals",
@@ -9298,6 +9298,20 @@
    "article_type": null,
    "id": "r-ace9108b7361",
    "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · galaxyproject/galaxy",
+   "title": "galaxy v26.1.2",
+   "description": "## What's Changed ### 🚀 New Features * [26.1] Add interactivetool tensorboard by @IvoLeist in https://github.com/galaxyproject/galaxy/pull/23577 ### 🔧 Enhancements * [26.1] Name DRS-fetched dat",
+   "url": "https://github.com/galaxyproject/galaxy/releases/tag/v26.1.2",
+   "date": "2026-10-25",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-1dfec619b13c",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -17442,21 +17456,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "MetaManifold: a Julia orchestrator for amplicon sequencing pipelines with an interactive web interface",
-   "description": "MetaManifold is a Julia-native orchestrator for amplicon sequencing workflows.",
-   "url": "https://zenodo.org/records/23464266",
-   "date": "2026-10-19",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-6f1fbdb2d867",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · vgteam/vg",
    "title": "vg v1.78.0",
    "description": "**[![Download for Linux](https://raw.githubusercontent.com/vgteam/vg/master/doc/figures/download-linux.png) ](https://github.com/vgteam/vg/releases/download/v1.78.0/vg)** Don't forget to mark the static binary executable: ``` chmod +x vg ``` **Docker Image:** `quay.io/vgteam/vg:v",
@@ -17497,6 +17496,21 @@
    ],
    "id": "r-a7102dc75590",
    "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "MetaManifold: a Julia orchestrator for amplicon sequencing pipelines with an interactive web interface",
+   "description": "MetaManifold is a Julia-native orchestrator for amplicon sequencing workflows.",
+   "url": "https://zenodo.org/records/23464266",
+   "date": "2026-10-19",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-6f1fbdb2d867",
+   "score": 0.3
   },
   {
    "type": "narzedzie",
@@ -21123,21 +21137,6 @@
   {
    "type": "research",
    "source": "bioRxiv",
-   "title": "Genetic circuit rewiring underlies a lineage-specific patterning machinery on butterfly wings",
-   "description": "Phenotypes evolve through changes in gene regulatory networks (GRNs), but how changes in network topology contribute to phenotypic evolution is still poorly understood.",
-   "url": "https://doi.org/10.64898/2026.10.11.758279",
-   "date": "2026-10-14",
-   "tags": [
-    "sieci-systemy",
-    "ewolucja"
-   ],
-   "article_type": "benchmark",
-   "id": "r-0a3c531e7656",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
    "title": "Individual-Specific Gaussian Graphical Models for Heterogeneous Populations with Application to Epigenetic Gene Regulation in Lung Adenocarcinoma",
    "description": "Inter-patient molecular heterogeneity is a fundamental challenge in precision oncology: population-level multi-omics networks reveal average biology aggregated across the population but obscure individual variations…",
    "url": "https://doi.org/10.64898/2026.05.25.727641",
@@ -22309,6 +22308,21 @@
    ],
    "id": "r-361b082c22d0",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Genetic circuit rewiring underlies a lineage-specific patterning machinery on butterfly wings",
+   "description": "Phenotypes evolve through changes in gene regulatory networks (GRNs), but how changes in network topology contribute to phenotypic evolution is still poorly understood.",
+   "url": "https://doi.org/10.64898/2026.10.11.758279",
+   "date": "2026-10-14",
+   "tags": [
+    "sieci-systemy",
+    "ewolucja"
+   ],
+   "article_type": "benchmark",
+   "id": "r-0a3c531e7656",
+   "score": 2.0
   },
   {
    "type": "narzedzie",
