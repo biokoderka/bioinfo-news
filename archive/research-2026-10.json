@@ -1,6 +1,6 @@
 {
  "month": "2026-10",
- "count": 2161,
+ "count": 2162,
  "entries": [
   {
    "type": "research",
@@ -1026,34 +1026,6 @@
    "article_type": "eksperymentalne",
    "id": "r-ab43a58f4788",
    "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · kcleal/dysgu",
-   "title": "dysgu v1.10.0",
-   "description": "Improvements ------------ This release mainly targets paired-end reads. - Slight increase in sensitivity and precision for paired-end reads. - Genotyping overhaul for paired-end data (`--fragment-gt` option): alt/ref fragments are now re-counted from the input bam across regions",
-   "url": "https://github.com/kcleal/dysgu/releases/tag/v1.10.0",
-   "date": "2026-10-30",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "id": "r-321b2784c456",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · tskit-dev/tskit",
-   "title": "tskit 1.0.4",
-   "description": "**Maintenance** - Add support and wheels for Python 3.15 - Require Python ›= 3.12 **Features** - CLI commands that load a tree sequence now read from stdin when the input path argument is omitted. - The returned object from ``variant.counts()`` and ``variant.frequencies()`` now s",
-   "url": "https://github.com/tskit-dev/tskit/releases/tag/1.0.4",
-   "date": "2026-10-30",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "id": "r-292817805cdb",
-   "score": 1.0
   },
   {
    "type": "research",
@@ -2269,6 +2241,34 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · kcleal/dysgu",
+   "title": "dysgu v1.10.0",
+   "description": "Improvements ------------ This release mainly targets paired-end reads. - Slight increase in sensitivity and precision for paired-end reads. - Genotyping overhaul for paired-end data (`--fragment-gt` option): alt/ref fragments are now re-counted from the input bam across regions",
+   "url": "https://github.com/kcleal/dysgu/releases/tag/v1.10.0",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-321b2784c456",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · tskit-dev/tskit",
+   "title": "tskit 1.0.4",
+   "description": "**Maintenance** - Add support and wheels for Python 3.15 - Require Python ›= 3.12 **Features** - CLI commands that load a tree sequence now read from stdin when the input path argument is omitted. - The returned object from ``variant.counts()`` and ``variant.frequencies()`` now s",
+   "url": "https://github.com/tskit-dev/tskit/releases/tag/1.0.4",
+   "date": "2026-10-30",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-292817805cdb",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · MannLabs/alphadia",
    "title": "alphadia v2.3.2-dev0",
    "description": "New Features / Search Algorithm - Add varmodel_directlfq: variance-model precursor quantification by @GeorgWa in https://github.com/MannLabs/alphadia/pull/903 Technical - bump alphadia-search-rs to version 1.8.0 by @GeorgWa in https://github.com/MannLabs/alphadia/pull/907 - Refac",
@@ -2339,6 +2339,20 @@
    "article_type": null,
    "id": "r-f232cdbde41b",
    "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · plotly/dash",
+   "title": "dash v4.5.0",
+   "description": "### Added - [#4099](https://github.com/plotly/dash/pull/4099) Streaming callbacks over HTTP now require shared storage and fail at server setup without it, instead of falling back to one connection per stream; WebSocket streaming callbacks do not need it. - [#4095](https://github",
+   "url": "https://github.com/plotly/dash/releases/tag/v4.5.0",
+   "date": "2026-10-29",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-b11fcdc573a1",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -4133,6 +4147,19 @@
    "score": 1.0
   },
   {
+   "type": "narzedzie",
+   "source": "GitHub · fulcrumgenomics/fgumi",
+   "title": "fgumi v0.9.0",
+   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
+   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-5ddd360735ea",
+   "score": 1.0
+  },
+  {
    "type": "research",
    "source": "bioRxiv",
    "title": "Dissecting oligogenic and polygenic indirect genetic effects through the lens of neighboring plant genotypes",
@@ -5555,19 +5582,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · fulcrumgenomics/fgumi",
-   "title": "fgumi v0.9.0",
-   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
-   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
-   "date": "2026-10-28",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-5ddd360735ea",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · sortmerna/sortmerna",
    "title": "sortmerna v8.0.1",
    "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
@@ -5790,34 +5804,6 @@
     "narzedzia"
    ],
    "id": "r-41be82f20a93",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · samtools/samtools",
-   "title": "samtools 1.25",
-   "description": "_Download the source code here: [samtools-1.25.tar.bz2](https://github.com/samtools/samtools/releases/download/1.25/samtools-1.25.tar.bz2).(The \"Source code\" downloads are generated by GitHub and are incomplete as they don't bundle HTSlib and are missing some generated files.)_ -",
-   "url": "https://github.com/samtools/samtools/releases/tag/1.25",
-   "date": "2026-10-27",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-dad7b07ed074",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · samtools/bcftools",
-   "title": "bcftools 1.25",
-   "description": "_Download the source code here: [bcftools-1.25.tar.bz2](https://github.com/samtools/bcftools/releases/download/1.25/bcftools-1.25.tar.bz2).(The \"Source code\" downloads are generated by GitHub and are incomplete as they don't bundle HTSlib and are missing some generated files.)_ -",
-   "url": "https://github.com/samtools/bcftools/releases/tag/1.25",
-   "date": "2026-10-27",
-   "tags": [
-    "genomika",
-    "leki",
-    "narzedzia"
-   ],
-   "id": "r-df4f14f44e7a",
    "score": 1.0
   },
   {
@@ -7014,6 +7000,34 @@
    "article_type": null,
    "id": "r-5c7b11a08d3c",
    "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · samtools/samtools",
+   "title": "samtools 1.25",
+   "description": "_Download the source code here: [samtools-1.25.tar.bz2](https://github.com/samtools/samtools/releases/download/1.25/samtools-1.25.tar.bz2).(The \"Source code\" downloads are generated by GitHub and are incomplete as they don't bundle HTSlib and are missing some generated files.)_ -",
+   "url": "https://github.com/samtools/samtools/releases/tag/1.25",
+   "date": "2026-10-27",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-dad7b07ed074",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · samtools/bcftools",
+   "title": "bcftools 1.25",
+   "description": "_Download the source code here: [bcftools-1.25.tar.bz2](https://github.com/samtools/bcftools/releases/download/1.25/bcftools-1.25.tar.bz2).(The \"Source code\" downloads are generated by GitHub and are incomplete as they don't bundle HTSlib and are missing some generated files.)_ -",
+   "url": "https://github.com/samtools/bcftools/releases/tag/1.25",
+   "date": "2026-10-27",
+   "tags": [
+    "genomika",
+    "leki",
+    "narzedzia"
+   ],
+   "id": "r-df4f14f44e7a",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -18749,23 +18763,6 @@
   {
    "type": "research",
    "source": "Genome Research",
-   "title": "Glucocorticoid regulation of the human noncoding genome.",
-   "description": "Glucocorticoids (GCs) are widely used anti-inflammatory and immunosuppressive agents known to induce substantial changes in gene expression, yet their effects on noncoding RNAs such as long noncoding RNAs (lncRNAs) or…",
-   "url": "https://doi.org/10.1101/gr.281820.125",
-   "date": "2026-10-16",
-   "tags": [
-    "genomika",
-    "single-cell",
-    "transkryptomika",
-    "kliniczne"
-   ],
-   "article_type": "narzedzie-art",
-   "id": "r-3615628b6697",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
    "title": "Liver X receptors participate in the fasting response by assisting CEBPB binding to enhancers and promoting the fasting transcriptional program.",
    "description": "Upon fasting, a group of transcription factors (TFs) activates an extensive transcriptional program in the liver to alter hepatocyte metabolism and cope with fasting.",
    "url": "https://doi.org/10.1101/gr.282119.126",
@@ -18792,23 +18789,6 @@
    ],
    "article_type": "narzedzie-art",
    "id": "r-bec5758adbc4",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Pangenome and transcriptomics reveal the genomic basis associated with interspecific variation of sexually dimorphic nuptial spines in moustache toads.",
-   "description": "Sexual dimorphism is a widespread phenotypic innovation that plays a crucial role in species diversification, yet its genetic origins and evolutionary trajectories remain poorly understood in vertebrates.",
-   "url": "https://doi.org/10.1101/gr.282034.126",
-   "date": "2026-10-16",
-   "tags": [
-    "genomika",
-    "transkryptomika",
-    "ewolucja",
-    "bazy-danych"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-76724eaf5a7a",
    "score": 2.5
   },
   {
@@ -19460,6 +19440,40 @@
    "article_type": null,
    "id": "r-98f46f106e14",
    "score": 0.3
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Glucocorticoid regulation of the human noncoding genome.",
+   "description": "Glucocorticoids (GCs) are widely used anti-inflammatory and immunosuppressive agents known to induce substantial changes in gene expression, yet their effects on noncoding RNAs such as long noncoding RNAs (lncRNAs) or…",
+   "url": "https://doi.org/10.1101/gr.281820.125",
+   "date": "2026-10-16",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "kliniczne"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-3615628b6697",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Pangenome and transcriptomics reveal the genomic basis associated with interspecific variation of sexually dimorphic nuptial spines in moustache toads.",
+   "description": "Sexual dimorphism is a widespread phenotypic innovation that plays a crucial role in species diversification, yet its genetic origins and evolutionary trajectories remain poorly understood in vertebrates.",
+   "url": "https://doi.org/10.1101/gr.282034.126",
+   "date": "2026-10-16",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ewolucja",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-76724eaf5a7a",
+   "score": 2.5
   },
   {
    "type": "narzedzie",
@@ -22965,132 +22979,6 @@
   {
    "type": "research",
    "source": "Genome Research",
-   "title": "Parental genome reprogramming drives allelic convergence while preserving parent-of-origin memory during human early embryonic development.",
-   "description": "Human sperm and oocytes carry highly distinct DNA methylation landscapes, yet parental DNA methylation ultimately converges to a largely equivalent state, raising the question of when and how the allelic DNA methylome…",
-   "url": "https://doi.org/10.1101/gr.281969.126",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "transkryptomika",
-    "kliniczne"
-   ],
-   "article_type": "narzedzie-art",
-   "id": "r-fc6eec3ba4f4",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Reconstruction of contact signals from repeated elements with Hicberg.",
-   "description": "Throughout evolution, genomes have acquired various repetitive elements, such as transposons, ribosomal DNA, duplicated genes, and tandem repeats.",
-   "url": "https://doi.org/10.1101/gr.281770.125",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "ewolucja",
-    "narzedzia"
-   ],
-   "article_type": "narzedzie-art",
-   "id": "r-e603b76eab49",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "The divergent 3D genome landscapes of aging and neurodegenerative mouse models.",
-   "description": "Chromatin structure is essential for gene regulation and genome stability, as neurons must preserve their 3D genome organization throughout life.",
-   "url": "https://doi.org/10.1101/gr.281732.125",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "neuronauka"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-b591b09a9232",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Identity-by-descent captures shared environmental factors at biobank scale.",
-   "description": "Genealogical ties leave traces beyond shared genetic material: relatives tend to share environmental exposures and cultural practices that persist across generations.",
-   "url": "https://doi.org/10.1101/gr.282338.126",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "kliniczne"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-b2f288e53903",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Temporal transcriptomics identifies ‹i›trans‹/i›-regulation by multiple lncRNAs in human iPSCs.",
-   "description": "Some long noncoding RNAs (lncRNAs) are known to regulate gene expression.",
-   "url": "https://doi.org/10.1101/gr.282389.126",
-   "date": "2026-10-13",
-   "tags": [
-    "transkryptomika",
-    "kliniczne",
-    "bazy-danych"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-01e3b24b349e",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Viral haplotype reconstruction from long reads with virCHap.",
-   "description": "Resolving genomes at the haplotype level for viral populations is crucial for understanding the prevalence of viral diseases and for the development of effective therapeutic treatments.",
-   "url": "https://doi.org/10.1101/gr.281975.126",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "kliniczne",
-    "narzedzia"
-   ],
-   "article_type": "benchmark",
-   "id": "r-19fee2a4e348",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Dissecting functional regulatory convergence over 160 million years of therian evolution.",
-   "description": "Understanding the molecular mechanisms underpinning convergent traits can provide insight into the predictability of the evolutionary process.",
-   "url": "https://doi.org/10.1101/gr.281284.125",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "ewolucja"
-   ],
-   "article_type": "benchmark",
-   "id": "r-710481a32a10",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
-   "title": "Decoding cell division history and lineage-resolved phenotypic patterns from single-cell barcode and transcriptomic data.",
-   "description": "The cell division tree encodes how proliferation and differentiation generate cellular diversity during multicellular development.",
-   "url": "https://doi.org/10.1101/gr.281734.125",
-   "date": "2026-10-13",
-   "tags": [
-    "genomika",
-    "single-cell",
-    "transkryptomika",
-    "neuronauka"
-   ],
-   "article_type": "narzedzie-art",
-   "id": "r-88145d94a5af",
-   "score": 2.5
-  },
-  {
-   "type": "research",
-   "source": "Genome Research",
    "title": "Combined effects of ‹i›Ret‹/i› coding and enhancer loss-of-function alleles cause progressive loss of inhibitory motor neurons in the enteric nervous system.",
    "description": "Hirschsprung disease (HSCR) is a congenital enteric neuropathy caused by disrupted development of enteric neural crest-derived cells (ENCDCs).",
    "url": "https://doi.org/10.1101/gr.281450.125",
@@ -24119,6 +24007,132 @@
    ],
    "id": "r-26d2046f7468",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Parental genome reprogramming drives allelic convergence while preserving parent-of-origin memory during human early embryonic development.",
+   "description": "Human sperm and oocytes carry highly distinct DNA methylation landscapes, yet parental DNA methylation ultimately converges to a largely equivalent state, raising the question of when and how the allelic DNA methylome…",
+   "url": "https://doi.org/10.1101/gr.281969.126",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "kliniczne"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-fc6eec3ba4f4",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Reconstruction of contact signals from repeated elements with Hicberg.",
+   "description": "Throughout evolution, genomes have acquired various repetitive elements, such as transposons, ribosomal DNA, duplicated genes, and tandem repeats.",
+   "url": "https://doi.org/10.1101/gr.281770.125",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-e603b76eab49",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "The divergent 3D genome landscapes of aging and neurodegenerative mouse models.",
+   "description": "Chromatin structure is essential for gene regulation and genome stability, as neurons must preserve their 3D genome organization throughout life.",
+   "url": "https://doi.org/10.1101/gr.281732.125",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "neuronauka"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b591b09a9232",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Identity-by-descent captures shared environmental factors at biobank scale.",
+   "description": "Genealogical ties leave traces beyond shared genetic material: relatives tend to share environmental exposures and cultural practices that persist across generations.",
+   "url": "https://doi.org/10.1101/gr.282338.126",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b2f288e53903",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Temporal transcriptomics identifies ‹i›trans‹/i›-regulation by multiple lncRNAs in human iPSCs.",
+   "description": "Some long noncoding RNAs (lncRNAs) are known to regulate gene expression.",
+   "url": "https://doi.org/10.1101/gr.282389.126",
+   "date": "2026-10-13",
+   "tags": [
+    "transkryptomika",
+    "kliniczne",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-01e3b24b349e",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Viral haplotype reconstruction from long reads with virCHap.",
+   "description": "Resolving genomes at the haplotype level for viral populations is crucial for understanding the prevalence of viral diseases and for the development of effective therapeutic treatments.",
+   "url": "https://doi.org/10.1101/gr.281975.126",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-19fee2a4e348",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Dissecting functional regulatory convergence over 160 million years of therian evolution.",
+   "description": "Understanding the molecular mechanisms underpinning convergent traits can provide insight into the predictability of the evolutionary process.",
+   "url": "https://doi.org/10.1101/gr.281284.125",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "benchmark",
+   "id": "r-710481a32a10",
+   "score": 2.5
+  },
+  {
+   "type": "research",
+   "source": "Genome Research",
+   "title": "Decoding cell division history and lineage-resolved phenotypic patterns from single-cell barcode and transcriptomic data.",
+   "description": "The cell division tree encodes how proliferation and differentiation generate cellular diversity during multicellular development.",
+   "url": "https://doi.org/10.1101/gr.281734.125",
+   "date": "2026-10-13",
+   "tags": [
+    "genomika",
+    "single-cell",
+    "transkryptomika",
+    "neuronauka"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-88145d94a5af",
+   "score": 2.5
   },
   {
    "type": "narzedzie",
