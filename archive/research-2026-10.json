@@ -2342,20 +2342,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · plotly/dash",
-   "title": "dash v4.5.0",
-   "description": "### Added - [#4099](https://github.com/plotly/dash/pull/4099) Streaming callbacks over HTTP now require shared storage and fail at server setup without it, instead of falling back to one connection per stream; WebSocket streaming callbacks do not need it. - [#4095](https://github",
-   "url": "https://github.com/plotly/dash/releases/tag/v4.5.0",
-   "date": "2026-10-29",
-   "tags": [
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-b11fcdc573a1",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "PyPI · scanpy",
    "title": "scanpy 1.12.5",
    "description": "Single-Cell Analysis in Python.",
@@ -4034,6 +4020,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · plotly/dash",
+   "title": "dash v4.5.0",
+   "description": "### Added - [#4099](https://github.com/plotly/dash/pull/4099) Streaming callbacks over HTTP now require shared storage and fail at server setup without it, instead of falling back to one connection per stream; WebSocket streaming callbacks do not need it. - [#4095](https://github",
+   "url": "https://github.com/plotly/dash/releases/tag/v4.5.0",
+   "date": "2026-10-29",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-b11fcdc573a1",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · stjude-rust-labs/sprocket",
    "title": "sprocket v0.33.0",
    "description": "### Security Fix * Fixed a security issue where `sprocket dev server` was failing to properly handle submitted `file://` URLs, allowing attackers to access files outside of the allowed file system paths ([GHSA-gvw2-6ff9-8364](https://github.com/stjude-rust-labs/sprocket/security/",
@@ -4144,19 +4144,6 @@
     "bazy-danych"
    ],
    "id": "r-b090b822b9ac",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · fulcrumgenomics/fgumi",
-   "title": "fgumi v0.9.0",
-   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
-   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
-   "date": "2026-10-28",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-5ddd360735ea",
    "score": 1.0
   },
   {
@@ -5579,6 +5566,19 @@
    "article_type": "eksperymentalne",
    "id": "r-7321b6f5fdf6",
    "score": 4.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · fulcrumgenomics/fgumi",
+   "title": "fgumi v0.9.0",
+   "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
+   "url": "https://github.com/fulcrumgenomics/fgumi/releases/tag/v0.9.0",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-5ddd360735ea",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -7608,22 +7608,6 @@
   },
   {
    "type": "research",
-   "source": "medRxiv",
-   "title": "A Knowledge Database of Physical Activity Interventions for Hypertension using Large Language Models",
-   "description": "Physical exercise lowers blood pressure, but guidelines address broad populations and rarely consider age, comorbidities, medications or baseline severity.",
-   "url": "https://doi.org/10.64898/2026.10.22.26366246",
-   "date": "2026-10-26",
-   "tags": [
-    "ai-ml",
-    "kliniczne",
-    "bazy-danych"
-   ],
-   "article_type": "benchmark",
-   "id": "r-641f776328e1",
-   "score": 1.0
-  },
-  {
-   "type": "research",
    "source": "Bioinformatics (OUP)",
    "title": "Multi-View State-Space Modeling for Zero-Shot circRNA-miRNA Interaction Prediction.",
    "description": "Motivation CircRNA-miRNA interactions (CMIs) play regulatory roles in human diseases and provide clues for therapeutic target discovery.",
@@ -8563,6 +8547,22 @@
     "narzedzia"
    ],
    "id": "r-8dbd797aa387",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "A Knowledge Database of Physical Activity Interventions for Hypertension using Large Language Models",
+   "description": "Physical exercise lowers blood pressure, but guidelines address broad populations and rarely consider age, comorbidities, medications or baseline severity.",
+   "url": "https://doi.org/10.64898/2026.10.22.26366246",
+   "date": "2026-10-26",
+   "tags": [
+    "ai-ml",
+    "kliniczne",
+    "bazy-danych"
+   ],
+   "article_type": "benchmark",
+   "id": "r-641f776328e1",
    "score": 1.0
   },
   {
@@ -14623,6 +14623,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · neuhausi/canvasXpress",
+   "title": "canvasXpress 72.3.0",
+   "description": "CanvasXpress Version 72.3",
+   "url": "https://github.com/neuhausi/canvasXpress/releases/tag/72.3.0",
+   "date": "2026-10-21",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-58272e9af830",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · cogent3/cogent3",
    "title": "cogent3 2026.10.22",
    "description": "",
@@ -14647,20 +14661,6 @@
     "narzedzia"
    ],
    "id": "r-5a69ac377ff4",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · neuhausi/canvasXpress",
-   "title": "canvasXpress 72.3.0",
-   "description": "CanvasXpress Version 72.3",
-   "url": "https://github.com/neuhausi/canvasXpress/releases/tag/72.3.0",
-   "date": "2026-10-21",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-58272e9af830",
    "score": 1.0
   },
   {
@@ -17395,20 +17395,6 @@
    "score": 0.3
   },
   {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "MucOneUp",
-   "description": "A Python CLI tool for simulating MUC1 VNTR diploid references",
-   "url": "https://zenodo.org/records/23465977",
-   "date": "2026-10-19",
-   "tags": [
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-7cc67116d8a5",
-   "score": 0.3
-  },
-  {
    "type": "research",
    "source": "Nature Genetics",
    "title": "RNA ends connect genetic risk to brain disease",
@@ -17510,6 +17496,20 @@
    ],
    "id": "r-a7102dc75590",
    "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "MucOneUp",
+   "description": "A Python CLI tool for simulating MUC1 VNTR diploid references",
+   "url": "https://zenodo.org/records/23465977",
+   "date": "2026-10-19",
+   "tags": [
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-7cc67116d8a5",
+   "score": 0.3
   },
   {
    "type": "narzedzie",
@@ -25445,22 +25445,6 @@
   {
    "type": "research",
    "source": "bioRxiv",
-   "title": "A Plasmid-Derived Machinery Drives Chromosomal Replication Initiation in the Colorectal Cancer-Associated Bacterium Fusobacterium nucleatum and Its Close Relatives",
-   "description": "Chromosome replication initiation in bacterial genomes typically occurs at a single origin, called oriC, through the binding of the DnaA initiator protein to specific chromosomal repeats known as DnaA-boxes.",
-   "url": "https://doi.org/10.64898/2026.10.08.757545",
-   "date": "2026-10-11",
-   "tags": [
-    "genomika",
-    "ewolucja",
-    "kliniczne"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-78ede2dda3ea",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "bioRxiv",
    "title": "A unified framework for quantitative splicing and transcript prediction",
    "description": "RNA splicing is frequently disrupted by genetic variation, contributing to a wide range of human diseases. Identifying the variants responsible for altered splicing is therefore crucial but has long been challenging.",
    "url": "https://doi.org/10.64898/2026.10.08.757673",
@@ -26072,6 +26056,22 @@
    ],
    "id": "r-b0b59f72c426",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "A Plasmid-Derived Machinery Drives Chromosomal Replication Initiation in the Colorectal Cancer-Associated Bacterium Fusobacterium nucleatum and Its Close Relatives",
+   "description": "Chromosome replication initiation in bacterial genomes typically occurs at a single origin, called oriC, through the binding of the DnaA initiator protein to specific chromosomal repeats known as DnaA-boxes.",
+   "url": "https://doi.org/10.64898/2026.10.08.757545",
+   "date": "2026-10-11",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-78ede2dda3ea",
+   "score": 2.0
   },
   {
    "type": "narzedzie",
