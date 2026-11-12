@@ -2342,20 +2342,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "PyPI · scanpy",
-   "title": "scanpy 1.12.5",
-   "description": "Single-Cell Analysis in Python.",
-   "url": "https://pypi.org/project/scanpy/",
-   "date": "2026-10-29",
-   "tags": [
-    "single-cell",
-    "narzedzia"
-   ],
-   "id": "r-f888c9bfd2d5",
-   "score": 0.5
-  },
-  {
-   "type": "narzedzie",
    "source": "PyPI · pyfaidx",
    "title": "pyfaidx 0.9.2.2",
    "description": "pyfaidx: efficient pythonic random access to fasta subsequences",
@@ -4020,6 +4006,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "PyPI · scanpy",
+   "title": "scanpy 1.12.5",
+   "description": "Single-Cell Analysis in Python.",
+   "url": "https://pypi.org/project/scanpy/",
+   "date": "2026-10-29",
+   "tags": [
+    "single-cell",
+    "narzedzia"
+   ],
+   "id": "r-f888c9bfd2d5",
+   "score": 0.5
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · plotly/dash",
    "title": "dash v4.5.0",
    "description": "### Added - [#4099](https://github.com/plotly/dash/pull/4099) Streaming callbacks over HTTP now require shared storage and fail at server setup without it, instead of falling back to one connection per stream; WebSocket streaming callbacks do not need it. - [#4095](https://github",
@@ -4129,21 +4129,6 @@
     "narzedzia"
    ],
    "id": "r-5e5b12365bbb",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · ucscGenomeBrowser/kent",
-   "title": "kent v505_branch.1",
-   "description": "- Redesigned home page with the 2026 branding: a new header, a search box with a loading spinner at the top of the page, a Get started row, and lighter images; static pages no longer load jQuery twice, gain a target for the menu bar's skip link, and have updated footer links - VC",
-   "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v505_branch.1",
-   "date": "2026-10-28",
-   "tags": [
-    "genomika",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-b090b822b9ac",
    "score": 1.0
   },
   {
@@ -5569,6 +5554,21 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · ucscGenomeBrowser/kent",
+   "title": "kent v505_branch.1",
+   "description": "- Redesigned home page with the 2026 branding: a new header, a search box with a loading spinner at the top of the page, a Get started row, and lighter images; static pages no longer load jQuery twice, gain a target for the menu bar's skip link, and have updated footer links - VC",
+   "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v505_branch.1",
+   "date": "2026-10-28",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-b090b822b9ac",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · fulcrumgenomics/fgumi",
    "title": "fgumi v0.9.0",
    "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
@@ -5596,6 +5596,19 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · amkozlov/raxml-ng",
+   "title": "raxml-ng 2.0.4",
+   "description": "## Bugfixes - fix Transfer Bootstrap ([TBE](https://github.com/amkozlov/raxml-ng/wiki/Computing-branch-support-metrics#tbe-transfer-bootstrap-expectation)) branch support computation ([#236](https://github.com/amkozlov/raxml-ng/issues/236)) - moose: fix freerate heuristic for `I+",
+   "url": "https://github.com/amkozlov/raxml-ng/releases/tag/2.0.4",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-9a0f917fd3e1",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · depictio/depictio",
    "title": "depictio v1.19.3",
    "description": "### Docker Images 🐳 ```plaintext ghcr.io/depictio/depictio:1.19.3 ghcr.io/depictio/depictio:latest ghcr.io/depictio/depictio:stable ghcr.io/depictio/depictio:edge ``` Click to expand the changelog for 1.19.3 ### Changes 📜 #### Improvements 🚀 * perf: d",
@@ -5606,19 +5619,6 @@
     "narzedzia"
    ],
    "id": "r-9462e768fd4b",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · amkozlov/raxml-ng",
-   "title": "raxml-ng 2.0.4",
-   "description": "## Bugfixes - fix Transfer Bootstrap ([TBE](https://github.com/amkozlov/raxml-ng/wiki/Computing-branch-support-metrics#tbe-transfer-bootstrap-expectation)) branch support computation ([#236](https://github.com/amkozlov/raxml-ng/issues/236)) - moose: fix freerate heuristic for `I+",
-   "url": "https://github.com/amkozlov/raxml-ng/releases/tag/2.0.4",
-   "date": "2026-10-28",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-9a0f917fd3e1",
    "score": 1.0
   },
   {
@@ -8522,6 +8522,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · mdshw5/pyfaidx",
+   "title": "pyfaidx v0.9.2.1",
+   "description": "## What's Changed * Preserve coordinates and bounds when indexing individual bases by @antonsoo in https://github.com/mdshw5/pyfaidx/pull/249 * Document that Fasta int keys are positions, not record names by @musharna in https://github.com/mdshw5/pyfaidx/pull/251 ## New Contribut",
+   "url": "https://github.com/mdshw5/pyfaidx/releases/tag/v0.9.2.1",
+   "date": "2026-10-26",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-8dbd797aa387",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · nf-core/sarek",
    "title": "sarek 3.11.0",
    "description": "## What's Changed * back to dev (3.10.1dev) by @FriederikeHanssen in https://github.com/nf-core/sarek/pull/2271 * Remove executor dependency from accelerator directive by @pditommaso in https://github.com/nf-core/sarek/pull/2181 * Add parabricks/applybqsr by @famosab in https://g",
@@ -8533,20 +8547,6 @@
     "bazy-danych"
    ],
    "id": "r-ac897ac5e293",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · mdshw5/pyfaidx",
-   "title": "pyfaidx v0.9.2.1",
-   "description": "## What's Changed * Preserve coordinates and bounds when indexing individual bases by @antonsoo in https://github.com/mdshw5/pyfaidx/pull/249 * Document that Fasta int keys are positions, not record names by @musharna in https://github.com/mdshw5/pyfaidx/pull/251 ## New Contribut",
-   "url": "https://github.com/mdshw5/pyfaidx/releases/tag/v0.9.2.1",
-   "date": "2026-10-26",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-8dbd797aa387",
    "score": 1.0
   },
   {
@@ -13591,21 +13591,6 @@
   {
    "type": "research",
    "source": "medRxiv",
-   "title": "S4-Oligo: optimizing polygenic score methods for clinical deployment",
-   "description": "Polygenic scores (PGSs) have progressed toward clinical utility in recent years, demonstrating odds ratios that are comparable with both lifestyle-related and monogenic risk factors for several complex diseases.",
-   "url": "https://doi.org/10.64898/2026.10.16.26365773",
-   "date": "2026-10-21",
-   "tags": [
-    "genomika",
-    "kliniczne"
-   ],
-   "article_type": "benchmark",
-   "id": "r-24ed34cff9d8",
-   "score": 1.0
-  },
-  {
-   "type": "research",
-   "source": "medRxiv",
    "title": "A coding CAG repeat expansion in EP400 causes Spinocerebellar Ataxia",
    "description": "Several polyglutamine-encoding repeat expansions cause spinocerebellar ataxias (SCAs) and other movement disorders.",
    "url": "https://doi.org/10.64898/2026.10.16.26365393",
@@ -14633,6 +14618,21 @@
     "narzedzia"
    ],
    "id": "r-58272e9af830",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "S4-Oligo: optimizing polygenic score methods for clinical deployment",
+   "description": "Polygenic scores (PGSs) have progressed toward clinical utility in recent years, demonstrating odds ratios that are comparable with both lifestyle-related and monogenic risk factors for several complex diseases.",
+   "url": "https://doi.org/10.64898/2026.10.16.26365773",
+   "date": "2026-10-21",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "benchmark",
+   "id": "r-24ed34cff9d8",
    "score": 1.0
   },
   {
@@ -24950,20 +24950,6 @@
   },
   {
    "type": "research",
-   "source": "Nature Biotechnology",
-   "title": "Biotech news from around the world",
-   "description": "",
-   "url": "https://www.nature.com/articles/s41587-026-03347-2",
-   "date": "2026-10-12",
-   "tags": [
-    "inne"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-f521d5414999",
-   "score": 4.0
-  },
-  {
-   "type": "research",
    "source": "Zenodo · dataset",
    "title": "Benchmark dataset and analysis artifacts for zsasa v0.9.0",
    "description": "Curated benchmark dataset and analysis artifacts for zsasa v0.9.0, a high-throughput solvent-accessible surface area (SASA) engine.",
@@ -24989,6 +24975,20 @@
    ],
    "id": "r-9b46f6adeebf",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "Nature Biotechnology",
+   "title": "Biotech news from around the world",
+   "description": "",
+   "url": "https://www.nature.com/articles/s41587-026-03347-2",
+   "date": "2026-10-12",
+   "tags": [
+    "inne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-f521d5414999",
+   "score": 4.0
   },
   {
    "type": "narzedzie",
