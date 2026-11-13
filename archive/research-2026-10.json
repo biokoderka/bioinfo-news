@@ -2341,20 +2341,6 @@
    "score": 0.3
   },
   {
-   "type": "narzedzie",
-   "source": "PyPI · pyfaidx",
-   "title": "pyfaidx 0.9.2.2",
-   "description": "pyfaidx: efficient pythonic random access to fasta subsequences",
-   "url": "https://pypi.org/project/pyfaidx/",
-   "date": "2026-10-29",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-6a8879affe72",
-   "score": 0.5
-  },
-  {
    "type": "research",
    "source": "bioRxiv",
    "title": "Interpreting Short Tandem Repeat Variations with Genomic Foundation Models in Olive",
@@ -4006,6 +3992,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "PyPI · pyfaidx",
+   "title": "pyfaidx 0.9.2.2",
+   "description": "pyfaidx: efficient pythonic random access to fasta subsequences",
+   "url": "https://pypi.org/project/pyfaidx/",
+   "date": "2026-10-29",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-6a8879affe72",
+   "score": 0.5
+  },
+  {
+   "type": "narzedzie",
    "source": "PyPI · scanpy",
    "title": "scanpy 1.12.5",
    "description": "Single-Cell Analysis in Python.",
@@ -5582,6 +5582,19 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · amkozlov/raxml-ng",
+   "title": "raxml-ng 2.0.4",
+   "description": "## Bugfixes - fix Transfer Bootstrap ([TBE](https://github.com/amkozlov/raxml-ng/wiki/Computing-branch-support-metrics#tbe-transfer-bootstrap-expectation)) branch support computation ([#236](https://github.com/amkozlov/raxml-ng/issues/236)) - moose: fix freerate heuristic for `I+",
+   "url": "https://github.com/amkozlov/raxml-ng/releases/tag/2.0.4",
+   "date": "2026-10-28",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-9a0f917fd3e1",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · sortmerna/sortmerna",
    "title": "sortmerna v8.0.1",
    "description": "Replaced rapidgzip patch [issue 466](https://github.com/sortmerna/sortmerna/issues/466) with the updated rapidgzip library",
@@ -5592,19 +5605,6 @@
     "narzedzia"
    ],
    "id": "r-38dc4d9aaf06",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · amkozlov/raxml-ng",
-   "title": "raxml-ng 2.0.4",
-   "description": "## Bugfixes - fix Transfer Bootstrap ([TBE](https://github.com/amkozlov/raxml-ng/wiki/Computing-branch-support-metrics#tbe-transfer-bootstrap-expectation)) branch support computation ([#236](https://github.com/amkozlov/raxml-ng/issues/236)) - moose: fix freerate heuristic for `I+",
-   "url": "https://github.com/amkozlov/raxml-ng/releases/tag/2.0.4",
-   "date": "2026-10-28",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-9a0f917fd3e1",
    "score": 1.0
   },
   {
@@ -13511,22 +13511,6 @@
   {
    "type": "research",
    "source": "medRxiv",
-   "title": "Multi-agent LLM diagnostic teams improve differential recall on curated cases and reverse on real emergency notes: a label-level reversal without a clinician-judged safety difference",
-   "description": "BackgroundMulti-agent large language model (LLM) pipelines are proposed for diagnostic support, but when they help or harm is unknown: evaluations use curated case reports, rarely include budget-matched controls, or…",
-   "url": "https://doi.org/10.64898/2026.09.24.26363897",
-   "date": "2026-10-21",
-   "tags": [
-    "ai-ml",
-    "kliniczne",
-    "narzedzia"
-   ],
-   "article_type": "benchmark",
-   "id": "r-e3b4ec9a6f3d",
-   "score": 2.0
-  },
-  {
-   "type": "research",
-   "source": "medRxiv",
    "title": "MULTIMODAL EEG WORLD MODEL: SELF-SUPERVISED LATENT TRANSITION LEARNING FOR WEARABLE EEG SEIZURE DETECTION",
    "description": "Existing supervised and self-supervised EEG models mainly learn within-segment discriminative or reconstructive representations, leaving transitions between adjacent EEG segments underexplored.",
    "url": "https://doi.org/10.64898/2026.07.20.26358450",
@@ -14619,6 +14603,22 @@
    ],
    "id": "r-58272e9af830",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Multi-agent LLM diagnostic teams improve differential recall on curated cases and reverse on real emergency notes: a label-level reversal without a clinician-judged safety difference",
+   "description": "BackgroundMulti-agent large language model (LLM) pipelines are proposed for diagnostic support, but when they help or harm is unknown: evaluations use curated case reports, rarely include budget-matched controls, or…",
+   "url": "https://doi.org/10.64898/2026.09.24.26363897",
+   "date": "2026-10-21",
+   "tags": [
+    "ai-ml",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-e3b4ec9a6f3d",
+   "score": 2.0
   },
   {
    "type": "research",
