@@ -70,6 +70,7 @@ function internStatus(e) {
 const RESEARCH_TYPE_META = {
   'research':  { label: '📄 Artykuł',   cls: 'research' },
   'narzedzie': { label: '🔧 Narzędzie', cls: 'narzedzie' },
+  'branza':    { label: '📰 Branża',    cls: 'branza' },
   'grant':     { label: '💰 Grant',     cls: 'grant' },
 };
 const ARTICLE_TYPE_META = {

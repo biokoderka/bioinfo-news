@@ -119,6 +119,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(13,10,26,.88);backdrop-
 .type-pill.research  {background:rgba(239,68,68,.12); border:1px solid rgba(239,68,68,.25); color:#f87171}
 .type-pill.narzedzie {background:rgba(59,130,246,.12); border:1px solid rgba(59,130,246,.25); color:#60a5fa}
 .type-pill.grant     {background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.25); color:#34d399}
+.type-pill.branza {background:rgba(96,165,250,.12); border:1px solid rgba(96,165,250,.25); color:#93c5fd}
 
 .card-title{font-size:15px;font-weight:700;color:var(--text);flex:1;line-height:1.3;letter-spacing:-.1px}
 .card-org{font-size:12px;color:var(--muted);margin-bottom:8px}
@@ -263,6 +264,7 @@ footer a:hover{color:var(--purple2)}
     <select id="typeFilter">
       <option value="">Źródło: dowolne</option>
       <option value="research">📄 artykuł</option>
+      <option value="branza">📰 branża (biotech, pharma, FDA)</option>
       <option value="narzedzie">🔧 release narzędzia</option>
       <option value="grant">💰 grant</option>
     </select>
@@ -289,7 +291,7 @@ footer a:hover{color:var(--purple2)}
   <a href="submit.html">Zgłoś wpis</a>
 </footer>
 
-<script src="assets/common.js?v=6"></script>
+<script src="assets/common.js?v=7"></script>
 <script>
 // Widok domyślny: ostatnie 7 dni z research-news.json (feed trzyma 30 dni).
 // Archiwum: archive/research-YYYY-MM.json — każdy pobrany wpis zostaje tam na zawsze.
@@ -302,7 +304,16 @@ function currentList(){
   return archiveCache[$('monthSelect').value] || [];
 }
 
+// Granty (NIH RePORTER) bywają puste tygodniami (np. październik–listopad, nowy rok
+// budżetowy NIH) — wtedy nie pokazujemy filtrów, które zawsze dają 0 wyników.
+function syncGrantOptions(list){
+  const has = list.some(e => e.type === 'grant' || (e.tags||[]).includes('granty'));
+  document.querySelectorAll('#typeFilter option[value="grant"], #tagFilter option[value="granty"]')
+    .forEach(o => { o.hidden = !has; o.disabled = !has; if(!has && o.selected) o.parentElement.value = ''; });
+}
+
 function render(){
+  syncGrantOptions(currentList());
   const q=$('searchInput').value.toLowerCase();
   const tag=$('tagFilter').value, artType=$('articleTypeFilter').value, type=$('typeFilter').value;
   const base = currentList();
