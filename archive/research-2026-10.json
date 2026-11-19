@@ -4420,21 +4420,6 @@
   {
    "type": "research",
    "source": "medRxiv",
-   "title": "Long-read genome sequencing resolves complex structural variants in exome-negative developmental and epileptic encephalopathy",
-   "description": "Background and ObjectivesDespite standard genetic testing, approximately two-thirds of patients with developmental and epileptic encephalopathy (DEE) remain undiagnosed.",
-   "url": "https://doi.org/10.64898/2026.10.26.26365902",
-   "date": "2026-10-28",
-   "tags": [
-    "genomika",
-    "kliniczne"
-   ],
-   "article_type": "benchmark",
-   "id": "r-9014593150d5",
-   "score": 1.0
-  },
-  {
-   "type": "research",
-   "source": "medRxiv",
    "title": "'Somebody to find an answer, so I can sleep at night': Diverse Perspectives on Genomic Research for Rare Disease",
    "description": "PurposeRare disease genomic research suffers from the underrepresentation of minoritized populations.",
    "url": "https://doi.org/10.64898/2026.10.23.26366105",
@@ -5554,21 +5539,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · ucscGenomeBrowser/kent",
-   "title": "kent v505_branch.1",
-   "description": "- Redesigned home page with the 2026 branding: a new header, a search box with a loading spinner at the top of the page, a Get started row, and lighter images; static pages no longer load jQuery twice, gain a target for the menu bar's skip link, and have updated footer links - VC",
-   "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v505_branch.1",
-   "date": "2026-10-28",
-   "tags": [
-    "genomika",
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-b090b822b9ac",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · fulcrumgenomics/fgumi",
    "title": "fgumi v0.9.0",
    "description": "## For those running the fgumi command line tools **v0.9.0 adds `fgumi realign`, which re-aligns consensus reads without leaving fgumi, and stops long runs from failing when a disk or downstream reader is slow. Existing commands give the same output as v0.8.0 unless you use a com",
@@ -5591,6 +5561,36 @@
     "narzedzia"
    ],
    "id": "r-9a0f917fd3e1",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Long-read genome sequencing resolves complex structural variants in exome-negative developmental and epileptic encephalopathy",
+   "description": "Background and ObjectivesDespite standard genetic testing, approximately two-thirds of patients with developmental and epileptic encephalopathy (DEE) remain undiagnosed.",
+   "url": "https://doi.org/10.64898/2026.10.26.26365902",
+   "date": "2026-10-28",
+   "tags": [
+    "genomika",
+    "kliniczne"
+   ],
+   "article_type": "benchmark",
+   "id": "r-9014593150d5",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · ucscGenomeBrowser/kent",
+   "title": "kent v505_branch.1",
+   "description": "- Redesigned home page with the 2026 branding: a new header, a search box with a loading spinner at the top of the page, a Get started row, and lighter images; static pages no longer load jQuery twice, gain a target for the menu bar's skip link, and have updated footer links - VC",
+   "url": "https://github.com/ucscGenomeBrowser/kent/releases/tag/v505_branch.1",
+   "date": "2026-10-28",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-b090b822b9ac",
    "score": 1.0
   },
   {
@@ -7046,20 +7046,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · bigomics/omicsplayground",
-   "title": "omicsplayground v5.0.5+master261027",
-   "description": "",
-   "url": "https://github.com/bigomics/omicsplayground/releases/tag/v5.0.5%2Bmaster261027",
-   "date": "2026-10-27",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-5784ef941f82",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · BortonWrightonLabs/DRAM",
    "title": "DRAM v2.0.0-beta40",
    "description": "## 2.0.0-beta40 - 2026-10-27 [c9018fc](https://github.com/BortonWrightonLabs/DRAM/commit/c9018fc6fc57e5fb6f317370d4fb43e1a98e3d82)...[a962b41](https://github.com/BortonWrightonLabs/DRAM/commit/a962b4120c94d8279991086725362f1444f3b09d) ### Bug Fixes - Bugfixes with rules submodule",
@@ -7070,6 +7056,20 @@
     "bazy-danych"
    ],
    "id": "r-a6dd756b6a7e",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · bigomics/omicsplayground",
+   "title": "omicsplayground v5.0.5+master261027",
+   "description": "",
+   "url": "https://github.com/bigomics/omicsplayground/releases/tag/v5.0.5%2Bmaster261027",
+   "date": "2026-10-27",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-5784ef941f82",
    "score": 1.0
   },
   {
@@ -10405,23 +10405,6 @@
   {
    "type": "research",
    "source": "medRxiv",
-   "title": "Common centromeric variation associates with molecular and complex traits in humans",
-   "description": "Human centromeres harbor extensive structural variation that has remained largely inaccessible to human genetics because their repetitive -satellite arrays are absent from standard reference and imputation panels.",
-   "url": "https://doi.org/10.64898/2026.10.09.26365154",
-   "date": "2026-10-23",
-   "tags": [
-    "genomika",
-    "transkryptomika",
-    "ewolucja",
-    "kliniczne"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-ef1f268537f8",
-   "score": 1.0
-  },
-  {
-   "type": "research",
-   "source": "medRxiv",
    "title": "Exome-based Preconception Carrier Screening for the Mexican Jewish Community; Yields and Implications",
    "description": "IntroductionPreconception carrier screening (PCS) reduces monogenic disease incidence, exemplified by a 90% decline in Tay-Sachs among Ashkenazi populations.",
    "url": "https://doi.org/10.64898/2026.10.21.26366106",
@@ -11498,6 +11481,23 @@
     "narzedzia"
    ],
    "id": "r-8e987a5111bb",
+   "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "medRxiv",
+   "title": "Common centromeric variation associates with molecular and complex traits in humans",
+   "description": "Human centromeres harbor extensive structural variation that has remained largely inaccessible to human genetics because their repetitive -satellite arrays are absent from standard reference and imputation panels.",
+   "url": "https://doi.org/10.64898/2026.10.09.26365154",
+   "date": "2026-10-23",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "ewolucja",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-ef1f268537f8",
    "score": 1.0
   },
   {
