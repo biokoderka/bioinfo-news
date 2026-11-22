@@ -1,6 +1,6 @@
 {
  "month": "2026-11",
- "count": 1402,
+ "count": 1428,
  "entries": [
   {
    "type": "branza",
@@ -8,7 +8,7 @@
    "title": "FDA Approves First Drug to Treat Neurological Symptoms of Type 3 Gaucher Disease",
    "description": "FDA today approved Infilbray (venglustat) tablets, the first treatment for the neurological symptoms of Type 3 Gaucher disease (GD3) in adults and pediatric patients weighing at least 15 kg (approximately 33 pounds).",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-neurological-symptoms-type-3-gaucher-disease",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "tags": [
     "kliniczne"
    ],
@@ -88,7 +88,7 @@
    "title": "FDA Launches the Global Reliance Disclosure Program to Expand Patient Access to Medicines Worldwide",
    "description": "FDA today announced the Global Reliance Disclosure Program (GRDP), a landmark initiative that will fundamentally transform how the FDA's regulatory drug and biologic approval decisions are leveraged by health…",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-global-reliance-disclosure-program-expand-patient-access-medicines-worldwide",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "tags": [
     "kliniczne"
    ],
@@ -108,7 +108,7 @@
    "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
    "description": "The U.S. Food and Drug Administration today granted accelerated approval to Rybrevant Faspro (amivantamab and hyaluronidase-lpuj) for the treatment of adults with recurrent or metastatic head and neck squamous cell…",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "tags": [
     "inne"
    ],
@@ -132,7 +132,7 @@
    "title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
    "description": "The U.S. Food and Drug Administration today released final guidance establishing a clear framework for how drug companies can develop, distribute, and label apps used alongside their prescription medicines.",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "tags": [
     "narzedzia"
    ],
@@ -146,7 +146,7 @@
    "title": "FDA Investigation Leads to Charges Against Two Indian Nationals Involved in Transnational Counterfeit Drug Distribution Scheme",
    "description": "The U.S. Attorney’s Office for the Middle District of Florida and the Criminal Division of the U.S.",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-investigation-leads-charges-against-two-indian-nationals-involved-transnational-counterfeit-drug",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "tags": [
     "inne"
    ],
@@ -160,13 +160,85 @@
    "title": "FDA intends to evaluate changes to the PMTA regulatory framework",
    "description": "FDA is carefully reviewing its experience implementing the Premarket Tobacco Product Application (PMTA) rule, as well as recent judicial developments, including a federal lawsuit filed in the U.S.",
    "url": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "tags": [
     "inne"
    ],
    "article_type": null,
    "id": "r-d498631acebf",
    "score": 7.0
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "Promoter usage QTL (puQTL) summary statistics from BOHR in 50 GTEx tissues",
+   "description": "Summary statistics of the promoter usage QTL (puQTL) analysis in Dong et al., Genetic regulation of alternative promoter usage with BOHR reveals distinct modes of transcription initiation (submitted).",
+   "url": "https://zenodo.org/records/24439350",
+   "date": "2026-11-22",
+   "tags": [
+    "genomika",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-0fea36172eab",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Design and validation of ADAR-recruiting RNAs for programmable RNA editing and exon skipping in mammalian cells",
+   "description": "Code accompanying the manuscript named in this record. The repository contains a Bash pipeline for paired-end NGS processing and target-site RNA editing analysis, and an R script for read-level dinucleotide counts at…",
+   "url": "https://zenodo.org/records/24438849",
+   "date": "2026-11-22",
+   "tags": [
+    "genomika",
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-e06ee3e54ccc",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "schirmer-lab/metagear-pipeline: Release 26.11.1",
+   "description": "MetaGEAR Pipeline 26.11.1 Patch release with one fix to the msp workflow.",
+   "url": "https://zenodo.org/records/24430978",
+   "date": "2026-11-22",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-2452d6998e29",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · RemagenRe/PruneTopGODAGviz",
+   "title": "PruneTopGODAGviz v0.1.13",
+   "description": "## Highlights - **External import fixes**: `GeneRatio` / `BgRatio` fallback now uses the numerator; malformed or mismatched counts are reported; a raw p-value is never written into `p.adjust`. Raw-only tables keep `NA` and the editor switches to p-values with a visible notice. -",
+   "url": "https://github.com/RemagenRe/PruneTopGODAGviz/releases/tag/v0.1.13",
+   "date": "2026-11-22",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-90a65a670ee6",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · moritztng/tt-bio",
+   "title": "tt-bio v0.44.0",
+   "description": "## [0.44.0] - 2026-11-22 ### Changed - **OpenDDE writes upstream's per-sample output files.** Each run now also writes `seed_ /predictions/` with `summary_confidence_sample_ .json`, plus `full_data_sample_ .json` (token-pair PAE) with `--write_pae`, the same layout as upstr",
+   "url": "https://github.com/moritztng/tt-bio/releases/tag/v0.44.0",
+   "date": "2026-11-22",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-d062e1b71070",
+   "score": 1.0
   },
   {
    "type": "branza",
@@ -181,6 +253,37 @@
    "article_type": null,
    "id": "r-6ecfc574844b",
    "score": 3.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "FOCA plugins",
+   "description": "Plugins for gateway services built with FOCA, such as proTES (GA4GH TES) and proWES (GA4GH WES): installable request processing that changes tasks, rejects them by policy, chooses and orders the backends, and adapts…",
+   "url": "https://zenodo.org/records/24427312",
+   "date": "2026-11-21",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-5d901aa46f3f",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "PTMantra : Interpretable Adaptive Context Learning for Protein Post-Translational Modification Site Prediction",
+   "description": "PTMantra 1.0: An Interpretable Sequence-Based Framework for Protein Post-Translational Modification Prediction Description PTMantra is an interpretable, sequence-based deep learning framework for predicting candidate…",
+   "url": "https://zenodo.org/records/24424614",
+   "date": "2026-11-21",
+   "tags": [
+    "proteomika",
+    "ai-ml",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-a977ff7d3d3f",
+   "score": 0.3
   },
   {
    "type": "narzedzie",
@@ -229,6 +332,20 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · klamt-lab/straindesign",
+   "title": "straindesign v1.20.0",
+   "description": "Performance improvements, bug fixes, new functions - Faster MCS enumeration with populate on CPLEX and Gurobi: indicator gates as SOS1 sets and a sweep over cost levels, same designs #102 #110 - SCIP enumerates each cost level in a single search tree #98 - New function flux_coupl",
+   "url": "https://github.com/klamt-lab/straindesign/releases/tag/v1.20.0",
+   "date": "2026-11-21",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-2ccd6a8c0410",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "Zenodo · software",
    "title": "RCV: RNA Conformation Viewer",
    "description": "RCV (RNA Conformation Viewer) v0.7.6, source code. Website: https://www.rnaconfviewer.com/ RCV (RNA Conformation Viewer) is a free, open-source desktop application that predicts the 3D conformations an RNA can adopt…",
@@ -256,20 +373,6 @@
    "article_type": null,
    "id": "r-dbae6fb68082",
    "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · klamt-lab/straindesign",
-   "title": "straindesign v1.20.0",
-   "description": "Performance improvements, bug fixes, new functions",
-   "url": "https://github.com/klamt-lab/straindesign/releases/tag/v1.20.0",
-   "date": "2026-11-21",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-2ccd6a8c0410",
-   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -316,7 +419,7 @@
   {
    "type": "research",
    "source": "Nature",
-   "title": "Mathematician says he and AI solved Riemann hypothesis — the field’s biggest outstanding challenge",
+   "title": "Mathematicians astounded by AI and human-written proofs of iconic Riemann hypothesis",
    "description": "",
    "url": "https://www.nature.com/articles/d41586-026-03812-7",
    "date": "2026-11-20",
@@ -851,80 +954,6 @@
   },
   {
    "type": "research",
-   "source": "Zenodo · dataset",
-   "title": "Data for 'Accounting for digestion enzyme bias in Casanovo' (Melendez et al., 2024)",
-   "description": "This upload contains two archives and an explanatory README.md that accompany Accounting for digestion enzyme bias in Casanovo (Melendez et al., 2024).",
-   "url": "https://zenodo.org/records/24407947",
-   "date": "2026-11-20",
-   "tags": [
-    "genomika",
-    "bazy-danych"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-1e5dfe0883ca",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "crolllab/effectorVAR",
-   "description": "Nextflow pipeline to track effector gene variation across genome panels: de novo genome assembly, assembly QC and query gene search (BLAST, Exonerate) across genome panels, with CDS integrity, isoform, paralog and…",
-   "url": "https://zenodo.org/records/24408070",
-   "date": "2026-11-20",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-a9279806973b",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "Pubgrade",
-   "description": "Pubgrade (Publish-Upgrade) is a publish-subscribe service that notifies deployments of new images of the software they run.",
-   "url": "https://zenodo.org/records/24405410",
-   "date": "2026-11-20",
-   "tags": [
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "article_type": null,
-   "id": "r-546b5b3d7c3a",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "Pubgrade-Sidecar",
-   "description": "Pubgrade-Sidecar runs next to the Kubernetes Deployments of a service and rolls them out to new image tags when Pubgrade, a publish-subscribe service for continuous delivery, notifies it of a new release.",
-   "url": "https://zenodo.org/records/24404840",
-   "date": "2026-11-20",
-   "tags": [
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-8b811dd196e4",
-   "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "Zenodo · software",
-   "title": "Physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model of hydrochlorothiazide",
-   "description": "This repository provides the hydrochlorothiazide (hctz) physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model. If you have any questions or problems please open an issue FundingMatthias König was…",
-   "url": "https://zenodo.org/records/24400863",
-   "date": "2026-11-20",
-   "tags": [
-    "bazy-danych",
-    "narzedzia"
-   ],
-   "article_type": null,
-   "id": "r-2ba344bf2cfd",
-   "score": 0.3
-  },
-  {
-   "type": "research",
    "source": "Nature Methods",
    "title": "Computational methods for cell–cell communication via single cells",
    "description": "",
@@ -997,33 +1026,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · BojarLab/glycowork",
-   "title": "glycowork v1.12.0",
-   "description": "# Changelog ## [1.12.0] - All figures are now drawn with `viscose` instead of `matplotlib` and `seaborn`, which are no longer dependencies. The default palette is Aura; `viscose.set_palette` picks another (73bca70) - `**kwargs` of `get_heatmap`, `get_volcano`, and `plot_embedding",
-   "url": "https://github.com/BojarLab/glycowork/releases/tag/v1.12.0",
-   "date": "2026-11-20",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-a7b7100ff865",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · BortonWrightonLabs/DRAM",
-   "title": "DRAM v2.0.0-beta45",
-   "description": "## 2.0.0-beta45 - 2026-11-20 [87c1722](https://github.com/BortonWrightonLabs/DRAM/commit/87c17222c47545baf4cdc94d607c5e415776a473)...[cb3a926](https://github.com/BortonWrightonLabs/DRAM/commit/cb3a92689e494087ea89aac619e1ddb1452051e6) ### Highlights - Fix bug where summary topic",
-   "url": "https://github.com/BortonWrightonLabs/DRAM/releases/tag/v2.0.0-beta45",
-   "date": "2026-11-20",
-   "tags": [
-    "genomika",
-    "narzedzia"
-   ],
-   "id": "r-ffc774e457e6",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · natera-open-source/vep-rs",
    "title": "vep-rs v0.6.0",
    "description": "vep-rs 0.6.0 is a feature release: custom annotation sources, regulatory and motif features completing `--everything`, RefSeq and merged caches, twenty more built-in plugins, Ensembl VEP's statistics report and natively written Parquet. Anyone using custom sources, regulatory fea",
@@ -1038,6 +1040,80 @@
    ],
    "id": "r-438b98db3585",
    "score": 1.0
+  },
+  {
+   "type": "research",
+   "source": "Zenodo · dataset",
+   "title": "Data for 'Accounting for digestion enzyme bias in Casanovo' (Melendez et al., 2024)",
+   "description": "This upload contains two archives and an explanatory README.md that accompany Accounting for digestion enzyme bias in Casanovo (Melendez et al., 2024).",
+   "url": "https://zenodo.org/records/24407947",
+   "date": "2026-11-20",
+   "tags": [
+    "genomika",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-1e5dfe0883ca",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "crolllab/effectorVAR",
+   "description": "Nextflow pipeline to track effector gene variation across genome panels: de novo genome assembly, assembly QC and query gene search (BLAST, Exonerate) across genome panels, with CDS integrity, isoform, paralog and…",
+   "url": "https://zenodo.org/records/24408070",
+   "date": "2026-11-20",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-a9279806973b",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Pubgrade",
+   "description": "Pubgrade (Publish-Upgrade) is a publish-subscribe service that notifies deployments of new images of the software they run.",
+   "url": "https://zenodo.org/records/24405410",
+   "date": "2026-11-20",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "article_type": null,
+   "id": "r-546b5b3d7c3a",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Pubgrade-Sidecar",
+   "description": "Pubgrade-Sidecar runs next to the Kubernetes Deployments of a service and rolls them out to new image tags when Pubgrade, a publish-subscribe service for continuous delivery, notifies it of a new release.",
+   "url": "https://zenodo.org/records/24404840",
+   "date": "2026-11-20",
+   "tags": [
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-8b811dd196e4",
+   "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "Zenodo · software",
+   "title": "Physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model of hydrochlorothiazide",
+   "description": "This repository provides the hydrochlorothiazide (hctz) physiologically based pharmacokinetic/pharmacodynamic (PBPK/PD) model. If you have any questions or problems please open an issue FundingMatthias König was…",
+   "url": "https://zenodo.org/records/24400863",
+   "date": "2026-11-20",
+   "tags": [
+    "bazy-danych",
+    "narzedzia"
+   ],
+   "article_type": null,
+   "id": "r-2ba344bf2cfd",
+   "score": 0.3
   },
   {
    "type": "narzedzie",
@@ -1122,6 +1198,33 @@
    "article_type": "benchmark",
    "id": "r-c294d709892c",
    "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · BojarLab/glycowork",
+   "title": "glycowork v1.12.0",
+   "description": "# Changelog ## [1.12.0] - All figures are now drawn with `viscose` instead of `matplotlib` and `seaborn`, which are no longer dependencies. The default palette is Aura; `viscose.set_palette` picks another (73bca70) - `**kwargs` of `get_heatmap`, `get_volcano`, and `plot_embedding",
+   "url": "https://github.com/BojarLab/glycowork/releases/tag/v1.12.0",
+   "date": "2026-11-20",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-a7b7100ff865",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · BortonWrightonLabs/DRAM",
+   "title": "DRAM v2.0.0-beta45",
+   "description": "## 2.0.0-beta45 - 2026-11-20 [87c1722](https://github.com/BortonWrightonLabs/DRAM/commit/87c17222c47545baf4cdc94d607c5e415776a473)...[cb3a926](https://github.com/BortonWrightonLabs/DRAM/commit/cb3a92689e494087ea89aac619e1ddb1452051e6) ### Highlights - Fix bug where summary topic",
+   "url": "https://github.com/BortonWrightonLabs/DRAM/releases/tag/v2.0.0-beta45",
+   "date": "2026-11-20",
+   "tags": [
+    "genomika",
+    "narzedzia"
+   ],
+   "id": "r-ffc774e457e6",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -1850,6 +1953,19 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · thetahealth/mirobody",
+   "title": "mirobody 1.6.2",
+   "description": "## What's Changed * docs: add Chinese screenshots and a complete image index by @saltyfishtree in https://github.com/thetahealth/mirobody/pull/286 * demo: add Chinese lab reports and validate walkthrough exports by @saltyfishtree in https://github.com/thetahealth/mirobody/pull/28",
+   "url": "https://github.com/thetahealth/mirobody/releases/tag/1.6.2",
+   "date": "2026-11-19",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-9125a92c53c3",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "PyPI · pyfaidx",
    "title": "pyfaidx 0.9.2.3",
    "description": "pyfaidx: efficient pythonic random access to fasta subsequences",
@@ -2348,19 +2464,6 @@
    "article_type": null,
    "id": "r-b174b997370d",
    "score": 0.3
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · thetahealth/mirobody",
-   "title": "mirobody 1.6.2",
-   "description": "## What's Changed * docs: add Chinese screenshots and a complete image index by @saltyfishtree in https://github.com/thetahealth/mirobody/pull/286 * demo: add Chinese lab reports and validate walkthrough exports by @saltyfishtree in https://github.com/thetahealth/mirobody/pull/28",
-   "url": "https://github.com/thetahealth/mirobody/releases/tag/1.6.2",
-   "date": "2026-11-19",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-9125a92c53c3",
-   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -3400,21 +3503,6 @@
   },
   {
    "type": "research",
-   "source": "GigaScience",
-   "title": "Machine learning-based proteomics analysis identified 23 protein biomarkers for enhanced risk prediction of myocardial infarction in Chinese and Europeans.",
-   "description": "Background Advances in proteomics assays enable measurement of thousands of plasma proteins, which could facilitate machine learning-based approaches to enhance risk prediction of disease. Methods We…",
-   "url": "https://doi.org/10.1093/gigascience/giag102",
-   "date": "2026-11-17",
-   "tags": [
-    "proteomika",
-    "ai-ml"
-   ],
-   "article_type": "eksperymentalne",
-   "id": "r-b7476a2af48a",
-   "score": 3.0
-  },
-  {
-   "type": "research",
    "source": "Nature Genetics",
    "title": "Integrated QTL mapping and CRISPR screening in pooled iPSC-derived microglia reveals genetic drivers of neurodegenerative risk",
    "description": "",
@@ -3469,18 +3557,19 @@
    "score": 1.0
   },
   {
-   "type": "narzedzie",
-   "source": "GitHub · GMOD/jbrowse-components",
-   "title": "jbrowse-components v5.0.0-beta.22",
-   "description": "_Release notes pending._",
-   "url": "https://github.com/GMOD/jbrowse-components/releases/tag/v5.0.0-beta.22",
+   "type": "research",
+   "source": "GigaScience",
+   "title": "Machine learning-based proteomics analysis identified 23 protein biomarkers for enhanced risk prediction of myocardial infarction in Chinese and Europeans.",
+   "description": "Background Advances in proteomics assays enable measurement of thousands of plasma proteins, which could facilitate machine learning-based approaches to enhance risk prediction of disease. Methods We…",
+   "url": "https://doi.org/10.1093/gigascience/giag102",
    "date": "2026-11-17",
    "tags": [
-    "inne",
-    "narzedzia"
+    "proteomika",
+    "ai-ml"
    ],
-   "id": "r-d1ca743325d4",
-   "score": 1.0
+   "article_type": "eksperymentalne",
+   "id": "r-b7476a2af48a",
+   "score": 3.0
   },
   {
    "type": "research",
@@ -4302,15 +4391,16 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · nextflow-io/nextflow",
-   "title": "nextflow v26.11.0-edge",
-   "description": "- Add comment option to splitCsv operator (#6705) (#6896) [e337b3886] - Add e2e dispatch input and surface the showcase run URL (#7192) [a229c18c9] - Add ForeignFileFilter extension point to link inputs in place (#7818) [43f87fb4e] - Add Margaret Dayhoff to the run name generator",
-   "url": "https://github.com/nextflow-io/nextflow/releases/tag/v26.11.0-edge",
+   "source": "GitHub · GMOD/jbrowse-components",
+   "title": "jbrowse-components v5.0.0-beta.22",
+   "description": "_Release notes pending._",
+   "url": "https://github.com/GMOD/jbrowse-components/releases/tag/v5.0.0-beta.22",
    "date": "2026-11-17",
    "tags": [
+    "inne",
     "narzedzia"
    ],
-   "id": "r-a383e8330bf2",
+   "id": "r-d1ca743325d4",
    "score": 1.0
   },
   {
@@ -4351,6 +4441,19 @@
     "narzedzia"
    ],
    "id": "r-cb09e79e66c6",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · nextflow-io/nextflow",
+   "title": "nextflow v26.11.0-edge",
+   "description": "- Add comment option to splitCsv operator (#6705) (#6896) [e337b3886] - Add e2e dispatch input and surface the showcase run URL (#7192) [a229c18c9] - Add ForeignFileFilter extension point to link inputs in place (#7818) [43f87fb4e] - Add Margaret Dayhoff to the run name generator",
+   "url": "https://github.com/nextflow-io/nextflow/releases/tag/v26.11.0-edge",
+   "date": "2026-11-17",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-a383e8330bf2",
    "score": 1.0
   },
   {
@@ -5206,6 +5309,301 @@
   },
   {
    "type": "research",
+   "source": "bioRxiv",
+   "title": "Is the Bitter Lesson coming to genomic prediction? An untuned tabular foundation model matches or beats specialized methods",
+   "description": "Genomic prediction (GP) is dominated by models designed around assumptions about how genetic variation affects phenotypes.",
+   "url": "https://doi.org/10.64898/2026.11.03.764067",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "ai-ml"
+   ],
+   "article_type": "benchmark",
+   "id": "r-0a266dea7a0f",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Unravelling the hidden diversity of the monkfish Lophius gastrophysus using integrative taxonomy",
+   "description": "The monkfish Lophius gastrophysus is a commercially exploited demersal species distributed along the continental shelf and slope of the western Atlantic Ocean. Like other anglerfish species, L.",
+   "url": "https://doi.org/10.64898/2026.11.10.765400",
+   "date": "2026-11-15",
+   "tags": [
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-3819ebd1e404",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Centromere divergence and allopolyploidy reshape carnivorous sundew genomes",
+   "description": "Centromeres are essential for chromosome function, yet how contrasting centromere architectures shape polyploid genome evolution and plant diversification remains unresolved.",
+   "url": "https://doi.org/10.1101/2025.07.27.666937",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-117600cc0de1",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "CLASSIFICATION OF PROKARYOTIC DNA METHYLTRANSFERASES BY CATALYTIC DOMAIN TOPOLOGY",
+   "description": "Prokaryotic DNA methyltransferases (MTases) are essential enzymes that play a crucial role in restriction-modification systems, preventing the degradation of self DNA by restriction enzymes.",
+   "url": "https://doi.org/10.1101/2023.12.13.571470",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "struktury",
+    "ewolucja"
+   ],
+   "article_type": "przeglad",
+   "id": "r-d02e4004e7f9",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "ISdetector: precise mapping of insertion sequences and associated structural variations from short-read sequencing data",
+   "description": "Motivation. Repetitive insertion sequences (ISs) and adjacent structural variants (SVs) complicate precise mapping from bacte-rial short reads.",
+   "url": "https://doi.org/10.64898/2026.03.18.712784",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-6fa2c3708983",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Inferring single-cell gene expression profiles from multicellular spatial transcriptomics data with st2sc",
+   "description": "Spatial transcriptomics (ST) enables the quantitative measurement of gene expression within tissue sections but is currently limited in spatial resolution, as each spot aggregates signals from multiple cells.",
+   "url": "https://doi.org/10.64898/2026.11.10.765653",
+   "date": "2026-11-15",
+   "tags": [
+    "single-cell",
+    "transkryptomika",
+    "ai-ml"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-54615c5805aa",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "DNA methylation assigns sequencing reads to closely related bacterial strains when their sequence cannot",
+   "description": "Clinical and public-health questions often concern strains rather than species, yet co-resident strains of one species can be so closely related that a single long read carries no sequence difference between them.",
+   "url": "https://doi.org/10.64898/2026.11.09.765334",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-ef6bc3bd2b12",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Point mutations in the FimH lectin domain: predicted folding stability versus conformational dynamics for R60P, Q133K and Y137A",
+   "description": "Background. The adhesin FimH attaches uropathogenic Escherichia coli to the urinary epithelium through a force-regulated catch-bond that single lectin-domain substitutions can modulate.",
+   "url": "https://doi.org/10.64898/2026.11.10.765513",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "struktury"
+   ],
+   "article_type": "benchmark",
+   "id": "r-7cd737ea684a",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Ultrasensitive Regulation in the Tryptophan System in Escherichia coli Provides Effective Noise Mitigation",
+   "description": "The tryptophan system in Escherichia coli maintains intracellular concentration of tryptophan in a narrow band regardless of the nutritional status and uncertainty in its environment.",
+   "url": "https://doi.org/10.64898/2026.11.02.763317",
+   "date": "2026-11-15",
+   "tags": [
+    "inne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-3f41e0ec86d2",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Transcription factor activities as a shared representation for drug repurposing hypotheses in breast cancer",
+   "description": "Drug repurposing could expand the limited targeted options for triple-negative breast cancer (TNBC).",
+   "url": "https://doi.org/10.64898/2026.09.08.750045",
+   "date": "2026-11-15",
+   "tags": [
+    "ai-ml",
+    "leki",
+    "kliniczne"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-36ce48051612",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Substitution rate variation, not hidden paralogy, drives false hybridization signal in phylogenetic network inference",
+   "description": "Phylogenetic network inference methods are increasingly used to detect hybridization and gene [fl]ow from genomic data, but their robustness to common sources of model violation remains poorly characterized.",
+   "url": "https://doi.org/10.64898/2026.05.11.723986",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "ewolucja"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-39171b4b1428",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Systematic benchmarking of small variant calling pipelines for long-read RNA sequencing data",
+   "description": "Background: Long-read RNA sequencing (lrRNA-seq) enables transcript-resolved variant detection, but systematic and neutral evaluations of small variants calling pipelines remain limited.",
+   "url": "https://doi.org/10.64898/2026.04.29.721619",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "transkryptomika",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-0dc4a03d0d95",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Harnessing Contextual Embeddings: A Deep Learning Framework for Predicting PCR Amplification Using BERT Tokenization",
+   "description": "Polymerase Chain Reaction (PCR) is a widely used molecular biology technique to amplify DNA sequences. PCR amplification is affected by factors such as binding dynamics and primer-template interactions.",
+   "url": "https://doi.org/10.1101/2024.11.23.624986",
+   "date": "2026-11-15",
+   "tags": [
+    "ai-ml"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-b9e5e64b41b6",
+   "score": 3.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Biophysical resetting of specialization enables metabolic network diversification",
+   "description": "Organisms must integrate external inputs whose availability they do not control in internal functions that require precision.",
+   "url": "https://doi.org/10.64898/2026.10.14.759191",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "ewolucja",
+    "bazy-danych"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-657c4771f63d",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "STARgrid - an open end-to-end pipeline for Visium HD",
+   "description": "Grid-based spatial transcriptomics quantifies expression by counting reads, assigning them to genes and, from their barcodes, to capture locations on a grid, which is registered to a microscope image.",
+   "url": "https://doi.org/10.64898/2026.10.09.757882",
+   "date": "2026-11-15",
+   "tags": [
+    "single-cell",
+    "transkryptomika",
+    "kliniczne",
+    "narzedzia"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-05655fc7c37f",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "spearfish: ultrafast Δ-mapping of long reads to redundant transcriptomes",
+   "description": "In a transcriptome, isoforms share most of their sequence, and gene families add further near-copies.",
+   "url": "https://doi.org/10.64898/2026.11.05.764698",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "transkryptomika"
+   ],
+   "article_type": "narzedzie-art",
+   "id": "r-8f83760ea227",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "DeepCDS: Ab initio coding sequence prediction in prokaryotic metagenomic short reads",
+   "description": "Accurate coding sequence prediction in short prokaryotic metagenomic sequences, such as Illumina reads, remains challenging due to sequence fragmentation, unknown sequence origins, and sequencing errors.",
+   "url": "https://doi.org/10.64898/2026.06.17.732633",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika",
+    "mikrobiom",
+    "ai-ml",
+    "ewolucja",
+    "narzedzia"
+   ],
+   "article_type": "benchmark",
+   "id": "r-080a0ddb35d3",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Fog adaptation and wind connectivity in an endangered California plant: a genomic baseline for wind energy development",
+   "description": "Fog buffers water stress in several arid, highly seasonal coastal ecosystems with exceptional plant endemism, yet the genomic basis of adaptation to fog remains almost entirely uncharacterized.",
+   "url": "https://doi.org/10.64898/2026.10.25.761743",
+   "date": "2026-11-15",
+   "tags": [
+    "genomika"
+   ],
+   "article_type": "eksperymentalne",
+   "id": "r-f41833078ebd",
+   "score": 2.0
+  },
+  {
+   "type": "research",
+   "source": "bioRxiv",
+   "title": "Pallatom2: Navigating the De Novo Protein Universe with Atom-to-Atom Modeling",
+   "description": "Protein binder design requires precise coordination of molecular structure, binding geometry, and experimentally measurable performance.",
+   "url": "https://doi.org/10.64898/2026.11.10.765209",
+   "date": "2026-11-15",
+   "tags": [
+    "immunoinformatyka",
+    "ai-ml",
+    "struktury"
+   ],
+   "article_type": "benchmark",
+   "id": "r-509d05f974c4",
+   "score": 2.0
+  },
+  {
+   "type": "research",
    "source": "medRxiv",
    "title": "Multi-Ancestry Rare and Low-Frequency Variant Analysis Reveals Novel and Convergent Biological Pathways for Cannabis Use Disorder",
    "description": "Large disparities in Cannabis Use Disorder (CUD) prevalence exist across U.S ethnic groups, yet genetic research has disproportionately focused on individuals of European descent.",
@@ -5312,20 +5710,6 @@
     "narzedzia"
    ],
    "id": "r-89b6a5324e04",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · scverse/PyDESeq2",
-   "title": "PyDESeq2 v0.6.0",
-   "description": "## Highlights - Genes with NaN counts are ignored with a warning instead of raising an error, and get NaN dispersions, LFCs and p-values (#502). - `plot_MA` and `plot_dispersions` take matplotlib axes through a new `ax` argument (#504). - A fitted `DeseqDataSet` can be written to",
-   "url": "https://github.com/scverse/PyDESeq2/releases/tag/v0.6.0",
-   "date": "2026-11-15",
-   "tags": [
-    "narzedzia",
-    "bazy-danych"
-   ],
-   "id": "r-3b381c2b5117",
    "score": 1.0
   },
   {
@@ -5556,6 +5940,20 @@
    "article_type": null,
    "id": "r-cd9f52979110",
    "score": 0.3
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · scverse/PyDESeq2",
+   "title": "PyDESeq2 v0.6.0",
+   "description": "## Highlights - Genes with NaN counts are ignored with a warning instead of raising an error, and get NaN dispersions, LFCs and p-values (#502). - `plot_MA` and `plot_dispersions` take matplotlib axes through a new `ax` argument (#504). - A fitted `DeseqDataSet` can be written to",
+   "url": "https://github.com/scverse/PyDESeq2/releases/tag/v0.6.0",
+   "date": "2026-11-15",
+   "tags": [
+    "narzedzia",
+    "bazy-danych"
+   ],
+   "id": "r-3b381c2b5117",
+   "score": 1.0
   },
   {
    "type": "narzedzie",
@@ -16938,20 +17336,6 @@
   },
   {
    "type": "narzedzie",
-   "source": "GitHub · klamt-lab/straindesign",
-   "title": "straindesign v1.19.2",
-   "description": "Sped up preprocessing",
-   "url": "https://github.com/klamt-lab/straindesign/releases/tag/v1.19.2",
-   "date": "2026-11-05",
-   "tags": [
-    "inne",
-    "narzedzia"
-   ],
-   "id": "r-4d94cd5cdd99",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
    "source": "GitHub · shenwei356/csvtk",
    "title": "csvtk v0.39.0",
    "description": "- [csvtk v0.39.0](https://github.com/shenwei356/csvtk/releases/tag/v0.39.0) [![Github Releases (by Release)](https://img.shields.io/github/downloads/shenwei356/csvtk/v0.39.0/total.svg)](https://github.com/shenwei356/csvtk/releases/tag/v0.39.0) - `csvtk`: - improve performance. -",
@@ -16975,6 +17359,20 @@
     "narzedzia"
    ],
    "id": "r-bfe8324ff582",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
+   "source": "GitHub · klamt-lab/straindesign",
+   "title": "straindesign v1.19.2",
+   "description": "Sped up preprocessing",
+   "url": "https://github.com/klamt-lab/straindesign/releases/tag/v1.19.2",
+   "date": "2026-11-05",
+   "tags": [
+    "inne",
+    "narzedzia"
+   ],
+   "id": "r-4d94cd5cdd99",
    "score": 1.0
   },
   {
