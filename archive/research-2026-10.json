@@ -4006,6 +4006,19 @@
   },
   {
    "type": "narzedzie",
+   "source": "GitHub · stjude-rust-labs/sprocket",
+   "title": "sprocket v0.33.0",
+   "description": "### Security Fix * Fixed a security issue where `sprocket dev server` was failing to properly handle submitted `file://` URLs, allowing attackers to access files outside of the allowed file system paths ([GHSA-gvw2-6ff9-8364](https://github.com/stjude-rust-labs/sprocket/security/",
+   "url": "https://github.com/stjude-rust-labs/sprocket/releases/tag/v0.33.0",
+   "date": "2026-10-29",
+   "tags": [
+    "narzedzia"
+   ],
+   "id": "r-20c900a0e896",
+   "score": 1.0
+  },
+  {
+   "type": "narzedzie",
    "source": "GitHub · plotly/dash",
    "title": "dash v4.5.0",
    "description": "### Added - [#4099](https://github.com/plotly/dash/pull/4099) Streaming callbacks over HTTP now require shared storage and fail at server setup without it, instead of falling back to one connection per stream; WebSocket streaming callbacks do not need it. - [#4095](https://github",
@@ -4016,19 +4029,6 @@
     "bazy-danych"
    ],
    "id": "r-b11fcdc573a1",
-   "score": 1.0
-  },
-  {
-   "type": "narzedzie",
-   "source": "GitHub · stjude-rust-labs/sprocket",
-   "title": "sprocket v0.33.0",
-   "description": "### Security Fix * Fixed a security issue where `sprocket dev server` was failing to properly handle submitted `file://` URLs, allowing attackers to access files outside of the allowed file system paths ([GHSA-gvw2-6ff9-8364](https://github.com/stjude-rust-labs/sprocket/security/",
-   "url": "https://github.com/stjude-rust-labs/sprocket/releases/tag/v0.33.0",
-   "date": "2026-10-29",
-   "tags": [
-    "narzedzia"
-   ],
-   "id": "r-20c900a0e896",
    "score": 1.0
   },
   {
